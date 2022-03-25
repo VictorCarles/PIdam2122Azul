@@ -1,0 +1,16 @@
+Perfil Empresa
+
+Con nuestro perfil enfocado a empresas, estas tendran acceso a una gran cantidad de herramientas que le permitiran captar nuevos clientes.
+Dispondran de un perfil personalizable en el colocar toda la informacion que pueda ser relevante para los clientes, asi como metodos de contacto.
+Los clientes podran valorar estos comercios dentro de la app, consiguiendo las empresas gran cantidad de feedback con el que mejorar sus servicios.
+Los clientes podran incluir en su lista de favoritos, los perfiles de las empresas que le resulten mas atractivas, recibiendo de esta manera todas las novedades sobre estos negocios ademas de grandes ofertas exclusivas.
+A traves de sus perfiles empresariales, podran lanzar ofertas personalizables con las que atraer clientes a sus negocios, ademas de disponer de un feed en el podran informar de las ultimas novedades a todos los clientes que hayan decidido seguir el perfil.
+Introduccion
+Saludos, hoy vengo a presentarios nuestra empresa llamada "Local market". En terminos generales, nuestra empresa se dedica a incentivar el comercio local, ademas de ser una plataforma de valoraciones, mediante las que los comerciantes obtienen feedback de las experiencias de los consumidores. Esto se hara con un sistema de puntuaciones del 0 al 10 segun lo satisfecho que este un cliente, ademas de poder dejar un comentario en caso de duda o objecion al respecto de su experiencia como consumidor del mismo. Hemos hecho esta aplicacion para darle visibilidad a los comercios locales y de esta manera permitirles captar clientes nuevos beneficiando asi
+
+Perfil Usuario
+Los usuarios tendran acceso a una homepage desde donde pueden consultar los perfiles destacados, nuevos perfiles de comercio, etc.
+Un usuario tiene un perfil basico, que en comparacion al de empresa, no tiene mucho contenido, salvo el nombre de usuario, correo para que sea notificado de las novedades de las tiendas a las que siga, y la capacidad de crear listas con sus tiendas favoritas o recomendadas, asi como un muro con todos sus comentarios en las respectivas tiendas.
+
+
+
