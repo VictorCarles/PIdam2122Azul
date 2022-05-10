@@ -21,8 +21,8 @@ namespace Localmarket_App
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            pictureBox2.Visible = false;
-            panel1.Visible = true;
+            picNombre.Visible = false;
+            pnlDatosUsuario.Visible = true;
         }
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
@@ -35,8 +35,8 @@ namespace Localmarket_App
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.FromArgb(200, 238, 240, 161);
-            panel1.Visible = false;
+            pnlDatosUsuario.BackColor = Color.FromArgb(200, 238, 240, 161);
+            pnlDatosUsuario.Visible = false;
         }
     }
 }

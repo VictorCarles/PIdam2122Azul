@@ -19,7 +19,21 @@ namespace Localmarket_App
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnEmpresario_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            lblUsuario.Visible = false;
+            txtUsuario.Visible = false;
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            grpBoxDatosNegocio.Visible = false;
+            lblDatosEmpresario.Visible = false;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
