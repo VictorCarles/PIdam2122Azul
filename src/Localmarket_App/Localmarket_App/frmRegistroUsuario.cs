@@ -21,5 +21,11 @@ namespace Localmarket_App
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            FrmAjustes ajustes = new FrmAjustes();
+            ajustes.ShowDialog();
+        }
     }
 }
