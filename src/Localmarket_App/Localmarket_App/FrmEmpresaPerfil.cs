@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Localmarket_App
 {
-    public partial class FrmEmpresaPerfil : Form
+    public partial class frmEmpresaPerfil : Form
     {
-        public FrmEmpresaPerfil()
+        public frmEmpresaPerfil()
         {
             InitializeComponent();
         }
