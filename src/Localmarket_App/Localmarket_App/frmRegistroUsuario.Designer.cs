@@ -72,7 +72,6 @@ namespace Localmarket_App
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
             this.pictureBox3.Location = new System.Drawing.Point(1250, 19);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(57, 57);
@@ -82,7 +81,6 @@ namespace Localmarket_App
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
             this.pictureBox2.Location = new System.Drawing.Point(1140, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(69, 64);

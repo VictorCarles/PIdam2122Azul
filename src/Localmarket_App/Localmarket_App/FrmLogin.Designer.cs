@@ -189,7 +189,6 @@ namespace Localmarket_App
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Localmarket_App.Properties.Resources.Nombre_App;
             this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(324, 305);
             this.pictureBox2.Name = "pictureBox2";
@@ -202,7 +201,6 @@ namespace Localmarket_App
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Localmarket_App.Properties.Resources.Logo;
             this.pictureBox1.Location = new System.Drawing.Point(546, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(214, 202);
@@ -213,7 +211,6 @@ namespace Localmarket_App
             // FrmLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::Localmarket_App.Properties.Resources.panaderia;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1332, 703);
             this.Controls.Add(this.panel1);

@@ -116,5 +116,26 @@
   <ItemGroup>
     <None Include="Resources\icono-ajustes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
