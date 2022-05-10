@@ -70,6 +70,7 @@ namespace Localmarket_App
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.grpBoxDatosNegocio = new System.Windows.Forms.GroupBox();
+            this.btnEnviar = new System.Windows.Forms.Button();
             this.pnlRegistroComo.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
@@ -81,11 +82,11 @@ namespace Localmarket_App
             // 
             // pnlRegistroComo
             // 
+            this.pnlRegistroComo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlRegistroComo.BackColor = System.Drawing.Color.Orange;
             this.pnlRegistroComo.Controls.Add(this.picAjustes);
             this.pnlRegistroComo.Controls.Add(this.picPerfil);
             this.pnlRegistroComo.Controls.Add(this.picLogo);
-            this.pnlRegistroComo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlRegistroComo.Location = new System.Drawing.Point(0, 0);
             this.pnlRegistroComo.Name = "pnlRegistroComo";
             this.pnlRegistroComo.Size = new System.Drawing.Size(1332, 100);
@@ -93,6 +94,7 @@ namespace Localmarket_App
             // 
             // lblRepContraseña
             // 
+            this.lblRepContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblRepContraseña.AutoSize = true;
             this.lblRepContraseña.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepContraseña.Location = new System.Drawing.Point(268, 407);
@@ -103,6 +105,7 @@ namespace Localmarket_App
             // 
             // lblNombre
             // 
+            this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(360, 212);
@@ -113,6 +116,7 @@ namespace Localmarket_App
             // 
             // lblApellidos
             // 
+            this.lblApellidos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidos.Location = new System.Drawing.Point(351, 261);
@@ -133,6 +137,7 @@ namespace Localmarket_App
             // 
             // lblContraseña
             // 
+            this.lblContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.Location = new System.Drawing.Point(333, 367);
@@ -143,6 +148,7 @@ namespace Localmarket_App
             // 
             // lblCorreo
             // 
+            this.lblCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.Location = new System.Drawing.Point(272, 314);
@@ -153,6 +159,7 @@ namespace Localmarket_App
             // 
             // txtRepContraseña
             // 
+            this.txtRepContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRepContraseña.Location = new System.Drawing.Point(449, 408);
             this.txtRepContraseña.Name = "txtRepContraseña";
             this.txtRepContraseña.Size = new System.Drawing.Size(205, 22);
@@ -160,6 +167,7 @@ namespace Localmarket_App
             // 
             // txtNombre
             // 
+            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombre.Location = new System.Drawing.Point(449, 213);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(205, 22);
@@ -167,6 +175,7 @@ namespace Localmarket_App
             // 
             // txtApellido
             // 
+            this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtApellido.Location = new System.Drawing.Point(449, 261);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(205, 22);
@@ -174,6 +183,7 @@ namespace Localmarket_App
             // 
             // txtCorreo
             // 
+            this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCorreo.Location = new System.Drawing.Point(449, 314);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(205, 22);
@@ -181,6 +191,7 @@ namespace Localmarket_App
             // 
             // txtContraseña
             // 
+            this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtContraseña.Location = new System.Drawing.Point(449, 368);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(205, 22);
@@ -193,19 +204,20 @@ namespace Localmarket_App
             this.panel2.Controls.Add(this.lblRegComo);
             this.panel2.Controls.Add(this.btnCliente);
             this.panel2.Controls.Add(this.btnEmpresario);
-            this.panel2.Location = new System.Drawing.Point(31, 124);
+            this.panel2.Location = new System.Drawing.Point(51, 124);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1243, 553);
             this.panel2.TabIndex = 20;
             // 
             // btnEmpresario
             // 
+            this.btnEmpresario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnEmpresario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEmpresario.Font = new System.Drawing.Font("Leelawadee", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpresario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEmpresario.Location = new System.Drawing.Point(74, 222);
+            this.btnEmpresario.Location = new System.Drawing.Point(89, 222);
             this.btnEmpresario.Name = "btnEmpresario";
-            this.btnEmpresario.Size = new System.Drawing.Size(497, 246);
+            this.btnEmpresario.Size = new System.Drawing.Size(497, 250);
             this.btnEmpresario.TabIndex = 0;
             this.btnEmpresario.Text = "Empresario";
             this.btnEmpresario.UseVisualStyleBackColor = false;
@@ -215,7 +227,7 @@ namespace Localmarket_App
             // 
             this.lblRegComo.AutoSize = true;
             this.lblRegComo.Font = new System.Drawing.Font("Leelawadee", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegComo.Location = new System.Drawing.Point(353, 68);
+            this.lblRegComo.Location = new System.Drawing.Point(363, 75);
             this.lblRegComo.Name = "lblRegComo";
             this.lblRegComo.Size = new System.Drawing.Size(563, 71);
             this.lblRegComo.TabIndex = 2;
@@ -235,6 +247,7 @@ namespace Localmarket_App
             // 
             // picAñadeFoto
             // 
+            this.picAñadeFoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picAñadeFoto.Image = ((System.Drawing.Image)(resources.GetObject("picAñadeFoto.Image")));
             this.picAñadeFoto.Location = new System.Drawing.Point(108, 160);
             this.picAñadeFoto.Name = "picAñadeFoto";
@@ -276,6 +289,7 @@ namespace Localmarket_App
             // 
             // lblDatosEmpresario
             // 
+            this.lblDatosEmpresario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblDatosEmpresario.AutoSize = true;
             this.lblDatosEmpresario.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatosEmpresario.Location = new System.Drawing.Point(333, 150);
@@ -286,6 +300,7 @@ namespace Localmarket_App
             // 
             // lblCP
             // 
+            this.lblCP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCP.AutoSize = true;
             this.lblCP.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCP.Location = new System.Drawing.Point(312, 451);
@@ -296,6 +311,7 @@ namespace Localmarket_App
             // 
             // mskCP
             // 
+            this.mskCP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.mskCP.Location = new System.Drawing.Point(449, 451);
             this.mskCP.Mask = "00000";
             this.mskCP.Name = "mskCP";
@@ -304,6 +320,7 @@ namespace Localmarket_App
             // 
             // txtDireccion
             // 
+            this.txtDireccion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDireccion.Location = new System.Drawing.Point(449, 491);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(205, 22);
@@ -311,6 +328,7 @@ namespace Localmarket_App
             // 
             // lblDireccion
             // 
+            this.lblDireccion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.Location = new System.Drawing.Point(349, 490);
@@ -425,6 +443,7 @@ namespace Localmarket_App
             // 
             // txtUsuario
             // 
+            this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtUsuario.Location = new System.Drawing.Point(449, 176);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(205, 22);
@@ -432,6 +451,7 @@ namespace Localmarket_App
             // 
             // lblUsuario
             // 
+            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(360, 176);
@@ -442,6 +462,7 @@ namespace Localmarket_App
             // 
             // grpBoxDatosNegocio
             // 
+            this.grpBoxDatosNegocio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.grpBoxDatosNegocio.Controls.Add(this.label13);
             this.grpBoxDatosNegocio.Controls.Add(this.lblDireccionNeg);
             this.grpBoxDatosNegocio.Controls.Add(this.lblTlfNeg);
@@ -461,11 +482,23 @@ namespace Localmarket_App
             this.grpBoxDatosNegocio.TabIndex = 43;
             this.grpBoxDatosNegocio.TabStop = false;
             // 
+            // btnEnviar
+            // 
+            this.btnEnviar.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnEnviar.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnviar.Location = new System.Drawing.Point(449, 571);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(190, 43);
+            this.btnEnviar.TabIndex = 44;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = false;
+            // 
             // FrmRegistroUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1332, 703);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.grpBoxDatosNegocio);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.txtUsuario);
@@ -546,5 +579,6 @@ namespace Localmarket_App
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.GroupBox grpBoxDatosNegocio;
+        private System.Windows.Forms.Button btnEnviar;
     }
 }
