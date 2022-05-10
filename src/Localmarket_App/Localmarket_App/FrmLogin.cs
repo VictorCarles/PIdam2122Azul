@@ -21,7 +21,7 @@ namespace Localmarket_App
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            pictureBox2.Visible = false;
+            picNombre.Visible = false;
             panel1.Visible = true;
         }
 
