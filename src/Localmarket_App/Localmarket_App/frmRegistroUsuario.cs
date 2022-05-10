@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Localmarket_App
 {
-    public partial class frmRegistroUsuario : Form
+    public partial class FrmRegistroUsuario : Form
     {
-        public frmRegistroUsuario()
+        public FrmRegistroUsuario()
         {
             InitializeComponent();
+        }
+
+        private void FrmRegistro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
