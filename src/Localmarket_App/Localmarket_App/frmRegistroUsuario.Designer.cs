@@ -30,6 +30,7 @@ namespace Localmarket_App
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroUsuario));
+<<<<<<< HEAD
             this.pnlRegistroComo = new System.Windows.Forms.Panel();
             this.lblRepContraseña = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -78,6 +79,34 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.grpBoxDatosNegocio.SuspendLayout();
+=======
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+>>>>>>> PerfilesUsuarioyEmpresaForms
             this.SuspendLayout();
             // 
 <<<<<<< HEAD
@@ -92,6 +121,35 @@ namespace Localmarket_App
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1332, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(1250, 19);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(57, 57);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(1140, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(31, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -127,7 +185,7 @@ namespace Localmarket_App
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(727, 287);
+            this.label5.Location = new System.Drawing.Point(690, 288);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 23);
             this.label5.TabIndex = 6;
@@ -217,7 +275,7 @@ namespace Localmarket_App
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(827, 287);
+            this.textBox8.Location = new System.Drawing.Point(790, 288);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(291, 22);
             this.textBox8.TabIndex = 18;
@@ -240,6 +298,7 @@ namespace Localmarket_App
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
+<<<<<<< HEAD
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
@@ -686,6 +745,8 @@ namespace Localmarket_App
             this.btnEnviar.UseVisualStyleBackColor = false;
 >>>>>>> src_FrmUsuyCliente
             // 
+=======
+>>>>>>> PerfilesUsuarioyEmpresaForms
             // FrmRegistroUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -716,6 +777,7 @@ namespace Localmarket_App
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro Usuario";
             this.Load += new System.EventHandler(this.FrmRegistro_Load);
+<<<<<<< HEAD
             this.pnlRegistroComo.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -725,6 +787,13 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.grpBoxDatosNegocio.ResumeLayout(false);
             this.grpBoxDatosNegocio.PerformLayout();
+=======
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+>>>>>>> PerfilesUsuarioyEmpresaForms
             this.ResumeLayout(false);
             this.PerformLayout();
 

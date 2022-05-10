@@ -46,11 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="FrmAjustes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAjustes.Designer.cs">
       <DependentUpon>FrmAjustes.cs</DependentUpon>
+=======
+    <Compile Include="FrmClientePerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientePerfil.Designer.cs">
+      <DependentUpon>FrmClientePerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpresaPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpresaPerfil.Designer.cs">
+      <DependentUpon>FrmEmpresaPerfil.cs</DependentUpon>
+>>>>>>> PerfilesUsuarioyEmpresaForms
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -66,8 +80,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="FrmAjustes.resx">
       <DependentUpon>FrmAjustes.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmClientePerfil.resx">
+      <DependentUpon>FrmClientePerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpresaPerfil.resx">
+      <DependentUpon>FrmEmpresaPerfil.cs</DependentUpon>
+>>>>>>> PerfilesUsuarioyEmpresaForms
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -117,7 +139,29 @@
     <None Include="Resources\icono-ajustes.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\bolsa.png" />
+=======
+    <None Include="Resources\perfil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+>>>>>>> PerfilesUsuarioyEmpresaForms
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
