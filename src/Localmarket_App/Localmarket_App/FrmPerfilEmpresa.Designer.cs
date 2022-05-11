@@ -31,25 +31,25 @@ namespace Localmarket_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPerfilEmpresa));
             this.pnlNaranja = new System.Windows.Forms.Panel();
+            this.pboxTienda = new System.Windows.Forms.PictureBox();
             this.lblNombreEmp = new System.Windows.Forms.Label();
             this.picNotif = new System.Windows.Forms.PictureBox();
             this.picAjustesPerfil = new System.Windows.Forms.PictureBox();
             this.picCrearPagCom = new System.Windows.Forms.PictureBox();
             this.picAccederPagCom = new System.Windows.Forms.PictureBox();
             this.picPerfil = new System.Windows.Forms.PictureBox();
-            this.pboxTienda = new System.Windows.Forms.PictureBox();
             this.lblAccederPagCom = new System.Windows.Forms.Label();
             this.lblCrearPagCom = new System.Windows.Forms.Label();
             this.lblAjustestPerfil = new System.Windows.Forms.Label();
             this.lblNotificaciones = new System.Windows.Forms.Label();
             this.picAtras = new System.Windows.Forms.PictureBox();
             this.pnlNaranja.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxTienda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNotif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustesPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCrearPagCom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAccederPagCom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxTienda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +62,17 @@ namespace Localmarket_App
             this.pnlNaranja.Name = "pnlNaranja";
             this.pnlNaranja.Size = new System.Drawing.Size(1332, 100);
             this.pnlNaranja.TabIndex = 2;
+            // 
+            // pboxTienda
+            // 
+            this.pboxTienda.Image = ((System.Drawing.Image)(resources.GetObject("pboxTienda.Image")));
+            this.pboxTienda.InitialImage = null;
+            this.pboxTienda.Location = new System.Drawing.Point(31, 12);
+            this.pboxTienda.Name = "pboxTienda";
+            this.pboxTienda.Size = new System.Drawing.Size(75, 68);
+            this.pboxTienda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxTienda.TabIndex = 0;
+            this.pboxTienda.TabStop = false;
             // 
             // lblNombreEmp
             // 
@@ -122,17 +133,6 @@ namespace Localmarket_App
             this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPerfil.TabIndex = 2;
             this.picPerfil.TabStop = false;
-            // 
-            // pboxTienda
-            // 
-            this.pboxTienda.Image = ((System.Drawing.Image)(resources.GetObject("pboxTienda.Image")));
-            this.pboxTienda.InitialImage = null;
-            this.pboxTienda.Location = new System.Drawing.Point(31, 12);
-            this.pboxTienda.Name = "pboxTienda";
-            this.pboxTienda.Size = new System.Drawing.Size(75, 68);
-            this.pboxTienda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxTienda.TabIndex = 0;
-            this.pboxTienda.TabStop = false;
             // 
             // lblAccederPagCom
             // 
@@ -204,12 +204,12 @@ namespace Localmarket_App
             this.Name = "FrmPerfilEmpresa";
             this.Text = "Perfil Empresa";
             this.pnlNaranja.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pboxTienda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNotif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustesPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCrearPagCom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAccederPagCom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxTienda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -39,6 +39,12 @@ namespace Localmarket_App
             pnlDatosUsuario.Visible = false;
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmPrincipal frmPrin = new FrmPrincipal();
+            frmPrin.ShowDialog();
+            this.Close();
+        }
     }   
 }

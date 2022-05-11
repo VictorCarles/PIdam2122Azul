@@ -130,11 +130,11 @@
   <data name="Grupo 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Grupo 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flechaacceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flechaacceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ajustesicono" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ajustesicono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nombre App" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nombre App.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icono-ajustes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono-ajustes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,13 +142,16 @@
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Nombre App" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Nombre App.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="campanita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campanita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flechaacceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flechaacceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flechaatras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flechaatras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="campanita" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campanita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuboton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuboton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

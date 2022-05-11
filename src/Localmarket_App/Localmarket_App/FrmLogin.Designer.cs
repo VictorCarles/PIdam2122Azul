@@ -44,6 +44,7 @@ namespace Localmarket_App
             this.lblDatosUsuario = new System.Windows.Forms.Label();
             this.picNombre = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlDatosUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -210,12 +211,23 @@ namespace Localmarket_App
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(105, 34);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Localmarket_App.Properties.Resources.panaderia;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1332, 703);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pnlDatosUsuario);
             this.Controls.Add(this.picNombre);
             this.Controls.Add(this.btnRegistrarse);
@@ -250,5 +262,6 @@ namespace Localmarket_App
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblDatosUsuario;
+        private System.Windows.Forms.Button button1;
     }
 }
