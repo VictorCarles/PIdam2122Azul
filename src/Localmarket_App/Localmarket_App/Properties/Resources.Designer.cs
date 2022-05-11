@@ -63,6 +63,7 @@ namespace Localmarket_App.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap arrow {
             get {
                 object obj = ResourceManager.GetObject("arrow", resourceCulture);
@@ -96,6 +97,11 @@ namespace Localmarket_App.Properties {
         internal static System.Drawing.Bitmap gear {
             get {
                 object obj = ResourceManager.GetObject("gear", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap flechaatras {
+            get {
+                object obj = ResourceManager.GetObject("flechaatras", resourceCulture);
+>>>>>>> src_FrmUsuyCliente
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

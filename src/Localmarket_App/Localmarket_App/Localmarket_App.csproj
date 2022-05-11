@@ -140,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <None Include="Resources\bolsa.png" />
 =======
     <None Include="Resources\perfil.jpg" />
@@ -162,6 +163,9 @@
   <ItemGroup>
     <None Include="Resources\cross.png" />
 >>>>>>> PerfilesUsuarioyEmpresaForms
+=======
+    <None Include="Resources\flechaatras.png" />
+>>>>>>> src_FrmUsuyCliente
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

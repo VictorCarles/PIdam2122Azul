@@ -43,14 +43,10 @@ namespace Localmarket_App
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnEmpresario = new System.Windows.Forms.Button();
+            this.pnlRegistrar = new System.Windows.Forms.Panel();
             this.lblRegComo = new System.Windows.Forms.Label();
             this.btnCliente = new System.Windows.Forms.Button();
-            this.picAñadeFoto = new System.Windows.Forms.PictureBox();
-            this.picAjustes = new System.Windows.Forms.PictureBox();
-            this.picPerfil = new System.Windows.Forms.PictureBox();
-            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.btnEmpresario = new System.Windows.Forms.Button();
             this.lblDatosEmpresario = new System.Windows.Forms.Label();
             this.lblCP = new System.Windows.Forms.Label();
             this.mskCP = new System.Windows.Forms.MaskedTextBox();
@@ -72,12 +68,20 @@ namespace Localmarket_App
             this.lblUsuario = new System.Windows.Forms.Label();
             this.grpBoxDatosNegocio = new System.Windows.Forms.GroupBox();
             this.btnEnviar = new System.Windows.Forms.Button();
+            this.picAtras = new System.Windows.Forms.PictureBox();
+            this.picAñadeFoto = new System.Windows.Forms.PictureBox();
+            this.picAjustes = new System.Windows.Forms.PictureBox();
+            this.picPerfil = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlRegistroComo.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlRegistrar.SuspendLayout();
+            this.grpBoxDatosNegocio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+<<<<<<< HEAD
             this.grpBoxDatosNegocio.SuspendLayout();
 =======
             this.panel1 = new System.Windows.Forms.Panel();
@@ -107,6 +111,8 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 >>>>>>> PerfilesUsuarioyEmpresaForms
+=======
+>>>>>>> src_FrmUsuyCliente
             this.SuspendLayout();
             // 
 <<<<<<< HEAD
@@ -448,31 +454,17 @@ namespace Localmarket_App
             this.txtContraseña.Size = new System.Drawing.Size(205, 22);
             this.txtContraseña.TabIndex = 15;
             // 
-            // panel2
+            // pnlRegistrar
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Controls.Add(this.lblRegComo);
-            this.panel2.Controls.Add(this.btnCliente);
-            this.panel2.Controls.Add(this.btnEmpresario);
-            this.panel2.Location = new System.Drawing.Point(51, 124);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1243, 553);
-            this.panel2.TabIndex = 20;
-            // 
-            // btnEmpresario
-            // 
-            this.btnEmpresario.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEmpresario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEmpresario.Font = new System.Drawing.Font("Leelawadee", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpresario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEmpresario.Location = new System.Drawing.Point(89, 222);
-            this.btnEmpresario.Name = "btnEmpresario";
-            this.btnEmpresario.Size = new System.Drawing.Size(497, 250);
-            this.btnEmpresario.TabIndex = 0;
-            this.btnEmpresario.Text = "Empresario";
-            this.btnEmpresario.UseVisualStyleBackColor = false;
-            this.btnEmpresario.Click += new System.EventHandler(this.btnEmpresario_Click);
+            this.pnlRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlRegistrar.Controls.Add(this.lblRegComo);
+            this.pnlRegistrar.Controls.Add(this.btnCliente);
+            this.pnlRegistrar.Controls.Add(this.btnEmpresario);
+            this.pnlRegistrar.Location = new System.Drawing.Point(51, 124);
+            this.pnlRegistrar.Name = "pnlRegistrar";
+            this.pnlRegistrar.Size = new System.Drawing.Size(1243, 553);
+            this.pnlRegistrar.TabIndex = 20;
             // 
             // lblRegComo
             // 
@@ -496,47 +488,19 @@ namespace Localmarket_App
             this.btnCliente.UseVisualStyleBackColor = false;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
-            // picAñadeFoto
+            // btnEmpresario
             // 
-            this.picAñadeFoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picAñadeFoto.Image = ((System.Drawing.Image)(resources.GetObject("picAñadeFoto.Image")));
-            this.picAñadeFoto.Location = new System.Drawing.Point(108, 160);
-            this.picAñadeFoto.Name = "picAñadeFoto";
-            this.picAñadeFoto.Size = new System.Drawing.Size(156, 151);
-            this.picAñadeFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAñadeFoto.TabIndex = 1;
-            this.picAñadeFoto.TabStop = false;
-            // 
-            // picAjustes
-            // 
-            this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
-            this.picAjustes.Location = new System.Drawing.Point(1250, 19);
-            this.picAjustes.Name = "picAjustes";
-            this.picAjustes.Size = new System.Drawing.Size(57, 57);
-            this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAjustes.TabIndex = 2;
-            this.picAjustes.TabStop = false;
-            // 
-            // picPerfil
-            // 
-            this.picPerfil.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
-            this.picPerfil.Location = new System.Drawing.Point(1140, 16);
-            this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(69, 64);
-            this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPerfil.TabIndex = 1;
-            this.picPerfil.TabStop = false;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.InitialImage = null;
-            this.picLogo.Location = new System.Drawing.Point(31, 12);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(75, 68);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
+            this.btnEmpresario.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEmpresario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEmpresario.Font = new System.Drawing.Font("Leelawadee", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpresario.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnEmpresario.Location = new System.Drawing.Point(89, 222);
+            this.btnEmpresario.Name = "btnEmpresario";
+            this.btnEmpresario.Size = new System.Drawing.Size(497, 250);
+            this.btnEmpresario.TabIndex = 0;
+            this.btnEmpresario.Text = "Empresario";
+            this.btnEmpresario.UseVisualStyleBackColor = false;
+            this.btnEmpresario.Click += new System.EventHandler(this.btnEmpresario_Click);
             // 
             // lblDatosEmpresario
             // 
@@ -745,13 +709,70 @@ namespace Localmarket_App
             this.btnEnviar.UseVisualStyleBackColor = false;
 >>>>>>> src_FrmUsuyCliente
             // 
+<<<<<<< HEAD
 =======
 >>>>>>> PerfilesUsuarioyEmpresaForms
+=======
+            // picAtras
+            // 
+            this.picAtras.Image = ((System.Drawing.Image)(resources.GetObject("picAtras.Image")));
+            this.picAtras.Location = new System.Drawing.Point(12, 106);
+            this.picAtras.Name = "picAtras";
+            this.picAtras.Size = new System.Drawing.Size(49, 50);
+            this.picAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAtras.TabIndex = 45;
+            this.picAtras.TabStop = false;
+            this.picAtras.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // picAñadeFoto
+            // 
+            this.picAñadeFoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picAñadeFoto.Image = ((System.Drawing.Image)(resources.GetObject("picAñadeFoto.Image")));
+            this.picAñadeFoto.Location = new System.Drawing.Point(108, 160);
+            this.picAñadeFoto.Name = "picAñadeFoto";
+            this.picAñadeFoto.Size = new System.Drawing.Size(156, 151);
+            this.picAñadeFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAñadeFoto.TabIndex = 1;
+            this.picAñadeFoto.TabStop = false;
+            // 
+            // picAjustes
+            // 
+            this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
+            this.picAjustes.Location = new System.Drawing.Point(1250, 19);
+            this.picAjustes.Name = "picAjustes";
+            this.picAjustes.Size = new System.Drawing.Size(57, 57);
+            this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAjustes.TabIndex = 2;
+            this.picAjustes.TabStop = false;
+            // 
+            // picPerfil
+            // 
+            this.picPerfil.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
+            this.picPerfil.Location = new System.Drawing.Point(1140, 16);
+            this.picPerfil.Name = "picPerfil";
+            this.picPerfil.Size = new System.Drawing.Size(69, 64);
+            this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPerfil.TabIndex = 1;
+            this.picPerfil.TabStop = false;
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.InitialImage = null;
+            this.picLogo.Location = new System.Drawing.Point(31, 12);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(75, 68);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
+            // 
+>>>>>>> src_FrmUsuyCliente
             // FrmRegistroUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1332, 703);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlRegistrar);
+            this.Controls.Add(this.picAtras);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.grpBoxDatosNegocio);
             this.Controls.Add(this.lblUsuario);
@@ -779,12 +800,16 @@ namespace Localmarket_App
             this.Load += new System.EventHandler(this.FrmRegistro_Load);
 <<<<<<< HEAD
             this.pnlRegistroComo.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlRegistrar.ResumeLayout(false);
+            this.pnlRegistrar.PerformLayout();
+            this.grpBoxDatosNegocio.ResumeLayout(false);
+            this.grpBoxDatosNegocio.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+<<<<<<< HEAD
             this.grpBoxDatosNegocio.ResumeLayout(false);
             this.grpBoxDatosNegocio.PerformLayout();
 =======
@@ -794,6 +819,8 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 >>>>>>> PerfilesUsuarioyEmpresaForms
+=======
+>>>>>>> src_FrmUsuyCliente
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -817,7 +844,7 @@ namespace Localmarket_App
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlRegistrar;
         private System.Windows.Forms.Label lblRegComo;
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Button btnEmpresario;
@@ -842,5 +869,6 @@ namespace Localmarket_App
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.GroupBox grpBoxDatosNegocio;
         private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.PictureBox picAtras;
     }
 }
