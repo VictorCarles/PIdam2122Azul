@@ -31,9 +31,6 @@ namespace Localmarket_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroUsuario));
             this.pnlRegistroComo = new System.Windows.Forms.Panel();
-            this.picAjustes = new System.Windows.Forms.PictureBox();
-            this.picPerfil = new System.Windows.Forms.PictureBox();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblRepContraseña = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
@@ -49,7 +46,6 @@ namespace Localmarket_App
             this.lblRegComo = new System.Windows.Forms.Label();
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnEmpresario = new System.Windows.Forms.Button();
-            this.picAñadeFoto = new System.Windows.Forms.PictureBox();
             this.lblDatosEmpresario = new System.Windows.Forms.Label();
             this.lblCP = new System.Windows.Forms.Label();
             this.mskCP = new System.Windows.Forms.MaskedTextBox();
@@ -72,14 +68,18 @@ namespace Localmarket_App
             this.grpBoxDatosNegocio = new System.Windows.Forms.GroupBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.picAtras = new System.Windows.Forms.PictureBox();
+            this.picAñadeFoto = new System.Windows.Forms.PictureBox();
+            this.picAjustes = new System.Windows.Forms.PictureBox();
+            this.picPerfil = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlRegistroComo.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.grpBoxDatosNegocio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
-            this.grpBoxDatosNegocio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlRegistroComo
@@ -93,38 +93,6 @@ namespace Localmarket_App
             this.pnlRegistroComo.Name = "pnlRegistroComo";
             this.pnlRegistroComo.Size = new System.Drawing.Size(1332, 100);
             this.pnlRegistroComo.TabIndex = 0;
-            // 
-            // picAjustes
-            // 
-            this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
-            this.picAjustes.Location = new System.Drawing.Point(1250, 19);
-            this.picAjustes.Name = "picAjustes";
-            this.picAjustes.Size = new System.Drawing.Size(57, 57);
-            this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAjustes.TabIndex = 2;
-            this.picAjustes.TabStop = false;
-            this.picAjustes.Click += new System.EventHandler(this.picAjustes_Click);
-            // 
-            // picPerfil
-            // 
-            this.picPerfil.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
-            this.picPerfil.Location = new System.Drawing.Point(1140, 16);
-            this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(69, 64);
-            this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPerfil.TabIndex = 1;
-            this.picPerfil.TabStop = false;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.InitialImage = null;
-            this.picLogo.Location = new System.Drawing.Point(31, 12);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(75, 68);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
             // 
             // lblRepContraseña
             // 
@@ -278,17 +246,6 @@ namespace Localmarket_App
             this.btnEmpresario.Text = "Empresario";
             this.btnEmpresario.UseVisualStyleBackColor = false;
             this.btnEmpresario.Click += new System.EventHandler(this.btnEmpresario_Click);
-            // 
-            // picAñadeFoto
-            // 
-            this.picAñadeFoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picAñadeFoto.Image = ((System.Drawing.Image)(resources.GetObject("picAñadeFoto.Image")));
-            this.picAñadeFoto.Location = new System.Drawing.Point(108, 160);
-            this.picAñadeFoto.Name = "picAñadeFoto";
-            this.picAñadeFoto.Size = new System.Drawing.Size(156, 151);
-            this.picAñadeFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAñadeFoto.TabIndex = 1;
-            this.picAñadeFoto.TabStop = false;
             // 
             // lblDatosEmpresario
             // 
@@ -508,6 +465,50 @@ namespace Localmarket_App
             this.picAtras.TabStop = false;
             this.picAtras.Click += new System.EventHandler(this.picAtras_Click);
             // 
+            // picAñadeFoto
+            // 
+            this.picAñadeFoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picAñadeFoto.Image = ((System.Drawing.Image)(resources.GetObject("picAñadeFoto.Image")));
+            this.picAñadeFoto.Location = new System.Drawing.Point(108, 160);
+            this.picAñadeFoto.Name = "picAñadeFoto";
+            this.picAñadeFoto.Size = new System.Drawing.Size(156, 151);
+            this.picAñadeFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAñadeFoto.TabIndex = 1;
+            this.picAñadeFoto.TabStop = false;
+            // 
+            // picAjustes
+            // 
+            this.picAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
+            this.picAjustes.Location = new System.Drawing.Point(1250, 19);
+            this.picAjustes.Name = "picAjustes";
+            this.picAjustes.Size = new System.Drawing.Size(57, 57);
+            this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAjustes.TabIndex = 2;
+            this.picAjustes.TabStop = false;
+            this.picAjustes.Click += new System.EventHandler(this.picAjustes_Click);
+            // 
+            // picPerfil
+            // 
+            this.picPerfil.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
+            this.picPerfil.Location = new System.Drawing.Point(1140, 16);
+            this.picPerfil.Name = "picPerfil";
+            this.picPerfil.Size = new System.Drawing.Size(69, 64);
+            this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPerfil.TabIndex = 1;
+            this.picPerfil.TabStop = false;
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.InitialImage = null;
+            this.picLogo.Location = new System.Drawing.Point(31, 12);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(75, 68);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
+            // 
             // FrmRegistroUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -540,15 +541,15 @@ namespace Localmarket_App
             this.Text = "Registro Usuario";
             this.Load += new System.EventHandler(this.FrmRegistro_Load);
             this.pnlRegistroComo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).EndInit();
             this.grpBoxDatosNegocio.ResumeLayout(false);
             this.grpBoxDatosNegocio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

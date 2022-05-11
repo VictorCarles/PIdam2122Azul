@@ -202,7 +202,7 @@ namespace Localmarket_App
             this.Controls.Add(this.picPerfil);
             this.Controls.Add(this.pnlNaranja);
             this.Name = "FrmPerfilEmpresa";
-            this.Text = "FrmPerfilEmpresa";
+            this.Text = "Perfil Empresa";
             this.pnlNaranja.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picNotif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustesPerfil)).EndInit();

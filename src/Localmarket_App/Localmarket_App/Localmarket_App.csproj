@@ -58,6 +58,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPerfilEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerfilEmpresa.Designer.cs">
+      <DependentUpon>FrmPerfilEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerfilEmpresa.resx">
+      <DependentUpon>FrmPerfilEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroUsuario.resx">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
@@ -118,6 +127,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bolsa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaacceder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\añadir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajustesicono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campanita.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
