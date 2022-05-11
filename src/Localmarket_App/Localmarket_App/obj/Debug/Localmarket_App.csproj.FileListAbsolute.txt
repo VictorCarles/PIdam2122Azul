@@ -21,3 +21,4 @@ C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Loc
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.CoreCompileInputs.cache
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.exe
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.pdb
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmAjustes.resources

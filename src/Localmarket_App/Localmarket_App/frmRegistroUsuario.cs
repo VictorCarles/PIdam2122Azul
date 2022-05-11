@@ -19,7 +19,7 @@ namespace Localmarket_App
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
-            
+            picAtras.Visible = false;
         }
 
         private void btnEmpresario_Click(object sender, EventArgs e)
@@ -27,6 +27,7 @@ namespace Localmarket_App
             panel2.Visible = false;
             lblUsuario.Visible = false;
             txtUsuario.Visible = false;
+            picAtras.Visible = true;
         }
 
         private void btnCliente_Click(object sender, EventArgs e)
@@ -34,12 +35,23 @@ namespace Localmarket_App
             panel2.Visible = false;
             grpBoxDatosNegocio.Visible = false;
             lblDatosEmpresario.Visible = false;
+            picAtras.Visible = true;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        public void picAjustes_Click(object sender, EventArgs e)
         {
-            FrmAjustes ajustes = new FrmAjustes();
-            ajustes.ShowDialog();
+            this.Hide();
+            FrmAjustes frmAj = new FrmAjustes();
+            frmAj.ShowDialog();
+            this.Close();
+        }
+
+        private void picAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmLogin frmLog = new FrmLogin();
+            frmLog.ShowDialog();
+            this.Close();
         }
     }
 }
