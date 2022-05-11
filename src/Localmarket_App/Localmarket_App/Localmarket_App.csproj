@@ -108,7 +108,7 @@
     <None Include="Resources\icono-ajustes.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bolsa.png" />
+    <None Include="Resources\flechaatras.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
