@@ -247,7 +247,7 @@ features
     border-top: 0px;
     height: 3px;
     width: 40px;
-    background-color: #BE9E21;
+    background-color: #21b4be;
 }
 .wrap-item h3 {
     font-size: 24px;
@@ -338,7 +338,7 @@ ul.service-list li i
 }
 .service-item a
 {
-    color: #be9e21;
+    color: #217fbe;
 }
 .mr-btn-15
 {
@@ -554,27 +554,27 @@ contact
 ***********************************/
 #contact
 {
-    background-color: rgb(73, 84, 105);
+    background-color: rgb(255, 136, 0);
 }
 .btn-submit, .btn-submit:hover, .btn-submit:focus
 {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.363);
     border-radius: 60px;
-    color: #be9e21;
+    color: #21bebe;
     font-weight: 400;
-    border: 1px solid #be9e21;
+    border: 1px solid #21bebe;
     font-size: 14px;
     padding: 6px 20px;
 }
 .form-control
 {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.363);;
     border-radius: 0px;
-    color: #be9e21 !important;
-    border-color: #be9e21;
+    color: #21bebe !important;
+    border-color: #21bebe;
 }
 .form-control:focus {
-    border-color: #be9e21;
+    border-color: #21bebe;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
