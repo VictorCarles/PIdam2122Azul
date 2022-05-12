@@ -15,31 +15,45 @@ namespace Localmarket_App
         public FrmPrincipal()
         {
             InitializeComponent();
+            timer1.Enabled = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == true)
+            if (pnlLateral.Visible == true)
             {
-                panel1.Visible = false;
+                pnlLateral.Visible = false;
             }
             else
             {
-                panel1.Visible = true;
+                pnlLateral.Visible = true;
             }
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            if (panel3.Visible == true)
+            if (pnlCategoriaDesplegable.Visible == true)
             {
-                label3.Text = "Categorias       +";
-                panel3.Visible = false;
+                lblCategorias.Text = "Categorias    +";
+                pnlCategoriaDesplegable.Visible = false;
             }
             else
             {
-                label3.Text = "Categorias       -";
-                panel3.Visible = true;
+                lblCategorias.Text = "Categorias    -";
+                pnlCategoriaDesplegable.Visible = true;
+            }
+        }
+
+        public int i = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (i < 5)
+            {
+                picCarusel.Image = imgListCarusel.Images[i];
+                i++;
+            } else if (i == 5)
+            {
+                i = 0;
             }
         }
     }

@@ -39,7 +39,7 @@ namespace Localmarket_App
             pnlDatosUsuario.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnIniciarSesion2_Click(object sender, EventArgs e)
         {
             this.Hide();
             FrmPrincipal frmPrin = new FrmPrincipal();
