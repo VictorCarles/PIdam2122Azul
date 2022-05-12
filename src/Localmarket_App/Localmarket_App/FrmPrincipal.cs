@@ -59,12 +59,9 @@ namespace Localmarket_App
 
         private void lblAlimentacion_Click(object sender, EventArgs e)
         {
-            pnlLateral.Visible = false;
+            limpiarPagina();
             lblAlimentacion.Text = "-Alimentacion";
-            picCarusel.Visible = false;
-            lblTituloCategoria.Visible = true;
             lblTituloCategoria.Text = "Comercios en categoría de Alimentación";
-            pnlComercio.Visible = true;
         }
 
         private void lblNomComercio_Click(object sender, EventArgs e)
@@ -73,6 +70,59 @@ namespace Localmarket_App
             FrmPaginaComercio frmPagCom = new FrmPaginaComercio();
             frmPagCom.ShowDialog();
             this.Close();
+        }
+
+        private void lblModa_Click(object sender, EventArgs e)
+        {
+            limpiarPagina();
+            lblModa.Text = "-Moda";
+            lblTituloCategoria.Text = "Comercios en categoría de Moda";
+        }
+
+        private void lblOcio_Click(object sender, EventArgs e)
+        {
+            limpiarPagina();
+            lblOcio.Text = "-Ocio";
+            lblTituloCategoria.Text = "Comercios en categoría de Ocio";
+        }
+
+        private void picBuscar_Click(object sender, EventArgs e)
+        {
+            limpiarPagina();
+            lblTituloCategoria.Text = "Resultados de la búsqueda '" + txtBusqueda.Text+ "':";
+        }
+
+        private void limpiarPagina()
+        {
+            lblNoticias.Visible = false;
+            pnlNoticia.Visible = false;
+            pnlLateral.Visible = false;
+            pnlComercio.Visible = true;
+            picCarusel.Visible = false;
+            lblTituloCategoria.Visible = true;
+            lblAlimentacion.Text = "Alimentacion";
+            lblModa.Text = "Moda";
+            lblOcio.Text = "Ocio";
+        }
+
+        private void lblListaFav_Click(object sender, EventArgs e)
+        {
+            limpiarPagina();
+            lblTituloCategoria.Text = "Lista de favoritos:";
+        }
+
+        private void lblRecientes_Click(object sender, EventArgs e)
+        {
+            limpiarPagina();
+            lblTituloCategoria.Text = "Vistos recientemente:";
+        }
+
+        private void picAjustes_Click(object sender, EventArgs e)
+        {
+            
+            FrmAjustes frmAjustes = new FrmAjustes();
+            frmAjustes.ShowDialog();
+           
         }
     }
 }

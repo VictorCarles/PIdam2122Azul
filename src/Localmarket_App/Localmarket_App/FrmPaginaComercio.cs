@@ -21,5 +21,13 @@ namespace Localmarket_App
         {
             System.Diagnostics.Process.Start("https://g.page/FloridaUniversitaria?share");
         }
+
+        private void picAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmPrincipal frmPrincipal = new FrmPrincipal();
+            frmPrincipal.ShowDialog();
+            this.Close();
+        }
     }
 }

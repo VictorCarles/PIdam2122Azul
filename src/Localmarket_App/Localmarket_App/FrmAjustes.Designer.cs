@@ -54,7 +54,7 @@ namespace Localmarket_App
             this.pnlNaranja.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlNaranja.Location = new System.Drawing.Point(0, 0);
             this.pnlNaranja.Name = "pnlNaranja";
-            this.pnlNaranja.Size = new System.Drawing.Size(1342, 100);
+            this.pnlNaranja.Size = new System.Drawing.Size(1332, 100);
             this.pnlNaranja.TabIndex = 1;
             // 
             // pboxTienda
@@ -74,7 +74,7 @@ namespace Localmarket_App
             this.lblAjustes.Font = new System.Drawing.Font("Leelawadee", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAjustes.Location = new System.Drawing.Point(131, 189);
             this.lblAjustes.Name = "lblAjustes";
-            this.lblAjustes.Size = new System.Drawing.Size(143, 41);
+            this.lblAjustes.Size = new System.Drawing.Size(139, 40);
             this.lblAjustes.TabIndex = 2;
             this.lblAjustes.Text = "Ajustes:";
             // 
@@ -155,6 +155,7 @@ namespace Localmarket_App
             this.btnAceptar.TabIndex = 16;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnVolver
             // 
@@ -165,12 +166,13 @@ namespace Localmarket_App
             this.btnVolver.TabIndex = 17;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // FrmAjustes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1342, 703);
+            this.ClientSize = new System.Drawing.Size(1332, 703);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtCamContrasenya);
