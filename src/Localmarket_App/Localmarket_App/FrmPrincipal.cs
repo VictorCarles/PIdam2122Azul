@@ -56,5 +56,23 @@ namespace Localmarket_App
                 i = 0;
             }
         }
+
+        private void lblAlimentacion_Click(object sender, EventArgs e)
+        {
+            pnlLateral.Visible = false;
+            lblAlimentacion.Text = "-Alimentacion";
+            picCarusel.Visible = false;
+            lblTituloCategoria.Visible = true;
+            lblTituloCategoria.Text = "Comercios en categoría de Alimentación";
+            pnlComercio.Visible = true;
+        }
+
+        private void lblNomComercio_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmPaginaComercio frmPagCom = new FrmPaginaComercio();
+            frmPagCom.ShowDialog();
+            this.Close();
+        }
     }
 }

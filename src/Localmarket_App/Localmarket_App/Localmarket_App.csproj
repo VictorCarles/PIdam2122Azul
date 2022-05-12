@@ -58,6 +58,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPaginaComercio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaginaComercio.Designer.cs">
+      <DependentUpon>FrmPaginaComercio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPerfilEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaginaComercio.resx">
+      <DependentUpon>FrmPaginaComercio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPerfilEmpresa.resx">
       <DependentUpon>FrmPerfilEmpresa.cs</DependentUpon>
@@ -163,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinchomapa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

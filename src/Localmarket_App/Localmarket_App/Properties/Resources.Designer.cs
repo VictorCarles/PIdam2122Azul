@@ -213,6 +213,16 @@ namespace Localmarket_App.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pinchomapa {
+            get {
+                object obj = ResourceManager.GetObject("pinchomapa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap recientes {
             get {
                 object obj = ResourceManager.GetObject("recientes", resourceCulture);

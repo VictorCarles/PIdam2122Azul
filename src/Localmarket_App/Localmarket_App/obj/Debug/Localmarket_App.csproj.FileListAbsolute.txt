@@ -24,3 +24,4 @@ C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Loc
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmAjustes.resources
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPerfilEmpresa.resources
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPrincipal.resources
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPaginaComercio.resources
