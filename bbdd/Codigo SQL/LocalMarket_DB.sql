@@ -8,4 +8,10 @@ USE localmarket_db;
 
 ## Procedemos a la creación de las tablas de la base de datos:
 ## Tabla Usuarios:
-##CREATE TABLE IF NOT EXISTS 
+/*
+CREATE TABLE IF NOT EXISTS usuarios(
+username VARCHAR(20) NOT NULL,
+nombre VARCHAR(50) NOT NULL,
+apellido VARCHAR(100) NOT NULL,
+informacion_contacto 
+*/
