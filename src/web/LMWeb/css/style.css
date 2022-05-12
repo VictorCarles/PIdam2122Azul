@@ -89,7 +89,7 @@ HEADER
 }
 .bg-color
 {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 136, 0, 0.637);
     min-height: 650px;
 }
 #main-header
@@ -104,17 +104,17 @@ HEADER
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
 {
-    color: #002F2F;
+    color: #ff9900;
 }
 
 .top-nav-collapse {
     padding: 0; 
-    background: rgba(64,75,97, 0.9);
+    background: rgba(255, 136, 0, 0.9);
 }
 
 .logo-dec
 {
-    color: #be9e21;
+    color: #00f7ff;
 }
 .navbar-default .navbar-brand {
     color: #fff;
@@ -145,12 +145,12 @@ HEADER
     transition: color 0.2s ease-out;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #be9e21;
+    color: #07fdfd;
     background-color: transparent;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     background-color: transparent;
-    color: #be9e21;
+    color: #07fdfd;
 }
 .banner-info
 {
@@ -199,17 +199,17 @@ h2.bnr-sub-title
 
 .btn-download
 {
-    background-color: #be9e21;
+    background-color: #11cece;
 }
 .btn-more, .btn-more:focus
 {
     margin-left: 15px;
-    border: 1px solid #be9e21;
-    color: #be9e21;
+    border: 1px solid #11cece;
+    color: #11cece;
 }
 
 .btn-more:hover {
-    background: #be9e21;
+    background: #11cece;
     color: #fff;
 }
 
