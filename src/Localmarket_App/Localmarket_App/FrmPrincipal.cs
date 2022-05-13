@@ -119,10 +119,29 @@ namespace Localmarket_App
 
         private void picAjustes_Click(object sender, EventArgs e)
         {
-            
             FrmAjustes frmAjustes = new FrmAjustes();
             frmAjustes.ShowDialog();
            
+        }
+
+        private void lblCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmLogin frmLog = new FrmLogin();
+            frmLog.ShowDialog();
+            this.Close();
+        }
+
+        private void picPerfil_Click(object sender, EventArgs e)
+        {
+            if (pnlPerfil.Visible == false)
+            {
+                pnlPerfil.Visible = true;
+            }else if (pnlPerfil.Visible == true)
+            {
+                pnlPerfil.Visible = false;
+            }
+            
         }
     }
 }

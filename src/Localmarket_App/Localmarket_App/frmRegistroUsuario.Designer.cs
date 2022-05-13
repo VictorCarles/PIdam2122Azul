@@ -239,7 +239,7 @@ namespace Localmarket_App
             this.panel2.Controls.Add(this.lblRegComo);
             this.panel2.Controls.Add(this.btnCliente);
             this.panel2.Controls.Add(this.btnEmpresario);
-            this.panel2.Location = new System.Drawing.Point(31, 124);
+            this.panel2.Location = new System.Drawing.Point(43, 124);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1243, 553);
             this.panel2.TabIndex = 20;
@@ -485,6 +485,7 @@ namespace Localmarket_App
             this.btnRegistrar.TabIndex = 44;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // picAtras
             // 

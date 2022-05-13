@@ -26,5 +26,17 @@ namespace Localmarket_App
         {
             this.Close();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            if (label2.Text == "ON")
+            {
+                label2.Text = "OFF";
+            }
+            else
+            {
+                label2.Text = "ON";
+            }
+        }
     }
 }

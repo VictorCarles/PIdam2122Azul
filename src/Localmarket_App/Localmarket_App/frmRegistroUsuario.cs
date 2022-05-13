@@ -53,5 +53,13 @@ namespace Localmarket_App
             frmLog.ShowDialog();
             this.Close();
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmLogin frmLog = new FrmLogin();
+            frmLog.ShowDialog();
+            this.Close();
+        }
     }
 }

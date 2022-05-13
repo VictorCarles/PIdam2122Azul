@@ -103,6 +103,16 @@ namespace Localmarket_App.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap favoritovacio {
+            get {
+                object obj = ResourceManager.GetObject("favoritovacio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flechaacceder {
             get {
                 object obj = ResourceManager.GetObject("flechaacceder", resourceCulture);
@@ -236,6 +246,26 @@ namespace Localmarket_App.Properties {
         internal static System.Drawing.Bitmap recientes {
             get {
                 object obj = ResourceManager.GetObject("recientes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_star {
+            get {
+                object obj = ResourceManager.GetObject("white_star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yellow_star {
+            get {
+                object obj = ResourceManager.GetObject("yellow_star", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
