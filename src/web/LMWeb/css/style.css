@@ -397,7 +397,7 @@ ul.service-list li i
     width:100%;
     height:100%;
     padding: 59px 30px;
-    background-color: #BE9E21;
+    background-color: #216abe;
     backface-visibility:hidden;
     -webkit-transform:rotateY(-180deg);
     -moz-transform:rotateY(-180deg);
@@ -621,7 +621,7 @@ contact
 }
 .loction-info p i
 {
-    color: #be9e21;
+    color: #216abe;
 }
 /***********************************
 ************************************
@@ -639,7 +639,7 @@ contact
     width: 42px;
     height: 42px;
     color: #ffffff;
-    background: #be9e21;
+    background: #216abe;
     font-size: 14px;
     line-height: 42px;
     text-align: center;
@@ -652,7 +652,7 @@ contact
     background-color: #fff;
 }
 #footer a{
-    color: #be9e21;
+    color: #216abe;
     font-weight: 400;
 }
 /***********************************
