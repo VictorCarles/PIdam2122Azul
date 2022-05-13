@@ -1,6 +1,6 @@
 ## BASE DE DATOS Local Market App 
 ## Inicio código de creación de base de datos
-## Version: 1.0
+## Version: 1.1
 
 ## DROP DATABASE localmarket_db;
 
@@ -126,9 +126,13 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Comentario` (
   `score` VARCHAR(45) NOT NULL,
   `Empresa_idEmpresa` INT NOT NULL,
   `Usuario_Username` VARCHAR(20) NOT NULL,
+  `Comentario_idComentario` INT NULL,
+  `usefulPoints` INT NOT NULL,
+  `Comentariocol` DATETIME NOT NULL,
   PRIMARY KEY (`idComentario`),
   INDEX `fk_Comentario_Empresa1_idx` (`Empresa_idEmpresa` ASC) VISIBLE,
   INDEX `fk_Comentario_Usuario1_idx` (`Usuario_Username` ASC) VISIBLE,
+  INDEX `fk_Comentario_Comentario1_idx` (`Comentario_idComentario` ASC) VISIBLE,
   CONSTRAINT `fk_Comentario_Empresa1`
     FOREIGN KEY (`Empresa_idEmpresa`)
     REFERENCES `localmarket_db`.`Empresa` (`idEmpresa`)
@@ -138,8 +142,13 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Comentario` (
     FOREIGN KEY (`Usuario_Username`)
     REFERENCES `localmarket_db`.`Usuario` (`Username`)
     ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Comentario_Comentario1`
+    FOREIGN KEY (`Comentario_idComentario`)
+    REFERENCES `localmarket_db`.`Comentario` (`idComentario`)
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE =INNODB;
+ENGINE = InnoDB;
 
 ## Tabla Versiones:
 
