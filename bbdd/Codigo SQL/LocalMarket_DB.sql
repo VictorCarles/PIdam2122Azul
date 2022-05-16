@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Usuario` (
   `type` VARCHAR(20) NOT NULL,
   `CIF` VARCHAR(9) NULL,
   `DNI` VARCHAR(9) NULL,
-  `Clave` INT NULL,
+  `Clave` INT(4) NULL,
   PRIMARY KEY (`Username`),
   UNIQUE INDEX `Username_UNIQUE` (`Username` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -32,7 +32,7 @@ ENGINE = InnoDB;
 ## Tabla Acciones:
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Acciones` (
-  `idAcciones` INT NOT NULL,
+  `idAcciones` INT NOT NULL AUTO_INCREMENT,
   `accion` VARCHAR(300) NOT NULL,
   `fecha` DATETIME NOT NULL,
   `Usuario_Username` VARCHAR(20) NOT NULL,
@@ -48,7 +48,7 @@ ENGINE = INNODB;
 ## Tabla Listas:
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Listas` (
-  `idListas` INT NOT NULL,
+  `idListas` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   `Usuario_Username` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`idListas`),
@@ -63,7 +63,7 @@ ENGINE = INNODB;
 ## Tabla Empresa:
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Empresa` (
-  `idEmpresa` INT NOT NULL,
+  `idEmpresa` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `category` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
@@ -86,7 +86,7 @@ ENGINE = INNODB;
 ## Tabla Images:
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Images` (
-  `idImages` INT NOT NULL,
+  `idImages` INT NOT NULL AUTO_INCREMENT,
   `Empresa_idEmpresa` INT NOT NULL,
    `img` BLOB NOT NULL,
   PRIMARY KEY (`idImages`),
@@ -101,7 +101,7 @@ ENGINE = INNODB;
 ## Tabla Producto:
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Producto` (
-  `idProducto` INT NOT NULL,
+  `idProducto` INT NOT NULL AUTO_INCREMENT,
   `category` VARCHAR(45) NOT NULL,
   `price` DOUBLE NOT NULL,
   `name` VARCHAR(45) NOT NULL,
@@ -121,18 +121,18 @@ ENGINE = INNODB;
 ## Tabla Comentario:
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Comentario` (
-  `idComentario` INT NOT NULL,
+  `idComentario` INT NOT NULL AUTO_INCREMENT,
   `text` VARCHAR(45) NOT NULL,
-  `score` VARCHAR(45) NOT NULL,
+  `score` INT NOT NULL,
   `Empresa_idEmpresa` INT NOT NULL,
   `Usuario_Username` VARCHAR(20) NOT NULL,
-  `Comentario_idComentario` INT NULL,
+  `idRespuesta_Comentario` INT NULL,
   `usefulPoints` INT NOT NULL,
-  `Comentariocol` DATETIME NOT NULL,
+  `PubCom` DATETIME NOT NULL,
   PRIMARY KEY (`idComentario`),
   INDEX `fk_Comentario_Empresa1_idx` (`Empresa_idEmpresa` ASC) VISIBLE,
   INDEX `fk_Comentario_Usuario1_idx` (`Usuario_Username` ASC) VISIBLE,
-  INDEX `fk_Comentario_Comentario1_idx` (`Comentario_idComentario` ASC) VISIBLE,
+  INDEX `fk_idRespuesta_Comentario1_idx` (`idRespuesta_Comentario` ASC) VISIBLE,
   CONSTRAINT `fk_Comentario_Empresa1`
     FOREIGN KEY (`Empresa_idEmpresa`)
     REFERENCES `localmarket_db`.`Empresa` (`idEmpresa`)
@@ -143,8 +143,8 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Comentario` (
     REFERENCES `localmarket_db`.`Usuario` (`Username`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Comentario_Comentario1`
-    FOREIGN KEY (`Comentario_idComentario`)
+  CONSTRAINT `fk_idRespuesta_Comentario1`
+    FOREIGN KEY (`idRespuesta_Comentario`)
     REFERENCES `localmarket_db`.`Comentario` (`idComentario`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)

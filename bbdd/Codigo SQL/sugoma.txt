@@ -1,0 +1,23 @@
+#ID's AUTO_INCREMENT
+
+- idAcciones
+- idListas
+- idEmpresa
+- idImages
+- idProducto
+- idComentario
+
+Todos estos campos pasaran a ser AutoIncrementativos [AUTO_INCREMENT] con la finalidad de autogenerar su id con cada registro.
+
+#Tabla Usuarios
+
+- A peticion, el apartado clave de la tabla usuarios, destinado a ser la contraseña de administradores, conserva el campo numerico INT con una limitacion de 4 caracteres.
+[INT(4)]
+
+
+#Tabla Comentario
+
+- El campo Score de la tabla Comenartio pasa a ser de VARCHAR(45) a INT.
+- El campo 'Comentario_idComentario' que hace referencia al comentario que se esta respondiendo al tratarse de una respuesta, pasa a llamarse 'idRespuesta_Comentario'.
+- El campo 'Comentariocol' que hace referencia a la fecha de publicacion de un comentario pasa a llamarse 'PubCom' (Publicacion Comentario for short).
+
