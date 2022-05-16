@@ -119,9 +119,17 @@ namespace Localmarket_App
 
         private void picAjustes_Click(object sender, EventArgs e)
         {
-            FrmAjustes frmAjustes = new FrmAjustes();
-            frmAjustes.ShowDialog();
+            pnlPerfil.Visible = false;
+            if (panel1.Visible == false)
+            {
+                panel1.Visible = true;
+            }
+            else if (panel1.Visible == true)
+            {
+                panel1.Visible = false;
+            }
            
+
         }
 
         private void lblCerrarSesion_Click(object sender, EventArgs e)
@@ -134,6 +142,7 @@ namespace Localmarket_App
 
         private void picPerfil_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             if (pnlPerfil.Visible == false)
             {
                 pnlPerfil.Visible = true;
@@ -142,6 +151,26 @@ namespace Localmarket_App
                 pnlPerfil.Visible = false;
             }
             
+        }
+
+        private void lblCrearEmpresa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa();
+            frmRegEmp.ShowDialog();
+            this.Close();
+        }
+
+        private void picNocheOff_Click(object sender, EventArgs e)
+        {
+            picNocheOff.Visible = false;
+            picNocheOn.Visible = true;
+        }
+
+        private void picNocheOn_Click(object sender, EventArgs e)
+        {
+            picNocheOff.Visible = true;
+            picNocheOn.Visible = false;
         }
     }
 }

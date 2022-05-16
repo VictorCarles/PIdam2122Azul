@@ -75,20 +75,20 @@ namespace Localmarket_App
             this.label1 = new System.Windows.Forms.Label();
             this.lblNomUsuario = new System.Windows.Forms.Label();
             this.picFotoPerfil = new System.Windows.Forms.PictureBox();
-            this.picFavoritos = new System.Windows.Forms.PictureBox();
-            this.picAtras = new System.Windows.Forms.PictureBox();
-            this.picUbicacion = new System.Windows.Forms.PictureBox();
-            this.picLogoComercio = new System.Windows.Forms.PictureBox();
+            this.picCorazon = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picFavoritos = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.picAtras = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.picCorazon = new System.Windows.Forms.PictureBox();
+            this.picUbicacion = new System.Windows.Forms.PictureBox();
+            this.picLogoComercio = new System.Windows.Forms.PictureBox();
             this.pnlNaranja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
@@ -112,20 +112,20 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUbicacion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoComercio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCorazon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCorazon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUbicacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoComercio)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlNaranja
@@ -643,6 +643,64 @@ namespace Localmarket_App
             this.picFotoPerfil.TabIndex = 0;
             this.picFotoPerfil.TabStop = false;
             // 
+            // picCorazon
+            // 
+            this.picCorazon.Image = global::Localmarket_App.Properties.Resources.corazon;
+            this.picCorazon.Location = new System.Drawing.Point(893, 217);
+            this.picCorazon.Name = "picCorazon";
+            this.picCorazon.Size = new System.Drawing.Size(60, 60);
+            this.picCorazon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCorazon.TabIndex = 29;
+            this.picCorazon.TabStop = false;
+            this.picCorazon.Visible = false;
+            this.picCorazon.Click += new System.EventHandler(this.picCorazon_Click);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.White;
+            this.pictureBox13.Location = new System.Drawing.Point(955, 320);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(188, 166);
+            this.pictureBox13.TabIndex = 28;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.White;
+            this.pictureBox12.Location = new System.Drawing.Point(757, 320);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(188, 166);
+            this.pictureBox12.TabIndex = 27;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.White;
+            this.pictureBox11.Location = new System.Drawing.Point(563, 320);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(188, 166);
+            this.pictureBox11.TabIndex = 26;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(369, 320);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(188, 166);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Localmarket_App.Properties.Resources.white_star;
+            this.pictureBox2.Location = new System.Drawing.Point(1169, 233);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            // 
             // picFavoritos
             // 
             this.picFavoritos.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -655,6 +713,16 @@ namespace Localmarket_App
             this.picFavoritos.TabStop = false;
             this.picFavoritos.Click += new System.EventHandler(this.picFavoritos_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Localmarket_App.Properties.Resources.white_star;
+            this.pictureBox7.Location = new System.Drawing.Point(1198, 233);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 23;
+            this.pictureBox7.TabStop = false;
+            // 
             // picAtras
             // 
             this.picAtras.Image = global::Localmarket_App.Properties.Resources.flechaatras;
@@ -666,6 +734,36 @@ namespace Localmarket_App
             this.picAtras.TabIndex = 13;
             this.picAtras.TabStop = false;
             this.picAtras.Click += new System.EventHandler(this.picAtras_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Localmarket_App.Properties.Resources.white_star;
+            this.pictureBox8.Location = new System.Drawing.Point(1141, 233);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 22;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Localmarket_App.Properties.Resources.white_star;
+            this.pictureBox9.Location = new System.Drawing.Point(1111, 233);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 21;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Localmarket_App.Properties.Resources.white_star;
+            this.pictureBox10.Location = new System.Drawing.Point(1083, 233);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 20;
+            this.pictureBox10.TabStop = false;
             // 
             // picUbicacion
             // 
@@ -688,104 +786,6 @@ namespace Localmarket_App
             this.picLogoComercio.Size = new System.Drawing.Size(134, 119);
             this.picLogoComercio.TabIndex = 3;
             this.picLogoComercio.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.pictureBox2.Location = new System.Drawing.Point(1197, 233);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.pictureBox7.Location = new System.Drawing.Point(1235, 233);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 23;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.pictureBox8.Location = new System.Drawing.Point(1159, 233);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 22;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.pictureBox9.Location = new System.Drawing.Point(1121, 233);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 21;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.pictureBox10.Location = new System.Drawing.Point(1083, 233);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 20;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(369, 320);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 166);
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.White;
-            this.pictureBox11.Location = new System.Drawing.Point(563, 320);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(188, 166);
-            this.pictureBox11.TabIndex = 26;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.White;
-            this.pictureBox12.Location = new System.Drawing.Point(757, 320);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(188, 166);
-            this.pictureBox12.TabIndex = 27;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.White;
-            this.pictureBox13.Location = new System.Drawing.Point(955, 320);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(188, 166);
-            this.pictureBox13.TabIndex = 28;
-            this.pictureBox13.TabStop = false;
-            // 
-            // picCorazon
-            // 
-            this.picCorazon.Image = global::Localmarket_App.Properties.Resources.corazon;
-            this.picCorazon.Location = new System.Drawing.Point(893, 217);
-            this.picCorazon.Name = "picCorazon";
-            this.picCorazon.Size = new System.Drawing.Size(60, 60);
-            this.picCorazon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCorazon.TabIndex = 29;
-            this.picCorazon.TabStop = false;
-            this.picCorazon.Visible = false;
-            this.picCorazon.Click += new System.EventHandler(this.picCorazon_Click);
             // 
             // FrmPaginaComercio
             // 
@@ -847,20 +847,20 @@ namespace Localmarket_App
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUbicacion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoComercio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCorazon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCorazon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUbicacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoComercio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
