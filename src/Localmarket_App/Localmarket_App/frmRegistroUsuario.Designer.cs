@@ -31,6 +31,8 @@ namespace Localmarket_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroUsuario));
             this.pnlRegistroComo = new System.Windows.Forms.Panel();
+            this.picAjustes = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblRepContraseña = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
@@ -51,29 +53,59 @@ namespace Localmarket_App
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.picAtras = new System.Windows.Forms.PictureBox();
             this.picAñadeFoto = new System.Windows.Forms.PictureBox();
-            this.picAjustes = new System.Windows.Forms.PictureBox();
-            this.picPerfil = new System.Windows.Forms.PictureBox();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblAjustes = new System.Windows.Forms.Label();
+            this.picNocheOn = new System.Windows.Forms.PictureBox();
+            this.picNocheOff = new System.Windows.Forms.PictureBox();
+            this.picIdioma = new System.Windows.Forms.PictureBox();
+            this.cmbIdioma = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.pnlRegistroComo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNocheOn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNocheOff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlRegistroComo
             // 
             this.pnlRegistroComo.BackColor = System.Drawing.Color.Orange;
             this.pnlRegistroComo.Controls.Add(this.picAjustes);
-            this.pnlRegistroComo.Controls.Add(this.picPerfil);
             this.pnlRegistroComo.Controls.Add(this.picLogo);
             this.pnlRegistroComo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlRegistroComo.Location = new System.Drawing.Point(0, 0);
             this.pnlRegistroComo.Name = "pnlRegistroComo";
             this.pnlRegistroComo.Size = new System.Drawing.Size(1332, 100);
             this.pnlRegistroComo.TabIndex = 0;
+            // 
+            // picAjustes
+            // 
+            this.picAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
+            this.picAjustes.Location = new System.Drawing.Point(1250, 19);
+            this.picAjustes.Name = "picAjustes";
+            this.picAjustes.Size = new System.Drawing.Size(57, 57);
+            this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAjustes.TabIndex = 2;
+            this.picAjustes.TabStop = false;
+            this.picAjustes.Click += new System.EventHandler(this.picAjustes_Click);
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.InitialImage = null;
+            this.picLogo.Location = new System.Drawing.Point(31, 12);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(75, 68);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
             // 
             // lblRepContraseña
             // 
@@ -277,47 +309,108 @@ namespace Localmarket_App
             this.picAñadeFoto.TabStop = false;
             this.picAñadeFoto.Click += new System.EventHandler(this.picAñadeFoto_Click);
             // 
-            // picAjustes
-            // 
-            this.picAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
-            this.picAjustes.Location = new System.Drawing.Point(1250, 19);
-            this.picAjustes.Name = "picAjustes";
-            this.picAjustes.Size = new System.Drawing.Size(57, 57);
-            this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAjustes.TabIndex = 2;
-            this.picAjustes.TabStop = false;
-            this.picAjustes.Click += new System.EventHandler(this.picAjustes_Click);
-            // 
-            // picPerfil
-            // 
-            this.picPerfil.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
-            this.picPerfil.Location = new System.Drawing.Point(1140, 16);
-            this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(69, 64);
-            this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPerfil.TabIndex = 1;
-            this.picPerfil.TabStop = false;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.InitialImage = null;
-            this.picLogo.Location = new System.Drawing.Point(31, 12);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(75, 68);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.Filter = "\"Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;...\"";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.BackColor = System.Drawing.Color.Aqua;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblAjustes);
+            this.panel1.Controls.Add(this.picNocheOn);
+            this.panel1.Controls.Add(this.picNocheOff);
+            this.panel1.Controls.Add(this.picIdioma);
+            this.panel1.Controls.Add(this.cmbIdioma);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(1151, 106);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(174, 176);
+            this.panel1.TabIndex = 47;
+            this.panel1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(-3, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 20);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Modo Noche";
+            // 
+            // lblAjustes
+            // 
+            this.lblAjustes.AutoSize = true;
+            this.lblAjustes.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAjustes.Location = new System.Drawing.Point(51, 12);
+            this.lblAjustes.Name = "lblAjustes";
+            this.lblAjustes.Size = new System.Drawing.Size(66, 20);
+            this.lblAjustes.TabIndex = 12;
+            this.lblAjustes.Text = "Ajustes";
+            // 
+            // picNocheOn
+            // 
+            this.picNocheOn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picNocheOn.Image = global::Localmarket_App.Properties.Resources.on;
+            this.picNocheOn.Location = new System.Drawing.Point(124, 100);
+            this.picNocheOn.Name = "picNocheOn";
+            this.picNocheOn.Size = new System.Drawing.Size(45, 45);
+            this.picNocheOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNocheOn.TabIndex = 22;
+            this.picNocheOn.TabStop = false;
+            this.picNocheOn.Visible = false;
+            // 
+            // picNocheOff
+            // 
+            this.picNocheOff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picNocheOff.Image = global::Localmarket_App.Properties.Resources.off;
+            this.picNocheOff.Location = new System.Drawing.Point(124, 94);
+            this.picNocheOff.Name = "picNocheOff";
+            this.picNocheOff.Size = new System.Drawing.Size(45, 56);
+            this.picNocheOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNocheOff.TabIndex = 21;
+            this.picNocheOff.TabStop = false;
+            // 
+            // picIdioma
+            // 
+            this.picIdioma.Image = global::Localmarket_App.Properties.Resources.idioma;
+            this.picIdioma.Location = new System.Drawing.Point(7, 48);
+            this.picIdioma.Name = "picIdioma";
+            this.picIdioma.Size = new System.Drawing.Size(40, 40);
+            this.picIdioma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picIdioma.TabIndex = 20;
+            this.picIdioma.TabStop = false;
+            // 
+            // cmbIdioma
+            // 
+            this.cmbIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIdioma.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbIdioma.FormattingEnabled = true;
+            this.cmbIdioma.Items.AddRange(new object[] {
+            "Español",
+            "Inglés"});
+            this.cmbIdioma.Location = new System.Drawing.Point(57, 54);
+            this.cmbIdioma.Name = "cmbIdioma";
+            this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
+            this.cmbIdioma.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(4, 85);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 20);
+            this.label5.TabIndex = 9;
             // 
             // FrmRegistroUsuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1332, 703);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.picAtras);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.lblUsuario);
@@ -344,11 +437,15 @@ namespace Localmarket_App
             this.Text = "Registro Usuario";
             this.Load += new System.EventHandler(this.FrmRegistro_Load);
             this.pnlRegistroComo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNocheOn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNocheOff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,7 +455,6 @@ namespace Localmarket_App
 
         private System.Windows.Forms.Panel pnlRegistroComo;
         private System.Windows.Forms.PictureBox picAjustes;
-        private System.Windows.Forms.PictureBox picPerfil;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.PictureBox picAñadeFoto;
         private System.Windows.Forms.Label lblRepContraseña;
@@ -381,5 +477,13 @@ namespace Localmarket_App
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.PictureBox picAtras;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblAjustes;
+        private System.Windows.Forms.PictureBox picNocheOn;
+        private System.Windows.Forms.PictureBox picNocheOff;
+        private System.Windows.Forms.PictureBox picIdioma;
+        private System.Windows.Forms.ComboBox cmbIdioma;
+        private System.Windows.Forms.Label label5;
     }
 }

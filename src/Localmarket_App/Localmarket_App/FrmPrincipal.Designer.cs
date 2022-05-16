@@ -685,8 +685,8 @@ namespace Localmarket_App
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1332, 703);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlPerfil);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlNoticia);
             this.Controls.Add(this.lblNoticias);
             this.Controls.Add(this.pnlComercio);
