@@ -694,9 +694,10 @@ namespace Localmarket_App
             this.Controls.Add(this.picCarusel);
             this.Controls.Add(this.pnlLateral);
             this.Controls.Add(this.pnlNaranja);
+            this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPrincipal";
+            this.Text = "Página Principal";
             this.pnlNaranja.ResumeLayout(false);
             this.pnlNaranja.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBuscar)).EndInit();

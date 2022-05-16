@@ -40,5 +40,29 @@ namespace Localmarket_App
             frmLog.ShowDialog();
             this.Close();
         }
+
+        private void picAjustes_Click(object sender, EventArgs e)
+        {
+            if (panel1.Visible == false)
+            {
+                panel1.Visible = true;
+            }
+            else if (panel1.Visible == true)
+            {
+                panel1.Visible = false;
+            }
+        }
+
+        private void picNocheOff_Click(object sender, EventArgs e)
+        {
+            picNocheOff.Visible = false;
+            picNocheOn.Visible = true;
+        }
+
+        private void picNocheOn_Click(object sender, EventArgs e)
+        {
+            picNocheOff.Visible = true;
+            picNocheOn.Visible = false;
+        }
     }
 }

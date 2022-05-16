@@ -128,8 +128,6 @@ namespace Localmarket_App
             {
                 panel1.Visible = false;
             }
-           
-
         }
 
         private void lblCerrarSesion_Click(object sender, EventArgs e)

@@ -21,7 +21,6 @@ C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Loc
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.CoreCompileInputs.cache
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.exe
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.pdb
-C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmAjustes.resources
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPerfilEmpresa.resources
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPrincipal.resources
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPaginaComercio.resources
@@ -40,3 +39,18 @@ C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\ob
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.CoreCompileInputs.cache
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.exe
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.pdb
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\MySql.Data.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\Google.Protobuf.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\ZstdNet.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\System.Memory.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\System.Buffers.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\MySql.Data.xml
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.exe.config
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmRegistroEmpresa.resources
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.CopyComplete

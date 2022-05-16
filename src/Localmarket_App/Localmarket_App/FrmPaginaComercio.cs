@@ -31,62 +31,6 @@ namespace Localmarket_App
             this.Close();
         }
 
-        private void picEstrella1_Click(object sender, EventArgs e)
-        {
-            picEstrella1.Image = Resources.yellow_star;
-            picEstrella2.Image = Resources.white_star;
-            picEstrella3.Image = Resources.white_star;
-            picEstrella4.Image = Resources.white_star;
-            picEstrella5.Image = Resources.white_star;
-
-        }
-
-        private void picEstrella2_Click(object sender, EventArgs e)
-        {
-            picEstrella1.Image = Resources.yellow_star;
-            picEstrella2.Image = Resources.yellow_star;
-            picEstrella3.Image = Resources.white_star;
-            picEstrella4.Image = Resources.white_star;
-            picEstrella5.Image = Resources.white_star;
-        }
-
-        private void picEstrella3_Click(object sender, EventArgs e)
-        {
-            picEstrella1.Image = Resources.yellow_star;
-            picEstrella2.Image = Resources.yellow_star;
-            picEstrella3.Image = Resources.yellow_star;
-            picEstrella4.Image = Resources.white_star;
-            picEstrella5.Image = Resources.white_star;
-        }
-
-        private void picEstrella4_Click(object sender, EventArgs e)
-        {
-            picEstrella1.Image = Resources.yellow_star;
-            picEstrella2.Image = Resources.yellow_star;
-            picEstrella3.Image = Resources.yellow_star;
-            picEstrella4.Image = Resources.yellow_star;
-            picEstrella5.Image = Resources.white_star;
-        }
-
-        private void picEstrella5_Click(object sender, EventArgs e)
-        {
-            picEstrella1.Image = Resources.yellow_star;
-            picEstrella2.Image = Resources.yellow_star;
-            picEstrella3.Image = Resources.yellow_star;
-            picEstrella4.Image = Resources.yellow_star;
-            picEstrella5.Image = Resources.yellow_star;
-        }
-
-        private void btnEnviarComentario_Click(object sender, EventArgs e)
-        {
-            picEstrella1.Image = Resources.white_star;
-            picEstrella2.Image = Resources.white_star;
-            picEstrella3.Image = Resources.white_star;
-            picEstrella4.Image = Resources.white_star;
-            picEstrella5.Image = Resources.white_star;
-            txtComentario.Text = "";
-        }
-
         private void picFavoritos_Click(object sender, EventArgs e)
         {
             picCorazon.Visible = true;
@@ -152,5 +96,62 @@ namespace Localmarket_App
             frmLog.ShowDialog();
             this.Close();
         }
+
+        private void picEstrella1_Click(object sender, EventArgs e)
+        {
+            picEstrella1.Image = Resources.yellow_star;
+            picEstrella2.Image = Resources.white_star;
+            picEstrella3.Image = Resources.white_star;
+            picEstrella4.Image = Resources.white_star;
+            picEstrella5.Image = Resources.white_star;
+
+        }
+
+        private void picEstrella2_Click(object sender, EventArgs e)
+        {
+            picEstrella1.Image = Resources.yellow_star;
+            picEstrella2.Image = Resources.yellow_star;
+            picEstrella3.Image = Resources.white_star;
+            picEstrella4.Image = Resources.white_star;
+            picEstrella5.Image = Resources.white_star;
+        }
+
+        private void picEstrella3_Click(object sender, EventArgs e)
+        {
+            picEstrella1.Image = Resources.yellow_star;
+            picEstrella2.Image = Resources.yellow_star;
+            picEstrella3.Image = Resources.yellow_star;
+            picEstrella4.Image = Resources.white_star;
+            picEstrella5.Image = Resources.white_star;
+        }
+
+        private void picEstrella4_Click(object sender, EventArgs e)
+        {
+            picEstrella1.Image = Resources.yellow_star;
+            picEstrella2.Image = Resources.yellow_star;
+            picEstrella3.Image = Resources.yellow_star;
+            picEstrella4.Image = Resources.yellow_star;
+            picEstrella5.Image = Resources.white_star;
+        }
+
+        private void picEstrella5_Click(object sender, EventArgs e)
+        {
+            picEstrella1.Image = Resources.yellow_star;
+            picEstrella2.Image = Resources.yellow_star;
+            picEstrella3.Image = Resources.yellow_star;
+            picEstrella4.Image = Resources.yellow_star;
+            picEstrella5.Image = Resources.yellow_star;
+        }
+
+        private void btnEnviarComentario_Click(object sender, EventArgs e)
+        {
+                picEstrella1.Image = Resources.white_star;
+                picEstrella2.Image = Resources.white_star;
+                picEstrella3.Image = Resources.white_star;
+                picEstrella4.Image = Resources.white_star;
+                picEstrella5.Image = Resources.white_star;
+                txtComentario.Text = "";
+        }
+
     }
 }

@@ -201,6 +201,7 @@ namespace Localmarket_App
             this.Controls.Add(this.lblNombreEmp);
             this.Controls.Add(this.picPerfil);
             this.Controls.Add(this.pnlNaranja);
+            this.MaximizeBox = false;
             this.Name = "FrmPerfilEmpresa";
             this.Text = "Perfil Empresa";
             this.pnlNaranja.ResumeLayout(false);

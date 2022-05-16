@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
-    <Compile Include="FrmAjustes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAjustes.Designer.cs">
-      <DependentUpon>FrmAjustes.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,9 +86,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAjustes.resx">
-      <DependentUpon>FrmAjustes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>

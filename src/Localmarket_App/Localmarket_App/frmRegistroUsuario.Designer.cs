@@ -335,7 +335,7 @@ namespace Localmarket_App
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-3, 113);
+            this.label2.Location = new System.Drawing.Point(7, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 20);
             this.label2.TabIndex = 23;
@@ -362,6 +362,7 @@ namespace Localmarket_App
             this.picNocheOn.TabIndex = 22;
             this.picNocheOn.TabStop = false;
             this.picNocheOn.Visible = false;
+            this.picNocheOn.Click += new System.EventHandler(this.picNocheOn_Click);
             // 
             // picNocheOff
             // 
@@ -373,6 +374,7 @@ namespace Localmarket_App
             this.picNocheOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picNocheOff.TabIndex = 21;
             this.picNocheOff.TabStop = false;
+            this.picNocheOff.Click += new System.EventHandler(this.picNocheOff_Click);
             // 
             // picIdioma
             // 
@@ -432,6 +434,7 @@ namespace Localmarket_App
             this.Controls.Add(this.lblRepContraseña);
             this.Controls.Add(this.picAñadeFoto);
             this.Controls.Add(this.pnlRegistroComo);
+            this.MaximizeBox = false;
             this.Name = "FrmRegistroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro Usuario";
