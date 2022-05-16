@@ -21,3 +21,38 @@ Todos estos campos pasaran a ser AutoIncrementativos [AUTO_INCREMENT] con la fin
 - El campo 'Comentario_idComentario' que hace referencia al comentario que se esta respondiendo al tratarse de una respuesta, pasa a llamarse 'idRespuesta_Comentario'.
 - El campo 'Comentariocol' que hace referencia a la fecha de publicacion de un comentario pasa a llamarse 'PubCom' (Publicacion Comentario for short).
 
+TRIGGERS
+
+Triggers que actualicen la tabla acciones:
+
+- Comentario:
+AFTER INSERT y BEFORE DELETE:
+Insertar: [IdAccion] | [Usuario] a añadido / borrado un comentario. | [Fecha] | [Usuario]
+
+- Usuario / Empresa:
+AFTER INSERT:
+Insertar: [IdAccion] | [Usuario/Empresa] se ha registrado. | [Fecha] | [Usuario/Empresa]
+
+AFTER UPDATE:
+Insertar: [IdAccion] | [Usuario/Empresa] a actualizado su perfil. | [Fecha] | [Usuario/Empresa]
+
+BEFORE DELETE:
+Insertar: [IdAccion] | [Usuario/Empresa] a borrado su cuenta. | [Fecha] | [Usuario/Empresa]
+
+*Añadir un campo de Empresa_Nombre a Acciones
+
+- Listas:
+
+AFTER INSERT y BEFORE DELETE:
+Insertar: [IdAccion] | [Usuario] a creado / borrado la lista [Lista] | [Fecha] | [Usuario]
+
+AFTER UPDATE:
+[IdAccion] | [Usuario] a modificado la lista [Lista] | [Fecha] | [Usuario]
+
+- Productos:
+
+AFTER INSERT y BEFORE DELETE:
+Insertar: [IdAccion] | [Empresa] a añadido / borrado [Producto] | [Fecha] | [Empresa]
+
+AFTER UPDATE:
+[IdAccion] | [Empresa] a modificado la informacion de [Producto] | [Fecha] | [Empresa]
