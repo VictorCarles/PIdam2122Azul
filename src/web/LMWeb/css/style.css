@@ -772,7 +772,7 @@ body{
 /*********************************************/
 /**********BUTTONS****************************/
 /*********************************************/
-
+ 
 .dropbtn {
     background-color: #216abe;
     color: white;
@@ -783,15 +783,6 @@ body{
     top: 50%;
     left: 50%;
     margin-top: -25px;
-    margin-left: -65px;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    top: 50%;
-    left: 50%;
-    margin-top: 65px;
     margin-left: -65px;
   }
   
@@ -816,3 +807,4 @@ body{
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #ff9900;}
+  
