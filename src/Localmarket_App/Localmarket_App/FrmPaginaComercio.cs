@@ -100,8 +100,57 @@ namespace Localmarket_App
 
         private void picAjustes_Click(object sender, EventArgs e)
         {
-            FrmAjustes frmAjustes = new FrmAjustes();
-            frmAjustes.ShowDialog();
+            pnlPerfil.Visible = false;
+            if (pnlAjustes.Visible == false)
+            {
+                pnlAjustes.Visible = true;
+            }
+            else if (pnlAjustes.Visible == true)
+            {
+                pnlAjustes.Visible = false;
+            }
+
+
+        }
+        private void picPerfil_Click_1(object sender, EventArgs e)
+        {
+            pnlAjustes.Visible = false;
+            if (pnlPerfil.Visible == false)
+            {
+                pnlPerfil.Visible = true;
+            }
+            else if (pnlPerfil.Visible == true)
+            {
+                pnlPerfil.Visible = false;
+            }
+        }
+
+        private void lblCrearEmpresa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa();
+            frmRegEmp.ShowDialog();
+            this.Close();
+        }
+
+        private void picNocheOff_Click(object sender, EventArgs e)
+        {
+            picNocheOff.Visible = false;
+            picNocheOn.Visible = true;
+        }
+
+        private void picNocheOn_Click(object sender, EventArgs e)
+        {
+            picNocheOff.Visible = true;
+            picNocheOn.Visible = false;
+        }
+
+        private void lblCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmLogin frmLog = new FrmLogin();
+            frmLog.ShowDialog();
+            this.Close();
         }
     }
 }

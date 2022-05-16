@@ -19,31 +19,19 @@ namespace Localmarket_App
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
-            picAtras.Visible = false;
-        }
-
-        private void btnEmpresario_Click(object sender, EventArgs e)
-        {
-            panel2.Visible = false;
-            lblUsuario.Visible = false;
-            txtUsuario.Visible = false;
-            picAtras.Visible = true;
-        }
-
-        private void btnCliente_Click(object sender, EventArgs e)
-        {
-            panel2.Visible = false;
-            grpBoxDatosNegocio.Visible = false;
-            lblDatosEmpresario.Visible = false;
-            picAtras.Visible = true;
+         
         }
 
         public void picAjustes_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmAjustes frmAj = new FrmAjustes();
-            frmAj.ShowDialog();
-            this.Close();
+            if (panel1.Visible == false)
+            {
+                panel1.Visible = true;
+            }
+            else if (panel1.Visible == true)
+            {
+                panel1.Visible = false;
+            }
         }
 
         private void picAtras_Click(object sender, EventArgs e)
@@ -60,6 +48,26 @@ namespace Localmarket_App
             FrmLogin frmLog = new FrmLogin();
             frmLog.ShowDialog();
             this.Close();
+        }
+
+        private void picAñadeFoto_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                picAñadeFoto.Image = new Bitmap(openFileDialog1.FileName);
+            }
+        }
+
+        private void picNocheOff_Click(object sender, EventArgs e)
+        {
+            picNocheOff.Visible = false;
+            picNocheOn.Visible = true;
+        }
+
+        private void picNocheOn_Click(object sender, EventArgs e)
+        {
+            picNocheOff.Visible = true;
+            picNocheOn.Visible = false;
         }
     }
 }
