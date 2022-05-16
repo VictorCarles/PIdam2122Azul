@@ -170,5 +170,11 @@ namespace Localmarket_App
             picNocheOff.Visible = true;
             picNocheOn.Visible = false;
         }
+
+        private void lblPerfil_Click(object sender, EventArgs e)
+        {
+            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario();
+            frmPerfUsu.Show();
+        }
     }
 }

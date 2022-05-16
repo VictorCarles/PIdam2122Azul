@@ -69,5 +69,100 @@ namespace Localmarket_App
             picNocheOff.Visible = true;
             picNocheOn.Visible = false;
         }
+
+        private void lblUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDireccion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mskCP_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void lblCP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDatosEmpresario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtRepContraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCorreo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblContraseña_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblApellidos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRepContraseña_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlRegistroComo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

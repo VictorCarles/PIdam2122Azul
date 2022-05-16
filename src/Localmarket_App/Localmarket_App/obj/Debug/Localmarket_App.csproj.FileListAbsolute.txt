@@ -54,3 +54,4 @@ C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\bin\Debug\
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.exe.config
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmRegistroEmpresa.resources
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.CopyComplete
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPerfilUsuario.resources

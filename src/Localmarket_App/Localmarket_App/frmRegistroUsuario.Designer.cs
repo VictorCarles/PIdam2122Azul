@@ -31,8 +31,6 @@ namespace Localmarket_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroUsuario));
             this.pnlRegistroComo = new System.Windows.Forms.Panel();
-            this.picAjustes = new System.Windows.Forms.PictureBox();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblRepContraseña = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
@@ -51,26 +49,28 @@ namespace Localmarket_App
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.picAtras = new System.Windows.Forms.PictureBox();
-            this.picAñadeFoto = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblAjustes = new System.Windows.Forms.Label();
+            this.cmbIdioma = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.picNocheOn = new System.Windows.Forms.PictureBox();
             this.picNocheOff = new System.Windows.Forms.PictureBox();
             this.picIdioma = new System.Windows.Forms.PictureBox();
-            this.cmbIdioma = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.picAtras = new System.Windows.Forms.PictureBox();
+            this.picAñadeFoto = new System.Windows.Forms.PictureBox();
+            this.picAjustes = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlRegistroComo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlRegistroComo
@@ -83,29 +83,7 @@ namespace Localmarket_App
             this.pnlRegistroComo.Name = "pnlRegistroComo";
             this.pnlRegistroComo.Size = new System.Drawing.Size(1332, 100);
             this.pnlRegistroComo.TabIndex = 0;
-            // 
-            // picAjustes
-            // 
-            this.picAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
-            this.picAjustes.Location = new System.Drawing.Point(1250, 19);
-            this.picAjustes.Name = "picAjustes";
-            this.picAjustes.Size = new System.Drawing.Size(57, 57);
-            this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAjustes.TabIndex = 2;
-            this.picAjustes.TabStop = false;
-            this.picAjustes.Click += new System.EventHandler(this.picAjustes_Click);
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.InitialImage = null;
-            this.picLogo.Location = new System.Drawing.Point(31, 12);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(75, 68);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
+            this.pnlRegistroComo.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRegistroComo_Paint);
             // 
             // lblRepContraseña
             // 
@@ -117,6 +95,7 @@ namespace Localmarket_App
             this.lblRepContraseña.Size = new System.Drawing.Size(175, 23);
             this.lblRepContraseña.TabIndex = 2;
             this.lblRepContraseña.Text = "Repetir Contraseña:";
+            this.lblRepContraseña.Click += new System.EventHandler(this.lblRepContraseña_Click);
             // 
             // lblNombre
             // 
@@ -128,6 +107,7 @@ namespace Localmarket_App
             this.lblNombre.Size = new System.Drawing.Size(83, 23);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre:";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // lblApellidos
             // 
@@ -139,6 +119,7 @@ namespace Localmarket_App
             this.lblApellidos.Size = new System.Drawing.Size(92, 23);
             this.lblApellidos.TabIndex = 4;
             this.lblApellidos.Text = "Apellidos:";
+            this.lblApellidos.Click += new System.EventHandler(this.lblApellidos_Click);
             // 
             // lblContraseña
             // 
@@ -150,6 +131,7 @@ namespace Localmarket_App
             this.lblContraseña.Size = new System.Drawing.Size(110, 23);
             this.lblContraseña.TabIndex = 9;
             this.lblContraseña.Text = "Contraseña:";
+            this.lblContraseña.Click += new System.EventHandler(this.lblContraseña_Click);
             // 
             // lblCorreo
             // 
@@ -161,6 +143,7 @@ namespace Localmarket_App
             this.lblCorreo.Size = new System.Drawing.Size(171, 23);
             this.lblCorreo.TabIndex = 10;
             this.lblCorreo.Text = "Correo electrónico:";
+            this.lblCorreo.Click += new System.EventHandler(this.lblCorreo_Click);
             // 
             // txtRepContraseña
             // 
@@ -169,6 +152,7 @@ namespace Localmarket_App
             this.txtRepContraseña.Name = "txtRepContraseña";
             this.txtRepContraseña.Size = new System.Drawing.Size(205, 22);
             this.txtRepContraseña.TabIndex = 11;
+            this.txtRepContraseña.TextChanged += new System.EventHandler(this.txtRepContraseña_TextChanged);
             // 
             // txtNombre
             // 
@@ -177,6 +161,7 @@ namespace Localmarket_App
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(205, 22);
             this.txtNombre.TabIndex = 12;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtApellido
             // 
@@ -185,6 +170,7 @@ namespace Localmarket_App
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(205, 22);
             this.txtApellido.TabIndex = 13;
+            this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
             // 
             // txtCorreo
             // 
@@ -193,6 +179,7 @@ namespace Localmarket_App
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(205, 22);
             this.txtCorreo.TabIndex = 14;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // txtContraseña
             // 
@@ -201,6 +188,7 @@ namespace Localmarket_App
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(205, 22);
             this.txtContraseña.TabIndex = 15;
+            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // lblDatosEmpresario
             // 
@@ -212,6 +200,7 @@ namespace Localmarket_App
             this.lblDatosEmpresario.Size = new System.Drawing.Size(186, 23);
             this.lblDatosEmpresario.TabIndex = 21;
             this.lblDatosEmpresario.Text = "DATOS DE CLIENTE:";
+            this.lblDatosEmpresario.Click += new System.EventHandler(this.lblDatosEmpresario_Click);
             // 
             // lblCP
             // 
@@ -223,6 +212,7 @@ namespace Localmarket_App
             this.lblCP.Size = new System.Drawing.Size(131, 23);
             this.lblCP.TabIndex = 22;
             this.lblCP.Text = "Código Postal:";
+            this.lblCP.Click += new System.EventHandler(this.lblCP_Click);
             // 
             // mskCP
             // 
@@ -232,6 +222,7 @@ namespace Localmarket_App
             this.mskCP.Name = "mskCP";
             this.mskCP.Size = new System.Drawing.Size(39, 22);
             this.mskCP.TabIndex = 24;
+            this.mskCP.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCP_MaskInputRejected);
             // 
             // txtDireccion
             // 
@@ -240,6 +231,7 @@ namespace Localmarket_App
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(205, 22);
             this.txtDireccion.TabIndex = 26;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // lblDireccion
             // 
@@ -251,6 +243,7 @@ namespace Localmarket_App
             this.lblDireccion.Size = new System.Drawing.Size(94, 23);
             this.lblDireccion.TabIndex = 25;
             this.lblDireccion.Text = "Dirección:";
+            this.lblDireccion.Click += new System.EventHandler(this.lblDireccion_Click);
             // 
             // txtUsuario
             // 
@@ -259,6 +252,7 @@ namespace Localmarket_App
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(205, 22);
             this.txtUsuario.TabIndex = 41;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // lblUsuario
             // 
@@ -270,6 +264,7 @@ namespace Localmarket_App
             this.lblUsuario.Size = new System.Drawing.Size(79, 23);
             this.lblUsuario.TabIndex = 42;
             this.lblUsuario.Text = "Usuario:";
+            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // btnRegistrar
             // 
@@ -283,31 +278,6 @@ namespace Localmarket_App
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // picAtras
-            // 
-            this.picAtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAtras.Image = global::Localmarket_App.Properties.Resources.flechaatras;
-            this.picAtras.Location = new System.Drawing.Point(58, 134);
-            this.picAtras.Name = "picAtras";
-            this.picAtras.Size = new System.Drawing.Size(49, 50);
-            this.picAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAtras.TabIndex = 45;
-            this.picAtras.TabStop = false;
-            this.picAtras.Click += new System.EventHandler(this.picAtras_Click);
-            // 
-            // picAñadeFoto
-            // 
-            this.picAñadeFoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picAñadeFoto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAñadeFoto.Image = ((System.Drawing.Image)(resources.GetObject("picAñadeFoto.Image")));
-            this.picAñadeFoto.Location = new System.Drawing.Point(154, 188);
-            this.picAñadeFoto.Name = "picAñadeFoto";
-            this.picAñadeFoto.Size = new System.Drawing.Size(156, 151);
-            this.picAñadeFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAñadeFoto.TabIndex = 1;
-            this.picAñadeFoto.TabStop = false;
-            this.picAñadeFoto.Click += new System.EventHandler(this.picAñadeFoto_Click);
             // 
             // openFileDialog1
             // 
@@ -330,6 +300,7 @@ namespace Localmarket_App
             this.panel1.Size = new System.Drawing.Size(174, 176);
             this.panel1.TabIndex = 47;
             this.panel1.Visible = false;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -350,6 +321,28 @@ namespace Localmarket_App
             this.lblAjustes.Size = new System.Drawing.Size(66, 20);
             this.lblAjustes.TabIndex = 12;
             this.lblAjustes.Text = "Ajustes";
+            // 
+            // cmbIdioma
+            // 
+            this.cmbIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIdioma.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbIdioma.FormattingEnabled = true;
+            this.cmbIdioma.Items.AddRange(new object[] {
+            "Español",
+            "Inglés"});
+            this.cmbIdioma.Location = new System.Drawing.Point(57, 54);
+            this.cmbIdioma.Name = "cmbIdioma";
+            this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
+            this.cmbIdioma.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(4, 85);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 20);
+            this.label5.TabIndex = 9;
             // 
             // picNocheOn
             // 
@@ -386,27 +379,53 @@ namespace Localmarket_App
             this.picIdioma.TabIndex = 20;
             this.picIdioma.TabStop = false;
             // 
-            // cmbIdioma
+            // picAtras
             // 
-            this.cmbIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbIdioma.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbIdioma.FormattingEnabled = true;
-            this.cmbIdioma.Items.AddRange(new object[] {
-            "Español",
-            "Inglés"});
-            this.cmbIdioma.Location = new System.Drawing.Point(57, 54);
-            this.cmbIdioma.Name = "cmbIdioma";
-            this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
-            this.cmbIdioma.TabIndex = 19;
+            this.picAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAtras.Image = global::Localmarket_App.Properties.Resources.flechaatras;
+            this.picAtras.Location = new System.Drawing.Point(58, 134);
+            this.picAtras.Name = "picAtras";
+            this.picAtras.Size = new System.Drawing.Size(49, 50);
+            this.picAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAtras.TabIndex = 45;
+            this.picAtras.TabStop = false;
+            this.picAtras.Click += new System.EventHandler(this.picAtras_Click);
             // 
-            // label5
+            // picAñadeFoto
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(4, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 20);
-            this.label5.TabIndex = 9;
+            this.picAñadeFoto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picAñadeFoto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAñadeFoto.Image = ((System.Drawing.Image)(resources.GetObject("picAñadeFoto.Image")));
+            this.picAñadeFoto.Location = new System.Drawing.Point(154, 188);
+            this.picAñadeFoto.Name = "picAñadeFoto";
+            this.picAñadeFoto.Size = new System.Drawing.Size(156, 151);
+            this.picAñadeFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAñadeFoto.TabIndex = 1;
+            this.picAñadeFoto.TabStop = false;
+            this.picAñadeFoto.Click += new System.EventHandler(this.picAñadeFoto_Click);
+            // 
+            // picAjustes
+            // 
+            this.picAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
+            this.picAjustes.Location = new System.Drawing.Point(1250, 19);
+            this.picAjustes.Name = "picAjustes";
+            this.picAjustes.Size = new System.Drawing.Size(57, 57);
+            this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAjustes.TabIndex = 2;
+            this.picAjustes.TabStop = false;
+            this.picAjustes.Click += new System.EventHandler(this.picAjustes_Click);
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.InitialImage = null;
+            this.picLogo.Location = new System.Drawing.Point(31, 12);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(75, 68);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
             // 
             // FrmRegistroUsuario
             // 
@@ -441,15 +460,15 @@ namespace Localmarket_App
             this.Text = "Registro Usuario";
             this.Load += new System.EventHandler(this.FrmRegistro_Load);
             this.pnlRegistroComo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

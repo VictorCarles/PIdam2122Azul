@@ -153,5 +153,10 @@ namespace Localmarket_App
                 txtComentario.Text = "";
         }
 
+        private void lblPerfil_Click(object sender, EventArgs e)
+        {
+            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario();
+            frmPerfUsu.Show();
+        }
     }
 }

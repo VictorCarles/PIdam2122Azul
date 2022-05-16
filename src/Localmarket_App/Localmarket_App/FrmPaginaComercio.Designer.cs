@@ -399,7 +399,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.pictureBox14);
-            this.pnlPerfil.Location = new System.Drawing.Point(1119, 109);
+            this.pnlPerfil.Location = new System.Drawing.Point(1109, 109);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(164, 180);
             this.pnlPerfil.TabIndex = 30;
@@ -441,12 +441,14 @@ namespace Localmarket_App
             // lblPerfil
             // 
             this.lblPerfil.AutoSize = true;
+            this.lblPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblPerfil.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPerfil.Location = new System.Drawing.Point(5, 66);
             this.lblPerfil.Name = "lblPerfil";
             this.lblPerfil.Size = new System.Drawing.Size(142, 20);
             this.lblPerfil.TabIndex = 8;
             this.lblPerfil.Text = "Perfil de Usuario";
+            this.lblPerfil.Click += new System.EventHandler(this.lblPerfil_Click);
             // 
             // lblUsuario
             // 
@@ -480,7 +482,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
             this.pnlAjustes.Controls.Add(this.label17);
-            this.pnlAjustes.Location = new System.Drawing.Point(1128, 109);
+            this.pnlAjustes.Location = new System.Drawing.Point(1140, 109);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(174, 176);
             this.pnlAjustes.TabIndex = 31;
@@ -570,7 +572,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(153, 503);
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(143, 503);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
             this.tabReseñasyProductos.SelectedIndex = 0;
@@ -880,9 +882,9 @@ namespace Localmarket_App
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1353, 703);
+            this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.tabReseñasyProductos);
             this.Controls.Add(this.pnlAjustes);
-            this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.picCorazon);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox12);
