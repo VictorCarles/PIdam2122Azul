@@ -694,6 +694,7 @@ namespace Localmarket_App
             this.Controls.Add(this.picCarusel);
             this.Controls.Add(this.pnlLateral);
             this.Controls.Add(this.pnlNaranja);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

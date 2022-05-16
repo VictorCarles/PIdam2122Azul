@@ -399,7 +399,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.pictureBox14);
-            this.pnlPerfil.Location = new System.Drawing.Point(1129, 109);
+            this.pnlPerfil.Location = new System.Drawing.Point(1119, 109);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(164, 180);
             this.pnlPerfil.TabIndex = 30;
@@ -480,7 +480,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
             this.pnlAjustes.Controls.Add(this.label17);
-            this.pnlAjustes.Location = new System.Drawing.Point(1138, 109);
+            this.pnlAjustes.Location = new System.Drawing.Point(1128, 109);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(174, 176);
             this.pnlAjustes.TabIndex = 31;
@@ -570,7 +570,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(163, 503);
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(153, 503);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
             this.tabReseñasyProductos.SelectedIndex = 0;
@@ -902,6 +902,7 @@ namespace Localmarket_App
             this.Controls.Add(this.lblNombreComercio);
             this.Controls.Add(this.picLogoComercio);
             this.Controls.Add(this.pnlNaranja);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FrmPaginaComercio";

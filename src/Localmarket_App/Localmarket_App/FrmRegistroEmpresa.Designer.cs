@@ -586,6 +586,7 @@ namespace Localmarket_App
             this.Controls.Add(this.lblRepContraseña);
             this.Controls.Add(this.picAñadeFoto);
             this.Controls.Add(this.pnlRegistroComo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmRegistroEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
