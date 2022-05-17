@@ -762,7 +762,6 @@ namespace Localmarket_App
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox picPerfil2;
         private System.Windows.Forms.Panel pnlAjustes;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbIdioma;
         private System.Windows.Forms.PictureBox picIdioma;
         private System.Windows.Forms.PictureBox picNocheOff;
