@@ -56,3 +56,13 @@ Insertar: [IdAccion] | [Empresa] a añadido / borrado [Producto] | [Fecha] | [Em
 
 AFTER UPDATE:
 [IdAccion] | [Empresa] a modificado la informacion de [Producto] | [Fecha] | [Empresa]
+
+Para calcular la puntuacion media en empresa:
+
+*Lo más recomendable seria hacerlo en C# con un metodo que calcule la media haciendo uso de una repetitiva for que haga select al campo puntuacion de todos los comentarios de una empresa y saque la media, luego lance un update.
+
+*Tambien podria hacerse con una rutina de base de datos que haga lo mismo que he explicado pero en la base de datos. Cualquier opcion es valida.
+
+Sobre listas:
+
+*¿Donde van las empresas de la lista? Asumo que en un array en la app, y que no forma parte de la informacion en la BBDD
