@@ -13,7 +13,7 @@ USE localmarket_db;
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Usuario` (
   `Username` VARCHAR(20) NOT NULL,
-  `name` VARCHAR(45) NOT NULL,
+  `fullname` VARCHAR(45) NOT NULL,
   `surnames` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
   `telephone` INT(11) NOT NULL,
@@ -65,7 +65,7 @@ ENGINE = INNODB;
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Empresa` (
   `idEmpresa` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
+  `emp_name` VARCHAR(45) NOT NULL,
   `category` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
   `telephone` INT(11) NOT NULL,
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Producto` (
   `idProducto` INT NOT NULL AUTO_INCREMENT,
   `category` VARCHAR(45) NOT NULL,
   `price` DOUBLE NOT NULL,
-  `name` VARCHAR(45) NOT NULL,
+  `prod_name` VARCHAR(45) NOT NULL,
   `description` VARCHAR(200) NOT NULL,
   `image` BLOB NOT NULL,
   `avaiable` TINYINT(1) NOT NULL,

@@ -26,43 +26,44 @@ TRIGGERS
 Triggers que actualicen la tabla acciones:
 
 - Comentario:
-AFTER INSERT y BEFORE DELETE:
-Insertar: [IdAccion] | [Usuario] a añadido / borrado un comentario. | [Fecha] | [Usuario]
+AFTER INSERT
+INSERT INTO Acciones VALUE (DEFAULT,Usuario_Username+' a añadido un comentario',CURDATE(),Usuario_Username,null);
+
+BEFORE DELETE:
+INSERT INTO Acciones VALUE (DEFAULT,Usuario_Username+' a borrado un comentario',CURDATE(),Usuario_Username,null);
 
 - Usuario / Empresa:
 AFTER INSERT:
-Insertar: [IdAccion] | [Usuario/Empresa] se ha registrado. | [Fecha] | [Usuario/Empresa]
+INSERT INTO Acciones VALUES (DEFAULT,username+' se ha registrado',CURDATE(), username,NULL);
+INSERT INTO Acciones VALUES (DEFAULT,Usuario_Username+' ha registrado '+emp_name,CURDATE(), Usuario_Username,emp_name);
 
 AFTER UPDATE:
-Insertar: [IdAccion] | [Usuario/Empresa] a actualizado su perfil. | [Fecha] | [Usuario/Empresa]
+INSERT INTO Acciones VALUES (DEFAULT,username+' a actualizado su perfil.',CURDATE(), username,NULL);
+INSERT INTO Acciones VALUES (DEFAULT,'Se a actualizado el perfil de '+emp_name+'.',CURDATE(), NULL,emp_name);
 
 BEFORE DELETE:
-Insertar: [IdAccion] | [Usuario/Empresa] a borrado su cuenta. | [Fecha] | [Usuario/Empresa]
-
-*Añadir un campo de Empresa_Nombre a Acciones
+INSERT INTO Acciones VALUE (DEFAULT,Username+' a borrado su cuenta',CURDATE(),Username,null);
+INSERT INTO Acciones VALUE (DEFAULT,Usuario_Username+' a borrado '+emp_name+'.',CURDATE(),Usuario_Username,emp_name);
 
 - Listas:
 
 AFTER INSERT y BEFORE DELETE:
-Insertar: [IdAccion] | [Usuario] a creado / borrado la lista [Lista] | [Fecha] | [Usuario]
+INSERT INTO Acciones VALUES (DEFAULT,Usuario_Username+' ha creado la lista '+Nombre,CURDATE(), Usuario_Username,NULL);
+INSERT INTO Acciones VALUE (DEFAULT,Usuario_Username+' a borrado la lista '+Nombre+'.',CURDATE(),Usuario_Username,NULL);
 
 AFTER UPDATE:
-[IdAccion] | [Usuario] a modificado la lista [Lista] | [Fecha] | [Usuario]
+INSERT INTO Acciones VALUE (DEFAULT,Usuario_Username+' a modificado la lista '+Nombre+'.',CURDATE(),Usuario_Username,NULL);
 
 - Productos:
 
 AFTER INSERT y BEFORE DELETE:
-Insertar: [IdAccion] | [Empresa] a añadido / borrado [Producto] | [Fecha] | [Empresa]
+INSERT INTO Acciones VALUES (DEFAULT,prod_name+' añadido a catalogo.',CURDATE(), NULL,NULL);
+INSERT INTO Acciones VALUE (DEFAULT,prod_name+' eliminado de catalogo.',CURDATE(),NULL,NULL);
+
 
 AFTER UPDATE:
-[IdAccion] | [Empresa] a modificado la informacion de [Producto] | [Fecha] | [Empresa]
+INSERT INTO Acciones VALUE (DEFAULT,'La información de '+prod_name+' fue modificada.',CURDATE(),NULL,NULL);
 
 Para calcular la puntuacion media en empresa:
 
-*Lo más recomendable seria hacerlo en C# con un metodo que calcule la media haciendo uso de una repetitiva for que haga select al campo puntuacion de todos los comentarios de una empresa y saque la media, luego lance un update.
-
-*Tambien podria hacerse con una rutina de base de datos que haga lo mismo que he explicado pero en la base de datos. Cualquier opcion es valida.
-
-Sobre listas:
-
-*¿Donde van las empresas de la lista? Asumo que en un array en la app, y que no forma parte de la informacion en la BBDD
+*Se realizara un metodo en C# que gestione este campo y lance a la query un update con este dato cada vez que se actualice.
