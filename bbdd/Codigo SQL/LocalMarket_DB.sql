@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Usuario` (
   `password` VARCHAR(45) NOT NULL,
   `telephone` INT(11) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `profilePicture` BLOB NOT NULL,
+  `profilePicture` BLOB,
   `Address` VARCHAR(45) NOT NULL,
   `CP` INT NOT NULL,
   `type` VARCHAR(20) NOT NULL,
