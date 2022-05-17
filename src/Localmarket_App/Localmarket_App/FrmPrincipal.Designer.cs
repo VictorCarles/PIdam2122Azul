@@ -39,15 +39,11 @@ namespace Localmarket_App
             this.picPerfil = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlLateral = new System.Windows.Forms.Panel();
-            this.flowMenuLateral = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlListaFav = new System.Windows.Forms.Panel();
             this.picFavoritos = new System.Windows.Forms.PictureBox();
-            this.lblListaFav = new System.Windows.Forms.Label();
-            this.pnlRecientes = new System.Windows.Forms.Panel();
-            this.picRecientes = new System.Windows.Forms.PictureBox();
-            this.lblRecientes = new System.Windows.Forms.Label();
-            this.pnlCategorias = new System.Windows.Forms.Panel();
             this.lblCategorias = new System.Windows.Forms.Label();
+            this.picRecientes = new System.Windows.Forms.PictureBox();
+            this.lblListaFav = new System.Windows.Forms.Label();
+            this.lblRecientes = new System.Windows.Forms.Label();
             this.pnlCategoriaDesplegable = new System.Windows.Forms.Panel();
             this.lblOcio = new System.Windows.Forms.Label();
             this.lblModa = new System.Windows.Forms.Label();
@@ -86,12 +82,8 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlLateral.SuspendLayout();
-            this.flowMenuLateral.SuspendLayout();
-            this.pnlListaFav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).BeginInit();
-            this.pnlRecientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRecientes)).BeginInit();
-            this.pnlCategorias.SuspendLayout();
             this.pnlCategoriaDesplegable.SuspendLayout();
             this.pnlComercio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picComercio1)).BeginInit();
@@ -152,9 +144,9 @@ namespace Localmarket_App
             this.picSideMenu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picSideMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picSideMenu.Image = global::Localmarket_App.Properties.Resources.menuboton;
-            this.picSideMenu.Location = new System.Drawing.Point(136, 12);
+            this.picSideMenu.Location = new System.Drawing.Point(136, 16);
             this.picSideMenu.Name = "picSideMenu";
-            this.picSideMenu.Size = new System.Drawing.Size(64, 64);
+            this.picSideMenu.Size = new System.Drawing.Size(63, 57);
             this.picSideMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSideMenu.TabIndex = 3;
             this.picSideMenu.TabStop = false;
@@ -203,112 +195,80 @@ namespace Localmarket_App
             this.pnlLateral.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlLateral.AutoScroll = true;
             this.pnlLateral.BackColor = System.Drawing.Color.DarkOrange;
-            this.pnlLateral.Controls.Add(this.flowMenuLateral);
+            this.pnlLateral.Controls.Add(this.picFavoritos);
+            this.pnlLateral.Controls.Add(this.lblCategorias);
+            this.pnlLateral.Controls.Add(this.picRecientes);
+            this.pnlLateral.Controls.Add(this.lblListaFav);
+            this.pnlLateral.Controls.Add(this.lblRecientes);
+            this.pnlLateral.Controls.Add(this.pnlCategoriaDesplegable);
             this.pnlLateral.Location = new System.Drawing.Point(0, 81);
             this.pnlLateral.Name = "pnlLateral";
             this.pnlLateral.Size = new System.Drawing.Size(233, 622);
             this.pnlLateral.TabIndex = 2;
             this.pnlLateral.Visible = false;
             // 
-            // flowMenuLateral
-            // 
-            this.flowMenuLateral.Controls.Add(this.pnlListaFav);
-            this.flowMenuLateral.Controls.Add(this.pnlRecientes);
-            this.flowMenuLateral.Controls.Add(this.pnlCategorias);
-            this.flowMenuLateral.Controls.Add(this.pnlCategoriaDesplegable);
-            this.flowMenuLateral.Location = new System.Drawing.Point(6, 20);
-            this.flowMenuLateral.Name = "flowMenuLateral";
-            this.flowMenuLateral.Size = new System.Drawing.Size(224, 571);
-            this.flowMenuLateral.TabIndex = 4;
-            // 
-            // pnlListaFav
-            // 
-            this.pnlListaFav.Controls.Add(this.picFavoritos);
-            this.pnlListaFav.Controls.Add(this.lblListaFav);
-            this.pnlListaFav.Location = new System.Drawing.Point(3, 3);
-            this.pnlListaFav.Name = "pnlListaFav";
-            this.pnlListaFav.Size = new System.Drawing.Size(221, 44);
-            this.pnlListaFav.TabIndex = 4;
-            // 
             // picFavoritos
             // 
             this.picFavoritos.Image = global::Localmarket_App.Properties.Resources.corazon;
-            this.picFavoritos.Location = new System.Drawing.Point(-6, 1);
+            this.picFavoritos.Location = new System.Drawing.Point(3, 12);
             this.picFavoritos.Name = "picFavoritos";
             this.picFavoritos.Size = new System.Drawing.Size(42, 42);
             this.picFavoritos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFavoritos.TabIndex = 3;
             this.picFavoritos.TabStop = false;
             // 
-            // lblListaFav
-            // 
-            this.lblListaFav.AutoSize = true;
-            this.lblListaFav.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblListaFav.Font = new System.Drawing.Font("Leelawadee", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListaFav.Location = new System.Drawing.Point(30, 7);
-            this.lblListaFav.Name = "lblListaFav";
-            this.lblListaFav.Size = new System.Drawing.Size(179, 29);
-            this.lblListaFav.TabIndex = 3;
-            this.lblListaFav.Text = "Lista Favoritos";
-            this.lblListaFav.Click += new System.EventHandler(this.lblListaFav_Click);
-            // 
-            // pnlRecientes
-            // 
-            this.pnlRecientes.Controls.Add(this.picRecientes);
-            this.pnlRecientes.Controls.Add(this.lblRecientes);
-            this.pnlRecientes.Location = new System.Drawing.Point(3, 53);
-            this.pnlRecientes.Name = "pnlRecientes";
-            this.pnlRecientes.Size = new System.Drawing.Size(209, 44);
-            this.pnlRecientes.TabIndex = 5;
-            // 
-            // picRecientes
-            // 
-            this.picRecientes.Image = global::Localmarket_App.Properties.Resources.recientes;
-            this.picRecientes.Location = new System.Drawing.Point(1, 5);
-            this.picRecientes.Name = "picRecientes";
-            this.picRecientes.Size = new System.Drawing.Size(32, 32);
-            this.picRecientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picRecientes.TabIndex = 3;
-            this.picRecientes.TabStop = false;
-            // 
-            // lblRecientes
-            // 
-            this.lblRecientes.AutoSize = true;
-            this.lblRecientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblRecientes.Font = new System.Drawing.Font("Leelawadee", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecientes.Location = new System.Drawing.Point(30, 7);
-            this.lblRecientes.Name = "lblRecientes";
-            this.lblRecientes.Size = new System.Drawing.Size(123, 29);
-            this.lblRecientes.TabIndex = 4;
-            this.lblRecientes.Text = "Recientes";
-            this.lblRecientes.Click += new System.EventHandler(this.lblRecientes_Click);
-            // 
-            // pnlCategorias
-            // 
-            this.pnlCategorias.Controls.Add(this.lblCategorias);
-            this.pnlCategorias.Location = new System.Drawing.Point(3, 103);
-            this.pnlCategorias.Name = "pnlCategorias";
-            this.pnlCategorias.Size = new System.Drawing.Size(209, 44);
-            this.pnlCategorias.TabIndex = 5;
-            // 
             // lblCategorias
             // 
             this.lblCategorias.AutoSize = true;
             this.lblCategorias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCategorias.Font = new System.Drawing.Font("Leelawadee", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategorias.Location = new System.Drawing.Point(30, 6);
+            this.lblCategorias.Location = new System.Drawing.Point(37, 112);
             this.lblCategorias.Name = "lblCategorias";
             this.lblCategorias.Size = new System.Drawing.Size(180, 29);
             this.lblCategorias.TabIndex = 4;
             this.lblCategorias.Text = "Categorias    +";
             this.lblCategorias.Click += new System.EventHandler(this.label3_Click);
             // 
+            // picRecientes
+            // 
+            this.picRecientes.Image = global::Localmarket_App.Properties.Resources.recientes;
+            this.picRecientes.Location = new System.Drawing.Point(12, 63);
+            this.picRecientes.Name = "picRecientes";
+            this.picRecientes.Size = new System.Drawing.Size(32, 32);
+            this.picRecientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picRecientes.TabIndex = 3;
+            this.picRecientes.TabStop = false;
+            // 
+            // lblListaFav
+            // 
+            this.lblListaFav.AutoSize = true;
+            this.lblListaFav.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblListaFav.Font = new System.Drawing.Font("Leelawadee", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListaFav.Location = new System.Drawing.Point(46, 19);
+            this.lblListaFav.Name = "lblListaFav";
+            this.lblListaFav.Size = new System.Drawing.Size(179, 29);
+            this.lblListaFav.TabIndex = 3;
+            this.lblListaFav.Text = "Lista Favoritos";
+            this.lblListaFav.Click += new System.EventHandler(this.lblListaFav_Click);
+            // 
+            // lblRecientes
+            // 
+            this.lblRecientes.AutoSize = true;
+            this.lblRecientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblRecientes.Font = new System.Drawing.Font("Leelawadee", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecientes.Location = new System.Drawing.Point(46, 67);
+            this.lblRecientes.Name = "lblRecientes";
+            this.lblRecientes.Size = new System.Drawing.Size(123, 29);
+            this.lblRecientes.TabIndex = 4;
+            this.lblRecientes.Text = "Recientes";
+            this.lblRecientes.Click += new System.EventHandler(this.lblRecientes_Click);
+            // 
             // pnlCategoriaDesplegable
             // 
             this.pnlCategoriaDesplegable.Controls.Add(this.lblOcio);
             this.pnlCategoriaDesplegable.Controls.Add(this.lblModa);
             this.pnlCategoriaDesplegable.Controls.Add(this.lblAlimentacion);
-            this.pnlCategoriaDesplegable.Location = new System.Drawing.Point(3, 153);
+            this.pnlCategoriaDesplegable.Location = new System.Drawing.Point(8, 155);
             this.pnlCategoriaDesplegable.Name = "pnlCategoriaDesplegable";
             this.pnlCategoriaDesplegable.Size = new System.Drawing.Size(209, 183);
             this.pnlCategoriaDesplegable.TabIndex = 4;
@@ -492,7 +452,7 @@ namespace Localmarket_App
             // pnlPerfil
             // 
             this.pnlPerfil.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pnlPerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlPerfil.BackColor = System.Drawing.Color.PaleGreen;
             this.pnlPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPerfil.Controls.Add(this.lblCerrarSesion);
             this.pnlPerfil.Controls.Add(this.lblCrearEmpresa);
@@ -665,8 +625,8 @@ namespace Localmarket_App
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1332, 703);
-            this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.pnlAjustes);
+            this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.pnlNoticia);
             this.Controls.Add(this.lblNoticias);
             this.Controls.Add(this.pnlComercio);
@@ -679,6 +639,7 @@ namespace Localmarket_App
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Página Principal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.pnlNaranja.ResumeLayout(false);
             this.pnlNaranja.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBuscar)).EndInit();
@@ -687,15 +648,9 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlLateral.ResumeLayout(false);
-            this.flowMenuLateral.ResumeLayout(false);
-            this.pnlListaFav.ResumeLayout(false);
-            this.pnlListaFav.PerformLayout();
+            this.pnlLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).EndInit();
-            this.pnlRecientes.ResumeLayout(false);
-            this.pnlRecientes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRecientes)).EndInit();
-            this.pnlCategorias.ResumeLayout(false);
-            this.pnlCategorias.PerformLayout();
             this.pnlCategoriaDesplegable.ResumeLayout(false);
             this.pnlCategoriaDesplegable.PerformLayout();
             this.pnlComercio.ResumeLayout(false);
@@ -725,20 +680,7 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picPerfil;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Panel pnlLateral;
-        private System.Windows.Forms.FlowLayoutPanel flowMenuLateral;
-        private System.Windows.Forms.Panel pnlListaFav;
-        private System.Windows.Forms.Panel pnlCategoriaDesplegable;
-        private System.Windows.Forms.Panel pnlRecientes;
-        private System.Windows.Forms.Panel pnlCategorias;
         private System.Windows.Forms.PictureBox picSideMenu;
-        private System.Windows.Forms.Label lblListaFav;
-        private System.Windows.Forms.Label lblRecientes;
-        private System.Windows.Forms.Label lblCategorias;
-        private System.Windows.Forms.Label lblOcio;
-        private System.Windows.Forms.Label lblModa;
-        private System.Windows.Forms.Label lblAlimentacion;
-        private System.Windows.Forms.PictureBox picRecientes;
-        private System.Windows.Forms.PictureBox picFavoritos;
         private System.Windows.Forms.ImageList imgListCarusel;
         private System.Windows.Forms.Timer timerSlider;
         private System.Windows.Forms.PictureBox picCarusel;
@@ -768,5 +710,14 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picNocheOn;
         private System.Windows.Forms.Label lblAjustes;
         private System.Windows.Forms.Label lblModoNoche;
+        private System.Windows.Forms.PictureBox picFavoritos;
+        private System.Windows.Forms.Label lblListaFav;
+        private System.Windows.Forms.PictureBox picRecientes;
+        private System.Windows.Forms.Label lblRecientes;
+        private System.Windows.Forms.Panel pnlCategoriaDesplegable;
+        private System.Windows.Forms.Label lblOcio;
+        private System.Windows.Forms.Label lblModa;
+        private System.Windows.Forms.Label lblAlimentacion;
+        private System.Windows.Forms.Label lblCategorias;
     }
 }

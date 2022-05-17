@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Localmarket_App.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Localmarket_App
 {
     public partial class FrmPerfilUsuario : Form
     {
-        public FrmPerfilUsuario()
+        private bool modoNoche;
+        public FrmPerfilUsuario(bool modoNoche)
         {
             InitializeComponent();
+            this.modoNoche = modoNoche;
         }
 
         private void picPerfil_Click(object sender, EventArgs e)
@@ -49,14 +52,12 @@ namespace Localmarket_App
 
         private void picNocheOff_Click(object sender, EventArgs e)
         {
-            picNocheOff.Visible = false;
-            picNocheOn.Visible = true;
+            modoNocheOn();
         }
 
         private void picNocheOn_Click(object sender, EventArgs e)
         {
-            picNocheOff.Visible = true;
-            picNocheOn.Visible = false;
+            modoNocheOff();
         }
 
         private void picAjustes_Click(object sender, EventArgs e)
@@ -81,6 +82,50 @@ namespace Localmarket_App
         private void picAtras_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void modoNocheOn()
+        {
+            picNocheOff.Visible = false;
+            picNocheOn.Visible = true;
+            modoNoche = true;
+            pnlNaranja.BackColor = Color.Black;
+            picAjustes.Image = Resources.ajustesicono;
+            picAtras.Image = Resources.flechaatrasblanca;
+            this.BackColor = Color.DimGray;
+
+            foreach (Label l in Controls.OfType<Label>())
+            {
+                l.ForeColor = Color.White;
+            }
+        }
+
+        private void modoNocheOff()
+        {
+            picNocheOff.Visible = true;
+            picNocheOn.Visible = false;
+            modoNoche = false;
+            pnlNaranja.BackColor = Color.Orange;
+            picAjustes.Image = Resources.icono_ajustes;
+            picAtras.Image = Resources.flechaatras;
+            this.BackColor = Color.FromKnownColor(KnownColor.Control);
+
+            foreach (Label l in Controls.OfType<Label>())
+            {
+                l.ForeColor = Color.Black;
+            }
+        }
+
+        private void FrmPerfilUsuario_Load(object sender, EventArgs e)
+        {
+            if (modoNoche)
+            {
+                modoNocheOn();
+            }
+            else
+            {
+                modoNocheOff();
+            }
         }
     }
 }

@@ -12,12 +12,12 @@ namespace Localmarket_App
 {
     public partial class FrmLogin : Form
     {
-        public FrmLogin()
+        private bool modoNoche;
+        public FrmLogin(bool modoNoche)
         {
             InitializeComponent();
+            this.modoNoche = modoNoche;
         }
-
-        
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace Localmarket_App
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmRegistroUsuario frmReg = new FrmRegistroUsuario();
+            FrmRegistroUsuario frmReg = new FrmRegistroUsuario(modoNoche);
             frmReg.ShowDialog();
             this.Close();
         }
@@ -42,7 +42,7 @@ namespace Localmarket_App
         private void btnIniciarSesion2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal frmPrin = new FrmPrincipal();
+            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche);
             frmPrin.ShowDialog();
             this.Close();
         }

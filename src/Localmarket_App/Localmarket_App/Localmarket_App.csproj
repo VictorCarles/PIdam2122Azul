@@ -211,5 +211,14 @@
   <ItemGroup>
     <None Include="Resources\editar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonmenublanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recientesblanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaatrasblanca.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

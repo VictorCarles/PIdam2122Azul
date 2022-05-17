@@ -14,9 +14,10 @@ namespace Localmarket_App
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            Application.Run(new FrmLogin(false));
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Localmarket_App.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,24 @@ namespace Localmarket_App
 {
     public partial class FrmPrincipal : Form
     {
-        public FrmPrincipal()
+        private bool modoNoche;
+        public FrmPrincipal(bool modoNoche)
         {
             InitializeComponent();
+            this.modoNoche = modoNoche;
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
             timerSlider.Enabled = true;
+            if (modoNoche)
+            {
+                modoNocheOn();
+            }
+            else
+            {
+                modoNocheOff();
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -67,7 +82,7 @@ namespace Localmarket_App
         private void lblNomComercio_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPaginaComercio frmPagCom = new FrmPaginaComercio();
+            FrmPaginaComercio frmPagCom = new FrmPaginaComercio(modoNoche);
             frmPagCom.ShowDialog();
             this.Close();
         }
@@ -133,7 +148,7 @@ namespace Localmarket_App
         private void lblCerrarSesion_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmLogin frmLog = new FrmLogin();
+            FrmLogin frmLog = new FrmLogin(modoNoche);
             frmLog.ShowDialog();
             this.Close();
         }
@@ -154,27 +169,92 @@ namespace Localmarket_App
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa();
+            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche);
             frmRegEmp.ShowDialog();
             this.Close();
         }
 
         private void picNocheOff_Click(object sender, EventArgs e)
         {
-            picNocheOff.Visible = false;
-            picNocheOn.Visible = true;
+            modoNocheOn();
         }
 
         private void picNocheOn_Click(object sender, EventArgs e)
         {
-            picNocheOff.Visible = true;
-            picNocheOn.Visible = false;
+            modoNocheOff();
         }
 
         private void lblPerfil_Click(object sender, EventArgs e)
         {
-            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario();
+            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche);
             frmPerfUsu.Show();
+        }
+
+        private void modoNocheOn()
+        {
+            picNocheOff.Visible = false;
+            picNocheOn.Visible = true;
+            modoNoche = true;
+            pnlComercio.BackColor = Color.Black;
+            pnlNoticia.BackColor = Color.Black;
+            pnlNaranja.BackColor = Color.Black;
+            pnlLateral.BackColor = Color.Black;
+            txtBusqueda.BackColor = Color.DimGray;
+            txtBusqueda.ForeColor = Color.White;
+            pnlAjustes.BackColor = Color.DarkCyan;
+            pnlPerfil.BackColor = Color.SeaGreen;
+            lblAlimentacion.ForeColor = Color.White;
+            lblOcio.ForeColor = Color.White;
+            lblModa.ForeColor = Color.White;
+            picAjustes.Image = Resources.ajustesicono;
+            picSideMenu.Image = Resources.botonmenublanco;
+            picRecientes.Image = Resources.recientesblanco;
+            this.BackColor = Color.DimGray;
+
+
+            foreach (Panel p in Controls.OfType<Panel>())
+                foreach (Label l in p.Controls.OfType<Label>())
+                {
+                    l.ForeColor = Color.White;
+                }
+
+            
+            foreach (Label l in Controls.OfType<Label>())
+            {
+                l.ForeColor = Color.White;
+            }
+        }
+
+        private void modoNocheOff()
+        {
+            picNocheOff.Visible = true;
+            picNocheOn.Visible = false;
+            modoNoche = false;
+            pnlComercio.BackColor = Color.White;
+            pnlNoticia.BackColor = Color.White;
+            pnlNaranja.BackColor = Color.Orange;
+            pnlLateral.BackColor = Color.DarkOrange;
+            txtBusqueda.BackColor = Color.White;
+            txtBusqueda.ForeColor = Color.Black;
+            pnlAjustes.BackColor = Color.Aqua;
+            pnlPerfil.BackColor = Color.PaleGreen;
+            lblAlimentacion.ForeColor = Color.Black;
+            lblOcio.ForeColor = Color.Black;
+            lblModa.ForeColor = Color.Black;
+            picAjustes.Image = Resources.icono_ajustes;
+            picSideMenu.Image = Resources.menuboton;
+            picRecientes.Image = Resources.recientes;
+            this.BackColor = Color.FromKnownColor(KnownColor.Control);
+
+            foreach (Panel p in Controls.OfType<Panel>())
+                foreach (Label l in p.Controls.OfType<Label>())
+                {
+                    l.ForeColor = Color.Black;
+                }
+            foreach (Label l in Controls.OfType<Label>())
+            {
+                l.ForeColor = Color.Black;
+            }
         }
     }
 }

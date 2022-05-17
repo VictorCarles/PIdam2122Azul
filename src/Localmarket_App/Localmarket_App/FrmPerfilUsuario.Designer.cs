@@ -371,6 +371,7 @@ namespace Localmarket_App
             this.Name = "FrmPerfilUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil Usuario";
+            this.Load += new System.EventHandler(this.FrmPerfilUsuario_Load);
             this.pnlNaranja.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxTienda)).EndInit();

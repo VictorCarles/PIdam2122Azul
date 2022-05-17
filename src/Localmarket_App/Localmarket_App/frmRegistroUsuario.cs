@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Localmarket_App.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,23 @@ namespace Localmarket_App
 {
     public partial class FrmRegistroUsuario : Form
     {
-        public FrmRegistroUsuario()
+        private bool modoNoche;
+        public FrmRegistroUsuario(bool modoNoche)
         {
             InitializeComponent();
+            this.modoNoche = modoNoche;
         }
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
-         
+            if (modoNoche)
+            {
+                modoNocheOn();
+            }
+            else
+            {
+                modoNocheOff();
+            }
         }
 
         public void picAjustes_Click(object sender, EventArgs e)
@@ -37,7 +47,7 @@ namespace Localmarket_App
         private void picAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmLogin frmLog = new FrmLogin();
+            FrmLogin frmLog = new FrmLogin(modoNoche);
             frmLog.ShowDialog();
             this.Close();
         }
@@ -45,7 +55,7 @@ namespace Localmarket_App
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmLogin frmLog = new FrmLogin();
+            FrmLogin frmLog = new FrmLogin(modoNoche);
             frmLog.ShowDialog();
             this.Close();
         }
@@ -60,109 +70,44 @@ namespace Localmarket_App
 
         private void picNocheOff_Click(object sender, EventArgs e)
         {
-            picNocheOff.Visible = false;
-            picNocheOn.Visible = true;
+            modoNocheOn();
         }
 
         private void picNocheOn_Click(object sender, EventArgs e)
         {
+            modoNocheOff();
+        }
+
+        private void modoNocheOn()
+        {
+            picNocheOff.Visible = false;
+            picNocheOn.Visible = true;
+            modoNoche = true;
+            pnlNaranja.BackColor = Color.Black;
+            picAjustes.Image = Resources.ajustesicono;
+            picAtras.Image = Resources.flechaatrasblanca;
+            this.BackColor = Color.DimGray;
+
+            foreach (Label l in Controls.OfType<Label>())
+            {
+                l.ForeColor = Color.White;
+            }
+        }
+
+        private void modoNocheOff()
+        {
             picNocheOff.Visible = true;
             picNocheOn.Visible = false;
-        }
+            modoNoche = false;
+            pnlNaranja.BackColor = Color.Orange;
+            picAjustes.Image = Resources.icono_ajustes;
+            picAtras.Image = Resources.flechaatras;
+            this.BackColor = Color.FromKnownColor(KnownColor.Control);
 
-        private void lblUsuario_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDireccion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDireccion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mskCP_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void lblCP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDatosEmpresario_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtContraseña_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCorreo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtApellido_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtRepContraseña_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCorreo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblContraseña_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblApellidos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNombre_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRepContraseña_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlRegistroComo_Paint(object sender, PaintEventArgs e)
-        {
-
+            foreach (Label l in Controls.OfType<Label>())
+            {
+                l.ForeColor = Color.Black;
+            }
         }
     }
 }

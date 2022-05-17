@@ -31,20 +31,6 @@ namespace Localmarket_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroEmpresa));
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.grpBoxDatosNegocio = new System.Windows.Forms.GroupBox();
-            this.lblDatosNegocio = new System.Windows.Forms.Label();
-            this.lblDireccionNeg = new System.Windows.Forms.Label();
-            this.lblTlfNeg = new System.Windows.Forms.Label();
-            this.mskCPNeg = new System.Windows.Forms.MaskedTextBox();
-            this.lblNombreNeg = new System.Windows.Forms.Label();
-            this.cmbCategoria = new System.Windows.Forms.ComboBox();
-            this.lblNIFNeg = new System.Windows.Forms.Label();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.lblCPNeg = new System.Windows.Forms.Label();
-            this.txtTlfNeg = new System.Windows.Forms.TextBox();
-            this.txtDireccionNeg = new System.Windows.Forms.TextBox();
-            this.txtNombreNeg = new System.Windows.Forms.TextBox();
-            this.txtNIFNeg = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -62,7 +48,7 @@ namespace Localmarket_App
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblRepContraseña = new System.Windows.Forms.Label();
-            this.pnlRegistroComo = new System.Windows.Forms.Panel();
+            this.pnlNaranja = new System.Windows.Forms.Panel();
             this.picAjustes = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.picAtras = new System.Windows.Forms.PictureBox();
@@ -75,8 +61,20 @@ namespace Localmarket_App
             this.picNocheOff = new System.Windows.Forms.PictureBox();
             this.picIdioma = new System.Windows.Forms.PictureBox();
             this.cmbIdioma = new System.Windows.Forms.ComboBox();
-            this.grpBoxDatosNegocio.SuspendLayout();
-            this.pnlRegistroComo.SuspendLayout();
+            this.lblDatosNegocio = new System.Windows.Forms.Label();
+            this.lblDireccionNeg = new System.Windows.Forms.Label();
+            this.lblTlfNeg = new System.Windows.Forms.Label();
+            this.mskCPNeg = new System.Windows.Forms.MaskedTextBox();
+            this.lblNombreNeg = new System.Windows.Forms.Label();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.lblNIFNeg = new System.Windows.Forms.Label();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblCPNeg = new System.Windows.Forms.Label();
+            this.txtTlfNeg = new System.Windows.Forms.TextBox();
+            this.txtDireccionNeg = new System.Windows.Forms.TextBox();
+            this.txtNombreNeg = new System.Windows.Forms.TextBox();
+            this.txtNIFNeg = new System.Windows.Forms.TextBox();
+            this.pnlNaranja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
@@ -98,142 +96,6 @@ namespace Localmarket_App
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // grpBoxDatosNegocio
-            // 
-            this.grpBoxDatosNegocio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.grpBoxDatosNegocio.Controls.Add(this.lblDatosNegocio);
-            this.grpBoxDatosNegocio.Controls.Add(this.lblDireccionNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.lblTlfNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.mskCPNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.lblNombreNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.cmbCategoria);
-            this.grpBoxDatosNegocio.Controls.Add(this.lblNIFNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.lblCategoria);
-            this.grpBoxDatosNegocio.Controls.Add(this.lblCPNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.txtTlfNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.txtDireccionNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.txtNombreNeg);
-            this.grpBoxDatosNegocio.Controls.Add(this.txtNIFNeg);
-            this.grpBoxDatosNegocio.Location = new System.Drawing.Point(702, 168);
-            this.grpBoxDatosNegocio.Name = "grpBoxDatosNegocio";
-            this.grpBoxDatosNegocio.Size = new System.Drawing.Size(401, 423);
-            this.grpBoxDatosNegocio.TabIndex = 65;
-            this.grpBoxDatosNegocio.TabStop = false;
-            // 
-            // lblDatosNegocio
-            // 
-            this.lblDatosNegocio.AutoSize = true;
-            this.lblDatosNegocio.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatosNegocio.Location = new System.Drawing.Point(77, 27);
-            this.lblDatosNegocio.Name = "lblDatosNegocio";
-            this.lblDatosNegocio.Size = new System.Drawing.Size(207, 23);
-            this.lblDatosNegocio.TabIndex = 37;
-            this.lblDatosNegocio.Text = "DATOS DEL NEGOCIO:";
-            // 
-            // lblDireccionNeg
-            // 
-            this.lblDireccionNeg.AutoSize = true;
-            this.lblDireccionNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccionNeg.Location = new System.Drawing.Point(72, 243);
-            this.lblDireccionNeg.Name = "lblDireccionNeg";
-            this.lblDireccionNeg.Size = new System.Drawing.Size(94, 23);
-            this.lblDireccionNeg.TabIndex = 6;
-            this.lblDireccionNeg.Text = "Dirección:";
-            // 
-            // lblTlfNeg
-            // 
-            this.lblTlfNeg.AutoSize = true;
-            this.lblTlfNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTlfNeg.Location = new System.Drawing.Point(77, 284);
-            this.lblTlfNeg.Name = "lblTlfNeg";
-            this.lblTlfNeg.Size = new System.Drawing.Size(88, 23);
-            this.lblTlfNeg.TabIndex = 27;
-            this.lblTlfNeg.Text = "Teléfono:";
-            // 
-            // mskCPNeg
-            // 
-            this.mskCPNeg.Location = new System.Drawing.Point(171, 192);
-            this.mskCPNeg.Mask = "00000";
-            this.mskCPNeg.Name = "mskCPNeg";
-            this.mskCPNeg.Size = new System.Drawing.Size(39, 22);
-            this.mskCPNeg.TabIndex = 40;
-            // 
-            // lblNombreNeg
-            // 
-            this.lblNombreNeg.AutoSize = true;
-            this.lblNombreNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreNeg.Location = new System.Drawing.Point(84, 90);
-            this.lblNombreNeg.Name = "lblNombreNeg";
-            this.lblNombreNeg.Size = new System.Drawing.Size(83, 23);
-            this.lblNombreNeg.TabIndex = 28;
-            this.lblNombreNeg.Text = "Nombre:";
-            // 
-            // cmbCategoria
-            // 
-            this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(173, 326);
-            this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(204, 24);
-            this.cmbCategoria.TabIndex = 39;
-            // 
-            // lblNIFNeg
-            // 
-            this.lblNIFNeg.AutoSize = true;
-            this.lblNIFNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNIFNeg.Location = new System.Drawing.Point(123, 138);
-            this.lblNIFNeg.Name = "lblNIFNeg";
-            this.lblNIFNeg.Size = new System.Drawing.Size(42, 23);
-            this.lblNIFNeg.TabIndex = 29;
-            this.lblNIFNeg.Text = "NIF:";
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(69, 326);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(96, 23);
-            this.lblCategoria.TabIndex = 38;
-            this.lblCategoria.Text = "Categoría:";
-            // 
-            // lblCPNeg
-            // 
-            this.lblCPNeg.AutoSize = true;
-            this.lblCPNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPNeg.Location = new System.Drawing.Point(34, 192);
-            this.lblCPNeg.Name = "lblCPNeg";
-            this.lblCPNeg.Size = new System.Drawing.Size(131, 23);
-            this.lblCPNeg.TabIndex = 30;
-            this.lblCPNeg.Text = "Código Postal:";
-            // 
-            // txtTlfNeg
-            // 
-            this.txtTlfNeg.Location = new System.Drawing.Point(172, 284);
-            this.txtTlfNeg.Name = "txtTlfNeg";
-            this.txtTlfNeg.Size = new System.Drawing.Size(205, 22);
-            this.txtTlfNeg.TabIndex = 32;
-            // 
-            // txtDireccionNeg
-            // 
-            this.txtDireccionNeg.Location = new System.Drawing.Point(172, 244);
-            this.txtDireccionNeg.Name = "txtDireccionNeg";
-            this.txtDireccionNeg.Size = new System.Drawing.Size(205, 22);
-            this.txtDireccionNeg.TabIndex = 36;
-            // 
-            // txtNombreNeg
-            // 
-            this.txtNombreNeg.Location = new System.Drawing.Point(173, 89);
-            this.txtNombreNeg.Name = "txtNombreNeg";
-            this.txtNombreNeg.Size = new System.Drawing.Size(205, 22);
-            this.txtNombreNeg.TabIndex = 33;
-            // 
-            // txtNIFNeg
-            // 
-            this.txtNIFNeg.Location = new System.Drawing.Point(173, 139);
-            this.txtNIFNeg.Name = "txtNIFNeg";
-            this.txtNIFNeg.Size = new System.Drawing.Size(205, 22);
-            this.txtNIFNeg.TabIndex = 34;
             // 
             // lblUsuario
             // 
@@ -399,16 +261,16 @@ namespace Localmarket_App
             this.lblRepContraseña.TabIndex = 48;
             this.lblRepContraseña.Text = "Repetir Contraseña:";
             // 
-            // pnlRegistroComo
+            // pnlNaranja
             // 
-            this.pnlRegistroComo.BackColor = System.Drawing.Color.Orange;
-            this.pnlRegistroComo.Controls.Add(this.picAjustes);
-            this.pnlRegistroComo.Controls.Add(this.picLogo);
-            this.pnlRegistroComo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlRegistroComo.Location = new System.Drawing.Point(0, 0);
-            this.pnlRegistroComo.Name = "pnlRegistroComo";
-            this.pnlRegistroComo.Size = new System.Drawing.Size(1332, 100);
-            this.pnlRegistroComo.TabIndex = 46;
+            this.pnlNaranja.BackColor = System.Drawing.Color.Orange;
+            this.pnlNaranja.Controls.Add(this.picAjustes);
+            this.pnlNaranja.Controls.Add(this.picLogo);
+            this.pnlNaranja.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlNaranja.Location = new System.Drawing.Point(0, 0);
+            this.pnlNaranja.Name = "pnlNaranja";
+            this.pnlNaranja.Size = new System.Drawing.Size(1332, 100);
+            this.pnlNaranja.TabIndex = 46;
             // 
             // picAjustes
             // 
@@ -547,15 +409,141 @@ namespace Localmarket_App
             this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
             this.cmbIdioma.TabIndex = 19;
             // 
+            // lblDatosNegocio
+            // 
+            this.lblDatosNegocio.AutoSize = true;
+            this.lblDatosNegocio.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosNegocio.Location = new System.Drawing.Point(706, 194);
+            this.lblDatosNegocio.Name = "lblDatosNegocio";
+            this.lblDatosNegocio.Size = new System.Drawing.Size(207, 23);
+            this.lblDatosNegocio.TabIndex = 78;
+            this.lblDatosNegocio.Text = "DATOS DEL NEGOCIO:";
+            // 
+            // lblDireccionNeg
+            // 
+            this.lblDireccionNeg.AutoSize = true;
+            this.lblDireccionNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccionNeg.Location = new System.Drawing.Point(701, 374);
+            this.lblDireccionNeg.Name = "lblDireccionNeg";
+            this.lblDireccionNeg.Size = new System.Drawing.Size(94, 23);
+            this.lblDireccionNeg.TabIndex = 69;
+            this.lblDireccionNeg.Text = "Dirección:";
+            // 
+            // lblTlfNeg
+            // 
+            this.lblTlfNeg.AutoSize = true;
+            this.lblTlfNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTlfNeg.Location = new System.Drawing.Point(706, 415);
+            this.lblTlfNeg.Name = "lblTlfNeg";
+            this.lblTlfNeg.Size = new System.Drawing.Size(88, 23);
+            this.lblTlfNeg.TabIndex = 70;
+            this.lblTlfNeg.Text = "Teléfono:";
+            // 
+            // mskCPNeg
+            // 
+            this.mskCPNeg.Location = new System.Drawing.Point(800, 323);
+            this.mskCPNeg.Mask = "00000";
+            this.mskCPNeg.Name = "mskCPNeg";
+            this.mskCPNeg.Size = new System.Drawing.Size(39, 22);
+            this.mskCPNeg.TabIndex = 81;
+            // 
+            // lblNombreNeg
+            // 
+            this.lblNombreNeg.AutoSize = true;
+            this.lblNombreNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreNeg.Location = new System.Drawing.Point(713, 221);
+            this.lblNombreNeg.Name = "lblNombreNeg";
+            this.lblNombreNeg.Size = new System.Drawing.Size(83, 23);
+            this.lblNombreNeg.TabIndex = 71;
+            this.lblNombreNeg.Text = "Nombre:";
+            // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(802, 457);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(204, 24);
+            this.cmbCategoria.TabIndex = 80;
+            // 
+            // lblNIFNeg
+            // 
+            this.lblNIFNeg.AutoSize = true;
+            this.lblNIFNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNIFNeg.Location = new System.Drawing.Point(752, 269);
+            this.lblNIFNeg.Name = "lblNIFNeg";
+            this.lblNIFNeg.Size = new System.Drawing.Size(42, 23);
+            this.lblNIFNeg.TabIndex = 72;
+            this.lblNIFNeg.Text = "NIF:";
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(698, 457);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(96, 23);
+            this.lblCategoria.TabIndex = 79;
+            this.lblCategoria.Text = "Categoría:";
+            // 
+            // lblCPNeg
+            // 
+            this.lblCPNeg.AutoSize = true;
+            this.lblCPNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPNeg.Location = new System.Drawing.Point(663, 323);
+            this.lblCPNeg.Name = "lblCPNeg";
+            this.lblCPNeg.Size = new System.Drawing.Size(131, 23);
+            this.lblCPNeg.TabIndex = 73;
+            this.lblCPNeg.Text = "Código Postal:";
+            // 
+            // txtTlfNeg
+            // 
+            this.txtTlfNeg.Location = new System.Drawing.Point(801, 415);
+            this.txtTlfNeg.Name = "txtTlfNeg";
+            this.txtTlfNeg.Size = new System.Drawing.Size(205, 22);
+            this.txtTlfNeg.TabIndex = 74;
+            // 
+            // txtDireccionNeg
+            // 
+            this.txtDireccionNeg.Location = new System.Drawing.Point(801, 375);
+            this.txtDireccionNeg.Name = "txtDireccionNeg";
+            this.txtDireccionNeg.Size = new System.Drawing.Size(205, 22);
+            this.txtDireccionNeg.TabIndex = 77;
+            // 
+            // txtNombreNeg
+            // 
+            this.txtNombreNeg.Location = new System.Drawing.Point(802, 220);
+            this.txtNombreNeg.Name = "txtNombreNeg";
+            this.txtNombreNeg.Size = new System.Drawing.Size(205, 22);
+            this.txtNombreNeg.TabIndex = 75;
+            // 
+            // txtNIFNeg
+            // 
+            this.txtNIFNeg.Location = new System.Drawing.Point(802, 270);
+            this.txtNIFNeg.Name = "txtNIFNeg";
+            this.txtNIFNeg.Size = new System.Drawing.Size(205, 22);
+            this.txtNIFNeg.TabIndex = 76;
+            // 
             // FrmRegistroEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1332, 703);
+            this.Controls.Add(this.lblDatosNegocio);
+            this.Controls.Add(this.lblDireccionNeg);
+            this.Controls.Add(this.lblTlfNeg);
+            this.Controls.Add(this.mskCPNeg);
+            this.Controls.Add(this.lblNombreNeg);
+            this.Controls.Add(this.cmbCategoria);
+            this.Controls.Add(this.lblNIFNeg);
+            this.Controls.Add(this.lblCategoria);
+            this.Controls.Add(this.lblCPNeg);
+            this.Controls.Add(this.txtTlfNeg);
+            this.Controls.Add(this.txtDireccionNeg);
+            this.Controls.Add(this.txtNombreNeg);
+            this.Controls.Add(this.txtNIFNeg);
             this.Controls.Add(this.pnlAjustes);
             this.Controls.Add(this.picAtras);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.grpBoxDatosNegocio);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtDireccion);
@@ -574,15 +562,14 @@ namespace Localmarket_App
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblRepContraseña);
             this.Controls.Add(this.picAñadeFoto);
-            this.Controls.Add(this.pnlRegistroComo);
+            this.Controls.Add(this.pnlNaranja);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmRegistroEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro Empresa";
-            this.grpBoxDatosNegocio.ResumeLayout(false);
-            this.grpBoxDatosNegocio.PerformLayout();
-            this.pnlRegistroComo.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FrmRegistroEmpresa_Load);
+            this.pnlNaranja.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
@@ -601,20 +588,6 @@ namespace Localmarket_App
 
         private System.Windows.Forms.PictureBox picAtras;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.GroupBox grpBoxDatosNegocio;
-        private System.Windows.Forms.Label lblDatosNegocio;
-        private System.Windows.Forms.Label lblDireccionNeg;
-        private System.Windows.Forms.Label lblTlfNeg;
-        private System.Windows.Forms.MaskedTextBox mskCPNeg;
-        private System.Windows.Forms.Label lblNombreNeg;
-        private System.Windows.Forms.ComboBox cmbCategoria;
-        private System.Windows.Forms.Label lblNIFNeg;
-        private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Label lblCPNeg;
-        private System.Windows.Forms.TextBox txtTlfNeg;
-        private System.Windows.Forms.TextBox txtDireccionNeg;
-        private System.Windows.Forms.TextBox txtNombreNeg;
-        private System.Windows.Forms.TextBox txtNIFNeg;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtDireccion;
@@ -633,7 +606,7 @@ namespace Localmarket_App
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblRepContraseña;
         private System.Windows.Forms.PictureBox picAñadeFoto;
-        private System.Windows.Forms.Panel pnlRegistroComo;
+        private System.Windows.Forms.Panel pnlNaranja;
         private System.Windows.Forms.PictureBox picAjustes;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.OpenFileDialog openFileDialogElegirImagen;
@@ -644,5 +617,18 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picNocheOff;
         private System.Windows.Forms.PictureBox picIdioma;
         private System.Windows.Forms.ComboBox cmbIdioma;
+        private System.Windows.Forms.Label lblDatosNegocio;
+        private System.Windows.Forms.Label lblDireccionNeg;
+        private System.Windows.Forms.Label lblTlfNeg;
+        private System.Windows.Forms.MaskedTextBox mskCPNeg;
+        private System.Windows.Forms.Label lblNombreNeg;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.Label lblNIFNeg;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Label lblCPNeg;
+        private System.Windows.Forms.TextBox txtTlfNeg;
+        private System.Windows.Forms.TextBox txtDireccionNeg;
+        private System.Windows.Forms.TextBox txtNombreNeg;
+        private System.Windows.Forms.TextBox txtNIFNeg;
     }
 }
