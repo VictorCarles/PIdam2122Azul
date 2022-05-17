@@ -62,13 +62,13 @@ namespace Localmarket_App
         private void picAjustes_Click(object sender, EventArgs e)
         {
            
-            if (panel1.Visible == false)
+            if (pnlAjustes.Visible == false)
             {
-                panel1.Visible = true;
+                pnlAjustes.Visible = true;
             }
-            else if (panel1.Visible == true)
+            else if (pnlAjustes.Visible == true)
             {
-                panel1.Visible = false;
+                pnlAjustes.Visible = false;
             }
 
         }

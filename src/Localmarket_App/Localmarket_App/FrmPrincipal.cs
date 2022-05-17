@@ -15,7 +15,7 @@ namespace Localmarket_App
         public FrmPrincipal()
         {
             InitializeComponent();
-            timer1.Enabled = true;
+            timerSlider.Enabled = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -120,13 +120,13 @@ namespace Localmarket_App
         private void picAjustes_Click(object sender, EventArgs e)
         {
             pnlPerfil.Visible = false;
-            if (panel1.Visible == false)
+            if (pnlAjustes.Visible == false)
             {
-                panel1.Visible = true;
+                pnlAjustes.Visible = true;
             }
-            else if (panel1.Visible == true)
+            else if (pnlAjustes.Visible == true)
             {
-                panel1.Visible = false;
+                pnlAjustes.Visible = false;
             }
         }
 
@@ -140,7 +140,7 @@ namespace Localmarket_App
 
         private void picPerfil_Click(object sender, EventArgs e)
         {
-            panel1.Visible = false;
+            pnlAjustes.Visible = false;
             if (pnlPerfil.Visible == false)
             {
                 pnlPerfil.Visible = true;

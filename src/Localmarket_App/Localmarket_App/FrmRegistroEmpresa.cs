@@ -27,9 +27,9 @@ namespace Localmarket_App
 
         private void picAñadeFoto_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialogElegirImagen.ShowDialog() == DialogResult.OK)
             {
-                picAñadeFoto.Image = new Bitmap(openFileDialog1.FileName);
+                picAñadeFoto.Image = new Bitmap(openFileDialogElegirImagen.FileName);
             }
         }
 
@@ -43,13 +43,13 @@ namespace Localmarket_App
 
         private void picAjustes_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == false)
+            if (pnlAjustes.Visible == false)
             {
-                panel1.Visible = true;
+                pnlAjustes.Visible = true;
             }
-            else if (panel1.Visible == true)
+            else if (pnlAjustes.Visible == true)
             {
-                panel1.Visible = false;
+                pnlAjustes.Visible = false;
             }
         }
 

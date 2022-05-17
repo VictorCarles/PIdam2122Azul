@@ -32,7 +32,7 @@ namespace Localmarket_App
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroEmpresa));
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.grpBoxDatosNegocio = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblDatosNegocio = new System.Windows.Forms.Label();
             this.lblDireccionNeg = new System.Windows.Forms.Label();
             this.lblTlfNeg = new System.Windows.Forms.Label();
             this.mskCPNeg = new System.Windows.Forms.MaskedTextBox();
@@ -67,22 +67,21 @@ namespace Localmarket_App
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.picAtras = new System.Windows.Forms.PictureBox();
             this.picAñadeFoto = new System.Windows.Forms.PictureBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.openFileDialogElegirImagen = new System.Windows.Forms.OpenFileDialog();
+            this.pnlAjustes = new System.Windows.Forms.Panel();
+            this.lblModoNoche = new System.Windows.Forms.Label();
             this.lblAjustes = new System.Windows.Forms.Label();
             this.picNocheOn = new System.Windows.Forms.PictureBox();
             this.picNocheOff = new System.Windows.Forms.PictureBox();
             this.picIdioma = new System.Windows.Forms.PictureBox();
             this.cmbIdioma = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.grpBoxDatosNegocio.SuspendLayout();
             this.pnlRegistroComo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlAjustes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).BeginInit();
@@ -103,7 +102,7 @@ namespace Localmarket_App
             // grpBoxDatosNegocio
             // 
             this.grpBoxDatosNegocio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.grpBoxDatosNegocio.Controls.Add(this.label13);
+            this.grpBoxDatosNegocio.Controls.Add(this.lblDatosNegocio);
             this.grpBoxDatosNegocio.Controls.Add(this.lblDireccionNeg);
             this.grpBoxDatosNegocio.Controls.Add(this.lblTlfNeg);
             this.grpBoxDatosNegocio.Controls.Add(this.mskCPNeg);
@@ -122,15 +121,15 @@ namespace Localmarket_App
             this.grpBoxDatosNegocio.TabIndex = 65;
             this.grpBoxDatosNegocio.TabStop = false;
             // 
-            // label13
+            // lblDatosNegocio
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(77, 27);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(207, 23);
-            this.label13.TabIndex = 37;
-            this.label13.Text = "DATOS DEL NEGOCIO:";
+            this.lblDatosNegocio.AutoSize = true;
+            this.lblDatosNegocio.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosNegocio.Location = new System.Drawing.Point(77, 27);
+            this.lblDatosNegocio.Name = "lblDatosNegocio";
+            this.lblDatosNegocio.Size = new System.Drawing.Size(207, 23);
+            this.lblDatosNegocio.TabIndex = 37;
+            this.lblDatosNegocio.Text = "DATOS DEL NEGOCIO:";
             // 
             // lblDireccionNeg
             // 
@@ -458,38 +457,37 @@ namespace Localmarket_App
             this.picAñadeFoto.TabStop = false;
             this.picAñadeFoto.Click += new System.EventHandler(this.picAñadeFoto_Click);
             // 
-            // openFileDialog1
+            // openFileDialogElegirImagen
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "\"Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;...\"";
+            this.openFileDialogElegirImagen.FileName = "openFileDialog1";
+            this.openFileDialogElegirImagen.Filter = "\"Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;...\"";
             // 
-            // panel1
+            // pnlAjustes
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.BackColor = System.Drawing.Color.Aqua;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.lblAjustes);
-            this.panel1.Controls.Add(this.picNocheOn);
-            this.panel1.Controls.Add(this.picNocheOff);
-            this.panel1.Controls.Add(this.picIdioma);
-            this.panel1.Controls.Add(this.cmbIdioma);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(1151, 103);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(174, 176);
-            this.panel1.TabIndex = 68;
-            this.panel1.Visible = false;
+            this.pnlAjustes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlAjustes.BackColor = System.Drawing.Color.Aqua;
+            this.pnlAjustes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAjustes.Controls.Add(this.lblModoNoche);
+            this.pnlAjustes.Controls.Add(this.lblAjustes);
+            this.pnlAjustes.Controls.Add(this.picNocheOn);
+            this.pnlAjustes.Controls.Add(this.picNocheOff);
+            this.pnlAjustes.Controls.Add(this.picIdioma);
+            this.pnlAjustes.Controls.Add(this.cmbIdioma);
+            this.pnlAjustes.Location = new System.Drawing.Point(1151, 103);
+            this.pnlAjustes.Name = "pnlAjustes";
+            this.pnlAjustes.Size = new System.Drawing.Size(174, 176);
+            this.pnlAjustes.TabIndex = 68;
+            this.pnlAjustes.Visible = false;
             // 
-            // label2
+            // lblModoNoche
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-3, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 20);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Modo Noche";
+            this.lblModoNoche.AutoSize = true;
+            this.lblModoNoche.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModoNoche.Location = new System.Drawing.Point(-3, 113);
+            this.lblModoNoche.Name = "lblModoNoche";
+            this.lblModoNoche.Size = new System.Drawing.Size(110, 20);
+            this.lblModoNoche.TabIndex = 23;
+            this.lblModoNoche.Text = "Modo Noche";
             // 
             // lblAjustes
             // 
@@ -549,21 +547,12 @@ namespace Localmarket_App
             this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
             this.cmbIdioma.TabIndex = 19;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(4, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 20);
-            this.label5.TabIndex = 9;
-            // 
             // FrmRegistroEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1332, 703);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlAjustes);
             this.Controls.Add(this.picAtras);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.grpBoxDatosNegocio);
@@ -598,8 +587,8 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlAjustes.ResumeLayout(false);
+            this.pnlAjustes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).EndInit();
@@ -613,7 +602,7 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picAtras;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.GroupBox grpBoxDatosNegocio;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblDatosNegocio;
         private System.Windows.Forms.Label lblDireccionNeg;
         private System.Windows.Forms.Label lblTlfNeg;
         private System.Windows.Forms.MaskedTextBox mskCPNeg;
@@ -647,14 +636,13 @@ namespace Localmarket_App
         private System.Windows.Forms.Panel pnlRegistroComo;
         private System.Windows.Forms.PictureBox picAjustes;
         private System.Windows.Forms.PictureBox picLogo;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.OpenFileDialog openFileDialogElegirImagen;
+        private System.Windows.Forms.Panel pnlAjustes;
+        private System.Windows.Forms.Label lblModoNoche;
         private System.Windows.Forms.Label lblAjustes;
         private System.Windows.Forms.PictureBox picNocheOn;
         private System.Windows.Forms.PictureBox picNocheOff;
         private System.Windows.Forms.PictureBox picIdioma;
         private System.Windows.Forms.ComboBox cmbIdioma;
-        private System.Windows.Forms.Label label5;
     }
 }
