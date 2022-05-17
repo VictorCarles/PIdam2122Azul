@@ -2,7 +2,7 @@
 ## Inicio código de creación de base de datos
 ## Version: 1.1
 
-## DROP DATABASE localmarket_db;
+DROP DATABASE localmarket_db;
 
 CREATE DATABASE IF NOT EXISTS  localmarket_db CHARACTER SET UTF8;
 
@@ -52,11 +52,14 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Listas` (
   `idListas` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   `Usuario_Username` VARCHAR(20) NOT NULL,
+  `idEmpresa` INT NOT NULL,
   PRIMARY KEY (`idListas`),
   INDEX `fk_Listas_Usuario1_idx` (`Usuario_Username` ASC) VISIBLE,
   CONSTRAINT `fk_Listas_Usuario1`
     FOREIGN KEY (`Usuario_Username`)
     REFERENCES `localmarket_db`.`Usuario` (`Username`)
+    FOREIGN KEY (`idEmpresa`)
+    REFERENCES `localmarket_db`.`Empresa` (`idEmpresa`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = INNODB;
@@ -158,4 +161,4 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Version` (
   `text` VARCHAR(500) NOT NULL,
   `app` BLOB NOT NULL,
   PRIMARY KEY (`numVersion`))
-ENGINE = InnoDB;
+ENGINE = INNODB;
