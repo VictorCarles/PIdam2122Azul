@@ -35,7 +35,8 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Acciones` (
   `idAcciones` INT NOT NULL AUTO_INCREMENT,
   `accion` VARCHAR(300) NOT NULL,
   `fecha` DATETIME NOT NULL,
-  `Usuario_Username` VARCHAR(20) NOT NULL,
+  `Usuario_Username` VARCHAR(20),
+  `Empresa_Username` VARCHAR(20),
   PRIMARY KEY (`idAcciones`),
   INDEX `fk_Acciones_Usuario_idx` (`Usuario_Username` ASC) VISIBLE,
   CONSTRAINT `fk_Acciones_Usuario`
