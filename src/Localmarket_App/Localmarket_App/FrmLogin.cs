@@ -41,10 +41,23 @@ namespace Localmarket_App
 
         private void btnIniciarSesion2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche);
-            frmPrin.ShowDialog();
-            this.Close();
+            Usuario usuario = new Usuario(txtUsuario.Text, txtContraseña.Text);
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                if (usuario.BuscarUsuario())
+                {
+                    this.Hide();
+                    FrmPrincipal frmPrin = new FrmPrincipal(modoNoche);
+                    frmPrin.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario/Contraseña Incorrectos");
+                }
+                ConexionBD.CerrarConexion();
+            }
         }
     }   
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
 
-namespace Aev7
+namespace Localmarket_App
 {
     class ConexionBD
     {
@@ -24,7 +24,7 @@ namespace Aev7
                 {
                     if (instancia == null)
                     {
-                        instancia = new MySqlConnection("Server=localhost;Database=aev7;Uid=root;Pwd=;");
+                        instancia = new MySqlConnection("Server=localmarket-db.cogascnxjvfa.us-east-1.rds.amazonaws.com;Database=localmarket_db;Uid=admin;Pwd=patata14;");
                     }
                     return instancia;
                 }

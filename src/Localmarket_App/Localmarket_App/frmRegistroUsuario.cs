@@ -54,6 +54,18 @@ namespace Localmarket_App
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            if (true)
+            {
+
+            }
+            Usuario usuario = new Usuario(txtUsuario.Text,txtNombre.Text,txtApellido.Text,txtContraseña.Text,
+                692621921,txtCorreo.Text,txtDireccion.Text,Convert.ToInt32(mskCP.Text),"client",picAñadeFoto.BackgroundImage);
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                usuario.RegistrarUsuario();
+                ConexionBD.CerrarConexion();
+            }
             this.Hide();
             FrmLogin frmLog = new FrmLogin(modoNoche);
             frmLog.ShowDialog();
