@@ -115,10 +115,10 @@ namespace Localmarket_App
             // 
             this.lblRepContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblRepContraseña.AutoSize = true;
-            this.lblRepContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRepContraseña.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepContraseña.Location = new System.Drawing.Point(314, 435);
             this.lblRepContraseña.Name = "lblRepContraseña";
-            this.lblRepContraseña.Size = new System.Drawing.Size(140, 18);
+            this.lblRepContraseña.Size = new System.Drawing.Size(175, 23);
             this.lblRepContraseña.TabIndex = 2;
             this.lblRepContraseña.Text = "Repetir Contraseña:";
             // 
@@ -126,10 +126,10 @@ namespace Localmarket_App
             // 
             this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(406, 240);
+            this.lblNombre.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(400, 241);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(66, 18);
+            this.lblNombre.Size = new System.Drawing.Size(83, 23);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -137,10 +137,10 @@ namespace Localmarket_App
             // 
             this.lblApellidos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidos.Location = new System.Drawing.Point(397, 289);
+            this.lblApellidos.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellidos.Location = new System.Drawing.Point(391, 287);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(71, 18);
+            this.lblApellidos.Size = new System.Drawing.Size(92, 23);
             this.lblApellidos.TabIndex = 4;
             this.lblApellidos.Text = "Apellidos:";
             // 
@@ -148,10 +148,10 @@ namespace Localmarket_App
             // 
             this.lblContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.Location = new System.Drawing.Point(379, 395);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(89, 18);
+            this.lblContraseña.Size = new System.Drawing.Size(110, 23);
             this.lblContraseña.TabIndex = 9;
             this.lblContraseña.Text = "Contraseña:";
             // 
@@ -159,57 +159,62 @@ namespace Localmarket_App
             // 
             this.lblCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(332, 342);
+            this.lblCorreo.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.Location = new System.Drawing.Point(313, 340);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(136, 18);
+            this.lblCorreo.Size = new System.Drawing.Size(171, 23);
             this.lblCorreo.TabIndex = 10;
             this.lblCorreo.Text = "Correo electrónico:";
             // 
             // txtRepContraseña
             // 
             this.txtRepContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtRepContraseña.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRepContraseña.Location = new System.Drawing.Point(495, 436);
             this.txtRepContraseña.MaxLength = 45;
             this.txtRepContraseña.Name = "txtRepContraseña";
-            this.txtRepContraseña.Size = new System.Drawing.Size(205, 20);
+            this.txtRepContraseña.Size = new System.Drawing.Size(205, 23);
             this.txtRepContraseña.TabIndex = 6;
             this.txtRepContraseña.UseSystemPasswordChar = true;
             // 
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtNombre.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(495, 241);
             this.txtNombre.MaxLength = 45;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(205, 20);
+            this.txtNombre.Size = new System.Drawing.Size(205, 23);
             this.txtNombre.TabIndex = 2;
             // 
             // txtApellido
             // 
             this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtApellido.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.Location = new System.Drawing.Point(495, 289);
             this.txtApellido.MaxLength = 45;
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(205, 20);
+            this.txtApellido.Size = new System.Drawing.Size(205, 23);
             this.txtApellido.TabIndex = 3;
             // 
             // txtCorreo
             // 
             this.txtCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCorreo.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(495, 342);
             this.txtCorreo.MaxLength = 45;
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(205, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(205, 23);
             this.txtCorreo.TabIndex = 4;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtContraseña.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(495, 396);
             this.txtContraseña.MaxLength = 45;
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(205, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(205, 23);
             this.txtContraseña.TabIndex = 5;
             this.txtContraseña.UseSystemPasswordChar = true;
             // 
@@ -217,10 +222,10 @@ namespace Localmarket_App
             // 
             this.lblDatosEmpresario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblDatosEmpresario.AutoSize = true;
-            this.lblDatosEmpresario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosEmpresario.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatosEmpresario.Location = new System.Drawing.Point(379, 178);
             this.lblDatosEmpresario.Name = "lblDatosEmpresario";
-            this.lblDatosEmpresario.Size = new System.Drawing.Size(171, 18);
+            this.lblDatosEmpresario.Size = new System.Drawing.Size(186, 23);
             this.lblDatosEmpresario.TabIndex = 21;
             this.lblDatosEmpresario.Text = "DATOS DE CLIENTE:";
             // 
@@ -228,10 +233,10 @@ namespace Localmarket_App
             // 
             this.lblCP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCP.AutoSize = true;
-            this.lblCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCP.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCP.Location = new System.Drawing.Point(358, 479);
             this.lblCP.Name = "lblCP";
-            this.lblCP.Size = new System.Drawing.Size(106, 18);
+            this.lblCP.Size = new System.Drawing.Size(131, 23);
             this.lblCP.TabIndex = 22;
             this.lblCP.Text = "Código Postal:";
             // 
@@ -241,46 +246,48 @@ namespace Localmarket_App
             this.mskCP.Location = new System.Drawing.Point(495, 479);
             this.mskCP.Mask = "00000";
             this.mskCP.Name = "mskCP";
-            this.mskCP.Size = new System.Drawing.Size(39, 20);
+            this.mskCP.Size = new System.Drawing.Size(39, 22);
             this.mskCP.TabIndex = 7;
             // 
             // txtDireccion
             // 
             this.txtDireccion.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtDireccion.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccion.Location = new System.Drawing.Point(495, 519);
             this.txtDireccion.MaxLength = 45;
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(205, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(205, 23);
             this.txtDireccion.TabIndex = 8;
             // 
             // lblDireccion
             // 
             this.lblDireccion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.Location = new System.Drawing.Point(395, 518);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(75, 18);
+            this.lblDireccion.Size = new System.Drawing.Size(94, 23);
             this.lblDireccion.TabIndex = 25;
             this.lblDireccion.Text = "Dirección:";
             // 
             // txtUsuario
             // 
             this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtUsuario.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(495, 204);
             this.txtUsuario.MaxLength = 20;
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(205, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(205, 23);
             this.txtUsuario.TabIndex = 1;
             // 
             // lblUsuario
             // 
             this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(406, 204);
+            this.lblUsuario.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(405, 201);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(64, 18);
+            this.lblUsuario.Size = new System.Drawing.Size(79, 23);
             this.lblUsuario.TabIndex = 42;
             this.lblUsuario.Text = "Usuario:";
             // 
@@ -288,7 +295,7 @@ namespace Localmarket_App
             // 
             this.btnRegistrar.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.Location = new System.Drawing.Point(495, 599);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(190, 43);
@@ -312,6 +319,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
+            this.pnlAjustes.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlAjustes.Location = new System.Drawing.Point(1151, 106);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(174, 176);
@@ -321,20 +329,20 @@ namespace Localmarket_App
             // lblModoNoche
             // 
             this.lblModoNoche.AutoSize = true;
-            this.lblModoNoche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModoNoche.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModoNoche.Location = new System.Drawing.Point(7, 113);
             this.lblModoNoche.Name = "lblModoNoche";
-            this.lblModoNoche.Size = new System.Drawing.Size(98, 17);
+            this.lblModoNoche.Size = new System.Drawing.Size(110, 20);
             this.lblModoNoche.TabIndex = 23;
             this.lblModoNoche.Text = "Modo Noche";
             // 
             // lblAjustes
             // 
             this.lblAjustes.AutoSize = true;
-            this.lblAjustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAjustes.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAjustes.Location = new System.Drawing.Point(51, 12);
             this.lblAjustes.Name = "lblAjustes";
-            this.lblAjustes.Size = new System.Drawing.Size(61, 17);
+            this.lblAjustes.Size = new System.Drawing.Size(66, 20);
             this.lblAjustes.TabIndex = 12;
             this.lblAjustes.Text = "Ajustes";
             // 
@@ -383,7 +391,7 @@ namespace Localmarket_App
             "Inglés"});
             this.cmbIdioma.Location = new System.Drawing.Point(57, 54);
             this.cmbIdioma.Name = "cmbIdioma";
-            this.cmbIdioma.Size = new System.Drawing.Size(96, 23);
+            this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
             this.cmbIdioma.TabIndex = 19;
             // 
             // picAtras
@@ -414,20 +422,21 @@ namespace Localmarket_App
             // txtTelefono
             // 
             this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTelefono.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.Location = new System.Drawing.Point(495, 559);
             this.txtTelefono.MaxLength = 9;
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(205, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(205, 23);
             this.txtTelefono.TabIndex = 9;
             // 
             // lblTelefono
             // 
             this.lblTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(394, 559);
+            this.lblTelefono.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.Location = new System.Drawing.Point(394, 557);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(70, 18);
+            this.lblTelefono.Size = new System.Drawing.Size(88, 23);
             this.lblTelefono.TabIndex = 49;
             this.lblTelefono.Text = "Telefono:";
             // 
