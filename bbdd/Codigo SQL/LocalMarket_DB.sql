@@ -67,7 +67,7 @@ ENGINE = INNODB;
 ## Tabla Empresa:
 
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Empresa` (
-  `idEmpresa` INT NOT NULL AUTO_INCREMENT,
+  `cif` VARCHAR(9) NOT NULL AUTO_INCREMENT,
   `emp_name` VARCHAR(45) NOT NULL,
   `category` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
