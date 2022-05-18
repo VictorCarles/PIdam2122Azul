@@ -43,6 +43,7 @@ namespace Localmarket_App
             this.password = password;
         }
         public string Username { get { return username; } }
+        public Image Imagen { get { return profilePicture; } }
 
         public static void InsertarUsuario(Usuario usu)
         {
@@ -57,7 +58,7 @@ namespace Localmarket_App
 
         public static Usuario ComprobarUsuario(Usuario usu)
         {
-            string consulta = string.Format("SELECT * FROM Usuario WHERE username = '{0}'", usu.username);
+            string consulta = string.Format("SELECT * FROM Usuario WHERE username = '{0}' AND password = '{1}'", usu.username, usu.password);
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
 

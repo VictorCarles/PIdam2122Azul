@@ -94,11 +94,11 @@
     <Compile Include="Interfaz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl1.cs">
+    <Compile Include="PanelEmpresa.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="PanelEmpresa.Designer.cs">
+      <DependentUpon>PanelEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
@@ -127,8 +127,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="PanelEmpresa.resx">
+      <DependentUpon>PanelEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -14,10 +14,14 @@ namespace Localmarket_App
     public partial class FrmPaginaComercio : Form
     {
         private bool modoNoche;
-        public FrmPaginaComercio(bool modoNoche)
+        Empresa empresa;
+        Usuario usuario;
+        public FrmPaginaComercio(bool modoNoche, Empresa emp, Usuario usu)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
+            this.empresa = emp;
+            this.usuario = usu;
         }
 
         private void FrmPaginaComercio_Load(object sender, EventArgs e)
@@ -30,6 +34,12 @@ namespace Localmarket_App
             {
                 modoNocheOff();
             }
+
+            lblNombreComercio.Text = empresa.Name;
+            picLogoComercio.Image = empresa.ProfilePicture;
+            lblDescComercio.Text = empresa.Description;
+            picFotoPerfil.Image = usuario.Imagen;
+            picPerfil.Image = usuario.Imagen;
         }
 
         private void lblUbicacion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

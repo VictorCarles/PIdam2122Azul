@@ -33,6 +33,10 @@ namespace Localmarket_App
             {
                 modoNocheOff();
             }
+
+            picPerfil.Image = usuario.Imagen;
+            picPerfil2.Image = usuario.Imagen;
+            lblUsuario.Text = usuario.Username;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -81,14 +85,6 @@ namespace Localmarket_App
             lblTituloCategoria.Text = "Comercios en categoría de Alimentación";
         }
 
-        private void lblNomComercio_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FrmPaginaComercio frmPagCom = new FrmPaginaComercio(modoNoche);
-            frmPagCom.ShowDialog();
-            this.Close();
-        }
-
         private void lblModa_Click(object sender, EventArgs e)
         {
             limpiarPagina();
@@ -115,12 +111,11 @@ namespace Localmarket_App
 
                 if (empresas != null)
                 {
-                    MessageBox.Show("Empresas encontradas");
                     int x = 0;
                     int y = 0;
                     for (int i = 0; i < empresas.Count; i++)
                     {
-                        var control = new UserControl1(empresas[i]);
+                        var control = new PanelEmpresa(modoNoche, empresas[i], usuario);
                         control.Location = new Point(x, y);
                         pnlComercio.Controls.Add(control);
                         y += control.Height;
