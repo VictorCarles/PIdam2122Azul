@@ -60,7 +60,7 @@ namespace Localmarket_App
             {
                 usuarioGlobal = new Usuario(txtUsuario.Text, txtNombre.Text, txtApellido.Text, txtContraseña.Text, 
                     Convert.ToInt32(txtTelefono.Text), txtCorreo.Text, txtDireccion.Text, Convert.ToInt32(mskCP.Text), 
-                    picAñadeFoto.Image, "client", null, null, -1);
+                    picAñadeFoto.Image, "client", null);
 
                 if (ConexionBD.Conexion != null)
                 {

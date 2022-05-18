@@ -19,14 +19,10 @@ namespace Localmarket_App
         private int cp;
         private Image profilePicture;
         private string type;
-
-        // Could be null
-        private string CIF;
         private string DNI;
-        private int pinCode;
 
         public Usuario(string username, string fullname, string surnames, string password, int telephone, string email,
-            string address, int cp, Image profilePicture, string type, string cif, string dni, int pin)
+            string address, int cp, Image profilePicture, string type,string dni = null)
         {
             this.username = username;
             this.fullname = fullname;
@@ -38,9 +34,7 @@ namespace Localmarket_App
             this.cp = cp;
             this.profilePicture = profilePicture;
             this.type = type;
-            this.CIF = cif;
             this.DNI = dni;
-            this.pinCode = pin;
         }
 
         public Usuario(string username, string password)
@@ -52,9 +46,9 @@ namespace Localmarket_App
 
         public static void InsertarUsuario(Usuario usu)
         {
-            string consulta = string.Format("INSERT INTO Usuario (username, fullname, surnames, password, telephone, email, profilepicture, address, cp, type, cif, dni, clave) VALUES " +
-                "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}')", usu.Username, usu.fullname, usu.surnames, usu.password, usu.telephone, usu.email, ImageToBase64(usu.profilePicture, ImageFormat.Jpeg), usu.address, usu.cp, usu.type,
-                usu.CIF, usu.DNI, usu.pinCode);
+            string consulta = string.Format("INSERT INTO Usuario (username, fullname, surnames, password, telephone, email, profilepicture, address, cp, type, dni) VALUES " +
+                "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", usu.Username, usu.fullname, usu.surnames, usu.password, usu.telephone, usu.email, ImageToBase64(usu.profilePicture, ImageFormat.Jpeg), 
+                usu.address, usu.cp, usu.type, usu.DNI);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.ExecuteNonQuery();
@@ -72,8 +66,8 @@ namespace Localmarket_App
                 reader.Read();
                 string data = reader.GetString(6);
                 Image img = Base64ToImage(data);
-                Usuario usuario = new Usuario(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetString(5),
-                    reader.GetString(7), reader.GetInt32(8), img, reader.GetString(9), reader.GetString(10), reader.GetString(11), reader.GetInt32(12));
+                Usuario usuario = new Usuario(reader.GetString(0),reader.GetString(1),reader.GetString(2),reader.GetString(3),reader.GetInt32(4),reader.GetString(5),
+                    reader.GetString(7),reader.GetInt32(8),img,reader.GetString(9),reader.GetString(10));
                 return usuario;
             }
             else
