@@ -1,0 +1,38 @@
+CAMPOS CON NOMBRE MODIFICADO:
+TABLA USUARIO:
+
+
+
+
+
+
+
+
+TABLA EMPRESA:
+empName => emp_name
+Empresa_Usuario => owner_username
+Usuario_Username => user_username
+
+TABLA ACCIONES:
+idAcciones => action_id
+Usuario_Username => user_username
+cifEmp => cif_company
+
+
+TABLA LISTAS:
+Nombre => nombre
+Usuario_Username => username
+cifEmp => cif_company
+
+
+TABLA COMENTARIO:
+text => text_contents
+cifEmp => cif_company
+Usuario_username => username
+usefulPoints => useful_rating
+idRespuesta_Comentaio => id_respuesta
+
+TABLA Version: => Versiones
+numVersion => num_version
+text => dev_notes
+
