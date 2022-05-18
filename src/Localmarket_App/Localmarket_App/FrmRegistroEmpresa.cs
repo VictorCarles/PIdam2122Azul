@@ -39,10 +39,54 @@ namespace Localmarket_App
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmLogin frmLog = new FrmLogin(modoNoche);
-            frmLog.ShowDialog();
-            this.Close();
+            if (ComprobarDatos())
+            {
+
+            }
+        }
+
+        private bool ComprobarDatos()
+        {
+            bool correcto = true;
+            errorProv.Clear();
+
+            if (txtNombreNeg.Text == "")
+            {
+                errorProv.SetError(txtNombreNeg, "Introduce el nombre de tu negocio");
+                correcto = false;
+            }
+
+            if (txtCIFNeg.Text == "")
+            {
+                errorProv.SetError(txtCIFNeg, "Introduce el CIF de tu negocio");
+                correcto = false;
+            }
+
+            if (mskCPNeg.Text == "")
+            {
+                errorProv.SetError(mskCPNeg, "Introduce el codigo postal de tu negocio");
+                correcto = false;
+            }
+
+            if (txtDireccionNeg.Text == "")
+            {
+                errorProv.SetError(txtDireccionNeg, "Introduce la direccion de tu negocio");
+                correcto = false;
+            }
+
+            if (txtTlfNeg.Text == "")
+            {
+                errorProv.SetError(txtTlfNeg, "Introduce el telefono de tu negocio");
+                correcto = false;
+            }
+
+            if (cmbCategoria.Text == "")
+            {
+                errorProv.SetError(cmbCategoria, "Introduce la categoria de tu negocio");
+                correcto = false;
+            }
+
+            return correcto;
         }
 
         private void picAjustes_Click(object sender, EventArgs e)

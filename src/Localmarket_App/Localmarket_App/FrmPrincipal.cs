@@ -33,8 +33,6 @@ namespace Localmarket_App
             {
                 modoNocheOff();
             }
-
-            MessageBox.Show(String.Format("El usuario actual es {0}",usuario.Username));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -109,6 +107,7 @@ namespace Localmarket_App
         {
             limpiarPagina();
             lblTituloCategoria.Text = "Resultados de la búsqueda '" + txtBusqueda.Text+ "':";
+
         }
 
         private void limpiarPagina()
