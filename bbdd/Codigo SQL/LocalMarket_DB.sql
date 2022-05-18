@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Empresa` (
   `email` VARCHAR(45) NOT NULL,
   `telephone` INT(11) NOT NULL,
   `avgScore` DOUBLE NOT NULL,
-  `pPicture` BLOB NOT NULL,
+  `pPicture` LONGBLOB NOT NULL,
   `address` VARCHAR(45) NOT NULL,
   `cp` INT NOT NULL,
   `description` VARCHAR(600) NOT NULL,
@@ -92,7 +92,7 @@ ENGINE = INNODB;
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Images` (
   `idImages` INT NOT NULL AUTO_INCREMENT,
   `Empresa_idEmpresa` INT NOT NULL,
-   `img` BLOB NOT NULL,
+   `img` LONGBLOB NOT NULL,
   PRIMARY KEY (`idImages`),
   INDEX `fk_Images_Empresa1_idx` (`Empresa_idEmpresa` ASC) VISIBLE,
   CONSTRAINT `fk_Images_Empresa1`
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Producto` (
   `price` DOUBLE NOT NULL,
   `prod_name` VARCHAR(45) NOT NULL,
   `description` VARCHAR(200) NOT NULL,
-  `image` BLOB NOT NULL,
+  `image` LONGBLOB NOT NULL,
   `avaiable` TINYINT(1) NOT NULL,
   `Empresa_idEmpresa` INT NOT NULL,
   PRIMARY KEY (`idProducto`),
@@ -159,6 +159,6 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `localmarket_db`.`Version` (
   `numVersion` VARCHAR(10) NOT NULL,
   `text` VARCHAR(500) NOT NULL,
-  `app` BLOB NOT NULL,
+  `app` LONGBLOB NOT NULL,
   PRIMARY KEY (`numVersion`))
 ENGINE = INNODB;
