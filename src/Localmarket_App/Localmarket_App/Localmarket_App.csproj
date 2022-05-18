@@ -67,11 +67,11 @@
     <Compile Include="FrmPerfilUsuario.Designer.cs">
       <DependentUpon>FrmPerfilUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPerfilEmpresa.cs">
+    <Compile Include="FrmEditarNegocio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPerfilEmpresa.Designer.cs">
-      <DependentUpon>FrmPerfilEmpresa.cs</DependentUpon>
+    <Compile Include="FrmEditarNegocio.Designer.cs">
+      <DependentUpon>FrmEditarNegocio.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -101,8 +101,8 @@
     <EmbeddedResource Include="FrmPaginaComercio.resx">
       <DependentUpon>FrmPaginaComercio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPerfilEmpresa.resx">
-      <DependentUpon>FrmPerfilEmpresa.cs</DependentUpon>
+    <EmbeddedResource Include="FrmEditarNegocio.resx">
+      <DependentUpon>FrmEditarNegocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPerfilUsuario.resx">
       <DependentUpon>FrmPerfilUsuario.cs</DependentUpon>

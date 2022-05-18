@@ -56,15 +56,6 @@ namespace Localmarket_App
             this.picEditarContraseña = new System.Windows.Forms.PictureBox();
             this.btnGuardarCambios = new System.Windows.Forms.Button();
             this.btnEditarNegocio = new System.Windows.Forms.Button();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblLogo = new System.Windows.Forms.Label();
-            this.lblDescripción = new System.Windows.Forms.Label();
-            this.btnElegirLogo = new System.Windows.Forms.Button();
-            this.openFileDialogLogoEmpresa = new System.Windows.Forms.OpenFileDialog();
-            this.picPreviewLogo = new System.Windows.Forms.PictureBox();
-            this.groupBoxEditarNegocio = new System.Windows.Forms.GroupBox();
             this.pnlNaranja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxTienda)).BeginInit();
@@ -77,15 +68,13 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEditarUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEditarContraseña)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPreviewLogo)).BeginInit();
-            this.groupBoxEditarNegocio.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(360, 314);
+            this.lblUsuario.Location = new System.Drawing.Point(446, 316);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(124, 34);
             this.lblUsuario.TabIndex = 15;
@@ -212,13 +201,14 @@ namespace Localmarket_App
             // 
             // openFileDialogPerfil
             // 
-            this.openFileDialogPerfil.FileName = "openFileDialog1";
+            this.openFileDialogPerfil.FileName = "openFileDialogPerfil";
+            this.openFileDialogPerfil.Filter = "\"Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;...\"";
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(314, 373);
+            this.lblContraseña.Location = new System.Drawing.Point(400, 375);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(170, 34);
             this.lblContraseña.TabIndex = 49;
@@ -228,7 +218,7 @@ namespace Localmarket_App
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(378, 260);
+            this.lblEmail.Location = new System.Drawing.Point(464, 262);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(106, 34);
             this.lblEmail.TabIndex = 50;
@@ -238,7 +228,7 @@ namespace Localmarket_App
             // 
             this.lblRepContraseña.AutoSize = true;
             this.lblRepContraseña.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRepContraseña.Location = new System.Drawing.Point(203, 443);
+            this.lblRepContraseña.Location = new System.Drawing.Point(289, 445);
             this.lblRepContraseña.Name = "lblRepContraseña";
             this.lblRepContraseña.Size = new System.Drawing.Size(274, 34);
             this.lblRepContraseña.TabIndex = 51;
@@ -248,7 +238,7 @@ namespace Localmarket_App
             // txtMail
             // 
             this.txtMail.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMail.Location = new System.Drawing.Point(490, 260);
+            this.txtMail.Location = new System.Drawing.Point(576, 262);
             this.txtMail.Name = "txtMail";
             this.txtMail.ReadOnly = true;
             this.txtMail.Size = new System.Drawing.Size(206, 28);
@@ -259,7 +249,7 @@ namespace Localmarket_App
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(490, 321);
+            this.txtUsuario.Location = new System.Drawing.Point(576, 323);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.ReadOnly = true;
             this.txtUsuario.Size = new System.Drawing.Size(206, 28);
@@ -270,7 +260,7 @@ namespace Localmarket_App
             // txtRepContraseña
             // 
             this.txtRepContraseña.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRepContraseña.Location = new System.Drawing.Point(490, 449);
+            this.txtRepContraseña.Location = new System.Drawing.Point(576, 451);
             this.txtRepContraseña.Name = "txtRepContraseña";
             this.txtRepContraseña.PasswordChar = '*';
             this.txtRepContraseña.Size = new System.Drawing.Size(206, 28);
@@ -280,7 +270,7 @@ namespace Localmarket_App
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(490, 380);
+            this.txtContraseña.Location = new System.Drawing.Point(576, 382);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.ReadOnly = true;
@@ -292,7 +282,7 @@ namespace Localmarket_App
             // picEditarMail
             // 
             this.picEditarMail.Image = global::Localmarket_App.Properties.Resources.editar;
-            this.picEditarMail.Location = new System.Drawing.Point(340, 256);
+            this.picEditarMail.Location = new System.Drawing.Point(426, 258);
             this.picEditarMail.Name = "picEditarMail";
             this.picEditarMail.Size = new System.Drawing.Size(32, 32);
             this.picEditarMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -327,7 +317,7 @@ namespace Localmarket_App
             // picEditarUsuario
             // 
             this.picEditarUsuario.Image = global::Localmarket_App.Properties.Resources.editar;
-            this.picEditarUsuario.Location = new System.Drawing.Point(320, 314);
+            this.picEditarUsuario.Location = new System.Drawing.Point(406, 316);
             this.picEditarUsuario.Name = "picEditarUsuario";
             this.picEditarUsuario.Size = new System.Drawing.Size(32, 32);
             this.picEditarUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -338,7 +328,7 @@ namespace Localmarket_App
             // picEditarContraseña
             // 
             this.picEditarContraseña.Image = global::Localmarket_App.Properties.Resources.editar;
-            this.picEditarContraseña.Location = new System.Drawing.Point(276, 373);
+            this.picEditarContraseña.Location = new System.Drawing.Point(362, 375);
             this.picEditarContraseña.Name = "picEditarContraseña";
             this.picEditarContraseña.Size = new System.Drawing.Size(32, 32);
             this.picEditarContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -350,7 +340,7 @@ namespace Localmarket_App
             // 
             this.btnGuardarCambios.BackColor = System.Drawing.Color.Aqua;
             this.btnGuardarCambios.Font = new System.Drawing.Font("Leelawadee", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarCambios.Location = new System.Drawing.Point(429, 533);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(515, 535);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(300, 63);
             this.btnGuardarCambios.TabIndex = 59;
@@ -363,109 +353,14 @@ namespace Localmarket_App
             // 
             this.btnEditarNegocio.BackColor = System.Drawing.Color.Aqua;
             this.btnEditarNegocio.Font = new System.Drawing.Font("Leelawadee", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarNegocio.Location = new System.Drawing.Point(825, 533);
+            this.btnEditarNegocio.Location = new System.Drawing.Point(987, 535);
             this.btnEditarNegocio.Name = "btnEditarNegocio";
-            this.btnEditarNegocio.Size = new System.Drawing.Size(300, 63);
+            this.btnEditarNegocio.Size = new System.Drawing.Size(236, 57);
             this.btnEditarNegocio.TabIndex = 60;
             this.btnEditarNegocio.Text = "Editar Negocio";
             this.btnEditarNegocio.UseVisualStyleBackColor = false;
             this.btnEditarNegocio.Visible = false;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtDescripcion.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(189, 84);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(311, 84);
-            this.txtDescripcion.TabIndex = 65;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtNombre.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(189, 23);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(241, 28);
-            this.txtNombre.TabIndex = 64;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(43, 18);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(131, 34);
-            this.lblNombre.TabIndex = 63;
-            this.lblNombre.Text = "Nombre:";
-            // 
-            // lblLogo
-            // 
-            this.lblLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblLogo.AutoSize = true;
-            this.lblLogo.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogo.Location = new System.Drawing.Point(86, 186);
-            this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(88, 34);
-            this.lblLogo.TabIndex = 62;
-            this.lblLogo.Text = "Logo:";
-            // 
-            // lblDescripción
-            // 
-            this.lblDescripción.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblDescripción.AutoSize = true;
-            this.lblDescripción.Font = new System.Drawing.Font("Leelawadee", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripción.Location = new System.Drawing.Point(6, 85);
-            this.lblDescripción.Name = "lblDescripción";
-            this.lblDescripción.Size = new System.Drawing.Size(177, 34);
-            this.lblDescripción.TabIndex = 61;
-            this.lblDescripción.Text = "Descripción:";
-            // 
-            // btnElegirLogo
-            // 
-            this.btnElegirLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnElegirLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnElegirLogo.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnElegirLogo.Location = new System.Drawing.Point(180, 186);
-            this.btnElegirLogo.Name = "btnElegirLogo";
-            this.btnElegirLogo.Size = new System.Drawing.Size(159, 38);
-            this.btnElegirLogo.TabIndex = 66;
-            this.btnElegirLogo.Text = "Elegir archivo";
-            this.btnElegirLogo.UseVisualStyleBackColor = false;
-            this.btnElegirLogo.Click += new System.EventHandler(this.btnElegirLogo_Click);
-            // 
-            // openFileDialogLogoEmpresa
-            // 
-            this.openFileDialogLogoEmpresa.FileName = "openFileDialog1";
-            // 
-            // picPreviewLogo
-            // 
-            this.picPreviewLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picPreviewLogo.BackColor = System.Drawing.SystemColors.Window;
-            this.picPreviewLogo.Location = new System.Drawing.Point(345, 182);
-            this.picPreviewLogo.Name = "picPreviewLogo";
-            this.picPreviewLogo.Size = new System.Drawing.Size(62, 50);
-            this.picPreviewLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPreviewLogo.TabIndex = 67;
-            this.picPreviewLogo.TabStop = false;
-            // 
-            // groupBoxEditarNegocio
-            // 
-            this.groupBoxEditarNegocio.Controls.Add(this.picPreviewLogo);
-            this.groupBoxEditarNegocio.Controls.Add(this.lblNombre);
-            this.groupBoxEditarNegocio.Controls.Add(this.btnElegirLogo);
-            this.groupBoxEditarNegocio.Controls.Add(this.lblDescripción);
-            this.groupBoxEditarNegocio.Controls.Add(this.txtDescripcion);
-            this.groupBoxEditarNegocio.Controls.Add(this.lblLogo);
-            this.groupBoxEditarNegocio.Controls.Add(this.txtNombre);
-            this.groupBoxEditarNegocio.Location = new System.Drawing.Point(717, 119);
-            this.groupBoxEditarNegocio.Name = "groupBoxEditarNegocio";
-            this.groupBoxEditarNegocio.Size = new System.Drawing.Size(539, 374);
-            this.groupBoxEditarNegocio.TabIndex = 68;
-            this.groupBoxEditarNegocio.TabStop = false;
-            this.groupBoxEditarNegocio.Visible = false;
+            this.btnEditarNegocio.Click += new System.EventHandler(this.btnEditarNegocio_Click);
             // 
             // FrmPerfilUsuario
             // 
@@ -489,7 +384,6 @@ namespace Localmarket_App
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.picPerfil);
             this.Controls.Add(this.pnlNaranja);
-            this.Controls.Add(this.groupBoxEditarNegocio);
             this.Name = "FrmPerfilUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil Usuario";
@@ -507,9 +401,6 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEditarUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEditarContraseña)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPreviewLogo)).EndInit();
-            this.groupBoxEditarNegocio.ResumeLayout(false);
-            this.groupBoxEditarNegocio.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,14 +434,5 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picEditarContraseña;
         private System.Windows.Forms.Button btnGuardarCambios;
         private System.Windows.Forms.Button btnEditarNegocio;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblLogo;
-        private System.Windows.Forms.Label lblDescripción;
-        private System.Windows.Forms.Button btnElegirLogo;
-        private System.Windows.Forms.OpenFileDialog openFileDialogLogoEmpresa;
-        private System.Windows.Forms.PictureBox picPreviewLogo;
-        private System.Windows.Forms.GroupBox groupBoxEditarNegocio;
     }
 }

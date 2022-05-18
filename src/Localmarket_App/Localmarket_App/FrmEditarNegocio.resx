@@ -561,4 +561,22 @@
         o8gOLMVXIDPxuMNJ4DQwh7rp8JxlLacXzaFNIvk/qnJ/+Wg98TcAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="openFileDialogLogoNegocio.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="openFileDialogImagen1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>268, 17</value>
+  </metadata>
+  <metadata name="openFileDialogImagen2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>486, 17</value>
+  </metadata>
+  <metadata name="openFileDialogImagen3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>704, 17</value>
+  </metadata>
+  <metadata name="openFileDialogImagen4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>922, 17</value>
+  </metadata>
+  <metadata name="openFileDialogImagenProducto.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 60</value>
+  </metadata>
 </root>

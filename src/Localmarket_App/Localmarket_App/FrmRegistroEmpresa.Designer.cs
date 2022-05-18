@@ -151,7 +151,7 @@ namespace Localmarket_App
             // 
             // openFileDialogElegirImagen
             // 
-            this.openFileDialogElegirImagen.FileName = "openFileDialog1";
+            this.openFileDialogElegirImagen.FileName = "openFileDialogElegirImagen";
             this.openFileDialogElegirImagen.Filter = "\"Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;...\"";
             // 
             // pnlAjustes
