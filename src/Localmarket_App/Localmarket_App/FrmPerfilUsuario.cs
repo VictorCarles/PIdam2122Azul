@@ -22,9 +22,9 @@ namespace Localmarket_App
 
         private void picPerfil_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialogPerfil.ShowDialog() == DialogResult.OK)
             {
-                picPerfil.Image = new Bitmap(openFileDialog1.FileName);
+                picPerfil.Image = new Bitmap(openFileDialogPerfil.FileName);
             }
         }
 
@@ -125,6 +125,14 @@ namespace Localmarket_App
             else
             {
                 modoNocheOff();
+            }
+        }
+
+        private void btnElegirLogo_Click(object sender, EventArgs e)
+        {
+            if (openFileDialogLogoEmpresa.ShowDialog() == DialogResult.OK)
+            {
+                picPreviewLogo.Image = new Bitmap(openFileDialogLogoEmpresa.FileName);
             }
         }
     }
