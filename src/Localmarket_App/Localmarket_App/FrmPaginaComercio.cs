@@ -41,7 +41,7 @@ namespace Localmarket_App
         private void picAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche);
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche,null);
             frmPrincipal.ShowDialog();
             this.Close();
         }

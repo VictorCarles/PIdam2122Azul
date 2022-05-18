@@ -29,6 +29,7 @@ namespace Localmarket_App
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroUsuario));
             this.pnlNaranja = new System.Windows.Forms.Panel();
             this.picAjustes = new System.Windows.Forms.PictureBox();
@@ -63,6 +64,7 @@ namespace Localmarket_App
             this.picAñadeFoto = new System.Windows.Forms.PictureBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
+            this.errorProv = new System.Windows.Forms.ErrorProvider(this.components);
             this.pnlNaranja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -72,6 +74,7 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProv)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlNaranja
@@ -422,11 +425,15 @@ namespace Localmarket_App
             this.lblTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(332, 559);
+            this.lblTelefono.Location = new System.Drawing.Point(394, 559);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(136, 18);
+            this.lblTelefono.Size = new System.Drawing.Size(70, 18);
             this.lblTelefono.TabIndex = 49;
-            this.lblTelefono.Text = "Correo electrónico:";
+            this.lblTelefono.Text = "Telefono:";
+            // 
+            // errorProv
+            // 
+            this.errorProv.ContainerControl = this;
             // 
             // FrmRegistroUsuario
             // 
@@ -472,6 +479,7 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAñadeFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -512,5 +520,6 @@ namespace Localmarket_App
         private System.Windows.Forms.ComboBox cmbIdioma;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.ErrorProvider errorProv;
     }
 }

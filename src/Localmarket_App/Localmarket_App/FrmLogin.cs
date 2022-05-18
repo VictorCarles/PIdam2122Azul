@@ -13,6 +13,7 @@ namespace Localmarket_App
     public partial class FrmLogin : Form
     {
         private bool modoNoche;
+        private Usuario usuarioGlobal;
         public FrmLogin(bool modoNoche)
         {
             InitializeComponent();
@@ -41,23 +42,48 @@ namespace Localmarket_App
 
         private void btnIniciarSesion2_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario(txtUsuario.Text, txtContraseña.Text);
-            if (ConexionBD.Conexion != null)
+            if (ComprobarDatos())
             {
-                ConexionBD.AbrirConexion();
-                if (usuario.BuscarUsuario())
+                usuarioGlobal = new Usuario(txtUsuario.Text,txtContraseña.Text);
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    usuarioGlobal = Usuario.ComprobarUsuario(usuarioGlobal);
+                    ConexionBD.CerrarConexion();
+                }
+
+                if (usuarioGlobal != null)
                 {
                     this.Hide();
-                    FrmPrincipal frmPrin = new FrmPrincipal(modoNoche);
-                    frmPrin.ShowDialog();
+                    FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche,usuarioGlobal);
+                    frmPrincipal.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Usuario/Contraseña Incorrectos");
+                    MessageBox.Show("Usuario/contraseña incorrectos");
                 }
-                ConexionBD.CerrarConexion();
             }
+        }
+
+        private bool ComprobarDatos()
+        {
+            bool correcto = true;
+            errorProv.Clear();
+
+            if (txtUsuario.Text == "")
+            {
+                errorProv.SetError(txtUsuario, "Introduce tu usuario");
+                correcto = false;
+            }
+
+            if (txtContraseña.Text == "")
+            {
+                errorProv.SetError(txtContraseña, "Introduce tu contraseña");
+                correcto = false;
+            }
+
+            return correcto;
         }
     }   
 }

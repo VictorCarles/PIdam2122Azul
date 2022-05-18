@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace Localmarket_App
     public partial class FrmRegistroUsuario : Form
     {
         private bool modoNoche;
+        private Usuario usuarioGlobal;
         public FrmRegistroUsuario(bool modoNoche)
         {
             InitializeComponent();
@@ -54,22 +56,90 @@ namespace Localmarket_App
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            if (true)
+            if (ComprobarDatos())
             {
+                usuarioGlobal = new Usuario(txtUsuario.Text, txtNombre.Text, txtApellido.Text, txtContraseña.Text, 
+                    Convert.ToInt32(txtTelefono.Text), txtCorreo.Text, txtDireccion.Text, Convert.ToInt32(mskCP.Text), 
+                    picAñadeFoto.Image, "client", null, null, -1);
 
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    Usuario.InsertarUsuario(usuarioGlobal);
+                    ConexionBD.CerrarConexion();
+                }
+
+                this.Hide();
+                FrmLogin frmLogin = new FrmLogin(modoNoche);
+                frmLogin.ShowDialog();
+                this.Close();
             }
-            Usuario usuario = new Usuario(txtUsuario.Text,txtNombre.Text,txtApellido.Text,txtContraseña.Text,
-                692621921,txtCorreo.Text,txtDireccion.Text,Convert.ToInt32(mskCP.Text),"client",picAñadeFoto.BackgroundImage);
-            if (ConexionBD.Conexion != null)
+        }
+
+        private bool ComprobarDatos()
+        {
+            bool correcto = true;
+            errorProv.Clear();
+            if (txtUsuario.Text == "")
             {
-                ConexionBD.AbrirConexion();
-                usuario.RegistrarUsuario();
-                ConexionBD.CerrarConexion();
+                errorProv.SetError(txtUsuario, "Introduce un nombre de usuario");
             }
-            this.Hide();
-            FrmLogin frmLog = new FrmLogin(modoNoche);
-            frmLog.ShowDialog();
-            this.Close();
+
+            if (txtNombre.Text == "")
+            {
+                errorProv.SetError(txtNombre, "Introduce tu nombre");
+                correcto = false;
+            }
+
+            if (txtApellido.Text == "")
+            {
+                errorProv.SetError(txtApellido, "Introduce tus apellidos");
+                correcto = false;
+            }
+
+            if (txtCorreo.Text == "")
+            {
+                errorProv.SetError(txtCorreo, "Introduce tu email");
+                correcto = false;
+            }
+
+            if (txtContraseña.Text == "")
+            {
+                errorProv.SetError(txtContraseña, "Introduce una contraseña");
+                correcto = false;
+            }
+
+            if (txtRepContraseña.Text == "")
+            {
+                errorProv.SetError(txtContraseña, "Introduce tu contraseña otra vez");
+                correcto = false;
+            }
+
+            if (mskCP.Text == "")
+            {
+                errorProv.SetError(mskCP, "Introduce tu codigo postal");
+                correcto = false;
+            }
+
+            if (txtDireccion.Text == "")
+            {
+                errorProv.SetError(txtDireccion, "Introduce tu direccion");
+                correcto = false;
+            }
+
+            if (txtTelefono.Text == "")
+            {
+                errorProv.SetError(txtTelefono, "Introduce un telefono de contacto");
+                correcto = false;
+            }
+
+            if (txtRepContraseña.Text != txtContraseña.Text)
+            {
+                errorProv.SetError(txtRepContraseña, "Introduce la misma contraseña");
+                correcto = false;
+            }
+
+            return correcto;
         }
 
         private void picAñadeFoto_Click(object sender, EventArgs e)

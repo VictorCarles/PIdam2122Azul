@@ -1,11 +1,13 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Localmarket_App
 {
-    internal class Usuario
+    public class Usuario
     {
         private string username;
         private string fullname;
@@ -24,7 +26,7 @@ namespace Localmarket_App
         private int pinCode;
 
         public Usuario(string username, string fullname, string surnames, string password, int telephone, string email,
-            string address, int cp, string type, Image profilePicture)
+            string address, int cp, Image profilePicture, string type, string cif, string dni, int pin)
         {
             this.username = username;
             this.fullname = fullname;
@@ -34,8 +36,11 @@ namespace Localmarket_App
             this.email = email;
             this.address = address;
             this.cp = cp;
-            this.type = type;
             this.profilePicture = profilePicture;
+            this.type = type;
+            this.CIF = cif;
+            this.DNI = dni;
+            this.pinCode = pin;
         }
 
         public Usuario(string username, string password)
@@ -43,38 +48,63 @@ namespace Localmarket_App
             this.username = username;
             this.password = password;
         }
+        public string Username { get { return username; } }
 
-        public void RegistrarUsuario()
+        public static void InsertarUsuario(Usuario usu)
         {
+            string consulta = string.Format("INSERT INTO Usuario (username, fullname, surnames, password, telephone, email, profilepicture, address, cp, type, cif, dni, clave) VALUES " +
+                "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}')", usu.Username, usu.fullname, usu.surnames, usu.password, usu.telephone, usu.email, ImageToBase64(usu.profilePicture, ImageFormat.Jpeg), usu.address, usu.cp, usu.type,
+                usu.CIF, usu.DNI, usu.pinCode);
 
-            string query = String.Format("INSERT INTO Usuario (username, fullname, surnames, password, telephone, email, profilepicture, address, cp, type) VALUES " +
-                "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}')", username, fullname, surnames, password, telephone, email, profilePicture, address, cp, type);
-            MySqlCommand comando = new MySqlCommand(query, ConexionBD.Conexion);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.ExecuteNonQuery();
-
-            MessageBox.Show("Usuario registrado con exito");
+            MessageBox.Show("Registro realizado correctamente");
         }
 
-        public bool BuscarUsuario()
+        public static Usuario ComprobarUsuario(Usuario usu)
         {
-            string query = String.Format("SELECT username, password FROM Usuario WHERE username = '{0}'",username);
-            MySqlCommand comando = new MySqlCommand(query, ConexionBD.Conexion);
+            string consulta = string.Format("SELECT * FROM Usuario WHERE username = '{0}'", usu.username);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             MySqlDataReader reader = comando.ExecuteReader();
+
             if (reader.HasRows)
             {
                 reader.Read();
-                if (reader.GetString(1) == password)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                string data = reader.GetString(6);
+                Image img = Base64ToImage(data);
+                Usuario usuario = new Usuario(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetString(5),
+                    reader.GetString(7), reader.GetInt32(8), img, reader.GetString(9), reader.GetString(10), reader.GetString(11), reader.GetInt32(12));
+                return usuario;
             }
             else
             {
-                return false;
+                return null;
+            }
+        }
+
+        public static string ImageToBase64(Image image, ImageFormat format)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Convert Image to byte[]
+                image.Save(ms, format);
+                byte[] imageBytes = ms.ToArray();
+
+                // Convert byte[] to base 64 string
+                string base64String = Convert.ToBase64String(imageBytes);
+                return base64String;
+            }
+        }
+
+        public static Image Base64ToImage(string base64String)
+        {
+            // Convert base 64 string to byte[]
+            byte[] imageBytes = Convert.FromBase64String(base64String);
+            // Convert byte[] to Image
+            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+            {
+                Image image = Image.FromStream(ms, true);
+                return image;
             }
         }
     }

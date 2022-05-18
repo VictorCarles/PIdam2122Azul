@@ -24,7 +24,7 @@ namespace Localmarket_App
         private void picAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche);
+            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche, null);
             frmPrin.ShowDialog();
             this.Close();
         }

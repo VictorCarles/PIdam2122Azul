@@ -14,10 +14,12 @@ namespace Localmarket_App
     public partial class FrmPrincipal : Form
     {
         private bool modoNoche;
-        public FrmPrincipal(bool modoNoche)
+        private Usuario usuario;
+        public FrmPrincipal(bool modoNoche, Usuario usuario)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
+            this.usuario = usuario;
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
@@ -31,6 +33,8 @@ namespace Localmarket_App
             {
                 modoNocheOff();
             }
+
+            MessageBox.Show(String.Format("El usuario actual es {0}",usuario.Username));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
