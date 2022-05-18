@@ -63,9 +63,17 @@ namespace Localmarket_App
 
             if (reader.HasRows)
             {
+                Image img;
                 reader.Read();
-                string data = reader.GetString(6);
-                Image img = Base64ToImage(data);
+                if (reader.GetString(6) != "nada")
+                {
+                    string data = reader.GetString(6);
+                    img = Base64ToImage(data);
+                }
+                else
+                {
+                    img = null;
+                }
                 Usuario usuario = new Usuario(reader.GetString(0),reader.GetString(1),reader.GetString(2),reader.GetString(3),reader.GetInt32(4),reader.GetString(5),
                     reader.GetString(7),reader.GetInt32(8),img,reader.GetString(9),reader.GetString(10));
                 return usuario;

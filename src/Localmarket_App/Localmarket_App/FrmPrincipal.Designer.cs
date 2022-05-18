@@ -52,10 +52,6 @@ namespace Localmarket_App
             this.timerSlider = new System.Windows.Forms.Timer(this.components);
             this.lblTituloCategoria = new System.Windows.Forms.Label();
             this.pnlComercio = new System.Windows.Forms.Panel();
-            this.lblDescComercio = new System.Windows.Forms.Label();
-            this.lblValoracion = new System.Windows.Forms.Label();
-            this.lblNomComercio = new System.Windows.Forms.Label();
-            this.picComercio1 = new System.Windows.Forms.PictureBox();
             this.lblNoticias = new System.Windows.Forms.Label();
             this.pnlNoticia = new System.Windows.Forms.Panel();
             this.lblDescNoticia = new System.Windows.Forms.Label();
@@ -85,8 +81,6 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRecientes)).BeginInit();
             this.pnlCategoriaDesplegable.SuspendLayout();
-            this.pnlComercio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picComercio1)).BeginInit();
             this.pnlNoticia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNoticia)).BeginInit();
             this.pnlPerfil.SuspendLayout();
@@ -340,59 +334,13 @@ namespace Localmarket_App
             // pnlComercio
             // 
             this.pnlComercio.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pnlComercio.BackColor = System.Drawing.Color.White;
+            this.pnlComercio.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlComercio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlComercio.Controls.Add(this.lblDescComercio);
-            this.pnlComercio.Controls.Add(this.lblValoracion);
-            this.pnlComercio.Controls.Add(this.lblNomComercio);
-            this.pnlComercio.Controls.Add(this.picComercio1);
-            this.pnlComercio.Location = new System.Drawing.Point(275, 202);
+            this.pnlComercio.Location = new System.Drawing.Point(239, 87);
             this.pnlComercio.Name = "pnlComercio";
-            this.pnlComercio.Size = new System.Drawing.Size(748, 100);
+            this.pnlComercio.Size = new System.Drawing.Size(1081, 604);
             this.pnlComercio.TabIndex = 6;
             this.pnlComercio.Visible = false;
-            // 
-            // lblDescComercio
-            // 
-            this.lblDescComercio.AutoSize = true;
-            this.lblDescComercio.Location = new System.Drawing.Point(113, 48);
-            this.lblDescComercio.Name = "lblDescComercio";
-            this.lblDescComercio.Size = new System.Drawing.Size(476, 34);
-            this.lblDescComercio.TabIndex = 3;
-            this.lblDescComercio.Text = "Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion \r\nDescrip" +
-    "cion Descripcion Descripcion Descripcion Descripcion Descripcion \r\n";
-            // 
-            // lblValoracion
-            // 
-            this.lblValoracion.AutoSize = true;
-            this.lblValoracion.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValoracion.Location = new System.Drawing.Point(533, 11);
-            this.lblValoracion.Name = "lblValoracion";
-            this.lblValoracion.Size = new System.Drawing.Size(94, 20);
-            this.lblValoracion.TabIndex = 2;
-            this.lblValoracion.Text = "Valoración:";
-            // 
-            // lblNomComercio
-            // 
-            this.lblNomComercio.AutoSize = true;
-            this.lblNomComercio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblNomComercio.Font = new System.Drawing.Font("Leelawadee", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomComercio.Location = new System.Drawing.Point(112, 10);
-            this.lblNomComercio.Name = "lblNomComercio";
-            this.lblNomComercio.Size = new System.Drawing.Size(175, 23);
-            this.lblNomComercio.TabIndex = 1;
-            this.lblNomComercio.Text = "Nombre Comercio";
-            this.lblNomComercio.Click += new System.EventHandler(this.lblNomComercio_Click);
-            // 
-            // picComercio1
-            // 
-            this.picComercio1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picComercio1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.picComercio1.Location = new System.Drawing.Point(0, 0);
-            this.picComercio1.Name = "picComercio1";
-            this.picComercio1.Size = new System.Drawing.Size(100, 98);
-            this.picComercio1.TabIndex = 0;
-            this.picComercio1.TabStop = false;
             // 
             // lblNoticias
             // 
@@ -653,9 +601,6 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picRecientes)).EndInit();
             this.pnlCategoriaDesplegable.ResumeLayout(false);
             this.pnlCategoriaDesplegable.PerformLayout();
-            this.pnlComercio.ResumeLayout(false);
-            this.pnlComercio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picComercio1)).EndInit();
             this.pnlNoticia.ResumeLayout(false);
             this.pnlNoticia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNoticia)).EndInit();
@@ -688,10 +633,6 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picBuscar;
         private System.Windows.Forms.Label lblTituloCategoria;
         private System.Windows.Forms.Panel pnlComercio;
-        private System.Windows.Forms.Label lblValoracion;
-        private System.Windows.Forms.Label lblNomComercio;
-        private System.Windows.Forms.PictureBox picComercio1;
-        private System.Windows.Forms.Label lblDescComercio;
         private System.Windows.Forms.Label lblNoticias;
         private System.Windows.Forms.Panel pnlNoticia;
         private System.Windows.Forms.Label lblDescNoticia;

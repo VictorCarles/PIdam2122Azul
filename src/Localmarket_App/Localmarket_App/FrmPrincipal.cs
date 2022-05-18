@@ -107,6 +107,30 @@ namespace Localmarket_App
         {
             limpiarPagina();
             lblTituloCategoria.Text = "Resultados de la búsqueda '" + txtBusqueda.Text+ "':";
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                List<Empresa> empresas = Interfaz.BusquedaComercios(txtBusqueda.Text);
+                ConexionBD.CerrarConexion();
+
+                if (empresas != null)
+                {
+                    MessageBox.Show("Empresas encontradas");
+                    int x = 0;
+                    int y = 0;
+                    for (int i = 0; i < empresas.Count; i++)
+                    {
+                        var control = new UserControl1(empresas[i]);
+                        control.Location = new Point(x, y);
+                        pnlComercio.Controls.Add(control);
+                        y += control.Height;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Empresas NO encontradas");
+                }
+            }
 
         }
 

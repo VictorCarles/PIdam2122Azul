@@ -30,7 +30,6 @@ C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\bi
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.AssemblyReference.cache
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmLogin.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPaginaComercio.resources
-C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPerfilEmpresa.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPrincipal.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmRegistroUsuario.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.Properties.Resources.resources
@@ -100,3 +99,5 @@ C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\ob
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPerfilUsuario.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmRegistroEmpresa.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.CopyComplete
+C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmEditarNegocio.resources
+C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.UserControl1.resources
