@@ -31,6 +31,7 @@ namespace Localmarket_App
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.btnRegistrarse = new System.Windows.Forms.Button();
             this.pnlDatosUsuario = new System.Windows.Forms.Panel();
@@ -44,9 +45,11 @@ namespace Localmarket_App
             this.lblDatosUsuario = new System.Windows.Forms.Label();
             this.picNombre = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.errorProv = new System.Windows.Forms.ErrorProvider(this.components);
             this.pnlDatosUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProv)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIniciarSesion
@@ -76,7 +79,7 @@ namespace Localmarket_App
             this.btnRegistrarse.Location = new System.Drawing.Point(556, 533);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(225, 47);
-            this.btnRegistrarse.TabIndex = 2;
+            this.btnRegistrarse.TabIndex = 6;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
             this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
@@ -94,7 +97,7 @@ namespace Localmarket_App
             this.pnlDatosUsuario.Controls.Add(this.lblContraseña);
             this.pnlDatosUsuario.Controls.Add(this.lblUsuario);
             this.pnlDatosUsuario.Controls.Add(this.lblDatosUsuario);
-            this.pnlDatosUsuario.Location = new System.Drawing.Point(420, 269);
+            this.pnlDatosUsuario.Location = new System.Drawing.Point(432, 269);
             this.pnlDatosUsuario.Name = "pnlDatosUsuario";
             this.pnlDatosUsuario.Size = new System.Drawing.Size(468, 247);
             this.pnlDatosUsuario.TabIndex = 4;
@@ -113,6 +116,7 @@ namespace Localmarket_App
             this.btnIniciarSesion2.TabIndex = 5;
             this.btnIniciarSesion2.Text = "Iniciar Sesión";
             this.btnIniciarSesion2.UseVisualStyleBackColor = false;
+            this.btnIniciarSesion2.Click += new System.EventHandler(this.btnIniciarSesion2_Click);
             // 
             // lblOlvidarContraseña
             // 
@@ -121,7 +125,7 @@ namespace Localmarket_App
             this.lblOlvidarContraseña.Location = new System.Drawing.Point(240, 141);
             this.lblOlvidarContraseña.Name = "lblOlvidarContraseña";
             this.lblOlvidarContraseña.Size = new System.Drawing.Size(141, 17);
-            this.lblOlvidarContraseña.TabIndex = 6;
+            this.lblOlvidarContraseña.TabIndex = 3;
             this.lblOlvidarContraseña.TabStop = true;
             this.lblOlvidarContraseña.Text = "Olvidé mi contraseña";
             // 
@@ -133,24 +137,26 @@ namespace Localmarket_App
             this.chkRecuerdame.Location = new System.Drawing.Point(158, 168);
             this.chkRecuerdame.Name = "chkRecuerdame";
             this.chkRecuerdame.Size = new System.Drawing.Size(117, 22);
-            this.chkRecuerdame.TabIndex = 5;
+            this.chkRecuerdame.TabIndex = 4;
             this.chkRecuerdame.Text = "Recuérdame";
             this.chkRecuerdame.UseVisualStyleBackColor = false;
             // 
             // txtContraseña
             // 
+            this.txtContraseña.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(158, 116);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(223, 22);
-            this.txtContraseña.TabIndex = 4;
+            this.txtContraseña.Size = new System.Drawing.Size(223, 23);
+            this.txtContraseña.TabIndex = 2;
             // 
             // txtUsuario
             // 
+            this.txtUsuario.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(158, 72);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(223, 22);
-            this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Size = new System.Drawing.Size(223, 23);
+            this.txtUsuario.TabIndex = 1;
             // 
             // lblContraseña
             // 
@@ -210,6 +216,10 @@ namespace Localmarket_App
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
+            // errorProv
+            // 
+            this.errorProv.ContainerControl = this;
+            // 
             // FrmLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -221,7 +231,10 @@ namespace Localmarket_App
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.picLogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FrmLogin";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
@@ -229,6 +242,7 @@ namespace Localmarket_App
             this.pnlDatosUsuario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -250,5 +264,6 @@ namespace Localmarket_App
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblDatosUsuario;
+        private System.Windows.Forms.ErrorProvider errorProv;
     }
 }

@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,17 +47,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAjustes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAjustes.Designer.cs">
-      <DependentUpon>FrmAjustes.cs</DependentUpon>
-    </Compile>
+    <Compile Include="ConexionBD.cs" />
+    <Compile Include="Empresa.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaginaComercio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaginaComercio.Designer.cs">
+      <DependentUpon>FrmPaginaComercio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerfilUsuario.Designer.cs">
+      <DependentUpon>FrmPerfilUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarNegocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarNegocio.Designer.cs">
+      <DependentUpon>FrmEditarNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroEmpresa.Designer.cs">
+      <DependentUpon>FrmRegistroEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistroUsuario.cs">
       <SubType>Form</SubType>
@@ -64,13 +91,33 @@
     <Compile Include="FrmRegistroUsuario.Designer.cs">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAjustes.resx">
-      <DependentUpon>FrmAjustes.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="PanelEmpresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelEmpresa.Designer.cs">
+      <DependentUpon>PanelEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaginaComercio.resx">
+      <DependentUpon>FrmPaginaComercio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarNegocio.resx">
+      <DependentUpon>FrmEditarNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerfilUsuario.resx">
+      <DependentUpon>FrmPerfilUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroEmpresa.resx">
+      <DependentUpon>FrmRegistroEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroUsuario.resx">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
@@ -79,6 +126,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelEmpresa.resx">
+      <DependentUpon>PanelEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,6 +168,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bolsa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaacceder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\añadir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajustesicono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campanita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuboton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recientes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corazon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinchomapa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruteria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favoritovacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idioma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonmenublanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recientesblanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaatrasblanca.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

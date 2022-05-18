@@ -561,6 +561,9 @@
         o8gOLMVXIDPxuMNJ4DQwh7rp8JxlLacXzaFNIvk/qnJ/+Wg98TcAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="openFileDialogElegirImagen.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>25, 11</value>
+  </metadata>
   <data name="picAñadeFoto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAYAAACJm/9dAAAABGdBTUEAALGPC/xhBQAAJuRJREFUeF7t
@@ -733,4 +736,7 @@
         AElFTkSuQmCC
 </value>
   </data>
+  <metadata name="errorProv.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>230, 11</value>
+  </metadata>
 </root>
