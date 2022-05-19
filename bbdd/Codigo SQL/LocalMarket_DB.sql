@@ -27,6 +27,8 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
   );
 -- UNIQUE INDEX `Username_UNIQUE` (`Username` ASC)
 -- ENGINE = INNODB;
+-- DROP TABLE IF EXISTS localmarket_db.Usuario;
+
 
 ## Tabla Empresa:
 
@@ -50,6 +52,8 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 -- ENGINE = INNODB;
+-- DROP TABLE IF EXISTS localmarket_db.Empresa;
+
 
 ## Tabla Acciones:
 
@@ -73,6 +77,10 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
     ON UPDATE NO ACTION);*/
 -- ENGINE = INNODB;
 
+-- DROP TABLE IF EXISTS localmarket_db.Acciones;
+
+
+
 ## Tabla Listas:
 
 CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
@@ -93,6 +101,8 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 -- ENGINE = INNODB; 
+-- DROP TABLE IF EXISTS localmarket_db.Listas;
+
 
 ## Tabla Images:
 
@@ -108,6 +118,8 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Images (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 -- ENGINE = INNODB;
+-- DROP TABLE IF EXISTS localmarket_db.Images;
+
 
 ## Tabla Producto:
 
@@ -128,6 +140,8 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Producto` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 -- ENGINE = INNODB;
+-- DROP TABLE IF EXISTS localmarket_db.Producto;
+
 
 ## Tabla Comentario:
 
@@ -160,6 +174,8 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Comentario (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 -- ENGINE = InnoDB;
+-- DROP TABLE IF EXISTS localmarket_db.Comentario;
+
 
 ## Tabla Versiones:
 
@@ -169,3 +185,4 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Versions (
   `appfiles` LONGBLOB NOT NULL,
   PRIMARY KEY (`num_version`));
 -- ENGINE = INNODB;
+-- DROP TABLE IF EXISTS localmarket_db.Versions;
