@@ -1,4 +1,7 @@
 CAMPOS CON NOMBRE MODIFICADO:
+Nota:
+Con cada modificación del nombr de un campo, se deben asumir
+los cambios lógicos derivados a nombres de constraints, indices, y FKs.
 TABLA USUARIO:
 
 
@@ -35,4 +38,9 @@ idRespuesta_Comentaio => id_respuesta
 TABLA Version: => Versiones
 numVersion => num_version
 text => dev_notes
+
+
+TABLA PRODUCTO
+cifEmp => cif_company
+
 

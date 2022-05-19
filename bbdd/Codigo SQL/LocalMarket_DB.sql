@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
   `address` VARCHAR(45) NOT NULL,
   `cp` INT NOT NULL,
   `description` VARCHAR(600) NOT NULL,
-  `owner_username` VARCHAR(20) NOT NULL,
+  `owner_username` VARCHAR(20) NOT NULL, -- UNIQUE INDEX `owner_username_UNIQUE` (`owner_username` ASC)
   PRIMARY KEY (`cif`),
   INDEX `fk_owner_username_idx` (`owner_username` ASC),
   CONSTRAINT `fk_owner_username`
@@ -119,11 +119,11 @@ CREATE TABLE IF NOT EXISTS `localmarket_db`.`Producto` (
   `description` VARCHAR(200) NOT NULL,
   `image` LONGBLOB NULL,
   `available` TINYINT(1) NOT NULL,
-  `cifEmp` VARCHAR(9) NOT NULL,
+  `cif_company` VARCHAR(9) NOT NULL,
   PRIMARY KEY (`idProducto`),
-  INDEX `fk_Producto_Empresa1_idx` (`cifEmp` ASC),
-  CONSTRAINT `fk_Producto_Empresa1`
-    FOREIGN KEY (`cifEmp`)
+  INDEX `fk_cif_company_idx` (`cif_company` ASC),
+  CONSTRAINT `fk_cif_company`
+    FOREIGN KEY (`cif_company`)
     REFERENCES `localmarket_db`.`Empresa` (`cif`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
@@ -166,6 +166,6 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Comentario (
 CREATE TABLE IF NOT EXISTS localmarket_db.Versions (
   `num_version` VARCHAR(10) NOT NULL,
   `dev_notes` VARCHAR(500) NOT NULL,
-  `app` LONGBLOB NOT NULL,
+  `appfiles` LONGBLOB NOT NULL,
   PRIMARY KEY (`num_version`));
 -- ENGINE = INNODB;
