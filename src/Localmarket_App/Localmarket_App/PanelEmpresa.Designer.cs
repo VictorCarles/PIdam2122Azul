@@ -44,6 +44,7 @@ namespace Localmarket_App
             this.picComercio1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picComercio1.Name = "picComercio1";
             this.picComercio1.Size = new System.Drawing.Size(138, 136);
+            this.picComercio1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picComercio1.TabIndex = 1;
             this.picComercio1.TabStop = false;
             // 

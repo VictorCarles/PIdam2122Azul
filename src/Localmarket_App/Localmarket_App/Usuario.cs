@@ -50,7 +50,7 @@ namespace Localmarket_App
         public static void InsertarUsuario(Usuario usu)
         {
             string consulta = string.Format("INSERT INTO Usuario (username, fullname, surnames, password, telephone, email, profilepicture, address, cp, type, dni) VALUES " +
-                "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", usu.Username, usu.fullname, usu.surnames, usu.password, usu.telephone, usu.email, ImageToBase64(usu.profilePicture, ImageFormat.Jpeg), 
+                "('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", usu.Username, usu.fullname, usu.surnames, usu.password, usu.telephone, usu.email, ImageToBase64(usu.profilePicture, usu.profilePicture.RawFormat), 
                 usu.address, usu.cp, usu.type, usu.DNI);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
@@ -61,7 +61,7 @@ namespace Localmarket_App
         public static Usuario ModificarUsuario(Usuario usuario, string mail, string usu, string pasword, Image image)
         {
             string consulta = string.Format("UPDATE Usuario SET username='{0}', email='{1}', password='{2}', profilepicture='{3}' WHERE username='{4}';",
-                usu,mail,pasword,ImageToBase64(image, ImageFormat.Jpeg),usuario.username);
+                usu,mail,pasword,ImageToBase64(image, image.RawFormat),usuario.username);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.ExecuteNonQuery();

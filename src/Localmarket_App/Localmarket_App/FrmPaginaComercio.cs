@@ -101,7 +101,7 @@ namespace Localmarket_App
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche);
+            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche,usuario);
             frmRegEmp.ShowDialog();
             this.Close();
         }

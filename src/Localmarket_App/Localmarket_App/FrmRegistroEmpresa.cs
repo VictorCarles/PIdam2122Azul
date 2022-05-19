@@ -13,18 +13,19 @@ namespace Localmarket_App
 {
     public partial class FrmRegistroEmpresa : Form
     {
-
+        private Usuario usuario;
         private bool modoNoche;
-        public FrmRegistroEmpresa(bool modoNoche)
+        public FrmRegistroEmpresa(bool modoNoche, Usuario usu)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
+            this.usuario = usu;
         }
 
         private void picAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche, null);
+            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche, usuario);
             frmPrin.ShowDialog();
             this.Close();
         }
@@ -41,7 +42,15 @@ namespace Localmarket_App
         {
             if (ComprobarDatos())
             {
-
+                Empresa empresa = new Empresa(txtCIFNeg.Text, txtNombreNeg.Text, cmbCategoria.Text, 
+                    txtEmailContacto.Text,Convert.ToInt32(txtTlfNeg.Text), 0, picAñadeFoto.Image, txtDireccionNeg.Text, Convert.ToInt32(mskCPNeg.Text), 
+                    "Esto es la descripcion", usuario.Username);
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    Empresa.InsertarEmpresa(empresa);
+                    ConexionBD.CerrarConexion();
+                }
             }
         }
 

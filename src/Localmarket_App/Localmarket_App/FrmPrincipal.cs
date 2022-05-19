@@ -102,11 +102,12 @@ namespace Localmarket_App
         private void picBuscar_Click(object sender, EventArgs e)
         {
             limpiarPagina();
+            pnlComercio.Controls.Clear();
             lblTituloCategoria.Text = "Resultados de la búsqueda '" + txtBusqueda.Text+ "':";
             if (ConexionBD.Conexion != null)
             {
                 ConexionBD.AbrirConexion();
-                List<Empresa> empresas = Interfaz.BusquedaComercios(txtBusqueda.Text);
+                List<Empresa> empresas = Empresa.BusquedaComercios(txtBusqueda.Text);
                 ConexionBD.CerrarConexion();
 
                 if (empresas != null)
@@ -191,7 +192,7 @@ namespace Localmarket_App
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche);
+            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
             frmRegEmp.ShowDialog();
             this.Close();
         }
