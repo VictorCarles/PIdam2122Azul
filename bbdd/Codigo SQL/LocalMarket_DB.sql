@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
   `idListas` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `username` VARCHAR(20) NOT NULL,
-  `cif_company` VARCHAR(9) NOT NULL,
+  `cif_included` VARCHAR(9) NOT NULL,
   PRIMARY KEY (`idListas`),
   INDEX `fk_username_idx` (`username` ASC),
   CONSTRAINT `fk_username`
@@ -93,8 +93,8 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
     REFERENCES localmarket_db.Usuario (`username`)
 	 ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-	CONSTRAINT `fk_cif_company`
-    FOREIGN KEY (`cif_company`)
+	CONSTRAINT `fk_cif_included`
+    FOREIGN KEY (`cif_included`)
     REFERENCES localmarket_db.Empresa (cif)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
@@ -103,7 +103,6 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
 
 
 ## Tabla Images:
-
 CREATE TABLE IF NOT EXISTS localmarket_db.Images (
   `idImages` INT NOT NULL AUTO_INCREMENT,
   `cif_company` VARCHAR(9) NOT NULL,

@@ -28,7 +28,7 @@ Error dos arreglado: corregido OTRO error de sintaxys, una coma donde no toca.
 TABLA LISTAS:
 Nombre => nombre
 Usuario_Username => username
-cifEmp => cif_company
+cifEmp => cif_company => cif_included
 
 
 TABLA COMENTARIO:
