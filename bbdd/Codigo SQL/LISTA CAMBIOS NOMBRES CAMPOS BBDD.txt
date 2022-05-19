@@ -13,44 +13,48 @@ CP => cp
 TABLA EMPRESA:
 empName => company_name
 Empresa_Usuario => owner_username
-Usuario_Username => user_username
 avgScore => avgscore
+
 
 
 
 TABLA ACCIONES:
 idAcciones => action_id
 Usuario_Username => user_username
-cifEmp => cif_company // Campo y foreign key cif_company devueltos.
-Error arreglado: la constraint de fk_user_username, tenia error de sintaxys:
-	"... ON DELETE NO ACTION ON DELETE NO ACTION," el segundo "ON DELETE"
-	debería ser "ON UPDATE". 
-Error dos arreglado: corregido OTRO error de sintaxys, una coma donde no toca.
+cifEmp => cif_company
+
+
 
 TABLA LISTAS:
 Nombre => nombre
 Usuario_Username => username
-cifEmp => cif_company => cif_included
+cifEmp => cif_included
+
 
 
 TABLA COMENTARIO:
 text => text_contents
-cifEmp => cif_company => company_page
-Usuario_username => username => comment_username
+cifEmp => company_page
+Usuario_username => comment_username
 usefulPoints => useful_rating
 idRespuesta_Comentaio => id_respuesta
+
+
 
 TABLA Version: => Versiones
 numVersion => num_version
 text => dev_notes
 
 
+
 TABLA IMAGES:
-cif_emp => cif_company => company_profile
+cif_emp => company_profile
+
 
 
 TABLA PRODUCTO
-cifEmp => cif_company // Foreign Key: fk_product_company
+cifEmp => product_company
+
 
 
 TABLA VERSIONS:
