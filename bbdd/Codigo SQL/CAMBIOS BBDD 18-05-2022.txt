@@ -19,11 +19,11 @@ Usuario_Username => user_username
 TABLA ACCIONES:
 idAcciones => action_id
 Usuario_Username => user_username
-cifEmp => cif_company // ELIMINADO CAMPO Y FOREIGN KEY.
-			// SE REGISTRAN ACCIONES DEL USUARIO.
+cifEmp => cif_company // Campo y foreign key cif_company devueltos.
 Error arreglado: la constraint de fk_user_username, tenia error de sintaxys:
 	"... ON DELETE NO ACTION ON DELETE NO ACTION," el segundo "ON DELETE"
-	debería ser "ON UPDATE".
+	debería ser "ON UPDATE". 
+Error dos arreglado: corregido OTRO error de sintaxys, una coma donde no toca.
 
 TABLA LISTAS:
 Nombre => nombre

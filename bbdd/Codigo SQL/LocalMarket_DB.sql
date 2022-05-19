@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
   `accion` VARCHAR(300) NOT NULL,
   `fecha` DATETIME NOT NULL,
   `user_username` VARCHAR(20) NOT NULL,
---  `cif_company` VARCHAR(9) NOT NULL,
+  `cif_company` VARCHAR(9) NULL,
   PRIMARY KEY (`action_id`),
   INDEX `fk_user_username_idx` (`user_username` ASC),
   CONSTRAINT `fk_user_username`
@@ -70,11 +70,11 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
     REFERENCES localmarket_db.Usuario (username)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
-/*  CONSTRAINT `fk_cif_company`
+  CONSTRAINT `fk_cif_company`
     FOREIGN KEY (cif_company)
     REFERENCES localmarket_db.Empresa (cif)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION);*/
+    ON UPDATE NO ACTION);
 -- ENGINE = INNODB;
 
 -- DROP TABLE IF EXISTS localmarket_db.Acciones;
