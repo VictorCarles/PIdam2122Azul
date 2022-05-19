@@ -151,7 +151,6 @@ namespace Localmarket_App
             this.btnCambios.TabIndex = 69;
             this.btnCambios.Text = "Guardar Cambios";
             this.btnCambios.UseVisualStyleBackColor = false;
-            this.btnCambios.Visible = false;
             this.btnCambios.Click += new System.EventHandler(this.btnCambios_Click);
             // 
             // picPreviewLogo

@@ -116,5 +116,18 @@ namespace Localmarket_App
             }
         }
 
+        public static ModificarEmpresa(string nombre, string desc, Image logo, Usuario usuario)
+        {
+            string consulta = string.Format("UPDATE Empresa SET emp_name='{0}', description='{1}', pPicture='{2}', profilepicture='{3}' WHERE Usuario_username='{4}';",
+                nombre, desc, ImageToBase64(logo, logo.RawFormat), usuario.Username);
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.ExecuteNonQuery();
+            
+
+        }
+
+        
+
     }
 }

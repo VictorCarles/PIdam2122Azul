@@ -162,7 +162,7 @@ namespace Localmarket_App
 
         private void btnEditarNegocio_Click(object sender, EventArgs e)
         {
-            FrmEditarNegocio frmEdNegocio = new FrmEditarNegocio(modoNoche);
+            FrmEditarNegocio frmEdNegocio = new FrmEditarNegocio(modoNoche,usuario);
             frmEdNegocio.ShowDialog();
         }
     }

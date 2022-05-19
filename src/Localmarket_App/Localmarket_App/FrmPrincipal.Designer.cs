@@ -102,7 +102,7 @@ namespace Localmarket_App
             this.pnlNaranja.Controls.Add(this.picAjustes);
             this.pnlNaranja.Controls.Add(this.picPerfil);
             this.pnlNaranja.Controls.Add(this.picLogo);
-            this.pnlNaranja.Location = new System.Drawing.Point(1, 0);
+            this.pnlNaranja.Location = new System.Drawing.Point(-9, 0);
             this.pnlNaranja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlNaranja.Name = "pnlNaranja";
             this.pnlNaranja.Size = new System.Drawing.Size(1332, 81);
@@ -202,7 +202,7 @@ namespace Localmarket_App
             this.pnlLateral.Controls.Add(this.lblListaFav);
             this.pnlLateral.Controls.Add(this.lblRecientes);
             this.pnlLateral.Controls.Add(this.pnlCategoriaDesplegable);
-            this.pnlLateral.Location = new System.Drawing.Point(1, 81);
+            this.pnlLateral.Location = new System.Drawing.Point(-9, 81);
             this.pnlLateral.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlLateral.Name = "pnlLateral";
             this.pnlLateral.Size = new System.Drawing.Size(233, 622);
@@ -335,7 +335,7 @@ namespace Localmarket_App
             this.lblTituloCategoria.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTituloCategoria.AutoSize = true;
             this.lblTituloCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloCategoria.Location = new System.Drawing.Point(321, 121);
+            this.lblTituloCategoria.Location = new System.Drawing.Point(311, 121);
             this.lblTituloCategoria.Name = "lblTituloCategoria";
             this.lblTituloCategoria.Size = new System.Drawing.Size(258, 32);
             this.lblTituloCategoria.TabIndex = 5;
@@ -346,10 +346,10 @@ namespace Localmarket_App
             // 
             this.pnlComercio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlComercio.BackColor = System.Drawing.SystemColors.Control;
-            this.pnlComercio.Location = new System.Drawing.Point(240, 87);
+            this.pnlComercio.Location = new System.Drawing.Point(317, 193);
             this.pnlComercio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlComercio.Name = "pnlComercio";
-            this.pnlComercio.Size = new System.Drawing.Size(714, 616);
+            this.pnlComercio.Size = new System.Drawing.Size(714, 513);
             this.pnlComercio.TabIndex = 6;
             this.pnlComercio.Visible = false;
             // 
@@ -358,7 +358,7 @@ namespace Localmarket_App
             this.lblNoticias.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNoticias.AutoSize = true;
             this.lblNoticias.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoticias.Location = new System.Drawing.Point(356, 496);
+            this.lblNoticias.Location = new System.Drawing.Point(346, 496);
             this.lblNoticias.Name = "lblNoticias";
             this.lblNoticias.Size = new System.Drawing.Size(314, 32);
             this.lblNoticias.TabIndex = 7;
@@ -372,7 +372,7 @@ namespace Localmarket_App
             this.pnlNoticia.Controls.Add(this.lblDescNoticia);
             this.pnlNoticia.Controls.Add(this.lblNoticia);
             this.pnlNoticia.Controls.Add(this.picNoticia);
-            this.pnlNoticia.Location = new System.Drawing.Point(327, 551);
+            this.pnlNoticia.Location = new System.Drawing.Point(317, 551);
             this.pnlNoticia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlNoticia.Name = "pnlNoticia";
             this.pnlNoticia.Size = new System.Drawing.Size(749, 100);
@@ -420,7 +420,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfil2);
-            this.pnlPerfil.Location = new System.Drawing.Point(1144, 87);
+            this.pnlPerfil.Location = new System.Drawing.Point(1134, 87);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(177, 180);
@@ -495,7 +495,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-            this.pnlAjustes.Location = new System.Drawing.Point(1144, 87);
+            this.pnlAjustes.Location = new System.Drawing.Point(1134, 87);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(177, 180);
@@ -580,7 +580,7 @@ namespace Localmarket_App
             this.picCarusel.BackColor = System.Drawing.Color.Transparent;
             this.picCarusel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picCarusel.Image = global::Localmarket_App.Properties.Resources.fruteria;
-            this.picCarusel.Location = new System.Drawing.Point(399, 130);
+            this.picCarusel.Location = new System.Drawing.Point(389, 130);
             this.picCarusel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCarusel.Name = "picCarusel";
             this.picCarusel.Size = new System.Drawing.Size(529, 317);
@@ -598,11 +598,11 @@ namespace Localmarket_App
             this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.pnlNoticia);
             this.Controls.Add(this.lblNoticias);
-            this.Controls.Add(this.pnlComercio);
             this.Controls.Add(this.lblTituloCategoria);
             this.Controls.Add(this.picCarusel);
             this.Controls.Add(this.pnlLateral);
             this.Controls.Add(this.pnlNaranja);
+            this.Controls.Add(this.pnlComercio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;

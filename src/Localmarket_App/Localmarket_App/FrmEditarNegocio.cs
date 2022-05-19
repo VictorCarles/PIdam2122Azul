@@ -14,11 +14,13 @@ namespace Localmarket_App
     public partial class FrmEditarNegocio : Form
     {
         private bool modoNoche;
-
-        public FrmEditarNegocio(bool modoNoche)
+        private Empresa empresa;
+        private Usuario usuario;
+        public FrmEditarNegocio(bool modoNoche, Usuario usu)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
+            this.usuario = usu;
 
         }
 
@@ -148,12 +150,22 @@ namespace Localmarket_App
 
         private void btnCambios_Click(object sender, EventArgs e)
         {
-            Close();
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                empresa.ModificarEmpresa(txtNombre.Text, txtDescripcion.Text, picPreviewLogo.Image, usuario);
+                ConexionBD.CerrarConexion();
+            }
+            MessageBox.Show("Datos modificados con exito");
+
+            this.Close();
         }
 
         private void picNuevoProducto_Click(object sender, EventArgs e)
         {
             grpBoxAñadirProducto.Visible = true;
         }
+
+
     }
 }
