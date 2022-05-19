@@ -27,7 +27,15 @@ Triggers que actualicen la tabla acciones:
 
 - Comentario:
 AFTER INSERT
-INSERT INTO Acciones VALUE (DEFAULT,Usuario_Username+' a añadido un comentario',CURDATE(),Usuario_Username,null);
+
+// ERRONEO:: INSERT INTO Acciones VALUE (DEFAULT,Usuario_Username+' a añadido un comentario',CURDATE(),Usuario_Username,null);
+
+// CORREGIDO:
+INSERT INTO acciones (action_id, accion, fecha, user_username, cif_company) 
+VALUE (idComentario, 'Publicado nueva reseña', publication_date, comment_username, company_page);
+
+
+
 
 BEFORE DELETE:
 INSERT INTO Acciones VALUE (DEFAULT,Usuario_Username+' a borrado un comentario',CURDATE(),Usuario_Username,null);
