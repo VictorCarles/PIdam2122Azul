@@ -108,7 +108,6 @@ namespace Localmarket_App
             picAjustes.Image = Resources.ajustesicono;
             picAtras.Image = Resources.flechaatrasblanca;
             btnGuardarCambios.ForeColor = Color.White;
-            btnEditarNegocio.ForeColor = Color.White;
             this.BackColor = Color.DimGray;
 
             foreach (Label l in Controls.OfType<Label>())
@@ -126,7 +125,6 @@ namespace Localmarket_App
             picAjustes.Image = Resources.icono_ajustes;
             picAtras.Image = Resources.flechaatras;
             btnGuardarCambios.ForeColor = Color.Black;
-            btnEditarNegocio.ForeColor = Color.Black;
             this.BackColor = Color.FromKnownColor(KnownColor.Control);
 
             foreach (Label l in Controls.OfType<Label>())
@@ -158,12 +156,6 @@ namespace Localmarket_App
             {
                 picPerfil.Image = new Bitmap(openFileDialogPerfil.FileName);
             }
-        }
-
-        private void btnEditarNegocio_Click(object sender, EventArgs e)
-        {
-            FrmEditarNegocio frmEdNegocio = new FrmEditarNegocio(modoNoche,usuario);
-            frmEdNegocio.ShowDialog();
         }
     }
 }

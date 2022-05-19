@@ -15,6 +15,7 @@ namespace Localmarket_App
     {
         private bool modoNoche;
         private Usuario usuario;
+        private Empresa empresa;
         public FrmPrincipal(bool modoNoche, Usuario usuario)
         {
             InitializeComponent();
@@ -37,6 +38,15 @@ namespace Localmarket_App
             picPerfil.Image = usuario.Imagen;
             picPerfil2.Image = usuario.Imagen;
             lblUsuario.Text = usuario.Username;
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                if (Empresa.TieneEmpresa(usuario))
+                {
+                    lblCrearEmpresa.Text = "Editar empresa";
+                }
+                ConexionBD.CerrarConexion();
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -191,10 +201,26 @@ namespace Localmarket_App
 
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
-            frmRegEmp.ShowDialog();
-            this.Close();
+            if (lblCrearEmpresa.Text == "Editar empresa")
+            {
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    empresa = Empresa.ConseguirEmpresa(usuario);
+                    ConexionBD.CerrarConexion();
+                }
+                this.Hide();
+                FrmEditarNegocio frmEditarNegocio = new FrmEditarNegocio(modoNoche,usuario,empresa);
+                frmEditarNegocio.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
+                frmRegEmp.ShowDialog();
+                this.Close();
+            }
         }
 
         private void picNocheOff_Click(object sender, EventArgs e)

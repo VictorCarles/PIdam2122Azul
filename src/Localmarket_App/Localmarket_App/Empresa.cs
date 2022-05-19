@@ -56,6 +56,22 @@ namespace Localmarket_App
             MessageBox.Show("Registro de la Empresa realizado correctamente");
         }
 
+        internal static bool TieneEmpresa(Usuario usuario)
+        {
+            string consulta = string.Format("SELECT usuario_username FROM Empresa WHERE usuario_username='{0}'",usuario.Username);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static string ImageToBase64(Image image, ImageFormat format)
         {
             using (MemoryStream ms = new MemoryStream())
@@ -116,13 +132,50 @@ namespace Localmarket_App
             }
         }
 
-        public static ModificarEmpresa(string nombre, string desc, Image logo, Usuario usuario)
+        public static Empresa ConseguirEmpresa(Usuario usu)
         {
-            string consulta = string.Format("UPDATE Empresa SET emp_name='{0}', description='{1}', pPicture='{2}', profilepicture='{3}' WHERE Usuario_username='{4}';",
-                nombre, desc, ImageToBase64(logo, logo.RawFormat), usuario.Username);
+            string consulta = string.Format("SELECT * FROM Empresa WHERE Usuario_Username='{0}'; ", usu.Username);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                reader.Read();
+
+                Image img;
+                if (reader.GetString(6) != "nada")
+                {
+                    string data = reader.GetString(6);
+                    img = Base64ToImage(data);
+                }
+                else
+                {
+                    img = null;
+                }
+
+                Empresa emp = new Empresa(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                   reader.GetInt32(4), reader.GetDouble(5), img, reader.GetString(7), reader.GetInt32(8), reader.GetString(9),
+                   reader.GetString(10));
+
+                return emp;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static Empresa ModificarEmpresa(Empresa empresa, string nombre, string desc, Image logo, Usuario usuario)
+        {
+            string consulta = string.Format("UPDATE Empresa SET emp_name='{0}', description='{1}', pPicture='{2}' WHERE cif='{3}';",
+                nombre, desc, ImageToBase64(logo, logo.RawFormat), empresa.CIF);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.ExecuteNonQuery();
+
+            empresa.name = nombre;
+            empresa.description = desc;
+            empresa.profilePicture = logo;
+            return empresa;
             
 
         }

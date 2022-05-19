@@ -226,7 +226,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfilUsuario);
-            this.pnlPerfil.Location = new System.Drawing.Point(1078, 104);
+            this.pnlPerfil.Location = new System.Drawing.Point(1067, 104);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(186, 176);
@@ -301,7 +301,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-            this.pnlAjustes.Location = new System.Drawing.Point(1122, 104);
+            this.pnlAjustes.Location = new System.Drawing.Point(1111, 104);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(186, 176);
@@ -387,7 +387,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(149, 504);
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(138, 504);
             this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
@@ -657,6 +657,7 @@ namespace Localmarket_App
             this.picLogoComercio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picLogoComercio.Name = "picLogoComercio";
             this.picLogoComercio.Size = new System.Drawing.Size(134, 119);
+            this.picLogoComercio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogoComercio.TabIndex = 3;
             this.picLogoComercio.TabStop = false;
             // 

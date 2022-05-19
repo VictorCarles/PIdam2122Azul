@@ -55,7 +55,6 @@ namespace Localmarket_App
             this.picEditarUsuario = new System.Windows.Forms.PictureBox();
             this.picEditarContraseña = new System.Windows.Forms.PictureBox();
             this.btnGuardarCambios = new System.Windows.Forms.Button();
-            this.btnEditarNegocio = new System.Windows.Forms.Button();
             this.pnlNaranja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxTienda)).BeginInit();
@@ -367,25 +366,11 @@ namespace Localmarket_App
             this.btnGuardarCambios.Visible = false;
             this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
             // 
-            // btnEditarNegocio
-            // 
-            this.btnEditarNegocio.BackColor = System.Drawing.Color.Aqua;
-            this.btnEditarNegocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarNegocio.Location = new System.Drawing.Point(954, 535);
-            this.btnEditarNegocio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEditarNegocio.Name = "btnEditarNegocio";
-            this.btnEditarNegocio.Size = new System.Drawing.Size(269, 57);
-            this.btnEditarNegocio.TabIndex = 60;
-            this.btnEditarNegocio.Text = "Editar Negocio";
-            this.btnEditarNegocio.UseVisualStyleBackColor = false;
-            this.btnEditarNegocio.Click += new System.EventHandler(this.btnEditarNegocio_Click);
-            // 
             // FrmPerfilUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1332, 703);
-            this.Controls.Add(this.btnEditarNegocio);
             this.Controls.Add(this.btnGuardarCambios);
             this.Controls.Add(this.picEditarContraseña);
             this.Controls.Add(this.picEditarUsuario);
@@ -452,6 +437,5 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picEditarUsuario;
         private System.Windows.Forms.PictureBox picEditarContraseña;
         private System.Windows.Forms.Button btnGuardarCambios;
-        private System.Windows.Forms.Button btnEditarNegocio;
     }
 }

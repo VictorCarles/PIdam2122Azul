@@ -16,17 +16,20 @@ namespace Localmarket_App
         private bool modoNoche;
         private Empresa empresa;
         private Usuario usuario;
-        public FrmEditarNegocio(bool modoNoche, Usuario usu)
+        public FrmEditarNegocio(bool modoNoche, Usuario usu, Empresa empresa)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
             this.usuario = usu;
+            this.empresa = empresa;
 
         }
 
         private void FrmPerfilEmpresa_Load(object sender, EventArgs e)
         {
-
+            txtNombre.Text = empresa.Name;
+            txtDescripcion.Text = empresa.Description;
+            picPreviewLogo.Image = empresa.ProfilePicture;
         }
 
         private void picAjustes_Click(object sender, EventArgs e)
@@ -153,7 +156,7 @@ namespace Localmarket_App
             if (ConexionBD.Conexion != null)
             {
                 ConexionBD.AbrirConexion();
-                empresa.ModificarEmpresa(txtNombre.Text, txtDescripcion.Text, picPreviewLogo.Image, usuario);
+                Empresa.ModificarEmpresa(empresa, txtNombre.Text, txtDescripcion.Text, picPreviewLogo.Image, usuario);
                 ConexionBD.CerrarConexion();
             }
             MessageBox.Show("Datos modificados con exito");
