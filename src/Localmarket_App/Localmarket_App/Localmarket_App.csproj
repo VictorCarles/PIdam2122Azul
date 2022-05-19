@@ -232,5 +232,35 @@
   <ItemGroup>
     <None Include="Resources\flechaatrasblanca.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1stars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1estr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.5estr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2estr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.5estr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3estr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.5estr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4estr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.5estr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5estr.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

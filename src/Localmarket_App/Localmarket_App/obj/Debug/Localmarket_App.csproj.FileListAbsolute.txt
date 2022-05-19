@@ -21,7 +21,6 @@ C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Loc
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.CoreCompileInputs.cache
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.exe
 C:\Users\jamifo\Desktop\RepoPI\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.pdb
-C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPerfilEmpresa.resources
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPrincipal.resources
 C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmPaginaComercio.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\bin\Debug\Localmarket_App.exe.config
@@ -102,3 +101,5 @@ C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\ob
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.UserControl1.resources
 C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmEditarNegocio.resources
 C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelEmpresa.resources
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmEditarNegocio.resources
+C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelEmpresa.resources

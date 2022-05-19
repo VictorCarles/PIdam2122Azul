@@ -139,6 +139,9 @@
   <data name="Perfil Usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Perfil Usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flechaatrasblanca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flechaatrasblanca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="flechaacceder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flechaacceder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,11 +157,17 @@
   <data name="yellow_star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yellow_star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1stars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1stars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Grupo 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Grupo 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="idioma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idioma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="recientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\recientes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,14 +175,26 @@
   <data name="menuboton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menuboton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="4estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="añadir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\añadir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="4.5estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4.5estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3.5estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.5estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2.5estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.5estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flechaatras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flechaatras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +202,17 @@
   <data name="botonmenublanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botonmenublanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1.5estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.5estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ajustesicono" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ajustesicono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="panaderia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panaderia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +229,7 @@
   <data name="on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flechaatrasblanca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flechaatrasblanca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5estr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5estr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -79,15 +79,11 @@ namespace Localmarket_App
             this.picImagen3 = new System.Windows.Forms.PictureBox();
             this.picImagen2 = new System.Windows.Forms.PictureBox();
             this.picImagen1 = new System.Windows.Forms.PictureBox();
-            this.picEstrellaVal4 = new System.Windows.Forms.PictureBox();
             this.picFavoritos = new System.Windows.Forms.PictureBox();
-            this.picEstrellaVal5 = new System.Windows.Forms.PictureBox();
             this.picAtras = new System.Windows.Forms.PictureBox();
-            this.picEstrellaVal3 = new System.Windows.Forms.PictureBox();
-            this.picEstrellaVal2 = new System.Windows.Forms.PictureBox();
-            this.picEstrellaVal1 = new System.Windows.Forms.PictureBox();
             this.picUbicacion = new System.Windows.Forms.PictureBox();
             this.picLogoComercio = new System.Windows.Forms.PictureBox();
+            this.picValoracion = new System.Windows.Forms.PictureBox();
             this.pnlNaranja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLocalMarket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
@@ -118,15 +114,11 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picImagen3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUbicacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoComercio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlNaranja
@@ -138,18 +130,18 @@ namespace Localmarket_App
             this.pnlNaranja.Controls.Add(this.picLogo);
             this.pnlNaranja.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlNaranja.Location = new System.Drawing.Point(0, 0);
-            this.pnlNaranja.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlNaranja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlNaranja.Name = "pnlNaranja";
-            this.pnlNaranja.Size = new System.Drawing.Size(998, 81);
+            this.pnlNaranja.Size = new System.Drawing.Size(1332, 100);
             this.pnlNaranja.TabIndex = 2;
             // 
             // picLocalMarket
             // 
             this.picLocalMarket.Image = global::Localmarket_App.Properties.Resources.Nombre_App;
-            this.picLocalMarket.Location = new System.Drawing.Point(254, -11);
-            this.picLocalMarket.Margin = new System.Windows.Forms.Padding(2);
+            this.picLocalMarket.Location = new System.Drawing.Point(339, -14);
+            this.picLocalMarket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picLocalMarket.Name = "picLocalMarket";
-            this.picLocalMarket.Size = new System.Drawing.Size(509, 93);
+            this.picLocalMarket.Size = new System.Drawing.Size(679, 114);
             this.picLocalMarket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLocalMarket.TabIndex = 3;
             this.picLocalMarket.TabStop = false;
@@ -158,10 +150,10 @@ namespace Localmarket_App
             // 
             this.picAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picAjustes.Image = global::Localmarket_App.Properties.Resources.icono_ajustes;
-            this.picAjustes.Location = new System.Drawing.Point(938, 15);
-            this.picAjustes.Margin = new System.Windows.Forms.Padding(2);
+            this.picAjustes.Location = new System.Drawing.Point(1251, 18);
+            this.picAjustes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picAjustes.Name = "picAjustes";
-            this.picAjustes.Size = new System.Drawing.Size(43, 46);
+            this.picAjustes.Size = new System.Drawing.Size(57, 57);
             this.picAjustes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAjustes.TabIndex = 2;
             this.picAjustes.TabStop = false;
@@ -171,10 +163,10 @@ namespace Localmarket_App
             // 
             this.picPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picPerfil.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
-            this.picPerfil.Location = new System.Drawing.Point(858, 12);
-            this.picPerfil.Margin = new System.Windows.Forms.Padding(2);
+            this.picPerfil.Location = new System.Drawing.Point(1144, 15);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(52, 52);
+            this.picPerfil.Size = new System.Drawing.Size(69, 64);
             this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPerfil.TabIndex = 1;
             this.picPerfil.TabStop = false;
@@ -184,10 +176,10 @@ namespace Localmarket_App
             // 
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
             this.picLogo.InitialImage = null;
-            this.picLogo.Location = new System.Drawing.Point(23, 10);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.picLogo.Location = new System.Drawing.Point(31, 12);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(56, 55);
+            this.picLogo.Size = new System.Drawing.Size(75, 68);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
@@ -196,10 +188,9 @@ namespace Localmarket_App
             // 
             this.lblNombreComercio.AutoSize = true;
             this.lblNombreComercio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreComercio.Location = new System.Drawing.Point(362, 145);
-            this.lblNombreComercio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombreComercio.Location = new System.Drawing.Point(542, 178);
             this.lblNombreComercio.Name = "lblNombreComercio";
-            this.lblNombreComercio.Size = new System.Drawing.Size(304, 26);
+            this.lblNombreComercio.Size = new System.Drawing.Size(379, 32);
             this.lblNombreComercio.TabIndex = 4;
             this.lblNombreComercio.Text = "NOMBRE DEL COMERCIO";
             // 
@@ -207,10 +198,9 @@ namespace Localmarket_App
             // 
             this.lblValoracion.AutoSize = true;
             this.lblValoracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValoracion.Location = new System.Drawing.Point(752, 157);
-            this.lblValoracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblValoracion.Location = new System.Drawing.Point(1003, 193);
             this.lblValoracion.Name = "lblValoracion";
-            this.lblValoracion.Size = new System.Drawing.Size(79, 17);
+            this.lblValoracion.Size = new System.Drawing.Size(93, 20);
             this.lblValoracion.TabIndex = 5;
             this.lblValoracion.Text = "Valoración:";
             // 
@@ -218,10 +208,9 @@ namespace Localmarket_App
             // 
             this.lblUbicacion.AutoSize = true;
             this.lblUbicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUbicacion.Location = new System.Drawing.Point(556, 196);
-            this.lblUbicacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUbicacion.Location = new System.Drawing.Point(577, 241);
             this.lblUbicacion.Name = "lblUbicacion";
-            this.lblUbicacion.Size = new System.Drawing.Size(109, 17);
+            this.lblUbicacion.Size = new System.Drawing.Size(127, 20);
             this.lblUbicacion.TabIndex = 6;
             this.lblUbicacion.TabStop = true;
             this.lblUbicacion.Text = "Ver Ubicación";
@@ -231,10 +220,9 @@ namespace Localmarket_App
             // 
             this.lblDescComercio.AutoSize = true;
             this.lblDescComercio.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescComercio.Location = new System.Drawing.Point(302, 372);
-            this.lblDescComercio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescComercio.Location = new System.Drawing.Point(403, 458);
             this.lblDescComercio.Name = "lblDescComercio";
-            this.lblDescComercio.Size = new System.Drawing.Size(420, 26);
+            this.lblDescComercio.Size = new System.Drawing.Size(554, 34);
             this.lblDescComercio.TabIndex = 8;
             this.lblDescComercio.Text = "Descripcion Descripcion Descripcion Descripcion DescripcionDescripcion Descripcio" +
     "n \r\nDescripcion Descripcion Descripcion Descripcion Descripcion Descripcion Desc" +
@@ -250,10 +238,10 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfilUsuario);
-            this.pnlPerfil.Location = new System.Drawing.Point(858, 85);
-            this.pnlPerfil.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlPerfil.Location = new System.Drawing.Point(1146, 307);
+            this.pnlPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlPerfil.Name = "pnlPerfil";
-            this.pnlPerfil.Size = new System.Drawing.Size(140, 143);
+            this.pnlPerfil.Size = new System.Drawing.Size(186, 176);
             this.pnlPerfil.TabIndex = 30;
             this.pnlPerfil.Visible = false;
             // 
@@ -262,10 +250,9 @@ namespace Localmarket_App
             this.lblCerrarSesion.AutoSize = true;
             this.lblCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCerrarSesion.Location = new System.Drawing.Point(4, 114);
-            this.lblCerrarSesion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCerrarSesion.Location = new System.Drawing.Point(5, 140);
             this.lblCerrarSesion.Name = "lblCerrarSesion";
-            this.lblCerrarSesion.Size = new System.Drawing.Size(106, 17);
+            this.lblCerrarSesion.Size = new System.Drawing.Size(124, 20);
             this.lblCerrarSesion.TabIndex = 11;
             this.lblCerrarSesion.Text = "Cerrar sesión";
             this.lblCerrarSesion.Click += new System.EventHandler(this.lblCerrarSesion_Click);
@@ -275,10 +262,9 @@ namespace Localmarket_App
             this.lblCrearEmpresa.AutoSize = true;
             this.lblCrearEmpresa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCrearEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCrearEmpresa.Location = new System.Drawing.Point(4, 84);
-            this.lblCrearEmpresa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCrearEmpresa.Location = new System.Drawing.Point(5, 103);
             this.lblCrearEmpresa.Name = "lblCrearEmpresa";
-            this.lblCrearEmpresa.Size = new System.Drawing.Size(116, 17);
+            this.lblCrearEmpresa.Size = new System.Drawing.Size(136, 20);
             this.lblCrearEmpresa.TabIndex = 10;
             this.lblCrearEmpresa.Text = "Crear Empresa";
             this.lblCrearEmpresa.Click += new System.EventHandler(this.lblCrearEmpresa_Click);
@@ -288,10 +274,9 @@ namespace Localmarket_App
             this.lblPerfil.AutoSize = true;
             this.lblPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPerfil.Location = new System.Drawing.Point(4, 54);
-            this.lblPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPerfil.Location = new System.Drawing.Point(5, 66);
             this.lblPerfil.Name = "lblPerfil";
-            this.lblPerfil.Size = new System.Drawing.Size(130, 17);
+            this.lblPerfil.Size = new System.Drawing.Size(151, 20);
             this.lblPerfil.TabIndex = 8;
             this.lblPerfil.Text = "Perfil de Usuario";
             this.lblPerfil.Click += new System.EventHandler(this.lblPerfil_Click);
@@ -300,20 +285,19 @@ namespace Localmarket_App
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(40, 13);
-            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsuario.Location = new System.Drawing.Point(53, 16);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(62, 17);
+            this.lblUsuario.Size = new System.Drawing.Size(71, 20);
             this.lblUsuario.TabIndex = 7;
             this.lblUsuario.Text = "usuario";
             // 
             // picPerfilUsuario
             // 
             this.picPerfilUsuario.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
-            this.picPerfilUsuario.Location = new System.Drawing.Point(2, 2);
-            this.picPerfilUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.picPerfilUsuario.Location = new System.Drawing.Point(3, 2);
+            this.picPerfilUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picPerfilUsuario.Name = "picPerfilUsuario";
-            this.picPerfilUsuario.Size = new System.Drawing.Size(33, 36);
+            this.picPerfilUsuario.Size = new System.Drawing.Size(44, 44);
             this.picPerfilUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPerfilUsuario.TabIndex = 6;
             this.picPerfilUsuario.TabStop = false;
@@ -329,10 +313,10 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-            this.pnlAjustes.Location = new System.Drawing.Point(858, 85);
-            this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlAjustes.Location = new System.Drawing.Point(1160, 344);
+            this.pnlAjustes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAjustes.Name = "pnlAjustes";
-            this.pnlAjustes.Size = new System.Drawing.Size(140, 143);
+            this.pnlAjustes.Size = new System.Drawing.Size(186, 176);
             this.pnlAjustes.TabIndex = 31;
             this.pnlAjustes.Visible = false;
             // 
@@ -340,10 +324,9 @@ namespace Localmarket_App
             // 
             this.lblModoNoche.AutoSize = true;
             this.lblModoNoche.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModoNoche.Location = new System.Drawing.Point(24, 84);
-            this.lblModoNoche.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblModoNoche.Location = new System.Drawing.Point(32, 103);
             this.lblModoNoche.Name = "lblModoNoche";
-            this.lblModoNoche.Size = new System.Drawing.Size(98, 17);
+            this.lblModoNoche.Size = new System.Drawing.Size(113, 20);
             this.lblModoNoche.TabIndex = 23;
             this.lblModoNoche.Text = "Modo Noche";
             // 
@@ -351,10 +334,9 @@ namespace Localmarket_App
             // 
             this.lblAjustes.AutoSize = true;
             this.lblAjustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAjustes.Location = new System.Drawing.Point(38, 10);
-            this.lblAjustes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAjustes.Location = new System.Drawing.Point(51, 12);
             this.lblAjustes.Name = "lblAjustes";
-            this.lblAjustes.Size = new System.Drawing.Size(61, 17);
+            this.lblAjustes.Size = new System.Drawing.Size(72, 20);
             this.lblAjustes.TabIndex = 12;
             this.lblAjustes.Text = "Ajustes";
             // 
@@ -362,10 +344,10 @@ namespace Localmarket_App
             // 
             this.picNocheOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picNocheOn.Image = global::Localmarket_App.Properties.Resources.on;
-            this.picNocheOn.Location = new System.Drawing.Point(54, 102);
-            this.picNocheOn.Margin = new System.Windows.Forms.Padding(2);
+            this.picNocheOn.Location = new System.Drawing.Point(72, 126);
+            this.picNocheOn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picNocheOn.Name = "picNocheOn";
-            this.picNocheOn.Size = new System.Drawing.Size(34, 37);
+            this.picNocheOn.Size = new System.Drawing.Size(45, 46);
             this.picNocheOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picNocheOn.TabIndex = 22;
             this.picNocheOn.TabStop = false;
@@ -376,10 +358,10 @@ namespace Localmarket_App
             // 
             this.picNocheOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picNocheOff.Image = global::Localmarket_App.Properties.Resources.off;
-            this.picNocheOff.Location = new System.Drawing.Point(54, 97);
-            this.picNocheOff.Margin = new System.Windows.Forms.Padding(2);
+            this.picNocheOff.Location = new System.Drawing.Point(72, 119);
+            this.picNocheOff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picNocheOff.Name = "picNocheOff";
-            this.picNocheOff.Size = new System.Drawing.Size(34, 46);
+            this.picNocheOff.Size = new System.Drawing.Size(45, 57);
             this.picNocheOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picNocheOff.TabIndex = 21;
             this.picNocheOff.TabStop = false;
@@ -388,10 +370,10 @@ namespace Localmarket_App
             // picIdioma
             // 
             this.picIdioma.Image = global::Localmarket_App.Properties.Resources.idioma;
-            this.picIdioma.Location = new System.Drawing.Point(5, 39);
-            this.picIdioma.Margin = new System.Windows.Forms.Padding(2);
+            this.picIdioma.Location = new System.Drawing.Point(7, 48);
+            this.picIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picIdioma.Name = "picIdioma";
-            this.picIdioma.Size = new System.Drawing.Size(30, 32);
+            this.picIdioma.Size = new System.Drawing.Size(40, 39);
             this.picIdioma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picIdioma.TabIndex = 20;
             this.picIdioma.TabStop = false;
@@ -404,10 +386,10 @@ namespace Localmarket_App
             this.cmbIdioma.Items.AddRange(new object[] {
             "Español",
             "Inglés"});
-            this.cmbIdioma.Location = new System.Drawing.Point(43, 44);
-            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbIdioma.Location = new System.Drawing.Point(57, 54);
+            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIdioma.Name = "cmbIdioma";
-            this.cmbIdioma.Size = new System.Drawing.Size(73, 23);
+            this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
             this.cmbIdioma.TabIndex = 19;
             // 
             // tabReseñasyProductos
@@ -417,12 +399,12 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(14, 410);
-            this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(2);
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(9, 505);
+            this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
             this.tabReseñasyProductos.SelectedIndex = 0;
-            this.tabReseñasyProductos.Size = new System.Drawing.Size(823, 593);
+            this.tabReseñasyProductos.Size = new System.Drawing.Size(1097, 730);
             this.tabReseñasyProductos.TabIndex = 0;
             this.tabReseñasyProductos.TabStop = false;
             // 
@@ -433,10 +415,10 @@ namespace Localmarket_App
             this.tabReseñas.Controls.Add(this.pnlReseña);
             this.tabReseñas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñas.Location = new System.Drawing.Point(4, 33);
-            this.tabReseñas.Margin = new System.Windows.Forms.Padding(2);
+            this.tabReseñas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabReseñas.Name = "tabReseñas";
-            this.tabReseñas.Padding = new System.Windows.Forms.Padding(2);
-            this.tabReseñas.Size = new System.Drawing.Size(815, 556);
+            this.tabReseñas.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabReseñas.Size = new System.Drawing.Size(1089, 693);
             this.tabReseñas.TabIndex = 0;
             this.tabReseñas.Text = "Reseñas";
             this.tabReseñas.UseVisualStyleBackColor = true;
@@ -451,20 +433,20 @@ namespace Localmarket_App
             this.pnlComentario.Controls.Add(this.picEstrella1);
             this.pnlComentario.Controls.Add(this.txtComentario);
             this.pnlComentario.Controls.Add(this.picFotoPerfil);
-            this.pnlComentario.Location = new System.Drawing.Point(55, 44);
-            this.pnlComentario.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlComentario.Location = new System.Drawing.Point(73, 54);
+            this.pnlComentario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlComentario.Name = "pnlComentario";
-            this.pnlComentario.Size = new System.Drawing.Size(707, 65);
+            this.pnlComentario.Size = new System.Drawing.Size(943, 80);
             this.pnlComentario.TabIndex = 999;
             // 
             // btnEnviarComentario
             // 
             this.btnEnviarComentario.BackColor = System.Drawing.Color.Cyan;
             this.btnEnviarComentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviarComentario.Location = new System.Drawing.Point(517, 40);
-            this.btnEnviarComentario.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEnviarComentario.Location = new System.Drawing.Point(689, 49);
+            this.btnEnviarComentario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEnviarComentario.Name = "btnEnviarComentario";
-            this.btnEnviarComentario.Size = new System.Drawing.Size(114, 23);
+            this.btnEnviarComentario.Size = new System.Drawing.Size(152, 28);
             this.btnEnviarComentario.TabIndex = 19;
             this.btnEnviarComentario.Text = "Enviar Comentario";
             this.btnEnviarComentario.UseVisualStyleBackColor = false;
@@ -473,10 +455,10 @@ namespace Localmarket_App
             // picEstrella4
             // 
             this.picEstrella4.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrella4.Location = new System.Drawing.Point(602, 9);
-            this.picEstrella4.Margin = new System.Windows.Forms.Padding(2);
+            this.picEstrella4.Location = new System.Drawing.Point(803, 11);
+            this.picEstrella4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEstrella4.Name = "picEstrella4";
-            this.picEstrella4.Size = new System.Drawing.Size(24, 26);
+            this.picEstrella4.Size = new System.Drawing.Size(32, 32);
             this.picEstrella4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEstrella4.TabIndex = 18;
             this.picEstrella4.TabStop = false;
@@ -485,10 +467,10 @@ namespace Localmarket_App
             // picEstrella5
             // 
             this.picEstrella5.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrella5.Location = new System.Drawing.Point(631, 9);
-            this.picEstrella5.Margin = new System.Windows.Forms.Padding(2);
+            this.picEstrella5.Location = new System.Drawing.Point(841, 11);
+            this.picEstrella5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEstrella5.Name = "picEstrella5";
-            this.picEstrella5.Size = new System.Drawing.Size(24, 26);
+            this.picEstrella5.Size = new System.Drawing.Size(32, 32);
             this.picEstrella5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEstrella5.TabIndex = 17;
             this.picEstrella5.TabStop = false;
@@ -497,10 +479,10 @@ namespace Localmarket_App
             // picEstrella3
             // 
             this.picEstrella3.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrella3.Location = new System.Drawing.Point(574, 9);
-            this.picEstrella3.Margin = new System.Windows.Forms.Padding(2);
+            this.picEstrella3.Location = new System.Drawing.Point(765, 11);
+            this.picEstrella3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEstrella3.Name = "picEstrella3";
-            this.picEstrella3.Size = new System.Drawing.Size(24, 26);
+            this.picEstrella3.Size = new System.Drawing.Size(32, 32);
             this.picEstrella3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEstrella3.TabIndex = 16;
             this.picEstrella3.TabStop = false;
@@ -509,10 +491,10 @@ namespace Localmarket_App
             // picEstrella2
             // 
             this.picEstrella2.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrella2.Location = new System.Drawing.Point(545, 9);
-            this.picEstrella2.Margin = new System.Windows.Forms.Padding(2);
+            this.picEstrella2.Location = new System.Drawing.Point(727, 11);
+            this.picEstrella2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEstrella2.Name = "picEstrella2";
-            this.picEstrella2.Size = new System.Drawing.Size(24, 26);
+            this.picEstrella2.Size = new System.Drawing.Size(32, 32);
             this.picEstrella2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEstrella2.TabIndex = 15;
             this.picEstrella2.TabStop = false;
@@ -521,10 +503,10 @@ namespace Localmarket_App
             // picEstrella1
             // 
             this.picEstrella1.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrella1.Location = new System.Drawing.Point(517, 9);
-            this.picEstrella1.Margin = new System.Windows.Forms.Padding(2);
+            this.picEstrella1.Location = new System.Drawing.Point(689, 11);
+            this.picEstrella1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEstrella1.Name = "picEstrella1";
-            this.picEstrella1.Size = new System.Drawing.Size(24, 26);
+            this.picEstrella1.Size = new System.Drawing.Size(32, 32);
             this.picEstrella1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEstrella1.TabIndex = 14;
             this.picEstrella1.TabStop = false;
@@ -534,21 +516,21 @@ namespace Localmarket_App
             // 
             this.txtComentario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtComentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComentario.Location = new System.Drawing.Point(60, 12);
-            this.txtComentario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtComentario.Location = new System.Drawing.Point(80, 15);
+            this.txtComentario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtComentario.Multiline = true;
             this.txtComentario.Name = "txtComentario";
-            this.txtComentario.Size = new System.Drawing.Size(453, 41);
+            this.txtComentario.Size = new System.Drawing.Size(603, 50);
             this.txtComentario.TabIndex = 999;
             this.txtComentario.TabStop = false;
             // 
             // picFotoPerfil
             // 
             this.picFotoPerfil.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
-            this.picFotoPerfil.Location = new System.Drawing.Point(12, 9);
-            this.picFotoPerfil.Margin = new System.Windows.Forms.Padding(2);
+            this.picFotoPerfil.Location = new System.Drawing.Point(16, 11);
+            this.picFotoPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picFotoPerfil.Name = "picFotoPerfil";
-            this.picFotoPerfil.Size = new System.Drawing.Size(40, 44);
+            this.picFotoPerfil.Size = new System.Drawing.Size(53, 54);
             this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFotoPerfil.TabIndex = 0;
             this.picFotoPerfil.TabStop = false;
@@ -559,10 +541,10 @@ namespace Localmarket_App
             this.pnlReseña.Controls.Add(this.lblComentario);
             this.pnlReseña.Controls.Add(this.lblNomUsuario);
             this.pnlReseña.Controls.Add(this.picFotoPerfil2);
-            this.pnlReseña.Location = new System.Drawing.Point(57, 122);
-            this.pnlReseña.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlReseña.Location = new System.Drawing.Point(76, 150);
+            this.pnlReseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlReseña.Name = "pnlReseña";
-            this.pnlReseña.Size = new System.Drawing.Size(705, 81);
+            this.pnlReseña.Size = new System.Drawing.Size(940, 100);
             this.pnlReseña.TabIndex = 13;
             // 
             // lblEstrellitas
@@ -570,10 +552,9 @@ namespace Localmarket_App
             this.lblEstrellitas.AutoSize = true;
             this.lblEstrellitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstrellitas.Location = new System.Drawing.Point(529, 9);
-            this.lblEstrellitas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEstrellitas.Location = new System.Drawing.Point(705, 11);
             this.lblEstrellitas.Name = "lblEstrellitas";
-            this.lblEstrellitas.Size = new System.Drawing.Size(62, 13);
+            this.lblEstrellitas.Size = new System.Drawing.Size(80, 17);
             this.lblEstrellitas.TabIndex = 11;
             this.lblEstrellitas.Text = "Estrellitas";
             // 
@@ -581,10 +562,9 @@ namespace Localmarket_App
             // 
             this.lblComentario.AutoSize = true;
             this.lblComentario.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComentario.Location = new System.Drawing.Point(56, 32);
-            this.lblComentario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblComentario.Location = new System.Drawing.Point(75, 39);
             this.lblComentario.Name = "lblComentario";
-            this.lblComentario.Size = new System.Drawing.Size(399, 26);
+            this.lblComentario.Size = new System.Drawing.Size(540, 34);
             this.lblComentario.TabIndex = 10;
             this.lblComentario.Text = "Comentario Comentario Comentario Comentario Comentario Comentario Comentario \r\nCo" +
     "mentario Comentario Comentario Comentario Comentario Comentario Comentario \r\n";
@@ -593,20 +573,19 @@ namespace Localmarket_App
             // 
             this.lblNomUsuario.AutoSize = true;
             this.lblNomUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomUsuario.Location = new System.Drawing.Point(55, 6);
-            this.lblNomUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomUsuario.Location = new System.Drawing.Point(73, 7);
             this.lblNomUsuario.Name = "lblNomUsuario";
-            this.lblNomUsuario.Size = new System.Drawing.Size(125, 17);
+            this.lblNomUsuario.Size = new System.Drawing.Size(145, 20);
             this.lblNomUsuario.TabIndex = 1;
             this.lblNomUsuario.Text = "Nombre Usuario";
             // 
             // picFotoPerfil2
             // 
             this.picFotoPerfil2.Image = global::Localmarket_App.Properties.Resources.Perfil_Usuario;
-            this.picFotoPerfil2.Location = new System.Drawing.Point(10, 2);
-            this.picFotoPerfil2.Margin = new System.Windows.Forms.Padding(2);
+            this.picFotoPerfil2.Location = new System.Drawing.Point(13, 2);
+            this.picFotoPerfil2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picFotoPerfil2.Name = "picFotoPerfil2";
-            this.picFotoPerfil2.Size = new System.Drawing.Size(40, 44);
+            this.picFotoPerfil2.Size = new System.Drawing.Size(53, 54);
             this.picFotoPerfil2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFotoPerfil2.TabIndex = 0;
             this.picFotoPerfil2.TabStop = false;
@@ -616,10 +595,10 @@ namespace Localmarket_App
             this.tabProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabProductos.Controls.Add(this.pnlProductos);
             this.tabProductos.Location = new System.Drawing.Point(4, 33);
-            this.tabProductos.Margin = new System.Windows.Forms.Padding(2);
+            this.tabProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabProductos.Name = "tabProductos";
-            this.tabProductos.Padding = new System.Windows.Forms.Padding(2);
-            this.tabProductos.Size = new System.Drawing.Size(815, 556);
+            this.tabProductos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabProductos.Size = new System.Drawing.Size(1089, 693);
             this.tabProductos.TabIndex = 1;
             this.tabProductos.Text = "Productos/Servicios";
             this.tabProductos.UseVisualStyleBackColor = true;
@@ -630,10 +609,10 @@ namespace Localmarket_App
             this.pnlProductos.Controls.Add(this.lblDescripcion);
             this.pnlProductos.Controls.Add(this.lblProducto);
             this.pnlProductos.Controls.Add(this.picProducto);
-            this.pnlProductos.Location = new System.Drawing.Point(27, 30);
-            this.pnlProductos.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlProductos.Location = new System.Drawing.Point(36, 37);
+            this.pnlProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlProductos.Name = "pnlProductos";
-            this.pnlProductos.Size = new System.Drawing.Size(705, 81);
+            this.pnlProductos.Size = new System.Drawing.Size(940, 100);
             this.pnlProductos.TabIndex = 999;
             // 
             // lblPrecio
@@ -641,10 +620,9 @@ namespace Localmarket_App
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(611, 9);
-            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrecio.Location = new System.Drawing.Point(815, 11);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(43, 13);
+            this.lblPrecio.Size = new System.Drawing.Size(54, 17);
             this.lblPrecio.TabIndex = 11;
             this.lblPrecio.Text = "Precio";
             // 
@@ -652,10 +630,9 @@ namespace Localmarket_App
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(139, 32);
-            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescripcion.Location = new System.Drawing.Point(185, 39);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(482, 26);
+            this.lblDescripcion.Size = new System.Drawing.Size(636, 34);
             this.lblDescripcion.TabIndex = 10;
             this.lblDescripcion.Text = "Descripción Descripción Descripción Descripción Descripción Descripción Descripci" +
     "ón Descripción\r\nDescripción Descripción Descripción Descripción Descripción Desc" +
@@ -665,19 +642,18 @@ namespace Localmarket_App
             // 
             this.lblProducto.AutoSize = true;
             this.lblProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProducto.Location = new System.Drawing.Point(137, 6);
-            this.lblProducto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProducto.Location = new System.Drawing.Point(183, 7);
             this.lblProducto.Name = "lblProducto";
-            this.lblProducto.Size = new System.Drawing.Size(136, 17);
+            this.lblProducto.Size = new System.Drawing.Size(158, 20);
             this.lblProducto.TabIndex = 1;
             this.lblProducto.Text = "Producto/Servicio";
             // 
             // picProducto
             // 
-            this.picProducto.Location = new System.Drawing.Point(27, 6);
-            this.picProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.picProducto.Location = new System.Drawing.Point(36, 7);
+            this.picProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picProducto.Name = "picProducto";
-            this.picProducto.Size = new System.Drawing.Size(70, 67);
+            this.picProducto.Size = new System.Drawing.Size(93, 82);
             this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picProducto.TabIndex = 0;
             this.picProducto.TabStop = false;
@@ -685,10 +661,10 @@ namespace Localmarket_App
             // picCorazon
             // 
             this.picCorazon.Image = global::Localmarket_App.Properties.Resources.corazon;
-            this.picCorazon.Location = new System.Drawing.Point(680, 136);
-            this.picCorazon.Margin = new System.Windows.Forms.Padding(2);
+            this.picCorazon.Location = new System.Drawing.Point(907, 167);
+            this.picCorazon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCorazon.Name = "picCorazon";
-            this.picCorazon.Size = new System.Drawing.Size(50, 51);
+            this.picCorazon.Size = new System.Drawing.Size(67, 63);
             this.picCorazon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCorazon.TabIndex = 29;
             this.picCorazon.TabStop = false;
@@ -698,130 +674,75 @@ namespace Localmarket_App
             // picImagen4
             // 
             this.picImagen4.BackColor = System.Drawing.Color.White;
-            this.picImagen4.Location = new System.Drawing.Point(707, 225);
-            this.picImagen4.Margin = new System.Windows.Forms.Padding(2);
+            this.picImagen4.Location = new System.Drawing.Point(943, 277);
+            this.picImagen4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picImagen4.Name = "picImagen4";
-            this.picImagen4.Size = new System.Drawing.Size(141, 135);
+            this.picImagen4.Size = new System.Drawing.Size(188, 166);
             this.picImagen4.TabIndex = 28;
             this.picImagen4.TabStop = false;
             // 
             // picImagen3
             // 
             this.picImagen3.BackColor = System.Drawing.Color.White;
-            this.picImagen3.Location = new System.Drawing.Point(562, 225);
-            this.picImagen3.Margin = new System.Windows.Forms.Padding(2);
+            this.picImagen3.Location = new System.Drawing.Point(749, 277);
+            this.picImagen3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picImagen3.Name = "picImagen3";
-            this.picImagen3.Size = new System.Drawing.Size(141, 135);
+            this.picImagen3.Size = new System.Drawing.Size(188, 166);
             this.picImagen3.TabIndex = 27;
             this.picImagen3.TabStop = false;
             // 
             // picImagen2
             // 
             this.picImagen2.BackColor = System.Drawing.Color.White;
-            this.picImagen2.Location = new System.Drawing.Point(413, 225);
-            this.picImagen2.Margin = new System.Windows.Forms.Padding(2);
+            this.picImagen2.Location = new System.Drawing.Point(551, 277);
+            this.picImagen2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picImagen2.Name = "picImagen2";
-            this.picImagen2.Size = new System.Drawing.Size(141, 135);
+            this.picImagen2.Size = new System.Drawing.Size(188, 166);
             this.picImagen2.TabIndex = 26;
             this.picImagen2.TabStop = false;
             // 
             // picImagen1
             // 
             this.picImagen1.BackColor = System.Drawing.Color.White;
-            this.picImagen1.Location = new System.Drawing.Point(268, 225);
-            this.picImagen1.Margin = new System.Windows.Forms.Padding(2);
+            this.picImagen1.Location = new System.Drawing.Point(357, 277);
+            this.picImagen1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picImagen1.Name = "picImagen1";
-            this.picImagen1.Size = new System.Drawing.Size(141, 135);
+            this.picImagen1.Size = new System.Drawing.Size(188, 166);
             this.picImagen1.TabIndex = 25;
             this.picImagen1.TabStop = false;
-            // 
-            // picEstrellaVal4
-            // 
-            this.picEstrellaVal4.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrellaVal4.Location = new System.Drawing.Point(891, 152);
-            this.picEstrellaVal4.Margin = new System.Windows.Forms.Padding(2);
-            this.picEstrellaVal4.Name = "picEstrellaVal4";
-            this.picEstrellaVal4.Size = new System.Drawing.Size(24, 26);
-            this.picEstrellaVal4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEstrellaVal4.TabIndex = 24;
-            this.picEstrellaVal4.TabStop = false;
             // 
             // picFavoritos
             // 
             this.picFavoritos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picFavoritos.Image = global::Localmarket_App.Properties.Resources.favoritovacio;
-            this.picFavoritos.Location = new System.Drawing.Point(684, 145);
-            this.picFavoritos.Margin = new System.Windows.Forms.Padding(2);
+            this.picFavoritos.Location = new System.Drawing.Point(912, 178);
+            this.picFavoritos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picFavoritos.Name = "picFavoritos";
-            this.picFavoritos.Size = new System.Drawing.Size(41, 39);
+            this.picFavoritos.Size = new System.Drawing.Size(55, 48);
             this.picFavoritos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFavoritos.TabIndex = 14;
             this.picFavoritos.TabStop = false;
             this.picFavoritos.Click += new System.EventHandler(this.picFavoritos_Click);
             // 
-            // picEstrellaVal5
-            // 
-            this.picEstrellaVal5.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrellaVal5.Location = new System.Drawing.Point(913, 152);
-            this.picEstrellaVal5.Margin = new System.Windows.Forms.Padding(2);
-            this.picEstrellaVal5.Name = "picEstrellaVal5";
-            this.picEstrellaVal5.Size = new System.Drawing.Size(24, 26);
-            this.picEstrellaVal5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEstrellaVal5.TabIndex = 23;
-            this.picEstrellaVal5.TabStop = false;
-            // 
             // picAtras
             // 
             this.picAtras.Image = global::Localmarket_App.Properties.Resources.flechaatras;
-            this.picAtras.Location = new System.Drawing.Point(80, 90);
-            this.picAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.picAtras.Location = new System.Drawing.Point(107, 111);
+            this.picAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picAtras.Name = "picAtras";
-            this.picAtras.Size = new System.Drawing.Size(48, 52);
+            this.picAtras.Size = new System.Drawing.Size(64, 64);
             this.picAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAtras.TabIndex = 13;
             this.picAtras.TabStop = false;
             this.picAtras.Click += new System.EventHandler(this.picAtras_Click);
             // 
-            // picEstrellaVal3
-            // 
-            this.picEstrellaVal3.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrellaVal3.Location = new System.Drawing.Point(870, 152);
-            this.picEstrellaVal3.Margin = new System.Windows.Forms.Padding(2);
-            this.picEstrellaVal3.Name = "picEstrellaVal3";
-            this.picEstrellaVal3.Size = new System.Drawing.Size(24, 26);
-            this.picEstrellaVal3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEstrellaVal3.TabIndex = 22;
-            this.picEstrellaVal3.TabStop = false;
-            // 
-            // picEstrellaVal2
-            // 
-            this.picEstrellaVal2.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrellaVal2.Location = new System.Drawing.Point(848, 152);
-            this.picEstrellaVal2.Margin = new System.Windows.Forms.Padding(2);
-            this.picEstrellaVal2.Name = "picEstrellaVal2";
-            this.picEstrellaVal2.Size = new System.Drawing.Size(24, 26);
-            this.picEstrellaVal2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEstrellaVal2.TabIndex = 21;
-            this.picEstrellaVal2.TabStop = false;
-            // 
-            // picEstrellaVal1
-            // 
-            this.picEstrellaVal1.Image = global::Localmarket_App.Properties.Resources.white_star;
-            this.picEstrellaVal1.Location = new System.Drawing.Point(826, 152);
-            this.picEstrellaVal1.Margin = new System.Windows.Forms.Padding(2);
-            this.picEstrellaVal1.Name = "picEstrellaVal1";
-            this.picEstrellaVal1.Size = new System.Drawing.Size(24, 26);
-            this.picEstrellaVal1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEstrellaVal1.TabIndex = 20;
-            this.picEstrellaVal1.TabStop = false;
-            // 
             // picUbicacion
             // 
             this.picUbicacion.Image = global::Localmarket_App.Properties.Resources.pinchomapa;
-            this.picUbicacion.Location = new System.Drawing.Point(651, 188);
-            this.picUbicacion.Margin = new System.Windows.Forms.Padding(2);
+            this.picUbicacion.Location = new System.Drawing.Point(719, 231);
+            this.picUbicacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUbicacion.Name = "picUbicacion";
-            this.picUbicacion.Size = new System.Drawing.Size(15, 24);
+            this.picUbicacion.Size = new System.Drawing.Size(20, 30);
             this.picUbicacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picUbicacion.TabIndex = 7;
             this.picUbicacion.TabStop = false;
@@ -830,19 +751,30 @@ namespace Localmarket_App
             // 
             this.picLogoComercio.BackColor = System.Drawing.Color.White;
             this.picLogoComercio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picLogoComercio.Location = new System.Drawing.Point(242, 114);
-            this.picLogoComercio.Margin = new System.Windows.Forms.Padding(2);
+            this.picLogoComercio.Location = new System.Drawing.Point(323, 140);
+            this.picLogoComercio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picLogoComercio.Name = "picLogoComercio";
-            this.picLogoComercio.Size = new System.Drawing.Size(101, 97);
+            this.picLogoComercio.Size = new System.Drawing.Size(134, 119);
             this.picLogoComercio.TabIndex = 3;
             this.picLogoComercio.TabStop = false;
             // 
+            // picValoracion
+            // 
+            this.picValoracion.Image = global::Localmarket_App.Properties.Resources._5estr;
+            this.picValoracion.Location = new System.Drawing.Point(1099, 191);
+            this.picValoracion.Name = "picValoracion";
+            this.picValoracion.Size = new System.Drawing.Size(122, 24);
+            this.picValoracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picValoracion.TabIndex = 33;
+            this.picValoracion.TabStop = false;
+            // 
             // FrmPaginaComercio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1015, 571);
+            this.ClientSize = new System.Drawing.Size(1353, 703);
+            this.Controls.Add(this.picValoracion);
             this.Controls.Add(this.pnlAjustes);
             this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.tabReseñasyProductos);
@@ -851,14 +783,9 @@ namespace Localmarket_App
             this.Controls.Add(this.picImagen3);
             this.Controls.Add(this.picImagen2);
             this.Controls.Add(this.picImagen1);
-            this.Controls.Add(this.picEstrellaVal4);
             this.Controls.Add(this.picFavoritos);
-            this.Controls.Add(this.picEstrellaVal5);
             this.Controls.Add(this.picAtras);
-            this.Controls.Add(this.picEstrellaVal3);
-            this.Controls.Add(this.picEstrellaVal2);
             this.Controls.Add(this.lblDescComercio);
-            this.Controls.Add(this.picEstrellaVal1);
             this.Controls.Add(this.picUbicacion);
             this.Controls.Add(this.lblUbicacion);
             this.Controls.Add(this.lblValoracion);
@@ -866,7 +793,7 @@ namespace Localmarket_App
             this.Controls.Add(this.picLogoComercio);
             this.Controls.Add(this.pnlNaranja);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FrmPaginaComercio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -907,15 +834,11 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picImagen3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFavoritos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEstrellaVal1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUbicacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoComercio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -935,11 +858,6 @@ namespace Localmarket_App
         private System.Windows.Forms.Label lblDescComercio;
         private System.Windows.Forms.PictureBox picAtras;
         private System.Windows.Forms.PictureBox picFavoritos;
-        private System.Windows.Forms.PictureBox picEstrellaVal4;
-        private System.Windows.Forms.PictureBox picEstrellaVal5;
-        private System.Windows.Forms.PictureBox picEstrellaVal3;
-        private System.Windows.Forms.PictureBox picEstrellaVal2;
-        private System.Windows.Forms.PictureBox picEstrellaVal1;
         private System.Windows.Forms.PictureBox picImagen1;
         private System.Windows.Forms.PictureBox picImagen2;
         private System.Windows.Forms.PictureBox picImagen3;
@@ -981,5 +899,6 @@ namespace Localmarket_App
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.PictureBox picProducto;
+        private System.Windows.Forms.PictureBox picValoracion;
     }
 }
