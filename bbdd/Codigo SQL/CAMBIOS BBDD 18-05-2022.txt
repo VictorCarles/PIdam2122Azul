@@ -3,11 +3,7 @@ Nota:
 Con cada modificación del nombr de un campo, se deben asumir
 los cambios lógicos derivados a nombres de constraints, indices, y FKs.
 TABLA USUARIO:
-
-
-
-
-
+Usuario => username
 
 
 

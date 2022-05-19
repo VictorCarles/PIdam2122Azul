@@ -23,10 +23,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
   `CP` INT NOT NULL,
   `type` VARCHAR(20) NOT NULL,
   `DNI` VARCHAR(9),
-  PRIMARY KEY (username)
-  );
--- UNIQUE INDEX `Username_UNIQUE` (`Username` ASC)
--- ENGINE = INNODB;
+  PRIMARY KEY (username));
 -- DROP TABLE IF EXISTS localmarket_db.Usuario;
 
 
@@ -49,8 +46,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
     FOREIGN KEY (owner_username)
     REFERENCES localmarket_db.Usuario (`username`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
--- ENGINE = INNODB;
+    ON UPDATE NO CASCADE);
 -- DROP TABLE IF EXISTS localmarket_db.Empresa;
 
 
@@ -68,14 +64,12 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
     FOREIGN KEY (user_username)
     REFERENCES localmarket_db.Usuario (username)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    ON UPDATE CASCADE);
   CONSTRAINT `fk_cif_company`
     FOREIGN KEY (cif_company)
     REFERENCES localmarket_db.Empresa (cif)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
--- ENGINE = INNODB;
-
+    ON UPDATE CASCADE);
 -- DROP TABLE IF EXISTS localmarket_db.Acciones;
 
 
@@ -91,14 +85,13 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
   CONSTRAINT `fk_username`
     FOREIGN KEY (`username`)
     REFERENCES localmarket_db.Usuario (`username`)
-	 ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+	 ON DELETE CASCADE
+    ON UPDATE CASCADE,
 	CONSTRAINT `fk_cif_included`
     FOREIGN KEY (`cif_included`)
     REFERENCES localmarket_db.Empresa (cif)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
--- ENGINE = INNODB; 
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
 -- DROP TABLE IF EXISTS localmarket_db.Listas;
 
 
@@ -112,9 +105,8 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Images (
   CONSTRAINT `fk_company_profile`
     FOREIGN KEY (`company_profile`)
     REFERENCES localmarket_db.Empresa (`cif`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
--- ENGINE = INNODB;
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
 -- DROP TABLE IF EXISTS localmarket_db.Images;
 
 
@@ -133,9 +125,8 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
   CONSTRAINT `fk_cif_company`
     FOREIGN KEY (`cif_company`)
     REFERENCES `localmarket_db`.`Empresa` (`cif`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
--- ENGINE = INNODB;
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
 -- DROP TABLE IF EXISTS localmarket_db.Producto;
 
 
@@ -161,14 +152,13 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Comentario (
   CONSTRAINT `fk_comment_username`
     FOREIGN KEY (`comment_username`)
     REFERENCES localmarket_db.Usuario (username)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_id_respuesta`
     FOREIGN KEY (`id_respuesta`)
     REFERENCES localmarket_db.Comentario (`idComentario`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
--- ENGINE = InnoDB;
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
 -- DROP TABLE IF EXISTS localmarket_db.Comentario;
 
 
@@ -179,5 +169,4 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Versions (
   `dev_notes` VARCHAR(500) NOT NULL,
   `appfiles` LONGBLOB NOT NULL,
   PRIMARY KEY (`num_version`));
--- ENGINE = INNODB;
 -- DROP TABLE IF EXISTS localmarket_db.Versions;
