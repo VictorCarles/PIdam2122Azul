@@ -61,7 +61,7 @@ namespace Localmarket_App
         public static Usuario ModificarUsuario(Usuario usuario, string mail, string usu, string pasword, Image image)
         {
             string consulta = string.Format("UPDATE Usuario SET username='{0}', email='{1}', password='{2}', profilepicture='{3}' WHERE username='{4}';",
-                usu,mail,pasword,ImageToBase64(image, image.RawFormat),usuario.username);
+                usu,mail,pasword,ImageToBase64(image, ImageFormat.Bmp),usuario.username);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.ExecuteNonQuery();

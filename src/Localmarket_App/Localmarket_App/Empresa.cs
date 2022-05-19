@@ -141,7 +141,7 @@ namespace Localmarket_App
         public static Empresa ModificarEmpresa(Empresa empresa, string nombre, string desc, Image logo, Usuario usuario)
         {
             string consulta = string.Format("UPDATE Empresa SET emp_name='{0}', description='{1}', pPicture='{2}' WHERE cif='{3}';",
-                nombre, desc, ImageToBase64(logo, logo.RawFormat), empresa.CIF);
+                nombre, desc, ImageToBase64(logo, ImageFormat.Bmp), empresa.CIF);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.ExecuteNonQuery();

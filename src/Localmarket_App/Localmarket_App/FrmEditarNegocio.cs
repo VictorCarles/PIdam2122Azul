@@ -29,7 +29,7 @@ namespace Localmarket_App
         {
             txtNombre.Text = empresa.Name;
             txtDescripcion.Text = empresa.Description;
-            picPreviewLogo.Image = empresa.ProfilePicture;
+            picPreviewLogo.Image = new Bitmap(empresa.ProfilePicture);
         }
 
         private void picAjustes_Click(object sender, EventArgs e)
@@ -164,6 +164,9 @@ namespace Localmarket_App
             }
             MessageBox.Show("Datos modificados con exito");
 
+            this.Hide();
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario, empresa);
+            frmPrincipal.ShowDialog();
             this.Close();
         }
 
