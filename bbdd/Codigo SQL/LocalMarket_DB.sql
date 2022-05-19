@@ -119,7 +119,6 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Images (
 
 
 ## Tabla Producto:
-
 CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
   `idProducto` INT NOT NULL AUTO_INCREMENT,
   `category` VARCHAR(45) NOT NULL,
@@ -141,30 +140,29 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
 
 
 ## Tabla Comentario:
-
 CREATE TABLE IF NOT EXISTS localmarket_db.Comentario (
   `idComentario` INT NOT NULL AUTO_INCREMENT,
    text_contents VARCHAR(45) NOT NULL,
   `score` INT NOT NULL,
-  `cif_company` VARCHAR(9) NOT NULL,
-  `username` VARCHAR(20) NOT NULL,
+  `company_page` VARCHAR(9) NOT NULL,
+  `comment_username` VARCHAR(20) NOT NULL,
   `id_respuesta` INT NULL,
   `useful_rating` INT NOT NULL,
   `publication_date` DATETIME NOT NULL,
   PRIMARY KEY (`idComentario`),
-  INDEX `fk_cif_company_idx` (`cif_company` ASC),
-  INDEX `fk_username_idx` (`username` ASC),
+  INDEX `fk_company_page_idx` (`company_page` ASC),
+  INDEX `fk_comment_username_idx` (`comment_username` ASC),
   INDEX `fk_id_respuesta_idx` (`id_respuesta` ASC),
-  CONSTRAINT `fk_cif_company`
-    FOREIGN KEY (`cif_company`)
+  CONSTRAINT `fk_company_page`
+    FOREIGN KEY (`company_page`)
     REFERENCES localmarket_db.Empresa (`cif`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_username`
-    FOREIGN KEY (`username`)
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_comment_username`
+    FOREIGN KEY (`comment_username`)
     REFERENCES localmarket_db.Usuario (username)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON UPDATE CASCADE,
   CONSTRAINT `fk_id_respuesta`
     FOREIGN KEY (`id_respuesta`)
     REFERENCES localmarket_db.Comentario (`idComentario`)
