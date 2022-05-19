@@ -9,8 +9,8 @@ CREATE DATABASE IF NOT EXISTS  localmarket_db CHARACTER SET UTF8;
 USE localmarket_db;
 
 ## Procedemos a la creación de las tablas de la base de datos:
-## Tabla Usuarios:
 
+## Tabla Usuarios:
 CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
   `username` VARCHAR(20) NOT NULL,
   `fullname` VARCHAR(45) NOT NULL,
@@ -31,7 +31,6 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
 
 
 ## Tabla Empresa:
-
 CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
   `cif` VARCHAR(9) NOT NULL,
   `emp_name` VARCHAR(45) NOT NULL,
@@ -82,12 +81,11 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
 
 
 ## Tabla Listas:
-
 CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
   `idListas` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `username` VARCHAR(20) NOT NULL,
-  -- `cif_company` VARCHAR(9) NOT NULL,
+  `cif_company` VARCHAR(9) NOT NULL,
   PRIMARY KEY (`idListas`),
   INDEX `fk_username_idx` (`username` ASC),
   CONSTRAINT `fk_username`
