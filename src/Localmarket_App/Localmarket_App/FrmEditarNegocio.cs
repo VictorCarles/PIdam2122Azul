@@ -148,7 +148,10 @@ namespace Localmarket_App
 
         private void picAtras_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Hide();
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario, empresa);
+            frmPrincipal.ShowDialog();
+            this.Close();
         }
 
         private void btnCambios_Click(object sender, EventArgs e)

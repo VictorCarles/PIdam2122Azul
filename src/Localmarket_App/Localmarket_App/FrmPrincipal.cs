@@ -16,11 +16,12 @@ namespace Localmarket_App
         private bool modoNoche;
         private Usuario usuario;
         private Empresa empresa;
-        public FrmPrincipal(bool modoNoche, Usuario usuario)
+        public FrmPrincipal(bool modoNoche, Usuario usuario, Empresa empresa = null)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
             this.usuario = usuario;
+            this.empresa = empresa;
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)

@@ -107,3 +107,5 @@ C:\Users\almese\Documents\PI_Azul\src\Localmarket_App\Localmarket_App\obj\Debug\
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelComentario.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelProducto.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelEmpresa.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelComentario.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelProducto.resources
