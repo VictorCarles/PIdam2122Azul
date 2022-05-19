@@ -18,11 +18,11 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
   `password` VARCHAR(45) NOT NULL,
   `telephone` INT(11) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `profilePicture` LONGBLOB,
+  `profilePicture` LONGBLOB NULL,
   `address` VARCHAR(45) NOT NULL,
-  `CP` INT NOT NULL,
+  `cp` INT NOT NULL,
   `type` VARCHAR(20) NOT NULL,
-  `DNI` VARCHAR(9),
+  `DNI` VARCHAR(9) NULL,
   PRIMARY KEY (username));
 -- DROP TABLE IF EXISTS localmarket_db.Usuario;
 
@@ -30,46 +30,47 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
 ## Tabla Empresa:
 CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
   `cif` VARCHAR(9) NOT NULL,
-  `emp_name` VARCHAR(45) NOT NULL,
+  `company_name` VARCHAR(45) NOT NULL,
   `category` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
   `telephone` INT(11) NOT NULL,
-  `avgScore` DOUBLE NOT NULL,
+  `avgscore` DOUBLE NOT NULL,
   `pPicture` LONGBLOB NULL,
   `address` VARCHAR(45) NOT NULL,
   `cp` INT NOT NULL,
   `description` VARCHAR(600) NOT NULL,
-  `owner_username` VARCHAR(20) NOT NULL, -- UNIQUE INDEX `owner_username_UNIQUE` (`owner_username` ASC)
+  `owner_username` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`cif`),
   INDEX `fk_owner_username_idx` (`owner_username` ASC),
   CONSTRAINT `fk_owner_username`
     FOREIGN KEY (owner_username)
     REFERENCES localmarket_db.Usuario (`username`)
     ON DELETE NO ACTION
-    ON UPDATE NO CASCADE);
+    ON UPDATE CASCADE);
 -- DROP TABLE IF EXISTS localmarket_db.Empresa;
-
+ -- UNIQUE INDEX `owner_username_UNIQUE` (`owner_username` ASC)
+ 
 
 ## Tabla Acciones:
-
 CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
   `action_id` INT NOT NULL AUTO_INCREMENT,
   `accion` VARCHAR(300) NOT NULL,
   `fecha` DATETIME NOT NULL,
   `user_username` VARCHAR(20) NOT NULL,
-  `cif_company` VARCHAR(9) NULL,
+  `cif_company` VARCHAR(9) NOT NULL,
   PRIMARY KEY (`action_id`),
   INDEX `fk_user_username_idx` (`user_username` ASC),
   CONSTRAINT `fk_user_username`
     FOREIGN KEY (user_username)
     REFERENCES localmarket_db.Usuario (username)
     ON DELETE NO ACTION
-    ON UPDATE CASCADE);
+    ON UPDATE CASCADE,
   CONSTRAINT `fk_cif_company`
     FOREIGN KEY (cif_company)
     REFERENCES localmarket_db.Empresa (cif)
     ON DELETE NO ACTION
     ON UPDATE CASCADE);
+    
 -- DROP TABLE IF EXISTS localmarket_db.Acciones;
 
 
@@ -119,11 +120,11 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
   `description` VARCHAR(200) NOT NULL,
   `image` LONGBLOB NULL,
   `available` TINYINT(1) NOT NULL,
-  `cif_company` VARCHAR(9) NOT NULL,
+  `product_company` VARCHAR(9) NOT NULL,
   PRIMARY KEY (`idProducto`),
-  INDEX `fk_cif_company_idx` (`cif_company` ASC),
-  CONSTRAINT `fk_cif_company`
-    FOREIGN KEY (`cif_company`)
+  INDEX `fk_product_company_idx` (`product_company` ASC),
+  CONSTRAINT `fk_product_company`
+    FOREIGN KEY (`product_company`)
     REFERENCES `localmarket_db`.`Empresa` (`cif`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);

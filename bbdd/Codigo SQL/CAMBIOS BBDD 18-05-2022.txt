@@ -2,15 +2,21 @@ CAMPOS CON NOMBRE MODIFICADO:
 Nota:
 Con cada modificación del nombr de un campo, se deben asumir
 los cambios lógicos derivados a nombres de constraints, indices, y FKs.
+
+
 TABLA USUARIO:
 Usuario => username
+CP => cp
 
 
 
 TABLA EMPRESA:
-empName => emp_name
+empName => company_name
 Empresa_Usuario => owner_username
 Usuario_Username => user_username
+avgScore => avgscore
+
+
 
 TABLA ACCIONES:
 idAcciones => action_id
@@ -40,11 +46,11 @@ text => dev_notes
 
 
 TABLA IMAGES:
-cif_emp => cif_company
+cif_emp => cif_company => company_profile
 
 
 TABLA PRODUCTO
-cifEmp => cif_company
+cifEmp => cif_company // Foreign Key: fk_product_company
 
 
 TABLA VERSIONS:
