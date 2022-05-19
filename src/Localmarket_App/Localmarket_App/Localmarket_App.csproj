@@ -91,7 +91,6 @@
     <Compile Include="FrmRegistroUsuario.Designer.cs">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz.cs" />
     <Compile Include="PanelComentario.cs">
       <SubType>UserControl</SubType>
     </Compile>
