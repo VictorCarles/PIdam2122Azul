@@ -58,19 +58,19 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
   `accion` VARCHAR(300) NOT NULL,
   `fecha` DATETIME NOT NULL,
   `user_username` VARCHAR(20) NOT NULL,
-  `cif_company` VARCHAR(9),
+--  `cif_company` VARCHAR(9) NOT NULL,
   PRIMARY KEY (`action_id`),
   INDEX `fk_user_username_idx` (`user_username` ASC),
   CONSTRAINT `fk_user_username`
     FOREIGN KEY (user_username)
     REFERENCES localmarket_db.Usuario (username),
     ON DELETE NO ACTION
-    ON DELETE NO ACTION,
-	CONSTRAINT `fk_cif_company`
+    ON DELETE NO ACTION);
+/*	CONSTRAINT `fk_cif_company`
     FOREIGN KEY (cif_company)
     REFERENCES localmarket_db.Empresa (cif)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    ON UPDATE NO ACTION);*/
 -- ENGINE = INNODB;
 
 ## Tabla Listas:
@@ -79,9 +79,9 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
   `idListas` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `username` VARCHAR(20) NOT NULL,
-  `cif_company` VARCHAR(9) NOT NULL,
+  -- `cif_company` VARCHAR(9) NOT NULL,
   PRIMARY KEY (`idListas`),
-  INDEX `fk_listas_username_idx` (`username` ASC),
+  INDEX `fk_username_idx` (`username` ASC),
   CONSTRAINT `fk_username`
     FOREIGN KEY (`username`)
     REFERENCES localmarket_db.Usuario (`username`)
@@ -92,18 +92,18 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
     REFERENCES localmarket_db.Empresa (cif)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
--- ENGINE = INNODB;
+-- ENGINE = INNODB; 
 
 ## Tabla Images:
 
 CREATE TABLE IF NOT EXISTS localmarket_db.Images (
   `idImages` INT NOT NULL AUTO_INCREMENT,
-  `cif_emp` VARCHAR(9) NOT NULL,
+  `cif_company` VARCHAR(9) NOT NULL,
    `img` LONGBLOB NOT NULL,
   PRIMARY KEY (`idImages`),
-  INDEX `fk_Images_Empresa1_idx` (`cifEmp` ASC),
-  CONSTRAINT `fk_Images_Empresa1`
-    FOREIGN KEY (`cif_emp`)
+  INDEX `fk_cif_company_idx` (`cif_company` ASC),
+  CONSTRAINT `fk_cif_company`
+    FOREIGN KEY (`cif_company`)
     REFERENCES localmarket_db.Empresa (`cif`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);

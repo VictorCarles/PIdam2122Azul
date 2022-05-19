@@ -19,8 +19,8 @@ Usuario_Username => user_username
 TABLA ACCIONES:
 idAcciones => action_id
 Usuario_Username => user_username
-cifEmp => cif_company
-
+cifEmp => cif_company // ELIMINADO CAMPO Y FOREIGN KEY.
+			// SE REGISTRAN ACCIONES DEL USUARIO.
 
 TABLA LISTAS:
 Nombre => nombre
@@ -40,7 +40,14 @@ numVersion => num_version
 text => dev_notes
 
 
+TABLA IMAGES:
+cif_emp => cif_company
+
+
 TABLA PRODUCTO
 cifEmp => cif_company
 
+
+TABLA VERSIONS:
+app => appfiles
 
