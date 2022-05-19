@@ -26,7 +26,7 @@ namespace Localmarket_App
             empresa = emp;
             usuario = usu;
             modoNoche = noche;
-            picComercio1.Image = emp.ProfilePicture;
+            picComercio1.Image = new Bitmap(emp.ProfilePicture);
             lblNomComercio.Text = emp.Name;
             lblDescComercio.Text = emp.Description;
             calculaValoracion(emp.AvgScore);

@@ -176,7 +176,7 @@ namespace Localmarket_App
             // 
             this.lblModoNoche.AutoSize = true;
             this.lblModoNoche.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModoNoche.Location = new System.Drawing.Point(0, 113);
+            this.lblModoNoche.Location = new System.Drawing.Point(42, 103);
             this.lblModoNoche.Name = "lblModoNoche";
             this.lblModoNoche.Size = new System.Drawing.Size(110, 20);
             this.lblModoNoche.TabIndex = 23;
@@ -196,7 +196,7 @@ namespace Localmarket_App
             // 
             this.picNocheOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picNocheOn.Image = global::Localmarket_App.Properties.Resources.on;
-            this.picNocheOn.Location = new System.Drawing.Point(123, 100);
+            this.picNocheOn.Location = new System.Drawing.Point(72, 125);
             this.picNocheOn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picNocheOn.Name = "picNocheOn";
             this.picNocheOn.Size = new System.Drawing.Size(45, 46);
@@ -210,7 +210,7 @@ namespace Localmarket_App
             // 
             this.picNocheOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picNocheOff.Image = global::Localmarket_App.Properties.Resources.off;
-            this.picNocheOff.Location = new System.Drawing.Point(123, 94);
+            this.picNocheOff.Location = new System.Drawing.Point(72, 119);
             this.picNocheOff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picNocheOff.Name = "picNocheOff";
             this.picNocheOff.Size = new System.Drawing.Size(45, 57);
@@ -280,7 +280,7 @@ namespace Localmarket_App
             this.mskCPNeg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mskCPNeg.Mask = "00000";
             this.mskCPNeg.Name = "mskCPNeg";
-            this.mskCPNeg.Size = new System.Drawing.Size(39, 22);
+            this.mskCPNeg.Size = new System.Drawing.Size(49, 22);
             this.mskCPNeg.TabIndex = 81;
             // 
             // lblNombreNeg
@@ -297,6 +297,11 @@ namespace Localmarket_App
             // 
             this.cmbCategoria.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Items.AddRange(new object[] {
+            "Moda",
+            "Alimentacion",
+            "Ocio",
+            "Varios"});
             this.cmbCategoria.Location = new System.Drawing.Point(541, 500);
             this.cmbCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCategoria.Name = "cmbCategoria";
