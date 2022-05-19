@@ -99,6 +99,6 @@ C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\ob
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmRegistroEmpresa.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.csproj.CopyComplete
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmEditarNegocio.resources
-C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.UserControl1.resources
 C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.FrmEditarNegocio.resources
 C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelEmpresa.resources
+C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.PanelEmpresa.resources
