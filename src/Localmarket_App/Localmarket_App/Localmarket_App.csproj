@@ -92,6 +92,18 @@
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaz.cs" />
+    <Compile Include="PanelComentario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelComentario.Designer.cs">
+      <DependentUpon>PanelComentario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelProducto.Designer.cs">
+      <DependentUpon>PanelProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PanelEmpresa.cs">
@@ -121,6 +133,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroUsuario.resx">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelComentario.resx">
+      <DependentUpon>PanelComentario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelProducto.resx">
+      <DependentUpon>PanelProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

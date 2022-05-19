@@ -46,7 +46,7 @@ namespace Localmarket_App
         private void lblUbicacion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             pnlNaranja.Focus();
-            System.Diagnostics.Process.Start("https://g.page/FloridaUniversitaria?share");
+            System.Diagnostics.Process.Start("https://www.google.com/maps/place/" + empresa.Address);
         }
 
         private void picAtras_Click(object sender, EventArgs e)
@@ -201,12 +201,6 @@ namespace Localmarket_App
             tabProductos.ForeColor = Color.White;
             pnlComentario.BackColor = Color.Black;
             pnlNaranja.BackColor = Color.Black;
-            pnlReseña.BackColor = Color.Black;
-            lblEstrellitas.ForeColor = Color.White;
-            lblDescripcion.ForeColor = Color.White;
-            lblComentario.ForeColor = Color.White;
-            lblProducto.ForeColor = Color.White;
-            lblNomUsuario.ForeColor = Color.White;
             pnlAjustes.BackColor = Color.DarkCyan;
             pnlPerfil.BackColor = Color.SeaGreen;
             pnlProductos.ForeColor = Color.White;
@@ -239,12 +233,6 @@ namespace Localmarket_App
             tabProductos.ForeColor = Color.Black;
             pnlComentario.BackColor = Color.White;
             pnlNaranja.BackColor = Color.Orange;
-            pnlReseña.BackColor = Color.White;
-            lblEstrellitas.ForeColor = Color.Black;
-            lblDescripcion.ForeColor = Color.Black;
-            lblComentario.ForeColor = Color.Black;
-            lblProducto.ForeColor = Color.Black;
-            lblNomUsuario.ForeColor = Color.Black;
             pnlAjustes.BackColor = Color.Aqua;
             pnlPerfil.BackColor = Color.PaleGreen;
             pnlProductos.ForeColor = Color.White;

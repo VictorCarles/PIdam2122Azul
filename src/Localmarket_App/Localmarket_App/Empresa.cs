@@ -39,6 +39,7 @@ namespace Localmarket_App
         public Image ProfilePicture { get { return profilePicture; } }
         public string Description { get { return description; } }
         public double AvgScore { get { return avgScore; } }
+        public string Address { get { return address; } }
 
         public static string ImageToBase64(Image image, ImageFormat format)
         {
