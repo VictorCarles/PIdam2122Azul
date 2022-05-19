@@ -1,8 +1,8 @@
 ## BASE DE DATOS Local Market App 
 ## Inicio código de creación de base de datos
-## Version: 1.1
-
--- DROP DATABASE localmarket_db;
+## Version: 2.0
+ 
+-- DROP DATABASE IF EXISTS localmarket_db;
 
 CREATE DATABASE IF NOT EXISTS  localmarket_db CHARACTER SET UTF8;
 

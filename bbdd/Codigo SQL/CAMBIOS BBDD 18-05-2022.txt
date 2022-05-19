@@ -33,8 +33,8 @@ cifEmp => cif_company => cif_included
 
 TABLA COMENTARIO:
 text => text_contents
-cifEmp => cif_company
-Usuario_username => username
+cifEmp => cif_company => company_page
+Usuario_username => username => comment_username
 usefulPoints => useful_rating
 idRespuesta_Comentaio => id_respuesta
 
