@@ -67,10 +67,10 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
   INDEX `fk_user_username_idx` (`user_username` ASC),
   CONSTRAINT `fk_user_username`
     FOREIGN KEY (user_username)
-    REFERENCES localmarket_db.Usuario (username),
+    REFERENCES localmarket_db.Usuario (username)
     ON DELETE NO ACTION
-    ON DELETE NO ACTION);
-/*	CONSTRAINT `fk_cif_company`
+    ON UPDATE NO ACTION);
+/*  CONSTRAINT `fk_cif_company`
     FOREIGN KEY (cif_company)
     REFERENCES localmarket_db.Empresa (cif)
     ON DELETE NO ACTION

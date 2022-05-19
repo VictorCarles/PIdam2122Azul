@@ -21,6 +21,9 @@ idAcciones => action_id
 Usuario_Username => user_username
 cifEmp => cif_company // ELIMINADO CAMPO Y FOREIGN KEY.
 			// SE REGISTRAN ACCIONES DEL USUARIO.
+Error arreglado: la constraint de fk_user_username, tenia error de sintaxys:
+	"... ON DELETE NO ACTION ON DELETE NO ACTION," el segundo "ON DELETE"
+	debería ser "ON UPDATE".
 
 TABLA LISTAS:
 Nombre => nombre
