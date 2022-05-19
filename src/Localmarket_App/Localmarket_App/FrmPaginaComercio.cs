@@ -51,7 +51,7 @@ namespace Localmarket_App
         private void picAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche,null);
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche,usuario);
             frmPrincipal.ShowDialog();
             this.Close();
         }
@@ -184,7 +184,7 @@ namespace Localmarket_App
 
         private void lblPerfil_Click(object sender, EventArgs e)
         {
-            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche);
+            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche, usuario);
             frmPerfUsu.Show();
         }
 

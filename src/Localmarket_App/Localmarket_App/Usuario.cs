@@ -44,6 +44,8 @@ namespace Localmarket_App
         }
         public string Username { get { return username; } }
         public Image Imagen { get { return profilePicture; } }
+        public string Email { get { return email; } }
+        public string Password { get { return password; } }
 
         public static void InsertarUsuario(Usuario usu)
         {
@@ -54,6 +56,23 @@ namespace Localmarket_App
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.ExecuteNonQuery();
             MessageBox.Show("Registro realizado correctamente");
+        }
+
+        public static Usuario ModificarUsuario(Usuario usuario, string mail, string usu, string pasword, Image image)
+        {
+            string consulta = string.Format("UPDATE Usuario SET username='{0}', email='{1}', password='{2}', profilepicture='{3}' WHERE username='{4}';",
+                usu,mail,pasword,ImageToBase64(image, ImageFormat.Jpeg),usuario.username);
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.ExecuteNonQuery();
+
+            usuario.email = mail;
+            usuario.username = usu;
+            usuario.password = pasword;
+            usuario.profilePicture = image;
+
+            Usuario usuario1 = ComprobarUsuario(usuario);
+            return usuario1;
         }
 
         public static Usuario ComprobarUsuario(Usuario usu)

@@ -208,8 +208,10 @@ namespace Localmarket_App
 
         private void lblPerfil_Click(object sender, EventArgs e)
         {
-            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche);
-            frmPerfUsu.Show();
+            this.Hide();
+            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche, usuario);
+            frmPerfUsu.ShowDialog();
+            this.Close();
         }
 
         private void modoNocheOn()

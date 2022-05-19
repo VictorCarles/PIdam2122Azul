@@ -14,10 +14,12 @@ namespace Localmarket_App
     public partial class FrmPerfilUsuario : Form
     {
         private bool modoNoche;
-        public FrmPerfilUsuario(bool modoNoche)
+        private Usuario usuario;
+        public FrmPerfilUsuario(bool modoNoche, Usuario usu)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
+            this.usuario = usu;
         }
 
         private void picPerfil_Click(object sender, EventArgs e)
@@ -76,12 +78,25 @@ namespace Localmarket_App
 
         private void btnGuardarCambios_Click(object sender, EventArgs e)
         {
-            Close();
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                Usuario.ModificarUsuario(usuario,txtMail.Text,txtUsuario.Text,txtContraseña.Text,picPerfil.Image);
+                ConexionBD.CerrarConexion();
+            }
+            MessageBox.Show("Datos modificados con exito");
+            this.Hide();
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario);
+            frmPrincipal.ShowDialog();
+            this.Close();
         }
 
         private void picAtras_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Hide();
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche,usuario);
+            frmPrincipal.ShowDialog();
+            this.Close();
         }
 
         private void modoNocheOn()
@@ -130,6 +145,11 @@ namespace Localmarket_App
             {
                 modoNocheOff();
             }
+
+            picPerfil.Image = new Bitmap(usuario.Imagen);
+            txtMail.Text = usuario.Email;
+            txtContraseña.Text = usuario.Password;
+            txtUsuario.Text = usuario.Username;
         }
 
         private void btnElegirLogo_Click(object sender, EventArgs e)
