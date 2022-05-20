@@ -104,6 +104,35 @@ namespace Localmarket_App
             }
         }
 
+        public static Usuario ComprobarUsuarioSeg(string usu)
+        {
+            string consulta = string.Format("SELECT * FROM Usuario WHERE username = '{0}'", usu);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                Image img;
+                reader.Read();
+                if (reader.GetString(6) != "nada")
+                {
+                    string data = reader.GetString(6);
+                    img = Base64ToImage(data);
+                }
+                else
+                {
+                    img = null;
+                }
+                Usuario usuario = new Usuario(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetString(5),
+                    reader.GetString(7), reader.GetInt32(8), img, reader.GetString(9), reader.GetString(10));
+                return usuario;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public static string ImageToBase64(Image image, ImageFormat format)
         {
             using (MemoryStream ms = new MemoryStream())

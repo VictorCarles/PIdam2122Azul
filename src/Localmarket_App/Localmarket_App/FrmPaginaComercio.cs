@@ -41,6 +41,35 @@ namespace Localmarket_App
             calculaValoracion(empresa.AvgScore);
             picFotoPerfil.Image = usuario.Imagen;
             picPerfil.Image = usuario.Imagen;
+
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                List<Comentario> comentarios = Comentario.BusquedaComentarios(empresa);
+                ConexionBD.CerrarConexion();
+
+                if (comentarios != null)
+                {
+                    if (ConexionBD.Conexion != null)
+                    {
+                        ConexionBD.AbrirConexion();
+                        int x = 0;
+                        int y = 0;
+                        for (int i = 0; i < comentarios.Count; i++)
+                        {
+                            var control = new PanelComentario(modoNoche, comentarios[i], Usuario.ComprobarUsuarioSeg(comentarios[i].Usuario));
+                            control.Location = new Point(x, y);
+                            panel1.Controls.Add(control);
+                            y += control.Height;
+                        }
+                        ConexionBD.CerrarConexion();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Empresas NO encontradas");
+                }
+            }
         }
 
         private void lblUbicacion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
