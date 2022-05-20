@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
   `accion` VARCHAR(600) NOT NULL,
   `fecha` DATETIME NOT NULL,
   `user_username` VARCHAR(20) NOT NULL,
-  `cif_company` VARCHAR(9) NOT NULL,
+  `cif_company` VARCHAR(9) NULL,
   PRIMARY KEY (`action_id`),
   INDEX `fk_user_username_idx` (`user_username` ASC),
   CONSTRAINT `fk_user_username`
