@@ -116,7 +116,7 @@ namespace Localmarket_App
             }
         }
 
-        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbIdioma_TextChanged_1(object sender, EventArgs e)
         {
             AplicarIdioma();
         }

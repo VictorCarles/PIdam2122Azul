@@ -120,11 +120,7 @@ namespace Localmarket_App
             this.pnlNaranja.Location = new System.Drawing.Point(0, 0);
             this.pnlNaranja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlNaranja.Name = "pnlNaranja";
-<<<<<<< HEAD
             this.pnlNaranja.Size = new System.Drawing.Size(1352, 100);
-=======
-            this.pnlNaranja.Size = new System.Drawing.Size(1478, 100);
->>>>>>> v1.6_VS
             this.pnlNaranja.TabIndex = 2;
             // 
             // picLocalMarket
@@ -230,11 +226,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfilUsuario);
-<<<<<<< HEAD
-            this.pnlPerfil.Location = new System.Drawing.Point(997, 103);
-=======
-            this.pnlPerfil.Location = new System.Drawing.Point(1004, 103);
->>>>>>> v1.6_VS
+            this.pnlPerfil.Location = new System.Drawing.Point(1072, 109);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(186, 176);
@@ -309,11 +301,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-<<<<<<< HEAD
-            this.pnlAjustes.Location = new System.Drawing.Point(1041, 103);
-=======
-            this.pnlAjustes.Location = new System.Drawing.Point(1048, 103);
->>>>>>> v1.6_VS
+            this.pnlAjustes.Location = new System.Drawing.Point(1144, 109);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(186, 176);
@@ -385,7 +373,7 @@ namespace Localmarket_App
             this.cmbIdioma.FormattingEnabled = true;
             this.cmbIdioma.Items.AddRange(new object[] {
             "Español",
-            "Inglés"});
+            "English"});
             this.cmbIdioma.Location = new System.Drawing.Point(57, 54);
             this.cmbIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIdioma.Name = "cmbIdioma";
@@ -399,11 +387,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-<<<<<<< HEAD
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(69, 505);
-=======
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(76, 505);
->>>>>>> v1.6_VS
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(201, 494);
             this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
@@ -429,11 +413,8 @@ namespace Localmarket_App
             // 
             // panel1
             // 
-<<<<<<< HEAD
             this.panel1.AutoScroll = true;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-=======
->>>>>>> v1.6_VS
             this.panel1.Location = new System.Drawing.Point(28, 149);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
@@ -690,11 +671,7 @@ namespace Localmarket_App
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1373, 703);
-=======
-            this.ClientSize = new System.Drawing.Size(1499, 703);
->>>>>>> v1.6_VS
             this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.pnlAjustes);
             this.Controls.Add(this.picValoracion);

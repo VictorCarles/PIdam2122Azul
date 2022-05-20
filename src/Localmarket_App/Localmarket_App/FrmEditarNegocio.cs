@@ -29,13 +29,10 @@ namespace Localmarket_App
         {
             txtNombre.Text = empresa.Name;
             txtDescripcion.Text = empresa.Description;
-<<<<<<< HEAD
+
             picPreviewLogo.Image = new Bitmap(empresa.ProfilePicture);
-=======
-            picPreviewLogo.Image = empresa.ProfilePicture;
             cmbIdioma.Text = "Español";
 
->>>>>>> v1.6_VS
         }
 
         private void picAjustes_Click(object sender, EventArgs e)

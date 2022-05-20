@@ -26,8 +26,6 @@ namespace Localmarket_App
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            cmbIdioma.Text = "Español";
-            AplicarIdioma();
             timerSlider.Enabled = true;
             if (modoNoche)
             {
@@ -346,7 +344,7 @@ namespace Localmarket_App
             }
         }
 
-        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbIdioma_TextChanged(object sender, EventArgs e)
         {
             AplicarIdioma();
         }

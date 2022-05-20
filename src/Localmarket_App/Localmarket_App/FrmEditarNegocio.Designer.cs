@@ -589,7 +589,7 @@ namespace Localmarket_App
             this.cmbIdioma.FormattingEnabled = true;
             this.cmbIdioma.Items.AddRange(new object[] {
             "Español",
-            "Inglés"});
+            "English"});
             this.cmbIdioma.Location = new System.Drawing.Point(57, 54);
             this.cmbIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIdioma.Name = "cmbIdioma";
