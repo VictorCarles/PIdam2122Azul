@@ -16,12 +16,13 @@ namespace Localmarket_App
         private bool modoNoche;
         Empresa empresa;
         Usuario usuario;
+        int score = 1;
         public FrmPaginaComercio(bool modoNoche, Empresa emp, Usuario usu)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
-            this.empresa = emp;
-            this.usuario = usu;
+            empresa = emp;
+            usuario = usu;
         }
 
         private void FrmPaginaComercio_Load(object sender, EventArgs e)
@@ -35,40 +36,38 @@ namespace Localmarket_App
                 modoNocheOff();
             }
 
+            picEstrella1.Image = Resources.yellow_star;
             lblNombreComercio.Text = empresa.Name;
             picLogoComercio.Image = empresa.ProfilePicture;
             lblDescComercio.Text = empresa.Description;
             calculaValoracion(empresa.AvgScore);
             picFotoPerfil.Image = usuario.Imagen;
             picPerfil.Image = usuario.Imagen;
-
             if (ConexionBD.Conexion != null)
             {
                 ConexionBD.AbrirConexion();
-                List<Comentario> comentarios = Comentario.BusquedaComentarios(empresa);
+                CargarComentarios(Comentario.BusquedaComentarios(empresa));
                 ConexionBD.CerrarConexion();
+            }
 
-                if (comentarios != null)
+
+
+        }
+
+        private void CargarComentarios(List<Comentario> comentarios)
+        {
+            if (comentarios != null)
+            {
+                int x = 0;
+                int y = 0;
+                for (int i = 0; i < comentarios.Count; i++)
                 {
-                    if (ConexionBD.Conexion != null)
-                    {
-                        ConexionBD.AbrirConexion();
-                        int x = 0;
-                        int y = 0;
-                        for (int i = 0; i < comentarios.Count; i++)
-                        {
-                            var control = new PanelComentario(modoNoche, comentarios[i], Usuario.ComprobarUsuarioSeg(comentarios[i].Usuario));
-                            control.Location = new Point(x, y);
-                            panel1.Controls.Add(control);
-                            y += control.Height;
-                        }
-                        ConexionBD.CerrarConexion();
-                    }
+                    var control = new PanelComentario(modoNoche, comentarios[i], Usuario.ComprobarUsuarioSeg(comentarios[i].Usuario));
+                    control.Location = new Point(x, y);
+                    panel1.Controls.Add(control);
+                    y += control.Height;
                 }
-                else
-                {
-                    MessageBox.Show("Empresas NO encontradas");
-                }
+
             }
         }
 
@@ -80,10 +79,10 @@ namespace Localmarket_App
 
         private void picAtras_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche,usuario);
+            Hide();
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario);
             frmPrincipal.ShowDialog();
-            this.Close();
+            Close();
         }
 
         private void picFavoritos_Click(object sender, EventArgs e)
@@ -130,10 +129,10 @@ namespace Localmarket_App
 
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche,usuario);
+            Hide();
+            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
             frmRegEmp.ShowDialog();
-            this.Close();
+            Close();
         }
 
         private void picNocheOff_Click(object sender, EventArgs e)
@@ -150,10 +149,10 @@ namespace Localmarket_App
 
         private void lblCerrarSesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FrmLogin frmLog = new FrmLogin(modoNoche);
             frmLog.ShowDialog();
-            this.Close();
+            Close();
         }
 
         private void picEstrella1_Click(object sender, EventArgs e)
@@ -163,6 +162,7 @@ namespace Localmarket_App
             picEstrella3.Image = Resources.white_star;
             picEstrella4.Image = Resources.white_star;
             picEstrella5.Image = Resources.white_star;
+            score = 1;
 
         }
 
@@ -173,6 +173,7 @@ namespace Localmarket_App
             picEstrella3.Image = Resources.white_star;
             picEstrella4.Image = Resources.white_star;
             picEstrella5.Image = Resources.white_star;
+            score = 2;
         }
 
         private void picEstrella3_Click(object sender, EventArgs e)
@@ -182,6 +183,7 @@ namespace Localmarket_App
             picEstrella3.Image = Resources.yellow_star;
             picEstrella4.Image = Resources.white_star;
             picEstrella5.Image = Resources.white_star;
+            score = 3;
         }
 
         private void picEstrella4_Click(object sender, EventArgs e)
@@ -191,6 +193,7 @@ namespace Localmarket_App
             picEstrella3.Image = Resources.yellow_star;
             picEstrella4.Image = Resources.yellow_star;
             picEstrella5.Image = Resources.white_star;
+            score = 4;
         }
 
         private void picEstrella5_Click(object sender, EventArgs e)
@@ -200,16 +203,31 @@ namespace Localmarket_App
             picEstrella3.Image = Resources.yellow_star;
             picEstrella4.Image = Resources.yellow_star;
             picEstrella5.Image = Resources.yellow_star;
+            score = 5;
         }
 
         private void btnEnviarComentario_Click(object sender, EventArgs e)
         {
-                picEstrella1.Image = Resources.white_star;
-                picEstrella2.Image = Resources.white_star;
-                picEstrella3.Image = Resources.white_star;
-                picEstrella4.Image = Resources.white_star;
-                picEstrella5.Image = Resources.white_star;
-                txtComentario.Text = "";
+            Comentario comentario = new Comentario(0, txtComentario.Text, score, empresa.CIFP, usuario.Username, 0, DateTime.Now);
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                Comentario.InsertarComentario(comentario);
+                ConexionBD.CerrarConexion();
+            }
+
+            picEstrella1.Image = Resources.white_star;
+            picEstrella2.Image = Resources.white_star;
+            picEstrella3.Image = Resources.white_star;
+            picEstrella4.Image = Resources.white_star;
+            picEstrella5.Image = Resources.white_star;
+            txtComentario.Text = "";
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                CargarComentarios(Comentario.BusquedaComentarios(empresa));
+                ConexionBD.CerrarConexion();
+            }
         }
 
         private void lblPerfil_Click(object sender, EventArgs e)
@@ -237,7 +255,7 @@ namespace Localmarket_App
             btnEnviarComentario.BackColor = Color.DarkCyan;
             picAjustes.Image = Resources.ajustesicono;
             picAtras.Image = Resources.flechaatrasblanca;
-            this.BackColor = Color.DimGray;
+            BackColor = Color.DimGray;
 
             foreach (Panel p in Controls.OfType<Panel>())
                 foreach (Label l in p.Controls.OfType<Label>())
@@ -269,7 +287,7 @@ namespace Localmarket_App
             btnEnviarComentario.BackColor = Color.Aqua;
             picAjustes.Image = Resources.icono_ajustes;
             picAtras.Image = Resources.flechaatras;
-            this.BackColor = Color.FromKnownColor(KnownColor.Control);
+            BackColor = Color.FromKnownColor(KnownColor.Control);
 
             foreach (Panel p in Controls.OfType<Panel>())
                 foreach (Label l in p.Controls.OfType<Label>())

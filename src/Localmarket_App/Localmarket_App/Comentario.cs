@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Localmarket_App
 {
@@ -51,12 +52,23 @@ namespace Localmarket_App
                         reader.GetString(3), reader.GetString(4), reader.GetInt32(6), reader.GetDateTime(7));
                     comentarios.Add(com);
                 }
+                reader.Close();
                 return comentarios;
             }
             else
             {
                 return null;
             }
+        }
+
+        public static void InsertarComentario(Comentario com)
+        {
+            string consulta = string.Format("INSERT INTO Comentario VALUES (DEFAULT,'{0}','{1}','{2}','{3}',NULL,'{4}',CURDATE())", com.text, com.score, 
+                com.cifEmp, com.Usuario_Username,com.usefulPoints);
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Registro realizado correctamente");
         }
 
         public static string ImageToBase64(Image image, ImageFormat format)
