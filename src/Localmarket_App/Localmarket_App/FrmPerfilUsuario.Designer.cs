@@ -205,6 +205,7 @@ namespace Localmarket_App
             this.cmbIdioma.Name = "cmbIdioma";
             this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
             this.cmbIdioma.TabIndex = 19;
+            this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
             // openFileDialogPerfil
             // 

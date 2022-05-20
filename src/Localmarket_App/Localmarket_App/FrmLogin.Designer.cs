@@ -46,10 +46,13 @@ namespace Localmarket_App
             this.picNombre = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.errorProv = new System.Windows.Forms.ErrorProvider(this.components);
+            this.picIdioma = new System.Windows.Forms.PictureBox();
+            this.cmbIdioma = new System.Windows.Forms.ComboBox();
             this.pnlDatosUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIniciarSesion
@@ -143,19 +146,19 @@ namespace Localmarket_App
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(158, 116);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(223, 23);
+            this.txtContraseña.Size = new System.Drawing.Size(223, 25);
             this.txtContraseña.TabIndex = 2;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Leelawadee", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(158, 72);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(223, 23);
+            this.txtUsuario.Size = new System.Drawing.Size(223, 25);
             this.txtUsuario.TabIndex = 1;
             // 
             // lblContraseña
@@ -220,12 +223,40 @@ namespace Localmarket_App
             // 
             this.errorProv.ContainerControl = this;
             // 
+            // picIdioma
+            // 
+            this.picIdioma.Image = global::Localmarket_App.Properties.Resources.idioma;
+            this.picIdioma.Location = new System.Drawing.Point(1165, 629);
+            this.picIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picIdioma.Name = "picIdioma";
+            this.picIdioma.Size = new System.Drawing.Size(40, 39);
+            this.picIdioma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picIdioma.TabIndex = 22;
+            this.picIdioma.TabStop = false;
+            // 
+            // cmbIdioma
+            // 
+            this.cmbIdioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIdioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbIdioma.FormattingEnabled = true;
+            this.cmbIdioma.Items.AddRange(new object[] {
+            "Español",
+            "English"});
+            this.cmbIdioma.Location = new System.Drawing.Point(1215, 635);
+            this.cmbIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbIdioma.Name = "cmbIdioma";
+            this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
+            this.cmbIdioma.TabIndex = 21;
+            this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
+            // 
             // FrmLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Localmarket_App.Properties.Resources.panaderia;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1332, 703);
+            this.Controls.Add(this.picIdioma);
+            this.Controls.Add(this.cmbIdioma);
             this.Controls.Add(this.pnlDatosUsuario);
             this.Controls.Add(this.picNombre);
             this.Controls.Add(this.btnRegistrarse);
@@ -243,6 +274,7 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picIdioma)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,5 +297,7 @@ namespace Localmarket_App
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblDatosUsuario;
         private System.Windows.Forms.ErrorProvider errorProv;
+        private System.Windows.Forms.PictureBox picIdioma;
+        private System.Windows.Forms.ComboBox cmbIdioma;
     }
 }

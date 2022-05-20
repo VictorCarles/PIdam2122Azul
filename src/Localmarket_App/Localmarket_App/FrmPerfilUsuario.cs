@@ -148,6 +148,8 @@ namespace Localmarket_App
             txtMail.Text = usuario.Email;
             txtContraseña.Text = usuario.Password;
             txtUsuario.Text = usuario.Username;
+            cmbIdioma.Text = "Español";
+
         }
 
         private void btnElegirLogo_Click(object sender, EventArgs e)
@@ -156,6 +158,37 @@ namespace Localmarket_App
             {
                 picPerfil.Image = new Bitmap(openFileDialogPerfil.FileName);
             }
+        }
+
+        private void AplicarIdioma()
+        {
+            if (cmbIdioma.Text == "English")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmPerfilUsuarioIng.Settings;
+                lblEmail.Text = MultiIdiomas.FrmPerfilUsuarioIng.email;
+                lblContraseña.Text = MultiIdiomas.FrmPerfilUsuarioIng.Password;
+                lblRepContraseña.Text = MultiIdiomas.FrmPerfilUsuarioIng.RepeatPasswrd;
+                lblModoNoche.Text = MultiIdiomas.FrmPerfilUsuarioIng.DarkMode;
+                lblUsuario.Text = MultiIdiomas.FrmPerfilUsuarioIng.User;
+                btnGuardarCambios.Text = MultiIdiomas.FrmPerfilUsuarioIng.SaveChanges;
+                this.Text = MultiIdiomas.FrmPerfilUsuarioIng.Userprofile;
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmPerfilUsuarioEsp.Ajustes;
+                lblEmail.Text = MultiIdiomas.FrmPerfilUsuarioEsp.email;
+                lblContraseña.Text = MultiIdiomas.FrmPerfilUsuarioEsp.Contraseña;
+                lblRepContraseña.Text = MultiIdiomas.FrmPerfilUsuarioEsp.RepetirContraseña;
+                lblModoNoche.Text = MultiIdiomas.FrmPerfilUsuarioEsp.Modonoche;
+                lblUsuario.Text = MultiIdiomas.FrmPerfilUsuarioEsp.Usuario;
+                btnGuardarCambios.Text = MultiIdiomas.FrmPerfilUsuarioEsp.GuardarCambios;
+                this.Text = MultiIdiomas.FrmPerfilUsuarioEsp.PerfilUsuario;
+            }
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AplicarIdioma();
         }
     }
 }

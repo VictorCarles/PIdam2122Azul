@@ -41,6 +41,8 @@ namespace Localmarket_App
             calculaValoracion(empresa.AvgScore);
             picFotoPerfil.Image = usuario.Imagen;
             picPerfil.Image = usuario.Imagen;
+            cmbIdioma.Text = "Español";
+
         }
 
         private void lblUbicacion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

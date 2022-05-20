@@ -91,6 +91,66 @@
     <Compile Include="FrmRegistroUsuario.Designer.cs">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="MultiIdiomas\FrmLoginEsp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmLoginEsp.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmLoginIng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmLoginIng.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmEditarNegocioIng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmEditarNegocioIng.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmEditarNegocioEsp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmEditarNegocioEsp.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmRegistroUsuarioIng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmRegistroUsuarioIng.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmRegistroUsuarioEsp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmRegistroUsuarioEsp.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmRegistroEmpresaIng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmRegistroEmpresaIng.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmRegistroEmpresaEsp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmRegistroEmpresaEsp.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmPerfilUsuarioEsp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmPerfilUsuarioEsp.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmPerfilUsuarioIng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmPerfilUsuarioIng.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmPrincipalEsp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmPrincipalEsp.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmPrincipalIng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmPrincipalIng.resx</DependentUpon>
+    </Compile>
     <Compile Include="PanelComentario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +192,54 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroUsuario.resx">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmLoginEsp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmLoginEsp.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmLoginIng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmLoginIng.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmEditarNegocioIng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmEditarNegocioIng.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmEditarNegocioEsp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmEditarNegocioEsp.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmRegistroUsuarioIng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmRegistroUsuarioIng.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmRegistroUsuarioEsp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmRegistroUsuarioEsp.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmRegistroEmpresaIng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmRegistroEmpresaIng.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmRegistroEmpresaEsp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmRegistroEmpresaEsp.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmPerfilUsuarioEsp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmPerfilUsuarioEsp.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmPerfilUsuarioIng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmPerfilUsuarioIng.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmPrincipalEsp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmPrincipalEsp.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmPrincipalIng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmPrincipalIng.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelComentario.resx">
       <DependentUpon>PanelComentario.cs</DependentUpon>

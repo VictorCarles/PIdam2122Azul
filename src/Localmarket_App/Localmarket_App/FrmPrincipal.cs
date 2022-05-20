@@ -26,6 +26,8 @@ namespace Localmarket_App
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+            cmbIdioma.Text = "Español";
+            AplicarIdioma();
             timerSlider.Enabled = true;
             if (modoNoche)
             {
@@ -307,6 +309,46 @@ namespace Localmarket_App
             {
                 l.ForeColor = Color.Black;
             }
+        }
+
+
+        private void AplicarIdioma()
+        {
+            if (cmbIdioma.Text == "English")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmPrincipalIng.Settings;
+                lblAlimentacion.Text = MultiIdiomas.FrmPrincipalIng.Nutrition;
+                lblCategorias.Text = MultiIdiomas.FrmPrincipalIng.Categories;
+                lblCerrarSesion.Text = MultiIdiomas.FrmPrincipalIng.Logout;
+                lblCrearEmpresa.Text = MultiIdiomas.FrmPrincipalIng.CreateBusiness;
+                lblListaFav.Text = MultiIdiomas.FrmPrincipalIng.FavList;
+                lblModa.Text = MultiIdiomas.FrmPrincipalIng.Fashion;
+                lblModoNoche.Text = MultiIdiomas.FrmPrincipalIng.DarkMode;
+                lblOcio.Text = MultiIdiomas.FrmPrincipalIng.Leisure;
+                lblPerfil.Text = MultiIdiomas.FrmPrincipalIng.UserProfile;
+                lblRecientes.Text = MultiIdiomas.FrmPrincipalIng.Recent;
+                this.Text = MultiIdiomas.FrmPrincipalIng.MainPage;
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmPrincipalEsp.ajustes;
+                lblAlimentacion.Text = MultiIdiomas.FrmPrincipalEsp.Alimentacion;
+                lblCategorias.Text = MultiIdiomas.FrmPrincipalEsp.Categorias;
+                lblCerrarSesion.Text = MultiIdiomas.FrmPrincipalEsp.CerrarSesion;
+                lblCrearEmpresa.Text = MultiIdiomas.FrmPrincipalEsp.CrearEmpresa;
+                lblListaFav.Text = MultiIdiomas.FrmPrincipalEsp.FavList;
+                lblModa.Text = MultiIdiomas.FrmPrincipalEsp.Moda;
+                lblModoNoche.Text = MultiIdiomas.FrmPrincipalEsp.ModoNoche;
+                lblOcio.Text = MultiIdiomas.FrmPrincipalEsp.Ocio;
+                lblPerfil.Text = MultiIdiomas.FrmPrincipalEsp.PerfilUsuario;
+                lblRecientes.Text = MultiIdiomas.FrmPrincipalEsp.recents;
+                this.Text = MultiIdiomas.FrmPrincipalEsp.PaginaPrincipal;
+            }
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AplicarIdioma();
         }
     }
 }

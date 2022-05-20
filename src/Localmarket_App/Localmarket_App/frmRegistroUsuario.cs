@@ -24,6 +24,8 @@ namespace Localmarket_App
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
+            cmbIdioma.Text = "Español";
+
             if (modoNoche)
             {
                 modoNocheOn();
@@ -32,6 +34,7 @@ namespace Localmarket_App
             {
                 modoNocheOff();
             }
+            cmbIdioma.Text = "Español";
         }
 
         public void picAjustes_Click(object sender, EventArgs e)
@@ -190,6 +193,49 @@ namespace Localmarket_App
             {
                 l.ForeColor = Color.Black;
             }
+        }
+
+        private void AplicarIdioma()
+        {
+            if (cmbIdioma.Text == "English")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmRegistroUsuarioIng.Settings;
+                lblApellidos.Text = MultiIdiomas.FrmRegistroUsuarioIng.Surnames;
+                lblContraseña.Text = MultiIdiomas.FrmRegistroUsuarioIng.pswrd;
+                lblCorreo.Text = MultiIdiomas.FrmRegistroUsuarioIng.email;
+                lblCP.Text = MultiIdiomas.FrmRegistroUsuarioIng.PostalCode;
+                lblDatosEmpresario.Text = MultiIdiomas.FrmRegistroUsuarioIng.UserData;
+                lblDireccion.Text = MultiIdiomas.FrmRegistroUsuarioIng.Addres;
+                lblModoNoche.Text = MultiIdiomas.FrmRegistroUsuarioIng.DarkMode;
+                lblNombre.Text = MultiIdiomas.FrmRegistroUsuarioIng.Name;
+                lblRepContraseña.Text = MultiIdiomas.FrmRegistroUsuarioIng.repeatPassword;
+                lblTelefono.Text = MultiIdiomas.FrmRegistroUsuarioIng.Phone;
+                lblUsuario.Text = MultiIdiomas.FrmRegistroUsuarioIng.User;
+                btnRegistrar.Text = MultiIdiomas.FrmRegistroUsuarioIng.Register;
+                this.Text = MultiIdiomas.FrmRegistroUsuarioIng.UserRegister;
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmRegistroUsuarioEsp.Settings;
+                lblApellidos.Text = MultiIdiomas.FrmRegistroUsuarioEsp.Surnames;
+                lblContraseña.Text = MultiIdiomas.FrmRegistroUsuarioEsp.pswrd;
+                lblCorreo.Text = MultiIdiomas.FrmRegistroUsuarioEsp.email;
+                lblCP.Text = MultiIdiomas.FrmRegistroUsuarioEsp.PostalCode;
+                lblDatosEmpresario.Text = MultiIdiomas.FrmRegistroUsuarioEsp.UserData;
+                lblDireccion.Text = MultiIdiomas.FrmRegistroUsuarioEsp.Addres;
+                lblModoNoche.Text = MultiIdiomas.FrmRegistroUsuarioEsp.DarkMode;
+                lblNombre.Text = MultiIdiomas.FrmRegistroUsuarioEsp.Name;
+                lblRepContraseña.Text = MultiIdiomas.FrmRegistroUsuarioEsp.repeatPassword;
+                lblTelefono.Text = MultiIdiomas.FrmRegistroUsuarioEsp.Phone;
+                lblUsuario.Text = MultiIdiomas.FrmRegistroUsuarioEsp.User;
+                btnRegistrar.Text = MultiIdiomas.FrmRegistroUsuarioEsp.Register;
+                this.Text = MultiIdiomas.FrmRegistroUsuarioEsp.UserRegister;
+            }
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AplicarIdioma();
         }
     }
 }
