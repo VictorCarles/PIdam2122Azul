@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -38,6 +40,8 @@ namespace Localmarket_App
         {
             pnlDatosUsuario.BackColor = Color.FromArgb(200, 238, 240, 161);
             pnlDatosUsuario.Visible = false;
+            cmbIdioma.Text = "Español";
+
         }
 
         private void btnIniciarSesion2_Click(object sender, EventArgs e)
@@ -84,6 +88,37 @@ namespace Localmarket_App
             }
 
             return correcto;
+        }
+
+        private void AplicarIdioma()
+        {
+            if (cmbIdioma.Text == "English")
+            {
+                btnRegistrarse.Text = MultiIdiomas.FrmLoginIng.btnRegister;
+                btnIniciarSesion.Text = MultiIdiomas.FrmLoginIng.btnLogin;
+                btnIniciarSesion2.Text = MultiIdiomas.FrmLoginIng.btnLogin2;
+                lblUsuario.Text = MultiIdiomas.FrmLoginIng.lblUser;
+                lblDatosUsuario.Text = MultiIdiomas.FrmLoginIng.lblUserData;
+                lblContraseña.Text = MultiIdiomas.FrmLoginIng.lblPswrd;
+                lblOlvidarContraseña.Text = MultiIdiomas.FrmLoginIng.lblForgotMyPswrd;
+                chkRecuerdame.Text = MultiIdiomas.FrmLoginIng.chkRememberMe;
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                btnRegistrarse.Text = MultiIdiomas.FrmLoginEsp.btnRegistro;
+                btnIniciarSesion.Text = MultiIdiomas.FrmLoginEsp.btnInicioSesion;
+                btnIniciarSesion2.Text = MultiIdiomas.FrmLoginEsp.btnInicioSesion2;
+                lblUsuario.Text = MultiIdiomas.FrmLoginEsp.lblUsuario;
+                lblDatosUsuario.Text = MultiIdiomas.FrmLoginEsp.lblDatosUsuario;
+                lblContraseña.Text = MultiIdiomas.FrmLoginEsp.lblContraseña;
+                lblOlvidarContraseña.Text = MultiIdiomas.FrmLoginEsp.lblOlvidarContraseña;
+                chkRecuerdame.Text = MultiIdiomas.FrmLoginEsp.chkRecuerdame;
+            }
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AplicarIdioma();
         }
     }   
 }

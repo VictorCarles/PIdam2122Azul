@@ -29,7 +29,13 @@ namespace Localmarket_App
         {
             txtNombre.Text = empresa.Name;
             txtDescripcion.Text = empresa.Description;
+<<<<<<< HEAD
             picPreviewLogo.Image = new Bitmap(empresa.ProfilePicture);
+=======
+            picPreviewLogo.Image = empresa.ProfilePicture;
+            cmbIdioma.Text = "Español";
+
+>>>>>>> v1.6_VS
         }
 
         private void picAjustes_Click(object sender, EventArgs e)
@@ -175,6 +181,53 @@ namespace Localmarket_App
             grpBoxAñadirProducto.Visible = true;
         }
 
+        private void AplicarIdioma()
+        {
+            if (cmbIdioma.Text == "English")
+            {
+                lblDatosNegocio.Text = MultiIdiomas.FrmEditarNegocioIng.lblBusinessData;
+                lblAjustes.Text = MultiIdiomas.FrmEditarNegocioIng.Settings;
+                lblDescProducto.Text = MultiIdiomas.FrmEditarNegocioIng.ProdDesc;
+                lblDescripción.Text = MultiIdiomas.FrmEditarNegocioIng.BusinessDesc;
+                lblFotos.Text = MultiIdiomas.FrmEditarNegocioIng.BusinessPics;
+                lblFoto.Text = MultiIdiomas.FrmEditarNegocioIng.ProdPic;
+                lblLogo.Text = MultiIdiomas.FrmEditarNegocioIng.BusinessLogo;
+                lblModoNoche.Text = MultiIdiomas.FrmEditarNegocioIng.DarkMode;
+                lblNombre.Text = MultiIdiomas.FrmEditarNegocioIng.BusinessName;
+                lblNomProducto.Text = MultiIdiomas.FrmEditarNegocioIng.ProdName;
+                lblPrecio.Text = MultiIdiomas.FrmEditarNegocioIng.Price;
+                btnAñadirProducto.Text = MultiIdiomas.FrmEditarNegocioIng.btnAddProd;
+                btnCambios.Text = MultiIdiomas.FrmEditarNegocioIng.btnSaveChanges;
+                btnElegirFotoProducto.Text = MultiIdiomas.FrmEditarNegocioIng.ChooseFile;
+                btnElegirLogo.Text = MultiIdiomas.FrmEditarNegocioIng.ChooseFile;
+                lblNuevoProducto.Text = MultiIdiomas.FrmEditarNegocioIng.NewProduct;
+                this.Text = MultiIdiomas.FrmEditarNegocioIng.EditBusiness;
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblDatosNegocio.Text = MultiIdiomas.FrmEditarNegocioEsp.lblBusinessData;
+                lblAjustes.Text = MultiIdiomas.FrmEditarNegocioEsp.Settings;
+                lblDescProducto.Text = MultiIdiomas.FrmEditarNegocioEsp.ProdDesc;
+                lblDescripción.Text = MultiIdiomas.FrmEditarNegocioEsp.BusinessDesc;
+                lblFotos.Text = MultiIdiomas.FrmEditarNegocioEsp.BusinessPics;
+                lblFoto.Text = MultiIdiomas.FrmEditarNegocioEsp.ProdPic;
+                lblLogo.Text = MultiIdiomas.FrmEditarNegocioEsp.BusinessLogo;
+                lblModoNoche.Text = MultiIdiomas.FrmEditarNegocioEsp.DarkMode;
+                lblNombre.Text = MultiIdiomas.FrmEditarNegocioEsp.BusinessName;
+                lblNomProducto.Text = MultiIdiomas.FrmEditarNegocioEsp.ProdName;
+                lblPrecio.Text = MultiIdiomas.FrmEditarNegocioEsp.Price;
+                btnAñadirProducto.Text = MultiIdiomas.FrmEditarNegocioEsp.btnAddProd;
+                btnCambios.Text = MultiIdiomas.FrmEditarNegocioEsp.btnSaveChanges;
+                btnElegirFotoProducto.Text = MultiIdiomas.FrmEditarNegocioEsp.ChooseFile;
+                btnElegirLogo.Text = MultiIdiomas.FrmEditarNegocioEsp.ChooseFile;
+                lblNuevoProducto.Text = MultiIdiomas.FrmEditarNegocioEsp.NewProduct;
+                this.Text = MultiIdiomas.FrmEditarNegocioEsp.EditBusiness;
+            }
+        }
 
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
     }
 }

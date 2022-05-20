@@ -154,6 +154,8 @@ namespace Localmarket_App
 
         private void FrmRegistroEmpresa_Load(object sender, EventArgs e)
         {
+            cmbIdioma.Text = "Español";
+
             if (modoNoche)
             {
                 modoNocheOn();
@@ -162,6 +164,43 @@ namespace Localmarket_App
             {
                 modoNocheOff();
             }
+        }
+
+        private void AplicarIdioma()
+        {
+            if (cmbIdioma.Text == "English")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmRegistroEmpresaIng.Settings;
+                lblCategoria.Text = MultiIdiomas.FrmRegistroEmpresaIng.Category;
+                lblCp.Text = MultiIdiomas.FrmRegistroEmpresaIng.PostalCode;
+                lblDatosNegocio.Text = MultiIdiomas.FrmRegistroEmpresaIng.BusinessData;
+                lblDireccionNeg.Text = MultiIdiomas.FrmRegistroEmpresaIng.Address;
+                lblMailContacto.Text = MultiIdiomas.FrmRegistroEmpresaIng.E_Mail;
+                lblModoNoche.Text = MultiIdiomas.FrmRegistroEmpresaIng.DarkMode;
+                lblNombreNeg.Text = MultiIdiomas.FrmRegistroEmpresaIng.Name;
+                lblTlfNeg.Text = MultiIdiomas.FrmRegistroEmpresaIng.Phone;
+                btnRegistrar.Text = MultiIdiomas.FrmRegistroEmpresaIng.CreateBusiness;
+                this.Text = MultiIdiomas.FrmRegistroEmpresaIng.CreateaBusiness;
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmRegistroEmpresaEsp.Settings;
+                lblCategoria.Text = MultiIdiomas.FrmRegistroEmpresaEsp.Category;
+                lblCp.Text = MultiIdiomas.FrmRegistroEmpresaEsp.PostalCode;
+                lblDatosNegocio.Text = MultiIdiomas.FrmRegistroEmpresaEsp.BusinessData;
+                lblDireccionNeg.Text = MultiIdiomas.FrmRegistroEmpresaEsp.Address;
+                lblMailContacto.Text = MultiIdiomas.FrmRegistroEmpresaEsp.E_Mail;
+                lblModoNoche.Text = MultiIdiomas.FrmRegistroEmpresaEsp.DarkMode;
+                lblNombreNeg.Text = MultiIdiomas.FrmRegistroEmpresaEsp.Name;
+                lblTlfNeg.Text = MultiIdiomas.FrmRegistroEmpresaEsp.Phone;
+                btnRegistrar.Text = MultiIdiomas.FrmRegistroEmpresaEsp.CreateBusiness;
+                this.Text = MultiIdiomas.FrmRegistroEmpresaEsp.CreateaBusiness;
+            }
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            AplicarIdioma();
         }
     }
 }
