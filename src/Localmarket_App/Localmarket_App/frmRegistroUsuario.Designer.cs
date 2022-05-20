@@ -160,11 +160,11 @@ namespace Localmarket_App
             this.lblCorreo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(313, 340);
+            this.lblCorreo.Location = new System.Drawing.Point(416, 342);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(171, 23);
+            this.lblCorreo.Size = new System.Drawing.Size(68, 23);
             this.lblCorreo.TabIndex = 10;
-            this.lblCorreo.Text = "Correo electrónico:";
+            this.lblCorreo.Text = "E-Mail:";
             // 
             // txtRepContraseña
             // 

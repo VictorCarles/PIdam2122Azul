@@ -131,10 +131,10 @@ namespace Localmarket_App
 
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
-            Hide();
+            this.Hide();
             FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
             frmRegEmp.ShowDialog();
-            Close();
+            this.Close();
         }
 
         private void picNocheOff_Click(object sender, EventArgs e)
@@ -234,8 +234,10 @@ namespace Localmarket_App
 
         private void lblPerfil_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche, usuario);
-            frmPerfUsu.Show();
+            frmPerfUsu.ShowDialog();
+            this.Close();
         }
 
         private void modoNocheOn()

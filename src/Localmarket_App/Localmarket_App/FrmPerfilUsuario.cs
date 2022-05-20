@@ -85,18 +85,18 @@ namespace Localmarket_App
                 ConexionBD.CerrarConexion();
             }
             MessageBox.Show("Datos modificados con exito");
-            this.Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario);
-            frmPrincipal.ShowDialog();
-            this.Close();
+            Hide();
+            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche,usuario);
+            frmPrin.ShowDialog();
+            Close();
         }
 
         private void picAtras_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche,usuario);
-            frmPrincipal.ShowDialog();
-            this.Close();
+            Hide();
+            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche,usuario);
+            frmPrin.ShowDialog();
+            Close();
         }
 
         private void modoNocheOn()

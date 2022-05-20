@@ -202,5 +202,7 @@ namespace Localmarket_App
         {
             AplicarIdioma();
         }
+
+
     }
 }

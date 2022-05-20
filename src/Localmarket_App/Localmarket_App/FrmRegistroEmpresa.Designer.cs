@@ -259,7 +259,7 @@ namespace Localmarket_App
             // 
             this.lblDireccionNeg.AutoSize = true;
             this.lblDireccionNeg.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccionNeg.Location = new System.Drawing.Point(440, 384);
+            this.lblDireccionNeg.Location = new System.Drawing.Point(432, 386);
             this.lblDireccionNeg.Name = "lblDireccionNeg";
             this.lblDireccionNeg.Size = new System.Drawing.Size(94, 23);
             this.lblDireccionNeg.TabIndex = 69;
@@ -373,7 +373,7 @@ namespace Localmarket_App
             // 
             this.lblCp.AutoSize = true;
             this.lblCp.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCp.Location = new System.Drawing.Point(395, 335);
+            this.lblCp.Location = new System.Drawing.Point(395, 332);
             this.lblCp.Name = "lblCp";
             this.lblCp.Size = new System.Drawing.Size(131, 23);
             this.lblCp.TabIndex = 82;
