@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
 ## Tabla Acciones:
 CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
 --  `action_id` INT NOT NULL AUTO_INCREMENT,
-  `action_id` INT NOT NULL,
+  `action_id` INT NOT NULL AUTO_INCREMENT,
   `accion` VARCHAR(600) NOT NULL,
   `fecha` DATETIME NOT NULL,
   `user_username` VARCHAR(20) NOT NULL,
