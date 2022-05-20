@@ -54,11 +54,11 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
 ## Tabla Acciones:
 CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
 --  `action_id` INT NOT NULL AUTO_INCREMENT,
-  `action_id` INT NOT NULL,
-  `accion` VARCHAR(300) NOT NULL,
+  `action_id` INT NOT NULL AUTO_INCREMENT,
+  `accion` VARCHAR(600) NOT NULL,
   `fecha` DATETIME NOT NULL,
   `user_username` VARCHAR(20) NOT NULL,
-  `cif_company` VARCHAR(9) NOT NULL,
+  `cif_company` VARCHAR(9) NULL,
   PRIMARY KEY (`action_id`),
   INDEX `fk_user_username_idx` (`user_username` ASC),
   CONSTRAINT `fk_user_username`
@@ -135,7 +135,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
 ## Tabla Comentario:
 CREATE TABLE IF NOT EXISTS localmarket_db.Comentario (
   `idComentario` INT NOT NULL AUTO_INCREMENT,
-   text_contents VARCHAR(45) NOT NULL,
+   text_contents VARCHAR(500) NOT NULL,
   `score` INT NOT NULL,
   `company_page` VARCHAR(9) NOT NULL,
   `comment_username` VARCHAR(20) NOT NULL,
