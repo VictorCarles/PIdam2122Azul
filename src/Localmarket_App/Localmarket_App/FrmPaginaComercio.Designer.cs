@@ -120,7 +120,7 @@ namespace Localmarket_App
             this.pnlNaranja.Location = new System.Drawing.Point(0, 0);
             this.pnlNaranja.Margin = new System.Windows.Forms.Padding(2);
             this.pnlNaranja.Name = "pnlNaranja";
-            this.pnlNaranja.Size = new System.Drawing.Size(1030, 81);
+            this.pnlNaranja.Size = new System.Drawing.Size(1047, 81);
             this.pnlNaranja.TabIndex = 2;
             // 
             // picLocalMarket
@@ -230,11 +230,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfilUsuario);
-<<<<<<< HEAD
-            this.pnlPerfil.Location = new System.Drawing.Point(778, 85);
-=======
-            this.pnlPerfil.Location = new System.Drawing.Point(761, 85);
->>>>>>> v1.9_VS
+            this.pnlPerfil.Location = new System.Drawing.Point(770, 85);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(140, 143);
@@ -324,11 +320,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-<<<<<<< HEAD
-            this.pnlAjustes.Location = new System.Drawing.Point(842, 85);
-=======
-            this.pnlAjustes.Location = new System.Drawing.Point(825, 85);
->>>>>>> v1.9_VS
+            this.pnlAjustes.Location = new System.Drawing.Point(834, 85);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(140, 143);
@@ -417,11 +409,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-<<<<<<< HEAD
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(128, 422);
-=======
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(111, 422);
->>>>>>> v1.9_VS
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(120, 422);
             this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(2);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
@@ -694,7 +682,7 @@ namespace Localmarket_App
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1047, 571);
+            this.ClientSize = new System.Drawing.Size(1064, 571);
             this.Controls.Add(this.pnlAjustes);
             this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.tabReseñasyProductos);

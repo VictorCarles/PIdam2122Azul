@@ -400,6 +400,7 @@ namespace Localmarket_App
         {
             if (cmbIdioma.Text == "English")
             {
+                idioma = "English";
                 lblAjustes.Text = MultiIdiomas.FrmPaginaComercioIng.ajustes;
                 lblModoNoche.Text = MultiIdiomas.FrmPaginaComercioIng.ModoNoche;
                 lblPerfil.Text = MultiIdiomas.FrmPaginaComercioIng.PerfilUsuario;
@@ -413,6 +414,7 @@ namespace Localmarket_App
             }
             else if (cmbIdioma.Text == "Español")
             {
+                idioma = "Español";
                 lblAjustes.Text = MultiIdiomas.FrmPaginaComercioEsp.ajustes;
                 lblModoNoche.Text = MultiIdiomas.FrmPaginaComercioEsp.ModoNoche;
                 lblPerfil.Text = MultiIdiomas.FrmPaginaComercioEsp.PerfilUsuario;
@@ -430,5 +432,7 @@ namespace Localmarket_App
         {
             AplicarIdioma();
         }
+
+
     }
 }

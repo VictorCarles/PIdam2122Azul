@@ -34,6 +34,7 @@ namespace Localmarket_App
         {
             pnlDatosUsuario.BackColor = Color.FromArgb(200, 238, 240, 161);
             pnlDatosUsuario.Visible = false;
+            idioma = "Español";
             cmbIdioma.Text = idioma;
             AplicarIdioma();
 
