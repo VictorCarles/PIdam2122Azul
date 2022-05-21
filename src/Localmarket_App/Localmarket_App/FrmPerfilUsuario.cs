@@ -47,8 +47,6 @@ namespace Localmarket_App
 
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
-            lblRepContraseña.Visible = true;
-            txtRepContraseña.Visible = true;
             btnGuardarCambios.Visible = true;
         }
 
@@ -167,7 +165,6 @@ namespace Localmarket_App
                 lblAjustes.Text = MultiIdiomas.FrmPerfilUsuarioIng.Settings;
                 lblEmail.Text = MultiIdiomas.FrmPerfilUsuarioIng.email;
                 lblContraseña.Text = MultiIdiomas.FrmPerfilUsuarioIng.Password;
-                lblRepContraseña.Text = MultiIdiomas.FrmPerfilUsuarioIng.RepeatPasswrd;
                 lblModoNoche.Text = MultiIdiomas.FrmPerfilUsuarioIng.DarkMode;
                 lblUsuario.Text = MultiIdiomas.FrmPerfilUsuarioIng.User;
                 btnGuardarCambios.Text = MultiIdiomas.FrmPerfilUsuarioIng.SaveChanges;
@@ -178,7 +175,6 @@ namespace Localmarket_App
                 lblAjustes.Text = MultiIdiomas.FrmPerfilUsuarioEsp.Ajustes;
                 lblEmail.Text = MultiIdiomas.FrmPerfilUsuarioEsp.email;
                 lblContraseña.Text = MultiIdiomas.FrmPerfilUsuarioEsp.Contraseña;
-                lblRepContraseña.Text = MultiIdiomas.FrmPerfilUsuarioEsp.RepetirContraseña;
                 lblModoNoche.Text = MultiIdiomas.FrmPerfilUsuarioEsp.Modonoche;
                 lblUsuario.Text = MultiIdiomas.FrmPerfilUsuarioEsp.Usuario;
                 btnGuardarCambios.Text = MultiIdiomas.FrmPerfilUsuarioEsp.GuardarCambios;

@@ -66,6 +66,7 @@ namespace Localmarket_App
             this.txtComentario = new System.Windows.Forms.TextBox();
             this.picFotoPerfil = new System.Windows.Forms.PictureBox();
             this.tabProductos = new System.Windows.Forms.TabPage();
+            this.pnlProductos = new System.Windows.Forms.Panel();
             this.picCorazon = new System.Windows.Forms.PictureBox();
             this.picImagen4 = new System.Windows.Forms.PictureBox();
             this.picImagen3 = new System.Windows.Forms.PictureBox();
@@ -75,7 +76,6 @@ namespace Localmarket_App
             this.picAtras = new System.Windows.Forms.PictureBox();
             this.picUbicacion = new System.Windows.Forms.PictureBox();
             this.picLogoComercio = new System.Windows.Forms.PictureBox();
-            this.pnlProductos = new System.Windows.Forms.Panel();
             this.pnlNaranja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLocalMarket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
@@ -187,7 +187,7 @@ namespace Localmarket_App
             // 
             this.lblValoracion.AutoSize = true;
             this.lblValoracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValoracion.Location = new System.Drawing.Point(758, 157);
+            this.lblValoracion.Location = new System.Drawing.Point(817, 157);
             this.lblValoracion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValoracion.Name = "lblValoracion";
             this.lblValoracion.Size = new System.Drawing.Size(79, 17);
@@ -230,7 +230,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfilUsuario);
-            this.pnlPerfil.Location = new System.Drawing.Point(746, 85);
+            this.pnlPerfil.Location = new System.Drawing.Point(787, 85);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(140, 143);
@@ -301,7 +301,7 @@ namespace Localmarket_App
             // picValoracion
             // 
             this.picValoracion.Image = global::Localmarket_App.Properties.Resources._5estr;
-            this.picValoracion.Location = new System.Drawing.Point(841, 157);
+            this.picValoracion.Location = new System.Drawing.Point(900, 157);
             this.picValoracion.Margin = new System.Windows.Forms.Padding(2);
             this.picValoracion.Name = "picValoracion";
             this.picValoracion.Size = new System.Drawing.Size(92, 20);
@@ -320,7 +320,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-            this.pnlAjustes.Location = new System.Drawing.Point(810, 85);
+            this.pnlAjustes.Location = new System.Drawing.Point(851, 85);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(140, 143);
@@ -408,7 +408,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(155, 422);
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(137, 422);
             this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(2);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
@@ -465,7 +465,7 @@ namespace Localmarket_App
             this.btnEnviarComentario.Location = new System.Drawing.Point(517, 40);
             this.btnEnviarComentario.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnviarComentario.Name = "btnEnviarComentario";
-            this.btnEnviarComentario.Size = new System.Drawing.Size(114, 23);
+            this.btnEnviarComentario.Size = new System.Drawing.Size(132, 23);
             this.btnEnviarComentario.TabIndex = 19;
             this.btnEnviarComentario.Text = "Enviar Comentario";
             this.btnEnviarComentario.UseVisualStyleBackColor = false;
@@ -567,6 +567,14 @@ namespace Localmarket_App
             this.tabProductos.Text = "Productos/Servicios";
             this.tabProductos.UseVisualStyleBackColor = true;
             // 
+            // pnlProductos
+            // 
+            this.pnlProductos.AutoScroll = true;
+            this.pnlProductos.Location = new System.Drawing.Point(31, 16);
+            this.pnlProductos.Name = "pnlProductos";
+            this.pnlProductos.Size = new System.Drawing.Size(755, 532);
+            this.pnlProductos.TabIndex = 0;
+            // 
             // picCorazon
             // 
             this.picCorazon.Image = global::Localmarket_App.Properties.Resources.corazon;
@@ -667,14 +675,6 @@ namespace Localmarket_App
             this.picLogoComercio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogoComercio.TabIndex = 3;
             this.picLogoComercio.TabStop = false;
-            // 
-            // pnlProductos
-            // 
-            this.pnlProductos.AutoScroll = true;
-            this.pnlProductos.Location = new System.Drawing.Point(31, 16);
-            this.pnlProductos.Name = "pnlProductos";
-            this.pnlProductos.Size = new System.Drawing.Size(755, 532);
-            this.pnlProductos.TabIndex = 0;
             // 
             // FrmPaginaComercio
             // 

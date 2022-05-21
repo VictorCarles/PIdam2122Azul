@@ -68,7 +68,7 @@ namespace Localmarket_App
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
             comando.ExecuteNonQuery();
-            MessageBox.Show("Registro realizado correctamente");
+            
         }
 
         public static string ImageToBase64(Image image, ImageFormat format)

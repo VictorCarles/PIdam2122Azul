@@ -36,8 +36,6 @@ namespace Localmarket_App
             this.btnRegistrarse = new System.Windows.Forms.Button();
             this.pnlDatosUsuario = new System.Windows.Forms.Panel();
             this.btnIniciarSesion2 = new System.Windows.Forms.Button();
-            this.lblOlvidarContraseña = new System.Windows.Forms.LinkLabel();
-            this.chkRecuerdame = new System.Windows.Forms.CheckBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
@@ -93,8 +91,6 @@ namespace Localmarket_App
             this.pnlDatosUsuario.BackColor = System.Drawing.Color.White;
             this.pnlDatosUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlDatosUsuario.Controls.Add(this.btnIniciarSesion2);
-            this.pnlDatosUsuario.Controls.Add(this.lblOlvidarContraseña);
-            this.pnlDatosUsuario.Controls.Add(this.chkRecuerdame);
             this.pnlDatosUsuario.Controls.Add(this.txtContraseña);
             this.pnlDatosUsuario.Controls.Add(this.txtUsuario);
             this.pnlDatosUsuario.Controls.Add(this.lblContraseña);
@@ -111,64 +107,41 @@ namespace Localmarket_App
             this.btnIniciarSesion2.BackColor = System.Drawing.Color.Orange;
             this.btnIniciarSesion2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciarSesion2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnIniciarSesion2.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion2.Font = new System.Drawing.Font("Leelawadee", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion2.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion2.Location = new System.Drawing.Point(276, 202);
+            this.btnIniciarSesion2.Location = new System.Drawing.Point(93, 176);
             this.btnIniciarSesion2.Name = "btnIniciarSesion2";
-            this.btnIniciarSesion2.Size = new System.Drawing.Size(181, 33);
+            this.btnIniciarSesion2.Size = new System.Drawing.Size(279, 51);
             this.btnIniciarSesion2.TabIndex = 5;
             this.btnIniciarSesion2.Text = "Iniciar Sesión";
             this.btnIniciarSesion2.UseVisualStyleBackColor = false;
             this.btnIniciarSesion2.Click += new System.EventHandler(this.btnIniciarSesion2_Click);
             // 
-            // lblOlvidarContraseña
-            // 
-            this.lblOlvidarContraseña.AutoSize = true;
-            this.lblOlvidarContraseña.BackColor = System.Drawing.Color.Transparent;
-            this.lblOlvidarContraseña.Location = new System.Drawing.Point(240, 141);
-            this.lblOlvidarContraseña.Name = "lblOlvidarContraseña";
-            this.lblOlvidarContraseña.Size = new System.Drawing.Size(141, 17);
-            this.lblOlvidarContraseña.TabIndex = 3;
-            this.lblOlvidarContraseña.TabStop = true;
-            this.lblOlvidarContraseña.Text = "Olvidé mi contraseña";
-            // 
-            // chkRecuerdame
-            // 
-            this.chkRecuerdame.AutoSize = true;
-            this.chkRecuerdame.BackColor = System.Drawing.Color.Transparent;
-            this.chkRecuerdame.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkRecuerdame.Location = new System.Drawing.Point(158, 168);
-            this.chkRecuerdame.Name = "chkRecuerdame";
-            this.chkRecuerdame.Size = new System.Drawing.Size(117, 22);
-            this.chkRecuerdame.TabIndex = 4;
-            this.chkRecuerdame.Text = "Recuérdame";
-            this.chkRecuerdame.UseVisualStyleBackColor = false;
-            // 
             // txtContraseña
             // 
-            this.txtContraseña.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(158, 116);
+            this.txtContraseña.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(139, 125);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(223, 25);
+            this.txtContraseña.Size = new System.Drawing.Size(223, 23);
             this.txtContraseña.TabIndex = 2;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Leelawadee", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(158, 72);
+            this.txtUsuario.Font = new System.Drawing.Font("Leelawadee", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(139, 81);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(223, 25);
+            this.txtUsuario.Size = new System.Drawing.Size(223, 23);
             this.txtUsuario.TabIndex = 1;
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.BackColor = System.Drawing.Color.Transparent;
-            this.lblContraseña.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(42, 115);
+            this.lblContraseña.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Location = new System.Drawing.Point(23, 124);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(116, 23);
+            this.lblContraseña.Size = new System.Drawing.Size(99, 19);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "Contraseña:";
             // 
@@ -176,10 +149,10 @@ namespace Localmarket_App
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuario.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(73, 72);
+            this.lblUsuario.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(54, 81);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(85, 23);
+            this.lblUsuario.Size = new System.Drawing.Size(72, 19);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuario:";
             // 
@@ -187,10 +160,10 @@ namespace Localmarket_App
             // 
             this.lblDatosUsuario.AutoSize = true;
             this.lblDatosUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblDatosUsuario.Font = new System.Drawing.Font("Leelawadee", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatosUsuario.Location = new System.Drawing.Point(125, 17);
+            this.lblDatosUsuario.Font = new System.Drawing.Font("Leelawadee", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosUsuario.Location = new System.Drawing.Point(121, 18);
             this.lblDatosUsuario.Name = "lblDatosUsuario";
-            this.lblDatosUsuario.Size = new System.Drawing.Size(256, 36);
+            this.lblDatosUsuario.Size = new System.Drawing.Size(235, 32);
             this.lblDatosUsuario.TabIndex = 0;
             this.lblDatosUsuario.Text = "Datos de Usuario";
             // 
@@ -225,6 +198,7 @@ namespace Localmarket_App
             // 
             // picIdioma
             // 
+            this.picIdioma.BackColor = System.Drawing.Color.Transparent;
             this.picIdioma.Image = global::Localmarket_App.Properties.Resources.idioma;
             this.picIdioma.Location = new System.Drawing.Point(1165, 629);
             this.picIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -245,7 +219,7 @@ namespace Localmarket_App
             this.cmbIdioma.Location = new System.Drawing.Point(1215, 635);
             this.cmbIdioma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIdioma.Name = "cmbIdioma";
-            this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
+            this.cmbIdioma.Size = new System.Drawing.Size(96, 23);
             this.cmbIdioma.TabIndex = 21;
             this.cmbIdioma.TextChanged += new System.EventHandler(this.cmbIdioma_TextChanged_1);
             // 
@@ -289,8 +263,6 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picNombre;
         private System.Windows.Forms.Panel pnlDatosUsuario;
         private System.Windows.Forms.Button btnIniciarSesion2;
-        private System.Windows.Forms.LinkLabel lblOlvidarContraseña;
-        private System.Windows.Forms.CheckBox chkRecuerdame;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblContraseña;

@@ -30,7 +30,6 @@ namespace Localmarket_App
                 calculaValoracion();
                 ConexionBD.CerrarConexion();
             }
-
         }
 
         private void lblNomComercio_Click(object sender, EventArgs e)
@@ -42,7 +41,6 @@ namespace Localmarket_App
             {
                 FrmPrincipal.ActiveForm.Close();
             }
-            
         }
 
         private void calculaValoracion()
@@ -95,6 +93,16 @@ namespace Localmarket_App
             else
             {
                 picValoracion.Image = Resources._5estr;
+            }
+        }
+
+        private void PanelEmpresa_Load(object sender, EventArgs e)
+        {
+            if (modoNoche)
+            {
+                lblNomComercio.ForeColor = Color.White;
+                lblDescComercio.ForeColor = Color.White;
+                lblValoracion.ForeColor = Color.White;
             }
         }
     }

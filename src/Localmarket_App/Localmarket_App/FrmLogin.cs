@@ -24,8 +24,8 @@ namespace Localmarket_App
         {
             this.Hide();
             FrmRegistroUsuario frmReg = new FrmRegistroUsuario(modoNoche);
-            frmReg.Closed += (s, args) => this.Close();
-            frmReg.Show();
+            frmReg.ShowDialog();
+            this.Close();
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -52,8 +52,8 @@ namespace Localmarket_App
                 {
                     this.Hide();
                     FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuarioGlobal);
-                    frmPrincipal.Closed += (s, args) => this.Close();
-                    frmPrincipal.Show();
+                    frmPrincipal.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
@@ -92,8 +92,6 @@ namespace Localmarket_App
                 lblUsuario.Text = MultiIdiomas.FrmLoginIng.lblUser;
                 lblDatosUsuario.Text = MultiIdiomas.FrmLoginIng.lblUserData;
                 lblContraseña.Text = MultiIdiomas.FrmLoginIng.lblPswrd;
-                lblOlvidarContraseña.Text = MultiIdiomas.FrmLoginIng.lblForgotMyPswrd;
-                chkRecuerdame.Text = MultiIdiomas.FrmLoginIng.chkRememberMe;
             }
             else if (cmbIdioma.Text == "Español")
             {
@@ -103,8 +101,6 @@ namespace Localmarket_App
                 lblUsuario.Text = MultiIdiomas.FrmLoginEsp.lblUsuario;
                 lblDatosUsuario.Text = MultiIdiomas.FrmLoginEsp.lblDatosUsuario;
                 lblContraseña.Text = MultiIdiomas.FrmLoginEsp.lblContraseña;
-                lblOlvidarContraseña.Text = MultiIdiomas.FrmLoginEsp.lblOlvidarContraseña;
-                chkRecuerdame.Text = MultiIdiomas.FrmLoginEsp.chkRecuerdame;
             }
         }
 

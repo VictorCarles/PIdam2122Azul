@@ -258,18 +258,20 @@ namespace Localmarket_App
                 ConexionBD.CerrarConexion();
             }
 
-            picEstrella1.Image = Resources.white_star;
+            picEstrella1.Image = Resources.yellow_star;
             picEstrella2.Image = Resources.white_star;
             picEstrella3.Image = Resources.white_star;
             picEstrella4.Image = Resources.white_star;
             picEstrella5.Image = Resources.white_star;
             txtComentario.Text = "";
+            score = 1;
             if (ConexionBD.Conexion != null)
             {
                 ConexionBD.AbrirConexion();
                 CargarComentarios(Comentario.BusquedaComentarios(empresa));
                 ConexionBD.CerrarConexion();
             }
+            MessageBox.Show("Comentario publicado correctamente");
         }
 
         private void lblPerfil_Click(object sender, EventArgs e)

@@ -60,7 +60,7 @@ namespace Localmarket_App
             // lblPrecio
             // 
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(372, 29);
+            this.lblPrecio.Location = new System.Drawing.Point(367, 22);
             this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(70, 24);

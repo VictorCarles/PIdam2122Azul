@@ -3,10 +3,12 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Localmarket_App
 {
@@ -36,6 +38,7 @@ namespace Localmarket_App
         public string Nombre { get { return prod_name; } }
         public string Descripcion { get { return description; } }
         public double Price { get { return price; } }
+        public Image Image { get { return image; } }
 
         internal static List<Producto> BusquedaProductos(Empresa emp)
         {
@@ -69,7 +72,31 @@ namespace Localmarket_App
                 return null;
             }
         }
-        
+
+        public static void InsertarProducto(Producto prod)
+        {
+            string consulta = string.Format("INSERT INTO Producto VALUES (DEFAULT,'{0}','{1}','{2}','{3}','{4}','1','{5}');", prod.category, prod.price,
+                prod.prod_name, prod.description, ImageToBase64(prod.image,prod.image.RawFormat),prod.cifEmp);
+
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Registro realizado correctamente");
+        }
+
+
+        public static string ImageToBase64(Image image, ImageFormat format)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Convert Image to byte[]
+                image.Save(ms, format);
+                byte[] imageBytes = ms.ToArray();
+
+                // Convert byte[] to base 64 string
+                string base64String = Convert.ToBase64String(imageBytes);
+                return base64String;
+            }
+        }
 
         public static Image Base64ToImage(string base64String)
         {

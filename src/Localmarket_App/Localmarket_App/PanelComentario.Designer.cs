@@ -44,8 +44,9 @@ namespace Localmarket_App
             this.lblComentario.Location = new System.Drawing.Point(82, 32);
             this.lblComentario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblComentario.Name = "lblComentario";
-            this.lblComentario.Size = new System.Drawing.Size(0, 13);
+            this.lblComentario.Size = new System.Drawing.Size(106, 13);
             this.lblComentario.TabIndex = 1;
+            this.lblComentario.Text = "Comentariocomntario";
             // 
             // lblUsuario
             // 
@@ -63,7 +64,7 @@ namespace Localmarket_App
             this.btnUtil.BackColor = System.Drawing.Color.Lime;
             this.btnUtil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUtil.Location = new System.Drawing.Point(406, 32);
-            this.btnUtil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUtil.Margin = new System.Windows.Forms.Padding(2);
             this.btnUtil.Name = "btnUtil";
             this.btnUtil.Size = new System.Drawing.Size(74, 28);
             this.btnUtil.TabIndex = 4;
@@ -74,7 +75,7 @@ namespace Localmarket_App
             // 
             this.picValoracion.Image = global::Localmarket_App.Properties.Resources._2estr;
             this.picValoracion.Location = new System.Drawing.Point(406, 7);
-            this.picValoracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picValoracion.Margin = new System.Windows.Forms.Padding(2);
             this.picValoracion.Name = "picValoracion";
             this.picValoracion.Size = new System.Drawing.Size(74, 16);
             this.picValoracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,8 +84,8 @@ namespace Localmarket_App
             // 
             // picFoto
             // 
-            this.picFoto.Location = new System.Drawing.Point(8, 7);
-            this.picFoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picFoto.Location = new System.Drawing.Point(8, 5);
+            this.picFoto.Margin = new System.Windows.Forms.Padding(2);
             this.picFoto.Name = "picFoto";
             this.picFoto.Size = new System.Drawing.Size(62, 60);
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,7 +102,7 @@ namespace Localmarket_App
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblComentario);
             this.Controls.Add(this.picFoto);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PanelComentario";
             this.Size = new System.Drawing.Size(495, 69);
             this.Load += new System.EventHandler(this.PanelComentario_Load);

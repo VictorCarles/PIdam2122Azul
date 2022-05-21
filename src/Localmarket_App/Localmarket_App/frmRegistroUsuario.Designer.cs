@@ -118,7 +118,7 @@ namespace Localmarket_App
             this.lblRepContraseña.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepContraseña.Location = new System.Drawing.Point(314, 435);
             this.lblRepContraseña.Name = "lblRepContraseña";
-            this.lblRepContraseña.Size = new System.Drawing.Size(175, 23);
+            this.lblRepContraseña.Size = new System.Drawing.Size(137, 18);
             this.lblRepContraseña.TabIndex = 2;
             this.lblRepContraseña.Text = "Repetir Contraseña:";
             // 
@@ -129,7 +129,7 @@ namespace Localmarket_App
             this.lblNombre.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(400, 241);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(83, 23);
+            this.lblNombre.Size = new System.Drawing.Size(66, 18);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -140,7 +140,7 @@ namespace Localmarket_App
             this.lblApellidos.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellidos.Location = new System.Drawing.Point(391, 287);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(92, 23);
+            this.lblApellidos.Size = new System.Drawing.Size(74, 18);
             this.lblApellidos.TabIndex = 4;
             this.lblApellidos.Text = "Apellidos:";
             // 
@@ -151,7 +151,7 @@ namespace Localmarket_App
             this.lblContraseña.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.Location = new System.Drawing.Point(379, 395);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(110, 23);
+            this.lblContraseña.Size = new System.Drawing.Size(85, 18);
             this.lblContraseña.TabIndex = 9;
             this.lblContraseña.Text = "Contraseña:";
             // 
@@ -162,7 +162,7 @@ namespace Localmarket_App
             this.lblCorreo.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.Location = new System.Drawing.Point(416, 342);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(68, 23);
+            this.lblCorreo.Size = new System.Drawing.Size(53, 18);
             this.lblCorreo.TabIndex = 10;
             this.lblCorreo.Text = "E-Mail:";
             // 
@@ -173,7 +173,7 @@ namespace Localmarket_App
             this.txtRepContraseña.Location = new System.Drawing.Point(495, 436);
             this.txtRepContraseña.MaxLength = 45;
             this.txtRepContraseña.Name = "txtRepContraseña";
-            this.txtRepContraseña.Size = new System.Drawing.Size(205, 23);
+            this.txtRepContraseña.Size = new System.Drawing.Size(205, 20);
             this.txtRepContraseña.TabIndex = 6;
             this.txtRepContraseña.UseSystemPasswordChar = true;
             // 
@@ -184,7 +184,7 @@ namespace Localmarket_App
             this.txtNombre.Location = new System.Drawing.Point(495, 241);
             this.txtNombre.MaxLength = 45;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(205, 23);
+            this.txtNombre.Size = new System.Drawing.Size(205, 20);
             this.txtNombre.TabIndex = 2;
             // 
             // txtApellido
@@ -194,7 +194,7 @@ namespace Localmarket_App
             this.txtApellido.Location = new System.Drawing.Point(495, 289);
             this.txtApellido.MaxLength = 45;
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(205, 23);
+            this.txtApellido.Size = new System.Drawing.Size(205, 20);
             this.txtApellido.TabIndex = 3;
             // 
             // txtCorreo
@@ -204,7 +204,7 @@ namespace Localmarket_App
             this.txtCorreo.Location = new System.Drawing.Point(495, 342);
             this.txtCorreo.MaxLength = 45;
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(205, 23);
+            this.txtCorreo.Size = new System.Drawing.Size(205, 20);
             this.txtCorreo.TabIndex = 4;
             // 
             // txtContraseña
@@ -214,7 +214,7 @@ namespace Localmarket_App
             this.txtContraseña.Location = new System.Drawing.Point(495, 396);
             this.txtContraseña.MaxLength = 45;
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(205, 23);
+            this.txtContraseña.Size = new System.Drawing.Size(205, 20);
             this.txtContraseña.TabIndex = 5;
             this.txtContraseña.UseSystemPasswordChar = true;
             // 
@@ -225,7 +225,7 @@ namespace Localmarket_App
             this.lblDatosEmpresario.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatosEmpresario.Location = new System.Drawing.Point(379, 178);
             this.lblDatosEmpresario.Name = "lblDatosEmpresario";
-            this.lblDatosEmpresario.Size = new System.Drawing.Size(186, 23);
+            this.lblDatosEmpresario.Size = new System.Drawing.Size(148, 18);
             this.lblDatosEmpresario.TabIndex = 21;
             this.lblDatosEmpresario.Text = "DATOS DE CLIENTE:";
             // 
@@ -236,7 +236,7 @@ namespace Localmarket_App
             this.lblCP.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCP.Location = new System.Drawing.Point(358, 479);
             this.lblCP.Name = "lblCP";
-            this.lblCP.Size = new System.Drawing.Size(131, 23);
+            this.lblCP.Size = new System.Drawing.Size(104, 18);
             this.lblCP.TabIndex = 22;
             this.lblCP.Text = "Código Postal:";
             // 
@@ -246,7 +246,7 @@ namespace Localmarket_App
             this.mskCP.Location = new System.Drawing.Point(495, 479);
             this.mskCP.Mask = "00000";
             this.mskCP.Name = "mskCP";
-            this.mskCP.Size = new System.Drawing.Size(39, 22);
+            this.mskCP.Size = new System.Drawing.Size(39, 20);
             this.mskCP.TabIndex = 7;
             // 
             // txtDireccion
@@ -256,7 +256,7 @@ namespace Localmarket_App
             this.txtDireccion.Location = new System.Drawing.Point(495, 519);
             this.txtDireccion.MaxLength = 45;
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(205, 23);
+            this.txtDireccion.Size = new System.Drawing.Size(205, 20);
             this.txtDireccion.TabIndex = 8;
             // 
             // lblDireccion
@@ -266,7 +266,7 @@ namespace Localmarket_App
             this.lblDireccion.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.Location = new System.Drawing.Point(395, 518);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(94, 23);
+            this.lblDireccion.Size = new System.Drawing.Size(74, 18);
             this.lblDireccion.TabIndex = 25;
             this.lblDireccion.Text = "Dirección:";
             // 
@@ -277,7 +277,7 @@ namespace Localmarket_App
             this.txtUsuario.Location = new System.Drawing.Point(495, 204);
             this.txtUsuario.MaxLength = 20;
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(205, 23);
+            this.txtUsuario.Size = new System.Drawing.Size(205, 20);
             this.txtUsuario.TabIndex = 1;
             // 
             // lblUsuario
@@ -287,7 +287,7 @@ namespace Localmarket_App
             this.lblUsuario.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(405, 201);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(79, 23);
+            this.lblUsuario.Size = new System.Drawing.Size(61, 18);
             this.lblUsuario.TabIndex = 42;
             this.lblUsuario.Text = "Usuario:";
             // 
@@ -307,7 +307,7 @@ namespace Localmarket_App
             // openFileDialogElegirImagen
             // 
             this.openFileDialogElegirImagen.FileName = "openFileDialogElegirImagen";
-            this.openFileDialogElegirImagen.Filter = "\"Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;...\"";
+            this.openFileDialogElegirImagen.Filter = "\"Image Files|*.jpg;*.jpeg;...\"";
             // 
             // pnlAjustes
             // 
@@ -333,7 +333,7 @@ namespace Localmarket_App
             this.lblModoNoche.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModoNoche.Location = new System.Drawing.Point(7, 113);
             this.lblModoNoche.Name = "lblModoNoche";
-            this.lblModoNoche.Size = new System.Drawing.Size(110, 20);
+            this.lblModoNoche.Size = new System.Drawing.Size(93, 16);
             this.lblModoNoche.TabIndex = 23;
             this.lblModoNoche.Text = "Modo Noche";
             // 
@@ -343,7 +343,7 @@ namespace Localmarket_App
             this.lblAjustes.Font = new System.Drawing.Font("Leelawadee", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAjustes.Location = new System.Drawing.Point(51, 12);
             this.lblAjustes.Name = "lblAjustes";
-            this.lblAjustes.Size = new System.Drawing.Size(66, 20);
+            this.lblAjustes.Size = new System.Drawing.Size(54, 16);
             this.lblAjustes.TabIndex = 12;
             this.lblAjustes.Text = "Ajustes";
             // 
@@ -392,7 +392,7 @@ namespace Localmarket_App
             "English"});
             this.cmbIdioma.Location = new System.Drawing.Point(57, 54);
             this.cmbIdioma.Name = "cmbIdioma";
-            this.cmbIdioma.Size = new System.Drawing.Size(96, 26);
+            this.cmbIdioma.Size = new System.Drawing.Size(96, 23);
             this.cmbIdioma.TabIndex = 19;
             this.cmbIdioma.SelectedIndexChanged += new System.EventHandler(this.cmbIdioma_SelectedIndexChanged);
             // 
@@ -428,7 +428,7 @@ namespace Localmarket_App
             this.txtTelefono.Location = new System.Drawing.Point(495, 559);
             this.txtTelefono.MaxLength = 9;
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(205, 23);
+            this.txtTelefono.Size = new System.Drawing.Size(205, 20);
             this.txtTelefono.TabIndex = 9;
             // 
             // lblTelefono
@@ -438,7 +438,7 @@ namespace Localmarket_App
             this.lblTelefono.Font = new System.Drawing.Font("Leelawadee", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.Location = new System.Drawing.Point(394, 557);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(88, 23);
+            this.lblTelefono.Size = new System.Drawing.Size(70, 18);
             this.lblTelefono.TabIndex = 49;
             this.lblTelefono.Text = "Telefono:";
             // 

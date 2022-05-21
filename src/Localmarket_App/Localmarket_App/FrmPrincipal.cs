@@ -40,15 +40,7 @@ namespace Localmarket_App
             picPerfil2.Image = usuario.Imagen;
             lblUsuario.Text = usuario.Username;
             cmbIdioma.SelectedIndex = 0;
-            if (ConexionBD.Conexion != null)
-            {
-                ConexionBD.AbrirConexion();
-                if (Empresa.TieneEmpresa(usuario))
-                {
-                    lblCrearEmpresa.Text = "Editar empresa";
-                }
-                ConexionBD.CerrarConexion();
-            }
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -93,29 +85,73 @@ namespace Localmarket_App
         private void lblAlimentacion_Click(object sender, EventArgs e)
         {
             limpiarPagina();
-            lblAlimentacion.Text = "-Alimentacion";
-            lblTituloCategoria.Text = "Comercios en categoría de Alimentación";
+            if (cmbIdioma.Text == "English")
+            {
+                lblAlimentacion.Text = "-Nutrition";
+                lblModa.Text = "Fashion";
+                lblOcio.Text = "Leisure";
+                lblTituloCategoria.Text = "Nutrition Businesses:";
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblAlimentacion.Text = "-Alimentación";
+                lblModa.Text = "Moda";
+                lblOcio.Text = "Ocio";
+                lblTituloCategoria.Text = "Comercios en categoría de Alimentación:";
+            }
         }
 
         private void lblModa_Click(object sender, EventArgs e)
         {
             limpiarPagina();
-            lblModa.Text = "-Moda";
-            lblTituloCategoria.Text = "Comercios en categoría de Moda";
+            if (cmbIdioma.Text == "English")
+            {
+                lblAlimentacion.Text = "Nutrition";
+                lblModa.Text = "-Fashion";
+                lblOcio.Text = "Leisure";
+                lblTituloCategoria.Text = "Fashion Businesses:";
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblAlimentacion.Text = "Alimentación";
+                lblModa.Text = "-Moda";
+                lblOcio.Text = "Ocio";
+                lblTituloCategoria.Text = "Comercios en categoría de Moda:";
+            }
         }
 
         private void lblOcio_Click(object sender, EventArgs e)
         {
             limpiarPagina();
-            lblOcio.Text = "-Ocio";
-            lblTituloCategoria.Text = "Comercios en categoría de Ocio";
+            if (cmbIdioma.Text == "English")
+            {
+                lblAlimentacion.Text = "Nutrition";
+                lblModa.Text = "Fashion";
+                lblOcio.Text = "-Leisure";
+                lblTituloCategoria.Text = "Leisure Businesses:";
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblAlimentacion.Text = "Alimentación";
+                lblModa.Text = "Moda";
+                lblOcio.Text = "-Ocio";
+                lblTituloCategoria.Text = "Comercios en categoría de Ocio:";
+            }
         }
 
         private void picBuscar_Click(object sender, EventArgs e)
         {
             limpiarPagina();
             pnlComercio.Controls.Clear();
-            lblTituloCategoria.Text = "Resultados de la búsqueda '" + txtBusqueda.Text+ "':";
+            if (cmbIdioma.Text == "English")
+            {
+                lblTituloCategoria.Text = "Search results for '" + txtBusqueda.Text + "':";
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblTituloCategoria.Text = "Resultados de la búsqueda '" + txtBusqueda.Text + "':";
+            }
+            
             if (ConexionBD.Conexion != null)
             {
                 ConexionBD.AbrirConexion();
@@ -144,15 +180,23 @@ namespace Localmarket_App
 
         private void limpiarPagina()
         {
-            lblNoticias.Visible = false;
-            pnlNoticia.Visible = false;
+            picLocalMarket.Visible = false;
             pnlLateral.Visible = false;
             pnlComercio.Visible = true;
             picCarusel.Visible = false;
             lblTituloCategoria.Visible = true;
-            lblAlimentacion.Text = "Alimentacion";
-            lblModa.Text = "Moda";
-            lblOcio.Text = "Ocio";
+
+            if (cmbIdioma.Text == "English")
+            {
+                lblAlimentacion.Text = "Nutrition";
+                lblModa.Text = "Fashion";
+                lblOcio.Text = "Leisure";
+            } else if (cmbIdioma.Text == "Español")
+            {
+                lblAlimentacion.Text = "Alimentación";
+                lblModa.Text = "Moda";
+                lblOcio.Text = "Ocio";
+            }
         }
 
         private void lblListaFav_Click(object sender, EventArgs e)
@@ -198,12 +242,11 @@ namespace Localmarket_App
             {
                 pnlPerfil.Visible = false;
             }
-            
         }
 
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
-            if (lblCrearEmpresa.Text == "Editar empresa")
+            if (lblCrearEmpresa.Text == "Editar empresa" || lblCrearEmpresa.Text == "Edit business")
             {
                 if (ConexionBD.Conexion != null)
                 {
@@ -248,8 +291,6 @@ namespace Localmarket_App
             picNocheOff.Visible = false;
             picNocheOn.Visible = true;
             modoNoche = true;
-            pnlComercio.BackColor = Color.Black;
-            pnlNoticia.BackColor = Color.Black;
             pnlNaranja.BackColor = Color.Black;
             pnlLateral.BackColor = Color.Black;
             txtBusqueda.BackColor = Color.DimGray;
@@ -263,6 +304,7 @@ namespace Localmarket_App
             picSideMenu.Image = Resources.botonmenublanco;
             picRecientes.Image = Resources.recientesblanco;
             this.BackColor = Color.DimGray;
+
 
 
             foreach (Panel p in Controls.OfType<Panel>())
@@ -283,8 +325,6 @@ namespace Localmarket_App
             picNocheOff.Visible = true;
             picNocheOn.Visible = false;
             modoNoche = false;
-            pnlComercio.BackColor = Color.White;
-            pnlNoticia.BackColor = Color.White;
             pnlNaranja.BackColor = Color.Orange;
             pnlLateral.BackColor = Color.DarkOrange;
             txtBusqueda.BackColor = Color.White;
@@ -327,6 +367,19 @@ namespace Localmarket_App
                 lblPerfil.Text = MultiIdiomas.FrmPrincipalIng.UserProfile;
                 lblRecientes.Text = MultiIdiomas.FrmPrincipalIng.Recent;
                 this.Text = MultiIdiomas.FrmPrincipalIng.MainPage;
+
+                lblTituloCategoria.Text = "Search results:";
+
+
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    if (Empresa.TieneEmpresa(usuario))
+                    {
+                        lblCrearEmpresa.Text = "Edit business";
+                    }
+                    ConexionBD.CerrarConexion();
+                }
             }
             else if (cmbIdioma.Text == "Español")
             {
@@ -342,6 +395,18 @@ namespace Localmarket_App
                 lblPerfil.Text = MultiIdiomas.FrmPrincipalEsp.PerfilUsuario;
                 lblRecientes.Text = MultiIdiomas.FrmPrincipalEsp.recents;
                 this.Text = MultiIdiomas.FrmPrincipalEsp.PaginaPrincipal;
+
+                lblTituloCategoria.Text = "Resultados de búsqueda:";
+
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    if (Empresa.TieneEmpresa(usuario))
+                    {
+                        lblCrearEmpresa.Text = "Editar empresa";
+                    }
+                    ConexionBD.CerrarConexion();
+                }
             }
         }
 

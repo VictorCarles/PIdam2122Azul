@@ -28,8 +28,9 @@ namespace Localmarket_App
         private void PanelProducto_Load(object sender, EventArgs e)
         {
             lblProducto.Text = producto.Nombre;
-            lblPrecio.Text = producto.Price.ToString();
+            lblPrecio.Text = producto.Price.ToString() + "€";
             lblDescripcion.Text = producto.Descripcion;
+            picProducto.Image = producto.Image;
         }
     }
 }

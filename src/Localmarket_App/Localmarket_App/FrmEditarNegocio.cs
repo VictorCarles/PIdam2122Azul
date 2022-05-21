@@ -226,5 +226,17 @@ namespace Localmarket_App
         {
             AplicarIdioma();
         }
+
+        private void btnAñadirProducto_Click(object sender, EventArgs e)
+        {
+           
+                Producto producto = new Producto(0, cmbIdioma.Text,  Convert.ToDouble(txtPrecio.Text), txtNomProducto.Text, txtDescProducto.Text, picPreviewProducto.Image, true, empresa.CIFP);
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    Producto.InsertarProducto(producto);
+                    ConexionBD.CerrarConexion();
+                }            
+        }
     }
 }
