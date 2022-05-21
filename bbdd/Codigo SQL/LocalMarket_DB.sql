@@ -19,10 +19,10 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
   `telephone` INT(11) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
   `profilePicture` LONGBLOB NULL,
-  `address` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(60) NOT NULL,
   `cp` INT NOT NULL,
-  `tipo` VARCHAR(20) NOT NULL,
-  `DNI` VARCHAR(9) NULL,
+  `tipo` VARCHAR(20) NOT NULL DEFAULT 'basic',
+  `nif` VARCHAR(9) NULL,
   PRIMARY KEY (username));
 -- DROP TABLE IF EXISTS localmarket_db.Usuario;
 
