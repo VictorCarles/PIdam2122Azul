@@ -78,11 +78,11 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
 
 ## Tabla Listas:
 CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
-  `idListas` INT NOT NULL AUTO_INCREMENT,
+  `list_id` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `username` VARCHAR(20) NOT NULL,
   `cif_included` VARCHAR(9) NOT NULL,
-  PRIMARY KEY (`idListas`),
+  PRIMARY KEY (`list_id`),
   INDEX `fk_username_idx` (`username` ASC),
   CONSTRAINT `fk_username`
     FOREIGN KEY (`username`)
