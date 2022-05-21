@@ -11,6 +11,8 @@ namespace Localmarket_App
         Empresa empresa;
         private bool modoNoche;
         Usuario usuario;
+        private string idioma;
+
         public PanelEmpresa()
         {
             InitializeComponent();
@@ -35,7 +37,7 @@ namespace Localmarket_App
         private void lblNomComercio_Click(object sender, EventArgs e)
         {
             FrmPrincipal.ActiveForm.Hide();
-            FrmPaginaComercio frmPaginaComercio = new FrmPaginaComercio(modoNoche, empresa, usuario);
+            FrmPaginaComercio frmPaginaComercio = new FrmPaginaComercio(modoNoche, empresa, usuario, idioma);
             frmPaginaComercio.ShowDialog();
             if (FrmPrincipal.ActiveForm != null)
             {

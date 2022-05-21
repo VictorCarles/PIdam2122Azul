@@ -16,12 +16,14 @@ namespace Localmarket_App
         private bool modoNoche;
         private Usuario usuario;
         private Empresa empresa;
-        public FrmPrincipal(bool modoNoche, Usuario usuario, Empresa empresa = null)
+        private string idioma;
+        public FrmPrincipal(bool modoNoche, Usuario usuario, Empresa empresa = null, string idioma = null)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
             this.usuario = usuario;
             this.empresa = empresa;
+            this.idioma = idioma;
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
@@ -39,7 +41,8 @@ namespace Localmarket_App
             picPerfil.Image = usuario.Imagen;
             picPerfil2.Image = usuario.Imagen;
             lblUsuario.Text = usuario.Username;
-            cmbIdioma.SelectedIndex = 0;
+            cmbIdioma.Text = idioma;
+            AplicarIdioma();
             
         }
 
@@ -227,7 +230,7 @@ namespace Localmarket_App
         private void lblCerrarSesion_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmLogin frmLog = new FrmLogin(modoNoche);
+            FrmLogin frmLog = new FrmLogin(modoNoche, idioma);
             frmLog.ShowDialog();
             frmLog.Show();
         }
@@ -255,7 +258,7 @@ namespace Localmarket_App
                     ConexionBD.CerrarConexion();
                 }
                 this.Hide();
-                FrmEditarNegocio frmEditarNegocio = new FrmEditarNegocio(modoNoche,usuario,empresa);
+                FrmEditarNegocio frmEditarNegocio = new FrmEditarNegocio(modoNoche,usuario,empresa, idioma);
                 frmEditarNegocio.ShowDialog();
                 this.Close();
             }
@@ -281,7 +284,7 @@ namespace Localmarket_App
         private void lblPerfil_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche, usuario);
+            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche, usuario, idioma);
             frmPerfUsu.ShowDialog();
             this.Close();
         }
@@ -355,6 +358,7 @@ namespace Localmarket_App
         {
             if (cmbIdioma.Text == "English")
             {
+                idioma = "English";
                 lblAjustes.Text = MultiIdiomas.FrmPrincipalIng.Settings;
                 lblAlimentacion.Text = MultiIdiomas.FrmPrincipalIng.Nutrition;
                 lblCategorias.Text = MultiIdiomas.FrmPrincipalIng.Categories;
@@ -383,6 +387,7 @@ namespace Localmarket_App
             }
             else if (cmbIdioma.Text == "Español")
             {
+                idioma = "Español";
                 lblAjustes.Text = MultiIdiomas.FrmPrincipalEsp.ajustes;
                 lblAlimentacion.Text = MultiIdiomas.FrmPrincipalEsp.Alimentacion;
                 lblCategorias.Text = MultiIdiomas.FrmPrincipalEsp.Categorias;

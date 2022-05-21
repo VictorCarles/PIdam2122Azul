@@ -16,16 +16,17 @@ namespace Localmarket_App
     {
         private bool modoNoche;
         private Usuario usuarioGlobal;
-        public FrmRegistroUsuario(bool modoNoche)
+        private string idioma;
+
+        public FrmRegistroUsuario(bool modoNoche, string idioma)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
+            this.idioma = idioma;
         }
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
-            cmbIdioma.Text = "Español";
-
             if (modoNoche)
             {
                 modoNocheOn();
@@ -34,7 +35,8 @@ namespace Localmarket_App
             {
                 modoNocheOff();
             }
-            cmbIdioma.Text = "Español";
+            cmbIdioma.Text = idioma;
+            AplicarIdioma();
         }
 
         public void picAjustes_Click(object sender, EventArgs e)
@@ -52,7 +54,7 @@ namespace Localmarket_App
         private void picAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmLogin frmLog = new FrmLogin(modoNoche);
+            FrmLogin frmLog = new FrmLogin(modoNoche, idioma);
             frmLog.ShowDialog();
             this.Close();
         }
@@ -73,7 +75,7 @@ namespace Localmarket_App
                 }
 
                 this.Hide();
-                FrmLogin frmLogin = new FrmLogin(modoNoche);
+                FrmLogin frmLogin = new FrmLogin(modoNoche, idioma);
                 frmLogin.ShowDialog();
                 this.Close();
             }

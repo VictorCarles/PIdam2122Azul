@@ -7,11 +7,13 @@ namespace Localmarket_App
     public partial class FrmLogin : Form
     {
         private bool modoNoche;
+        private string idioma;
         private Usuario usuarioGlobal;
-        public FrmLogin(bool modoNoche)
+        public FrmLogin(bool modoNoche, string idioma)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
+            this.idioma = idioma;
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -23,7 +25,7 @@ namespace Localmarket_App
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmRegistroUsuario frmReg = new FrmRegistroUsuario(modoNoche);
+            FrmRegistroUsuario frmReg = new FrmRegistroUsuario(modoNoche, idioma);
             frmReg.ShowDialog();
             this.Close();
         }
@@ -32,7 +34,8 @@ namespace Localmarket_App
         {
             pnlDatosUsuario.BackColor = Color.FromArgb(200, 238, 240, 161);
             pnlDatosUsuario.Visible = false;
-            cmbIdioma.Text = "Español";
+            cmbIdioma.Text = idioma;
+            AplicarIdioma();
 
         }
 
@@ -51,7 +54,7 @@ namespace Localmarket_App
                 if (usuarioGlobal != null)
                 {
                     this.Hide();
-                    FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuarioGlobal);
+                    FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuarioGlobal, null, idioma);
                     frmPrincipal.ShowDialog();
                     this.Close();
                 }
@@ -86,6 +89,7 @@ namespace Localmarket_App
         {
             if (cmbIdioma.Text == "English")
             {
+                idioma = "English";
                 btnRegistrarse.Text = MultiIdiomas.FrmLoginIng.btnRegister;
                 btnIniciarSesion.Text = MultiIdiomas.FrmLoginIng.btnLogin;
                 btnIniciarSesion2.Text = MultiIdiomas.FrmLoginIng.btnLogin2;
@@ -95,6 +99,7 @@ namespace Localmarket_App
             }
             else if (cmbIdioma.Text == "Español")
             {
+                idioma = "Español";
                 btnRegistrarse.Text = MultiIdiomas.FrmLoginEsp.btnRegistro;
                 btnIniciarSesion.Text = MultiIdiomas.FrmLoginEsp.btnInicioSesion;
                 btnIniciarSesion2.Text = MultiIdiomas.FrmLoginEsp.btnInicioSesion2;

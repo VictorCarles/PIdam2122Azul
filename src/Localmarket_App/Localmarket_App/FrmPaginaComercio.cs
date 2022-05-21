@@ -1,12 +1,8 @@
 ﻿using Localmarket_App.Properties;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Localmarket_App
@@ -16,13 +12,15 @@ namespace Localmarket_App
         private bool modoNoche;
         Empresa empresa;
         Usuario usuario;
+        private string idioma;
         int score = 1;
-        public FrmPaginaComercio(bool modoNoche, Empresa emp, Usuario usu)
+        public FrmPaginaComercio(bool modoNoche, Empresa emp, Usuario usu, string idioma)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
             empresa = emp;
             usuario = usu;
+            this.idioma = idioma;
         }
 
         private void FrmPaginaComercio_Load(object sender, EventArgs e)
@@ -44,7 +42,8 @@ namespace Localmarket_App
             picPerfil.Image = usuario.Imagen;
             picPerfilUsuario.Image = usuario.Imagen;
             lblUsuario.Text = usuario.Username;
-            cmbIdioma.Text = "Español";
+            cmbIdioma.Text = idioma;
+
 
             if (ConexionBD.Conexion != null)
             {
@@ -58,7 +57,7 @@ namespace Localmarket_App
                 calculaValoracion();
                 ConexionBD.CerrarConexion();
             }
-                     
+
         }
 
         private void CargarComentarios(List<Comentario> comentarios)
@@ -164,7 +163,7 @@ namespace Localmarket_App
                     ConexionBD.CerrarConexion();
                 }
                 this.Hide();
-                FrmEditarNegocio frmEditarNegocio = new FrmEditarNegocio(modoNoche, usuario, empresa);
+                FrmEditarNegocio frmEditarNegocio = new FrmEditarNegocio(modoNoche, usuario, empresa, idioma);
                 frmEditarNegocio.ShowDialog();
                 this.Close();
             }
@@ -192,7 +191,7 @@ namespace Localmarket_App
         private void lblCerrarSesion_Click(object sender, EventArgs e)
         {
             Hide();
-            FrmLogin frmLog = new FrmLogin(modoNoche);
+            FrmLogin frmLog = new FrmLogin(modoNoche, idioma);
             frmLog.ShowDialog();
             Close();
         }
@@ -277,7 +276,7 @@ namespace Localmarket_App
         private void lblPerfil_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche, usuario);
+            FrmPerfilUsuario frmPerfUsu = new FrmPerfilUsuario(modoNoche, usuario, idioma);
             frmPerfUsu.ShowDialog();
             this.Close();
         }

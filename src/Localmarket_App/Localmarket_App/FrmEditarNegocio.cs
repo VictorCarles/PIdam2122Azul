@@ -16,12 +16,14 @@ namespace Localmarket_App
         private bool modoNoche;
         private Empresa empresa;
         private Usuario usuario;
-        public FrmEditarNegocio(bool modoNoche, Usuario usu, Empresa empresa)
+        private string idioma;
+        public FrmEditarNegocio(bool modoNoche, Usuario usu, Empresa empresa, string idioma)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
             this.usuario = usu;
             this.empresa = empresa;
+            this.idioma = idioma;
 
         }
 
@@ -31,7 +33,8 @@ namespace Localmarket_App
             txtDescripcion.Text = empresa.Description;
 
             picPreviewLogo.Image = new Bitmap(empresa.ProfilePicture);
-            cmbIdioma.Text = "Español";
+            cmbIdioma.Text = idioma;
+            AplicarIdioma();
 
         }
 
@@ -152,7 +155,7 @@ namespace Localmarket_App
         private void picAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario, empresa);
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario, empresa, idioma);
             frmPrincipal.ShowDialog();
             this.Close();
         }
@@ -168,7 +171,7 @@ namespace Localmarket_App
             MessageBox.Show("Datos modificados con exito");
 
             this.Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario, empresa);
+            FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuario, empresa, idioma);
             frmPrincipal.ShowDialog();
             this.Close();
         }
@@ -182,6 +185,7 @@ namespace Localmarket_App
         {
             if (cmbIdioma.Text == "English")
             {
+                idioma = "English";
                 lblDatosNegocio.Text = MultiIdiomas.FrmEditarNegocioIng.lblBusinessData;
                 lblAjustes.Text = MultiIdiomas.FrmEditarNegocioIng.Settings;
                 lblDescProducto.Text = MultiIdiomas.FrmEditarNegocioIng.ProdDesc;
@@ -202,6 +206,7 @@ namespace Localmarket_App
             }
             else if (cmbIdioma.Text == "Español")
             {
+                idioma = "Español";
                 lblDatosNegocio.Text = MultiIdiomas.FrmEditarNegocioEsp.lblBusinessData;
                 lblAjustes.Text = MultiIdiomas.FrmEditarNegocioEsp.Settings;
                 lblDescProducto.Text = MultiIdiomas.FrmEditarNegocioEsp.ProdDesc;
