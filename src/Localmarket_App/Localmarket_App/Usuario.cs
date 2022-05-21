@@ -96,6 +96,7 @@ namespace Localmarket_App
                 }
                 Usuario usuario = new Usuario(reader.GetString(0),reader.GetString(1),reader.GetString(2),reader.GetString(3),reader.GetInt32(4),reader.GetString(5),
                     reader.GetString(7),reader.GetInt32(8),img,reader.GetString(9),reader.GetString(10));
+                reader.Close();
                 return usuario;
             }
             else

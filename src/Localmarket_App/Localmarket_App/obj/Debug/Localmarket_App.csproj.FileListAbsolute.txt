@@ -133,3 +133,15 @@ C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\ob
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPerfilUsuarioIng.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPrincipalEsp.resources
 C:\Users\vigigi01\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPrincipalIng.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmLoginEsp.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmLoginIng.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmEditarNegocioIng.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmEditarNegocioEsp.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmRegistroUsuarioIng.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmRegistroUsuarioEsp.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmRegistroEmpresaIng.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmRegistroEmpresaEsp.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPerfilUsuarioEsp.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPerfilUsuarioIng.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPrincipalEsp.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPrincipalIng.resources

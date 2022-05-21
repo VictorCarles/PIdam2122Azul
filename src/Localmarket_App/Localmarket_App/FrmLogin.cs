@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Localmarket_App
@@ -32,8 +24,8 @@ namespace Localmarket_App
         {
             this.Hide();
             FrmRegistroUsuario frmReg = new FrmRegistroUsuario(modoNoche);
-            frmReg.ShowDialog();
-            this.Close();
+            frmReg.Closed += (s, args) => this.Close();
+            frmReg.Show();
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -48,7 +40,7 @@ namespace Localmarket_App
         {
             if (ComprobarDatos())
             {
-                usuarioGlobal = new Usuario(txtUsuario.Text,txtContraseña.Text);
+                usuarioGlobal = new Usuario(txtUsuario.Text, txtContraseña.Text);
                 if (ConexionBD.Conexion != null)
                 {
                     ConexionBD.AbrirConexion();
@@ -59,9 +51,9 @@ namespace Localmarket_App
                 if (usuarioGlobal != null)
                 {
                     this.Hide();
-                    FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche,usuarioGlobal);
-                    frmPrincipal.ShowDialog();
-                    this.Close();
+                    FrmPrincipal frmPrincipal = new FrmPrincipal(modoNoche, usuarioGlobal);
+                    frmPrincipal.Closed += (s, args) => this.Close();
+                    frmPrincipal.Show();
                 }
                 else
                 {
@@ -120,5 +112,5 @@ namespace Localmarket_App
         {
             AplicarIdioma();
         }
-    }   
+    }
 }

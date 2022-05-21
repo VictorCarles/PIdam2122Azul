@@ -40,18 +40,31 @@ namespace Localmarket_App
             lblNombreComercio.Text = empresa.Name;
             picLogoComercio.Image = empresa.ProfilePicture;
             lblDescComercio.Text = empresa.Description;
-            calculaValoracion(empresa.AvgScore);
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                calculaValoracion();
+                ConexionBD.CerrarConexion();
+            }
             picFotoPerfil.Image = usuario.Imagen;
             picPerfil.Image = usuario.Imagen;
+            picPerfilUsuario.Image = usuario.Imagen;
+            lblUsuario.Text = usuario.Username;
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                if (Empresa.TieneEmpresa(usuario))
+                {
+                    lblCrearEmpresa.Text = "Editar empresa";
+                }
+                ConexionBD.CerrarConexion();
+            }
             if (ConexionBD.Conexion != null)
             {
                 ConexionBD.AbrirConexion();
                 CargarComentarios(Comentario.BusquedaComentarios(empresa));
                 ConexionBD.CerrarConexion();
             }
-
-
-
         }
 
         private void CargarComentarios(List<Comentario> comentarios)
@@ -131,10 +144,26 @@ namespace Localmarket_App
 
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
-            frmRegEmp.ShowDialog();
-            this.Close();
+            if (lblCrearEmpresa.Text == "Editar empresa")
+            {
+                if (ConexionBD.Conexion != null)
+                {
+                    ConexionBD.AbrirConexion();
+                    empresa = Empresa.ConseguirEmpresa(usuario);
+                    ConexionBD.CerrarConexion();
+                }
+                this.Hide();
+                FrmEditarNegocio frmEditarNegocio = new FrmEditarNegocio(modoNoche, usuario, empresa);
+                frmEditarNegocio.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
+                frmRegEmp.ShowDialog();
+                this.Close();
+            }
         }
 
         private void picNocheOff_Click(object sender, EventArgs e)
@@ -304,8 +333,21 @@ namespace Localmarket_App
             }
         }
 
-        private void calculaValoracion(double puntuacion)
+        private void calculaValoracion()
         {
+            List<Comentario> comentarios = Comentario.BusquedaComentarios(empresa);
+            double puntuacion = 1;
+            if (comentarios != null)
+            {
+
+                foreach (var item in comentarios)
+                {
+                    puntuacion += item.Score;
+                }
+
+                puntuacion /= comentarios.Count;
+            }
+
             if (puntuacion < 1.5)
             {
                 picValoracion.Image = Resources._1estr;

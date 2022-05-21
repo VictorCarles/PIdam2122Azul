@@ -64,10 +64,12 @@ namespace Localmarket_App
 
             if (reader.HasRows)
             {
+                reader.Close();
                 return true;
             }
             else
             {
+                reader.Close();
                 return false;
             }
         }
@@ -98,6 +100,7 @@ namespace Localmarket_App
                         reader.GetString(10));
                     empresas.Add(emp);
                 }
+                reader.Close();
                 return empresas;
             }
             else

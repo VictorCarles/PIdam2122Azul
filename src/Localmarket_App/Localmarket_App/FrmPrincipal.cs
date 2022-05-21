@@ -39,6 +39,7 @@ namespace Localmarket_App
             picPerfil.Image = usuario.Imagen;
             picPerfil2.Image = usuario.Imagen;
             lblUsuario.Text = usuario.Username;
+            cmbIdioma.SelectedIndex = 0;
             if (ConexionBD.Conexion != null)
             {
                 ConexionBD.AbrirConexion();
@@ -183,8 +184,8 @@ namespace Localmarket_App
         {
             this.Hide();
             FrmLogin frmLog = new FrmLogin(modoNoche);
-            frmLog.ShowDialog();
-            this.Close();
+            frmLog.Closed += (s, args) => this.Close();
+            frmLog.Show();
         }
 
         private void picPerfil_Click(object sender, EventArgs e)
