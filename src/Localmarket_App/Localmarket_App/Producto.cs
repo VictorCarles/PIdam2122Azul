@@ -47,7 +47,6 @@ namespace Localmarket_App
                 while (reader.Read())
                 {
                     Image img;
-                    reader.Read();
                     if (reader.GetString(5) != "nada")
                     {
                         string data = reader.GetString(5);

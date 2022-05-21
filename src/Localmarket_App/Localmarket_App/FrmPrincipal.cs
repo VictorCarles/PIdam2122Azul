@@ -184,7 +184,7 @@ namespace Localmarket_App
         {
             this.Hide();
             FrmLogin frmLog = new FrmLogin(modoNoche);
-            frmLog.Closed += (s, args) => this.Close();
+            frmLog.ShowDialog();
             frmLog.Show();
         }
 
