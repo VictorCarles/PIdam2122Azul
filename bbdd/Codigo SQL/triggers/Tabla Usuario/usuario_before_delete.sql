@@ -1,32 +1,25 @@
 CREATE TRIGGER `usuario_before_delete` BEFORE DELETE ON `usuario` FOR EACH ROW BEGIN
 
-DECLARE varcif VARCHAR(9);
-DECLARE iscompany_owner BOOL;
+DECLARE varcif VARCHAR(20);
 DECLARE acc VARCHAR(600);
--- SET $varcif = NULL;
-DECLARE CURSOR1 CURSOR FOR SELECT cif FROM empresa WHERE empresa.owner_username=OLD.username;
-DECLARE CONTINUE HANDLER FOR NOT FOUND SET iscompany_owner=1;
--- SET varcif = SELECT cif FROM localmarket_db.empresa WHERE empresa.owner_username=username;
-
-SET iscompany_owner=0;
+DECLARE pastacc INT;
 SET acc='Accion';
 
-OPEN CURSOR1;
-
-fetch CURSOR1 INTO varcif;
-
-if iscompany_owner=1 THEN
-	SET acc=OLD.username+' ha eliminado su cuenta de usuario empresario. Su empresa es: '+varcif;
-	INSERT INTO localmarket_db.acciones(action_id, accion, fecha, user_username, cif_company)
-	VALUE (DEFAULT, acc, NOW(), OLD.username, varcif);
-	
+if (OLD.tipo='basic') THEN
+		SET acc=username+' ha eliminado su cuenta de usuario cliente.';
+		SET varcif=NULL;
 END if;
 
-if iscompany_owner=0 THEN
-	INSERT INTO localmarket_db.acciones(action_id, accion, fecha, user_username, cif_company)
-	VALUE (DEFAULT,OLD.username+' ha eliminado su cuenta de usuario cliente.',
-								NOW(), OLD.username, NULL);
-END if;
-CLOSE CURSOR1;
+if (OLD.tipo='business') THEN
+		SET varcif=(SELECT cif FROM empresa WHERE owner_username=username);
+		SET acc=username+' ha eliminado su cuenta de usuario empresario. Su empresa es: '+varcif;
+END IF;
+
+INSERT INTO localmarket_db.acciones(action_id, accion, fecha, user_username, cif_company)
+VALUE (DEFAULT, acc, NOW(), username, varcif);
+
+SET pastacc=(SELECT action_id FROM localmarket_db.acciones WHERE user_username=username);
+UPDATE acciones SET accion=(SELECT CONCAT(accion,' : (DELETED USER. log code: ',action_id,')')) WHERE action_id=pastacc;
+
 
 END
