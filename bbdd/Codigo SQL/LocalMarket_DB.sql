@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
   `profilePicture` LONGBLOB NULL,
   `address` VARCHAR(45) NOT NULL,
   `cp` INT NOT NULL,
-  `type` VARCHAR(20) NOT NULL,
+  `tipo` VARCHAR(20) NOT NULL,
   `DNI` VARCHAR(9) NULL,
   PRIMARY KEY (username));
 -- DROP TABLE IF EXISTS localmarket_db.Usuario;
