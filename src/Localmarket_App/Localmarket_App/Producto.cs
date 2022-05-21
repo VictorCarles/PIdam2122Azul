@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Localmarket_App.Properties;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -56,9 +57,9 @@ namespace Localmarket_App
                     {
                         img = null;
                     }
-                    Producto com = new Producto(reader.GetInt32(0),reader.GetString(1),reader.GetDouble(2),reader.GetString(3), reader.GetString(4),
+                    Producto prod = new Producto(reader.GetInt32(0),reader.GetString(1),reader.GetDouble(2),reader.GetString(3), reader.GetString(4),
                         img,reader.GetBoolean(6),reader.GetString(7));
-                    productos.Add(com);
+                    productos.Add(prod);
                 }
                 reader.Close();
                 return productos;
@@ -68,6 +69,7 @@ namespace Localmarket_App
                 return null;
             }
         }
+        
 
         public static Image Base64ToImage(string base64String)
         {

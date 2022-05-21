@@ -40,16 +40,12 @@ namespace Localmarket_App
             lblNombreComercio.Text = empresa.Name;
             picLogoComercio.Image = empresa.ProfilePicture;
             lblDescComercio.Text = empresa.Description;
-            if (ConexionBD.Conexion != null)
-            {
-                ConexionBD.AbrirConexion();
-                calculaValoracion();
-                ConexionBD.CerrarConexion();
-            }
             picFotoPerfil.Image = usuario.Imagen;
             picPerfil.Image = usuario.Imagen;
             picPerfilUsuario.Image = usuario.Imagen;
             lblUsuario.Text = usuario.Username;
+            cmbIdioma.Text = "Español";
+
             if (ConexionBD.Conexion != null)
             {
                 ConexionBD.AbrirConexion();
@@ -57,21 +53,12 @@ namespace Localmarket_App
                 {
                     lblCrearEmpresa.Text = "Editar empresa";
                 }
-                ConexionBD.CerrarConexion();
-            }
-            if (ConexionBD.Conexion != null)
-            {
-                ConexionBD.AbrirConexion();
                 CargarComentarios(Comentario.BusquedaComentarios(empresa));
-                ConexionBD.CerrarConexion();
-            }
-            if (ConexionBD.Conexion != null)
-            {
-                ConexionBD.AbrirConexion();
                 CargarProductos(Producto.BusquedaProductos(empresa));
+                calculaValoracion();
                 ConexionBD.CerrarConexion();
             }
-            cmbIdioma.Text = "Español";
+                     
         }
 
         private void CargarComentarios(List<Comentario> comentarios)
@@ -307,7 +294,6 @@ namespace Localmarket_App
             pnlNaranja.BackColor = Color.Black;
             pnlAjustes.BackColor = Color.DarkCyan;
             pnlPerfil.BackColor = Color.SeaGreen;
-            pnlProductos.ForeColor = Color.White;
             btnEnviarComentario.ForeColor = Color.Black;
             btnEnviarComentario.BackColor = Color.DarkCyan;
             picAjustes.Image = Resources.ajustesicono;
@@ -339,7 +325,6 @@ namespace Localmarket_App
             pnlNaranja.BackColor = Color.Orange;
             pnlAjustes.BackColor = Color.Aqua;
             pnlPerfil.BackColor = Color.PaleGreen;
-            pnlProductos.ForeColor = Color.White;
             btnEnviarComentario.ForeColor = Color.Black;
             btnEnviarComentario.BackColor = Color.Aqua;
             picAjustes.Image = Resources.icono_ajustes;

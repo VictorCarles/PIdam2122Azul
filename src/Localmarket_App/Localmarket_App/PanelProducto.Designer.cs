@@ -32,13 +32,12 @@ namespace Localmarket_App
             this.lblProducto = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picProducto = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // lblProducto
             // 
-            this.lblProducto.AutoSize = true;
             this.lblProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProducto.Location = new System.Drawing.Point(98, 4);
             this.lblProducto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -53,29 +52,30 @@ namespace Localmarket_App
             this.lblDescripcion.Location = new System.Drawing.Point(99, 29);
             this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(0, 13);
+            this.lblDescripcion.Size = new System.Drawing.Size(243, 26);
             this.lblDescripcion.TabIndex = 4;
+            this.lblDescripcion.Text = "Descripcion Descripcion Descripcion Descripcion \r\nDescripcion Descripcion Descrip" +
+    "cion Descripcion ";
             // 
             // lblPrecio
             // 
-            this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(434, 29);
+            this.lblPrecio.Location = new System.Drawing.Point(372, 29);
             this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(70, 24);
             this.lblPrecio.TabIndex = 5;
             this.lblPrecio.Text = "Precio";
             // 
-            // pictureBox1
+            // picProducto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(4, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picProducto.Location = new System.Drawing.Point(4, 4);
+            this.picProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.picProducto.Name = "picProducto";
+            this.picProducto.Size = new System.Drawing.Size(69, 54);
+            this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picProducto.TabIndex = 0;
+            this.picProducto.TabStop = false;
             // 
             // PanelProducto
             // 
@@ -85,12 +85,12 @@ namespace Localmarket_App
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblProducto);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picProducto);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PanelProducto";
-            this.Size = new System.Drawing.Size(508, 63);
+            this.Size = new System.Drawing.Size(439, 63);
             this.Load += new System.EventHandler(this.PanelProducto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,7 +98,7 @@ namespace Localmarket_App
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picProducto;
         private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblPrecio;
