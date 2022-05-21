@@ -135,6 +135,9 @@
   <data name="BusinessPics" xml:space="preserve">
     <value>Pictures:</value>
   </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category:</value>
+  </data>
   <data name="ChooseFile" xml:space="preserve">
     <value>Open File</value>
   </data>

@@ -67,7 +67,6 @@ namespace Localmarket_App
             this.picFotoPerfil = new System.Windows.Forms.PictureBox();
             this.tabProductos = new System.Windows.Forms.TabPage();
             this.pnlProductos = new System.Windows.Forms.Panel();
-            this.picCorazon = new System.Windows.Forms.PictureBox();
             this.picImagen4 = new System.Windows.Forms.PictureBox();
             this.picImagen3 = new System.Windows.Forms.PictureBox();
             this.picImagen2 = new System.Windows.Forms.PictureBox();
@@ -76,6 +75,7 @@ namespace Localmarket_App
             this.picAtras = new System.Windows.Forms.PictureBox();
             this.picUbicacion = new System.Windows.Forms.PictureBox();
             this.picLogoComercio = new System.Windows.Forms.PictureBox();
+            this.picCorazon = new System.Windows.Forms.PictureBox();
             this.pnlNaranja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLocalMarket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAjustes)).BeginInit();
@@ -98,7 +98,6 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picEstrella1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).BeginInit();
             this.tabProductos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCorazon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen2)).BeginInit();
@@ -107,6 +106,7 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUbicacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoComercio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCorazon)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlNaranja
@@ -120,7 +120,7 @@ namespace Localmarket_App
             this.pnlNaranja.Location = new System.Drawing.Point(0, 0);
             this.pnlNaranja.Margin = new System.Windows.Forms.Padding(2);
             this.pnlNaranja.Name = "pnlNaranja";
-            this.pnlNaranja.Size = new System.Drawing.Size(1013, 81);
+            this.pnlNaranja.Size = new System.Drawing.Size(1030, 81);
             this.pnlNaranja.TabIndex = 2;
             // 
             // picLocalMarket
@@ -176,7 +176,7 @@ namespace Localmarket_App
             // 
             this.lblNombreComercio.AutoSize = true;
             this.lblNombreComercio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreComercio.Location = new System.Drawing.Point(353, 144);
+            this.lblNombreComercio.Location = new System.Drawing.Point(387, 145);
             this.lblNombreComercio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreComercio.Name = "lblNombreComercio";
             this.lblNombreComercio.Size = new System.Drawing.Size(304, 26);
@@ -230,7 +230,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfilUsuario);
-            this.pnlPerfil.Location = new System.Drawing.Point(787, 85);
+            this.pnlPerfil.Location = new System.Drawing.Point(761, 85);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(140, 143);
@@ -320,7 +320,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-            this.pnlAjustes.Location = new System.Drawing.Point(851, 85);
+            this.pnlAjustes.Location = new System.Drawing.Point(825, 85);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(140, 143);
@@ -400,6 +400,7 @@ namespace Localmarket_App
             this.cmbIdioma.Name = "cmbIdioma";
             this.cmbIdioma.Size = new System.Drawing.Size(73, 23);
             this.cmbIdioma.TabIndex = 19;
+            this.cmbIdioma.TextChanged += new System.EventHandler(this.cmbIdioma_TextChanged);
             // 
             // tabReseñasyProductos
             // 
@@ -408,7 +409,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(137, 422);
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(111, 422);
             this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(2);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
@@ -575,19 +576,6 @@ namespace Localmarket_App
             this.pnlProductos.Size = new System.Drawing.Size(755, 532);
             this.pnlProductos.TabIndex = 0;
             // 
-            // picCorazon
-            // 
-            this.picCorazon.Image = global::Localmarket_App.Properties.Resources.corazon;
-            this.picCorazon.Location = new System.Drawing.Point(686, 136);
-            this.picCorazon.Margin = new System.Windows.Forms.Padding(2);
-            this.picCorazon.Name = "picCorazon";
-            this.picCorazon.Size = new System.Drawing.Size(50, 51);
-            this.picCorazon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCorazon.TabIndex = 29;
-            this.picCorazon.TabStop = false;
-            this.picCorazon.Visible = false;
-            this.picCorazon.Click += new System.EventHandler(this.picCorazon_Click);
-            // 
             // picImagen4
             // 
             this.picImagen4.BackColor = System.Drawing.Color.White;
@@ -676,12 +664,25 @@ namespace Localmarket_App
             this.picLogoComercio.TabIndex = 3;
             this.picLogoComercio.TabStop = false;
             // 
+            // picCorazon
+            // 
+            this.picCorazon.Image = global::Localmarket_App.Properties.Resources.corazon;
+            this.picCorazon.Location = new System.Drawing.Point(686, 136);
+            this.picCorazon.Margin = new System.Windows.Forms.Padding(2);
+            this.picCorazon.Name = "picCorazon";
+            this.picCorazon.Size = new System.Drawing.Size(50, 51);
+            this.picCorazon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCorazon.TabIndex = 29;
+            this.picCorazon.TabStop = false;
+            this.picCorazon.Visible = false;
+            this.picCorazon.Click += new System.EventHandler(this.picCorazon_Click);
+            // 
             // FrmPaginaComercio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1030, 571);
+            this.ClientSize = new System.Drawing.Size(1047, 571);
             this.Controls.Add(this.pnlAjustes);
             this.Controls.Add(this.pnlPerfil);
             this.Controls.Add(this.tabReseñasyProductos);
@@ -732,7 +733,6 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picEstrella1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).EndInit();
             this.tabProductos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picCorazon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen2)).EndInit();
@@ -741,6 +741,7 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUbicacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoComercio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCorazon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -764,7 +765,6 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picImagen2;
         private System.Windows.Forms.PictureBox picImagen3;
         private System.Windows.Forms.PictureBox picImagen4;
-        private System.Windows.Forms.PictureBox picCorazon;
         private System.Windows.Forms.Panel pnlPerfil;
         private System.Windows.Forms.Label lblCerrarSesion;
         private System.Windows.Forms.Label lblCrearEmpresa;
@@ -794,5 +794,6 @@ namespace Localmarket_App
         private System.Windows.Forms.PictureBox picValoracion;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlProductos;
+        private System.Windows.Forms.PictureBox picCorazon;
     }
 }

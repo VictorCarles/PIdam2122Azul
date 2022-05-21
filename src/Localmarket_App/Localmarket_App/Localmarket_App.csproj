@@ -152,6 +152,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FrmPrincipalIng.resx</DependentUpon>
     </Compile>
+    <Compile Include="MultiIdiomas\FrmPaginaComercioEsp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmPaginaComercioEsp.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiIdiomas\FrmPaginaComercioIng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrmPaginaComercioIng.resx</DependentUpon>
+    </Compile>
     <Compile Include="PanelComentario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -242,6 +252,14 @@
     <EmbeddedResource Include="MultiIdiomas\FrmPrincipalIng.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>FrmPrincipalIng.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmPaginaComercioEsp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmPaginaComercioEsp.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiIdiomas\FrmPaginaComercioIng.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FrmPaginaComercioIng.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelComentario.resx">
       <DependentUpon>PanelComentario.cs</DependentUpon>

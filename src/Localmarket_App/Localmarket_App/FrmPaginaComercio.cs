@@ -51,7 +51,7 @@ namespace Localmarket_App
                 ConexionBD.AbrirConexion();
                 if (Empresa.TieneEmpresa(usuario))
                 {
-                    lblCrearEmpresa.Text = "Editar empresa";
+                    lblCrearEmpresa.Text = "Editar Empresa";
                 }
                 CargarComentarios(Comentario.BusquedaComentarios(empresa));
                 CargarProductos(Producto.BusquedaProductos(empresa));
@@ -155,7 +155,7 @@ namespace Localmarket_App
 
         private void lblCrearEmpresa_Click(object sender, EventArgs e)
         {
-            if (lblCrearEmpresa.Text == "Editar empresa")
+            if (lblCrearEmpresa.Text == "Editar Empresa")
             {
                 if (ConexionBD.Conexion != null)
                 {
@@ -397,5 +397,39 @@ namespace Localmarket_App
             }
         }
 
+        private void AplicarIdioma()
+        {
+            if (cmbIdioma.Text == "English")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmPaginaComercioIng.ajustes;
+                lblModoNoche.Text = MultiIdiomas.FrmPaginaComercioIng.ModoNoche;
+                lblPerfil.Text = MultiIdiomas.FrmPaginaComercioIng.PerfilUsuario;
+                lblCrearEmpresa.Text = MultiIdiomas.FrmPaginaComercioIng.CrearEmpresa;
+                lblCerrarSesion.Text = MultiIdiomas.FrmPaginaComercioIng.CerrarSesion;
+                lblUbicacion.Text = MultiIdiomas.FrmPaginaComercioIng.VerUbi;
+                tabProductos.Text = MultiIdiomas.FrmPaginaComercioIng.ProductosServicios;
+                tabReseñas.Text = MultiIdiomas.FrmPaginaComercioIng.Reseñas;
+                lblValoracion.Text = MultiIdiomas.FrmPaginaComercioIng.Valoracion;
+                this.Text = MultiIdiomas.FrmPaginaComercioIng.PaginaComercio;
+            }
+            else if (cmbIdioma.Text == "Español")
+            {
+                lblAjustes.Text = MultiIdiomas.FrmPaginaComercioEsp.ajustes;
+                lblModoNoche.Text = MultiIdiomas.FrmPaginaComercioEsp.ModoNoche;
+                lblPerfil.Text = MultiIdiomas.FrmPaginaComercioEsp.PerfilUsuario;
+                lblCrearEmpresa.Text = MultiIdiomas.FrmPaginaComercioEsp.CrearEmpresa;
+                lblCerrarSesion.Text = MultiIdiomas.FrmPaginaComercioEsp.CerrarSesion;
+                lblUbicacion.Text = MultiIdiomas.FrmPaginaComercioEsp.VerUbi;
+                tabProductos.Text = MultiIdiomas.FrmPaginaComercioEsp.ProductosServicios;
+                tabReseñas.Text = MultiIdiomas.FrmPaginaComercioEsp.Reseñas;
+                lblValoracion.Text = MultiIdiomas.FrmPaginaComercioEsp.Valoracion;
+                this.Text = MultiIdiomas.FrmPaginaComercioEsp.PaginaComercio;
+            }
+        }
+
+        private void cmbIdioma_TextChanged(object sender, EventArgs e)
+        {
+            AplicarIdioma();
+        }
     }
 }
