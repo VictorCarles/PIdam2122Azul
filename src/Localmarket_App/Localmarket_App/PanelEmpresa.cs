@@ -35,11 +35,14 @@ namespace Localmarket_App
 
         private void lblNomComercio_Click(object sender, EventArgs e)
         {
-            FrmPrincipal.ActiveForm.Close();
             FrmPrincipal.ActiveForm.Hide();
             FrmPaginaComercio frmPaginaComercio = new FrmPaginaComercio(modoNoche, empresa, usuario);
             frmPaginaComercio.ShowDialog();
-
+            if (FrmPrincipal.ActiveForm != null)
+            {
+                FrmPrincipal.ActiveForm.Close();
+            }
+            
         }
 
         private void calculaValoracion()

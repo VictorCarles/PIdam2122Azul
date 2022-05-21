@@ -40,12 +40,12 @@ namespace Localmarket_App
             this.lblUbicacion = new System.Windows.Forms.LinkLabel();
             this.lblDescComercio = new System.Windows.Forms.Label();
             this.pnlPerfil = new System.Windows.Forms.Panel();
-            this.picValoracion = new System.Windows.Forms.PictureBox();
             this.lblCerrarSesion = new System.Windows.Forms.Label();
             this.lblCrearEmpresa = new System.Windows.Forms.Label();
             this.lblPerfil = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.picPerfilUsuario = new System.Windows.Forms.PictureBox();
+            this.picValoracion = new System.Windows.Forms.PictureBox();
             this.pnlAjustes = new System.Windows.Forms.Panel();
             this.lblModoNoche = new System.Windows.Forms.Label();
             this.lblAjustes = new System.Windows.Forms.Label();
@@ -82,8 +82,8 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlPerfil.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfilUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).BeginInit();
             this.pnlAjustes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOff)).BeginInit();
@@ -230,23 +230,12 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfilUsuario);
-            this.pnlPerfil.Location = new System.Drawing.Point(809, 85);
+            this.pnlPerfil.Location = new System.Drawing.Point(782, 85);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(140, 143);
             this.pnlPerfil.TabIndex = 30;
             this.pnlPerfil.Visible = false;
-            // 
-            // picValoracion
-            // 
-            this.picValoracion.Image = global::Localmarket_App.Properties.Resources._5estr;
-            this.picValoracion.Location = new System.Drawing.Point(841, 157);
-            this.picValoracion.Margin = new System.Windows.Forms.Padding(2);
-            this.picValoracion.Name = "picValoracion";
-            this.picValoracion.Size = new System.Drawing.Size(92, 20);
-            this.picValoracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picValoracion.TabIndex = 33;
-            this.picValoracion.TabStop = false;
             // 
             // lblCerrarSesion
             // 
@@ -309,6 +298,17 @@ namespace Localmarket_App
             this.picPerfilUsuario.TabIndex = 6;
             this.picPerfilUsuario.TabStop = false;
             // 
+            // picValoracion
+            // 
+            this.picValoracion.Image = global::Localmarket_App.Properties.Resources._5estr;
+            this.picValoracion.Location = new System.Drawing.Point(841, 157);
+            this.picValoracion.Margin = new System.Windows.Forms.Padding(2);
+            this.picValoracion.Name = "picValoracion";
+            this.picValoracion.Size = new System.Drawing.Size(92, 20);
+            this.picValoracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picValoracion.TabIndex = 33;
+            this.picValoracion.TabStop = false;
+            // 
             // pnlAjustes
             // 
             this.pnlAjustes.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -320,7 +320,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-            this.pnlAjustes.Location = new System.Drawing.Point(873, 85);
+            this.pnlAjustes.Location = new System.Drawing.Point(846, 85);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(140, 143);
@@ -408,7 +408,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(119, 422);
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(92, 422);
             this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(2);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
@@ -569,6 +569,7 @@ namespace Localmarket_App
             // 
             // pnlProductos
             // 
+            this.pnlProductos.AutoScroll = true;
             this.pnlProductos.Location = new System.Drawing.Point(16, 15);
             this.pnlProductos.Margin = new System.Windows.Forms.Padding(2);
             this.pnlProductos.Name = "pnlProductos";
@@ -714,8 +715,8 @@ namespace Localmarket_App
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlPerfil.ResumeLayout(false);
             this.pnlPerfil.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfilUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).EndInit();
             this.pnlAjustes.ResumeLayout(false);
             this.pnlAjustes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNocheOn)).EndInit();

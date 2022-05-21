@@ -65,6 +65,13 @@ namespace Localmarket_App
                 CargarComentarios(Comentario.BusquedaComentarios(empresa));
                 ConexionBD.CerrarConexion();
             }
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                CargarProductos(Producto.BusquedaProductos(empresa));
+                ConexionBD.CerrarConexion();
+            }
+            cmbIdioma.Text = "Español";
         }
 
         private void CargarComentarios(List<Comentario> comentarios)
@@ -82,7 +89,24 @@ namespace Localmarket_App
                 }
 
             }
-            cmbIdioma.Text = "Español";
+
+        }
+
+        private void CargarProductos(List<Producto> productos)
+        {
+            if (productos != null)
+            {
+                int x = 0;
+                int y = 0;
+                for (int i = 0; i < productos.Count; i++)
+                {
+                    var control = new PanelProducto(modoNoche, productos[i]);
+                    control.Location = new Point(x, y);
+                    pnlProductos.Controls.Add(control);
+                    y += control.Height;
+                }
+
+            }
 
         }
 

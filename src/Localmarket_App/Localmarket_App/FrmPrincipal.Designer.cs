@@ -340,7 +340,7 @@ namespace Localmarket_App
             this.lblTituloCategoria.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTituloCategoria.AutoSize = true;
             this.lblTituloCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloCategoria.Location = new System.Drawing.Point(168, 99);
+            this.lblTituloCategoria.Location = new System.Drawing.Point(160, 99);
             this.lblTituloCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTituloCategoria.Name = "lblTituloCategoria";
             this.lblTituloCategoria.Size = new System.Drawing.Size(198, 26);
@@ -352,7 +352,7 @@ namespace Localmarket_App
             // 
             this.pnlComercio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlComercio.BackColor = System.Drawing.SystemColors.Control;
-            this.pnlComercio.Location = new System.Drawing.Point(173, 158);
+            this.pnlComercio.Location = new System.Drawing.Point(165, 158);
             this.pnlComercio.Margin = new System.Windows.Forms.Padding(2);
             this.pnlComercio.Name = "pnlComercio";
             this.pnlComercio.Size = new System.Drawing.Size(536, 417);
@@ -364,7 +364,7 @@ namespace Localmarket_App
             this.lblNoticias.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNoticias.AutoSize = true;
             this.lblNoticias.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoticias.Location = new System.Drawing.Point(195, 404);
+            this.lblNoticias.Location = new System.Drawing.Point(187, 404);
             this.lblNoticias.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNoticias.Name = "lblNoticias";
             this.lblNoticias.Size = new System.Drawing.Size(246, 26);
@@ -379,7 +379,7 @@ namespace Localmarket_App
             this.pnlNoticia.Controls.Add(this.lblDescNoticia);
             this.pnlNoticia.Controls.Add(this.lblNoticia);
             this.pnlNoticia.Controls.Add(this.picNoticia);
-            this.pnlNoticia.Location = new System.Drawing.Point(173, 448);
+            this.pnlNoticia.Location = new System.Drawing.Point(165, 448);
             this.pnlNoticia.Margin = new System.Windows.Forms.Padding(2);
             this.pnlNoticia.Name = "pnlNoticia";
             this.pnlNoticia.Size = new System.Drawing.Size(562, 82);
@@ -429,7 +429,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfil2);
-            this.pnlPerfil.Location = new System.Drawing.Point(791, 70);
+            this.pnlPerfil.Location = new System.Drawing.Point(783, 70);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(133, 147);
@@ -508,7 +508,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-            this.pnlAjustes.Location = new System.Drawing.Point(833, 70);
+            this.pnlAjustes.Location = new System.Drawing.Point(825, 70);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(133, 147);
@@ -596,7 +596,7 @@ namespace Localmarket_App
             this.picCarusel.BackColor = System.Drawing.Color.Transparent;
             this.picCarusel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picCarusel.Image = global::Localmarket_App.Properties.Resources.fruteria;
-            this.picCarusel.Location = new System.Drawing.Point(227, 106);
+            this.picCarusel.Location = new System.Drawing.Point(219, 106);
             this.picCarusel.Margin = new System.Windows.Forms.Padding(2);
             this.picCarusel.Name = "picCarusel";
             this.picCarusel.Size = new System.Drawing.Size(398, 258);

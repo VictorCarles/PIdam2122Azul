@@ -41,18 +41,20 @@ namespace Localmarket_App
             // lblComentario
             // 
             this.lblComentario.AutoSize = true;
-            this.lblComentario.Location = new System.Drawing.Point(109, 39);
+            this.lblComentario.Location = new System.Drawing.Point(82, 32);
+            this.lblComentario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblComentario.Name = "lblComentario";
-            this.lblComentario.Size = new System.Drawing.Size(0, 17);
+            this.lblComentario.Size = new System.Drawing.Size(0, 13);
             this.lblComentario.TabIndex = 1;
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(109, 9);
+            this.lblUsuario.Location = new System.Drawing.Point(82, 7);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(86, 25);
+            this.lblUsuario.Size = new System.Drawing.Size(71, 20);
             this.lblUsuario.TabIndex = 2;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -60,10 +62,10 @@ namespace Localmarket_App
             // 
             this.btnUtil.BackColor = System.Drawing.Color.Lime;
             this.btnUtil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUtil.Location = new System.Drawing.Point(541, 39);
-            this.btnUtil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUtil.Location = new System.Drawing.Point(406, 32);
+            this.btnUtil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUtil.Name = "btnUtil";
-            this.btnUtil.Size = new System.Drawing.Size(99, 34);
+            this.btnUtil.Size = new System.Drawing.Size(74, 28);
             this.btnUtil.TabIndex = 4;
             this.btnUtil.Text = "👍Útil";
             this.btnUtil.UseVisualStyleBackColor = false;
@@ -71,36 +73,37 @@ namespace Localmarket_App
             // picValoracion
             // 
             this.picValoracion.Image = global::Localmarket_App.Properties.Resources._2estr;
-            this.picValoracion.Location = new System.Drawing.Point(541, 9);
-            this.picValoracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picValoracion.Location = new System.Drawing.Point(406, 7);
+            this.picValoracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picValoracion.Name = "picValoracion";
-            this.picValoracion.Size = new System.Drawing.Size(99, 20);
+            this.picValoracion.Size = new System.Drawing.Size(74, 16);
             this.picValoracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picValoracion.TabIndex = 3;
             this.picValoracion.TabStop = false;
             // 
             // picFoto
             // 
-            this.picFoto.Location = new System.Drawing.Point(11, 9);
-            this.picFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picFoto.Location = new System.Drawing.Point(8, 7);
+            this.picFoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(83, 74);
+            this.picFoto.Size = new System.Drawing.Size(62, 60);
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFoto.TabIndex = 0;
             this.picFoto.TabStop = false;
             // 
             // PanelComentario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.btnUtil);
             this.Controls.Add(this.picValoracion);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblComentario);
             this.Controls.Add(this.picFoto);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PanelComentario";
-            this.Size = new System.Drawing.Size(663, 87);
+            this.Size = new System.Drawing.Size(495, 69);
             this.Load += new System.EventHandler(this.PanelComentario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
