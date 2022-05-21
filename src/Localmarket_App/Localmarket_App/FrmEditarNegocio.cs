@@ -202,6 +202,7 @@ namespace Localmarket_App
                 btnElegirFotoProducto.Text = MultiIdiomas.FrmEditarNegocioIng.ChooseFile;
                 btnElegirLogo.Text = MultiIdiomas.FrmEditarNegocioIng.ChooseFile;
                 lblNuevoProducto.Text = MultiIdiomas.FrmEditarNegocioIng.NewProduct;
+                lblCategoria.Text = MultiIdiomas.FrmEditarNegocioIng.Category;
                 this.Text = MultiIdiomas.FrmEditarNegocioIng.EditBusiness;
             }
             else if (cmbIdioma.Text == "Español")
@@ -223,6 +224,7 @@ namespace Localmarket_App
                 btnElegirFotoProducto.Text = MultiIdiomas.FrmEditarNegocioEsp.ChooseFile;
                 btnElegirLogo.Text = MultiIdiomas.FrmEditarNegocioEsp.ChooseFile;
                 lblNuevoProducto.Text = MultiIdiomas.FrmEditarNegocioEsp.NewProduct;
+                lblCategoria.Text = MultiIdiomas.FrmEditarNegocioEsp.Category;
                 this.Text = MultiIdiomas.FrmEditarNegocioEsp.EditBusiness;
             }
         }

@@ -117,58 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnAddProd" xml:space="preserve">
-    <value>Add Product</value>
+  <data name="ajustes" xml:space="preserve">
+    <value>Ajustes</value>
   </data>
-  <data name="btnSaveChanges" xml:space="preserve">
-    <value>Save Changes</value>
+  <data name="CerrarSesion" xml:space="preserve">
+    <value>Cerrar sesión</value>
   </data>
-  <data name="BusinessDesc" xml:space="preserve">
-    <value>Description:</value>
+  <data name="CrearEmpresa" xml:space="preserve">
+    <value>Crear Empresa</value>
   </data>
-  <data name="BusinessLogo" xml:space="preserve">
-    <value>Logo:</value>
+  <data name="ModoNoche" xml:space="preserve">
+    <value>Modo Noche</value>
   </data>
-  <data name="BusinessName" xml:space="preserve">
-    <value>Name:</value>
+  <data name="PaginaComercio" xml:space="preserve">
+    <value>Página de Comercio</value>
   </data>
-  <data name="BusinessPics" xml:space="preserve">
-    <value>Pictures:</value>
+  <data name="PerfilUsuario" xml:space="preserve">
+    <value>Perfil de Usuario</value>
   </data>
-  <data name="Category" xml:space="preserve">
-    <value>Category:</value>
+  <data name="ProductosServicios" xml:space="preserve">
+    <value>Productos/Servicios</value>
   </data>
-  <data name="ChooseFile" xml:space="preserve">
-    <value>Open File</value>
+  <data name="Reseñas" xml:space="preserve">
+    <value>Reseñas</value>
   </data>
-  <data name="ClickToChange" xml:space="preserve">
-    <value>Click to change pictures</value>
+  <data name="Valoracion" xml:space="preserve">
+    <value>Valoracion:</value>
   </data>
-  <data name="DarkMode" xml:space="preserve">
-    <value>DarkMode</value>
-  </data>
-  <data name="EditBusiness" xml:space="preserve">
-    <value>Edit Business</value>
-  </data>
-  <data name="lblBusinessData" xml:space="preserve">
-    <value>Business Data</value>
-  </data>
-  <data name="NewProduct" xml:space="preserve">
-    <value>New Product</value>
-  </data>
-  <data name="Price" xml:space="preserve">
-    <value>Price:</value>
-  </data>
-  <data name="ProdDesc" xml:space="preserve">
-    <value>Description:</value>
-  </data>
-  <data name="ProdName" xml:space="preserve">
-    <value>Name:</value>
-  </data>
-  <data name="ProdPic" xml:space="preserve">
-    <value>Picture:</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+  <data name="VerUbi" xml:space="preserve">
+    <value>Ver Ubicación</value>
   </data>
 </root>

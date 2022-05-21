@@ -117,58 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnAddProd" xml:space="preserve">
-    <value>Add Product</value>
-  </data>
-  <data name="btnSaveChanges" xml:space="preserve">
-    <value>Save Changes</value>
-  </data>
-  <data name="BusinessDesc" xml:space="preserve">
-    <value>Description:</value>
-  </data>
-  <data name="BusinessLogo" xml:space="preserve">
-    <value>Logo:</value>
-  </data>
-  <data name="BusinessName" xml:space="preserve">
-    <value>Name:</value>
-  </data>
-  <data name="BusinessPics" xml:space="preserve">
-    <value>Pictures:</value>
-  </data>
-  <data name="Category" xml:space="preserve">
-    <value>Category:</value>
-  </data>
-  <data name="ChooseFile" xml:space="preserve">
-    <value>Open File</value>
-  </data>
-  <data name="ClickToChange" xml:space="preserve">
-    <value>Click to change pictures</value>
-  </data>
-  <data name="DarkMode" xml:space="preserve">
-    <value>DarkMode</value>
-  </data>
-  <data name="EditBusiness" xml:space="preserve">
-    <value>Edit Business</value>
-  </data>
-  <data name="lblBusinessData" xml:space="preserve">
-    <value>Business Data</value>
-  </data>
-  <data name="NewProduct" xml:space="preserve">
-    <value>New Product</value>
-  </data>
-  <data name="Price" xml:space="preserve">
-    <value>Price:</value>
-  </data>
-  <data name="ProdDesc" xml:space="preserve">
-    <value>Description:</value>
-  </data>
-  <data name="ProdName" xml:space="preserve">
-    <value>Name:</value>
-  </data>
-  <data name="ProdPic" xml:space="preserve">
-    <value>Picture:</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
+  <data name="ajustes" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="CerrarSesion" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="CrearEmpresa" xml:space="preserve">
+    <value>Create Business</value>
+  </data>
+  <data name="ModoNoche" xml:space="preserve">
+    <value>Dark Mode</value>
+  </data>
+  <data name="PaginaComercio" xml:space="preserve">
+    <value>Business Page</value>
+  </data>
+  <data name="PerfilUsuario" xml:space="preserve">
+    <value>User Profile</value>
+  </data>
+  <data name="ProductosServicios" xml:space="preserve">
+    <value>Products/Services</value>
+  </data>
+  <data name="Reseñas" xml:space="preserve">
+    <value>Reviews</value>
+  </data>
+  <data name="Valoracion" xml:space="preserve">
+    <value>Rating:</value>
+  </data>
+  <data name="VerUbi" xml:space="preserve">
+    <value>Location</value>
   </data>
 </root>
