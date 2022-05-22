@@ -17,7 +17,7 @@ if (NEW.tipo!=OLD.tipo && NEW.tipo='basic') THEN
 		SET varcif=NULL;
 END IF;		
 
-INSERT INTO Acciones (action_id, accion, fecha, user_username, cif_company)
+INSERT INTO localmarket_db.Acciones (action_id, accion, fecha, user_username, cif_company)
 VALUES (DEFAULT, acc, NOW(), username, varcif);
 
 END
