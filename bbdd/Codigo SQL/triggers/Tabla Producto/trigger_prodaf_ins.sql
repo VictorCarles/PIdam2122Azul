@@ -1,3 +1,3 @@
 BEGIN
-INSERT INTO Acciones VALUES (DEFAULT,prod_name+' añadido a catalogo.',CURDATE(), NULL,cifEmp);
+INSERT INTO Acciones VALUES (DEFAULT, prod_name+' añadido a catalogo.',CURDATE(), NULL,cifEmp);
 END
