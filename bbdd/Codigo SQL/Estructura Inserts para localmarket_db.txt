@@ -1,0 +1,49 @@
+Estructura de los INSERTS para las TABLAS de la base de datos: LocalMarket_DB2.
+Version de BBDD:
+
+TABLA USUARIOS:
+
+INSERT INTO localmarket_db.Usuario (username, fullname, surnames, password, telephone, email, profilepicture, address, cp, tipo, nif)
+VALUE (VARCHAR(20) NN, VARCHAR(45) NN, VARCHAR(45) NN, VARCHAR(45) NN, INT(11) NN, VARCHAR(45) NN, LONGBLOB NULL, VARCHAR(60) NN, INT NN, VARCHAR(20) NN, VARCHAR(9) NULL);
+
+Valores posibles para columna 'tipo': 'basic', 'business', 'admin'.
+
+
+TABLA EMPRESA:
+
+INSERT INTO localmarket_db.Empresa (cif, company_name, category, email, telephone, avgscore, pPicture, address, cp, description, owner_username)
+VALUE (VARCHAR(9) NN, VARCHAR(45) NN, VARCHAR(45) NN, VARCHAR(45) NN, INT(11) NN, DOUBLE NN, LONGBLOB NULL, VARCHAR(45) NN, INT NN, VARCHAR(600) NN, VARCHAR(20) NN);
+
+Formato correcto valores en columna 'address': 'Calle/Avenida/Plaza '+Nombre Calle+', n '+numero calle '+ Indicar si es Bajo
+						+', puerta/piso '+numero puerta+'. '+Codigo Postal+', '+ciudad+'.'
+						(Se recomienda escribirlo ya como una único string, para saltar el concatenado y reducir puntos de fallo).
+Valor inicia por defecto para avgscore = 0;
+Valores posibles para columna 'category': 'alimentacion', 'panaderia_pasteleria', 'electronica', 'hogar', 'sastreria', 'moda', 'informática', 'papeleria_oficina', 
+					  'ocio_cultura', 'electrodomesticos', 'muebles', 'reformas', bodegas', 'calzado', 'tradicional', 'cristaleria', 'mobilidad_ciclismo'.
+
+TABLA ACCIONES:
+NO ES NECESARIO INSERTS, SE REALIZAN AUTOMATICAMENTE.
+
+
+TABLA LISTAS:
+ESTA FUNCIONALIDAD NO SE ENCUENTRA IMPLEMENTADA EN EL CÓDIGO DE LA APLICACIÓN.
+
+
+
+TABLA IMAGES:
+INSERT INTO localmarket_db.Images (idImages, company_profile, img)
+			VALUE (INT NN, VARCHAR(9) NN, LONGBLOB NN);
+
+
+TABLA PRODUCTO:
+INSERT INTO localmarket_db.Producto (idProducto, category, proce, product_name, description, image, available, product_company)
+VALUE (INT NN, VARCHAR(45) NN, DOUBLE NN, VARCHAR(45) NN, VARCHAR(200) NN, LONGBLOB NULL, TINYINT(1) NN, VARCHAR(9) NN);
+
+Valores posibles para columna 'category':
+Valores posibles para columna 'available': 1 (true), 0 (false).
+
+
+TABLA COMENTARIO:
+INSERT INTO localmarket_db.Comentario (idComentario, text_contents, score, company_page, comment_username, id_respuesta, useful_rating, publication_date)
+				VALUE (INT NOT NULL, VARCHAR(500) NN, INT NN, VARCHAR(9) NN, VARCHAR(20) NN, INT NULL,	 INT NN, 	DATETIME NN);
+Valores posibles para columna 'score': 1, 2, 3, 4, 5.
