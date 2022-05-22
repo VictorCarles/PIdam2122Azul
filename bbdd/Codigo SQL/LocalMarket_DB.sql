@@ -4,14 +4,14 @@
  
 -- DROP DATABASE IF EXISTS localmarket_db;
 
-CREATE DATABASE IF NOT EXISTS  localmarket_db CHARACTER SET UTF8;
+CREATE DATABASE IF NOT EXISTS  localmarket_db2 CHARACTER SET UTF8;
 
-USE localmarket_db;
+USE localmarket_db2;
 
 ## Procedemos a la creación de las tablas de la base de datos:
 
 ## Tabla Usuarios:
-CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
+CREATE TABLE IF NOT EXISTS localmarket_db2.Usuario(
   `username` VARCHAR(20) NOT NULL,
   `fullname` VARCHAR(45) NOT NULL,
   `surnames` VARCHAR(45) NOT NULL,
@@ -26,11 +26,11 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
   PRIMARY KEY (username)
   -- INDEX `pk_username_idx` (`username` ASC),
   );
--- DROP TABLE IF EXISTS localmarket_db.Usuario;
+-- DROP TABLE IF EXISTS localmarket_db2.Usuario;
 
 
 ## Tabla Empresa:
-CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
+CREATE TABLE IF NOT EXISTS localmarket_db2.Empresa(
   `cif` VARCHAR(9) NOT NULL,
   `company_name` VARCHAR(45) NOT NULL,
   `category` VARCHAR(45) NOT NULL,
@@ -47,15 +47,15 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
   -- INDEX `cp_idx` (`cp` ASC),
   CONSTRAINT `fk_owner_username`
     FOREIGN KEY (owner_username)
-    REFERENCES localmarket_db.Usuario (`username`)
+    REFERENCES localmarket_db2.Usuario (`username`)
     ON DELETE NO ACTION
     ON UPDATE CASCADE);
--- DROP TABLE IF EXISTS localmarket_db.Empresa;
- -- UNIQUE INDEX `owner_username_UNIQUE` (`owner_username` ASC)
+-- DROP TABLE IF EXISTS localmarket_db2.Empresa;
+-- UNIQUE INDEX `owner_username_UNIQUE` (`owner_username` ASC)
  
 
 ## Tabla Acciones:
-CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
+CREATE TABLE IF NOT EXISTS localmarket_db2.Acciones (
   `action_id` INT NOT NULL AUTO_INCREMENT,
   `accion` VARCHAR(600) NOT NULL,
   `fecha` DATETIME NOT NULL,
@@ -65,21 +65,21 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
   INDEX `fk_user_username_idx` (`user_username` ASC),
   CONSTRAINT `fk_user_username`
     FOREIGN KEY (user_username)
-    REFERENCES localmarket_db.Usuario (username)
+    REFERENCES localmarket_db2.Usuario (username)
     ON DELETE NO ACTION
     ON UPDATE CASCADE,
   CONSTRAINT `fk_cif_company`
     FOREIGN KEY (cif_company)
-    REFERENCES localmarket_db.Empresa (cif)
+    REFERENCES localmarket_db2.Empresa (cif)
     ON DELETE NO ACTION
     ON UPDATE CASCADE);
     
--- DROP TABLE IF EXISTS localmarket_db.Acciones;
+-- DROP TABLE IF EXISTS localmarket_db2.Acciones;
 
 
 
 ## Tabla Listas:
-CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
+CREATE TABLE IF NOT EXISTS localmarket_db2.Listas (
   `list_id` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `list_username` VARCHAR(20) NOT NULL,
@@ -88,15 +88,15 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
   INDEX `fk_list_username_idx` (`list_username` ASC),
   CONSTRAINT `fk_list_username`
     FOREIGN KEY (`list_username`)
-    REFERENCES localmarket_db.Usuario (`username`)
+    REFERENCES localmarket_db2.Usuario (`username`)
 	 ON DELETE CASCADE
     ON UPDATE CASCADE,
 	CONSTRAINT `fk_cif_included`
     FOREIGN KEY (`cif_included`)
-    REFERENCES localmarket_db.Empresa (cif)
+    REFERENCES localmarket_db2.Empresa (cif)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
--- DROP TABLE IF EXISTS localmarket_db.Listas;
+-- DROP TABLE IF EXISTS localmarket_db2.Listas;
 
 
 ## Tabla Images:
@@ -108,14 +108,14 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Images (
   INDEX `fk_company_profile_idx` (`company_profile` ASC),
   CONSTRAINT `fk_company_profile`
     FOREIGN KEY (`company_profile`)
-    REFERENCES localmarket_db.Empresa (`cif`)
+    REFERENCES localmarket_db2.Empresa (`cif`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
--- DROP TABLE IF EXISTS localmarket_db.Images;
+-- DROP TABLE IF EXISTS localmarket_db2.Images;
 
 
 ## Tabla Producto:
-CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
+CREATE TABLE IF NOT EXISTS localmarket_db2.Producto (
   `idProducto` INT NOT NULL AUTO_INCREMENT,
   `category` VARCHAR(45) NOT NULL,
   `price` DOUBLE NOT NULL,
@@ -128,14 +128,14 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
   INDEX `fk_product_company_idx` (`product_company` ASC),
   CONSTRAINT `fk_product_company`
     FOREIGN KEY (`product_company`)
-    REFERENCES localmarket_db.Empresa (`cif`)
+    REFERENCES localmarket_db2.Empresa (`cif`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
--- DROP TABLE IF EXISTS localmarket_db.Producto;
+-- DROP TABLE IF EXISTS localmarket_db2.Producto;
 
 
 ## Tabla Comentario:
-CREATE TABLE IF NOT EXISTS localmarket_db.Comentario (
+CREATE TABLE IF NOT EXISTS localmarket_db2.Comentario (
   `idComentario` INT NOT NULL AUTO_INCREMENT,
    text_contents VARCHAR(500) NOT NULL,
   `score` INT NOT NULL,
@@ -150,27 +150,27 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Comentario (
   INDEX `fk_id_respuesta_idx` (`id_respuesta` ASC),
   CONSTRAINT `fk_company_page`
     FOREIGN KEY (`company_page`)
-    REFERENCES localmarket_db.Empresa (`cif`)
+    REFERENCES localmarket_db2.Empresa (`cif`)
     ON DELETE NO ACTION
     ON UPDATE CASCADE,
   CONSTRAINT `fk_comment_username`
     FOREIGN KEY (`comment_username`)
-    REFERENCES localmarket_db.Usuario (username)
+    REFERENCES localmarket_db2.Usuario (username)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_id_respuesta`
     FOREIGN KEY (`id_respuesta`)
-    REFERENCES localmarket_db.Comentario (`idComentario`)
+    REFERENCES localmarket_db2.Comentario (`idComentario`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
--- DROP TABLE IF EXISTS localmarket_db.Comentario;
+-- DROP TABLE IF EXISTS localmarket_db2.Comentario;
 
 
 ## Tabla Versiones:
 
-CREATE TABLE IF NOT EXISTS localmarket_db.Versions (
+CREATE TABLE IF NOT EXISTS localmarket_db2.Versions (
   `num_version` VARCHAR(10) NOT NULL,
   `dev_notes` VARCHAR(500) NOT NULL,
   `appfiles` LONGBLOB NOT NULL,
   PRIMARY KEY (`num_version`));
--- DROP TABLE IF EXISTS localmarket_db.Versions;
+-- DROP TABLE IF EXISTS localmarket_db2.Versions;
