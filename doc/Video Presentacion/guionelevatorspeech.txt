@@ -17,8 +17,10 @@ LocalMarket is an app designed to promote the small businesses in our country.
 It allows users to have a better perspective of every local shop in their area,
 as well as give small owners a chance to advertise their businesses.
 
-This app wants to shrink the space between the local shops and the user,
-space which keeps getting bigger due to the power of big companies
+This app wants to shrink the gap between the local shops and the user,
+
+gap which keeps getting bigger due to the power of big companies
+				diu
 and the lack of resources from the small businesses.
 
 How does it work?
@@ -38,5 +40,5 @@ create new shops, and changing the aspect of the shops pages.
 In conclusion, Local Market offers a whole new world to small businesses and promotes
 quality, local and sustainable shopping.
 
-LocalMarket,Simple
+LocalMarket, As Simple as it Sounds.
 
