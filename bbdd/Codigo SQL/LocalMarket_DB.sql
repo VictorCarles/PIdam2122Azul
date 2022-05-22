@@ -2,7 +2,7 @@
 ## Inicio código de creación de base de datos
 ## Version: 2.0
  
--- DROP DATABASE IF EXISTS localmarket_db;
+-- DROP DATABASE IF EXISTS localmarket_db2;
 
 CREATE DATABASE IF NOT EXISTS  localmarket_db2 CHARACTER SET UTF8;
 
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db2.Listas (
 
 
 ## Tabla Images:
-CREATE TABLE IF NOT EXISTS localmarket_db.Images (
+CREATE TABLE IF NOT EXISTS localmarket_db2.Images (
   `idImages` INT NOT NULL AUTO_INCREMENT,
   `company_profile` VARCHAR(9) NOT NULL,
    `img` LONGBLOB NOT NULL,
