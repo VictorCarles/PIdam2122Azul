@@ -45,6 +45,7 @@ namespace Localmarket_App
             this.lblNomComercio.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomComercio.Location = new System.Drawing.Point(108, 0);
             this.lblNomComercio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomComercio.MaximumSize = new System.Drawing.Size(265, 0);
             this.lblNomComercio.Name = "lblNomComercio";
             this.lblNomComercio.Size = new System.Drawing.Size(248, 31);
             this.lblNomComercio.TabIndex = 2;
@@ -65,10 +66,12 @@ namespace Localmarket_App
             // lblDescComercio
             // 
             this.lblDescComercio.AutoSize = true;
-            this.lblDescComercio.Location = new System.Drawing.Point(111, 52);
+            this.lblDescComercio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescComercio.Location = new System.Drawing.Point(108, 67);
             this.lblDescComercio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescComercio.MaximumSize = new System.Drawing.Size(457, 0);
             this.lblDescComercio.Name = "lblDescComercio";
-            this.lblDescComercio.Size = new System.Drawing.Size(361, 26);
+            this.lblDescComercio.Size = new System.Drawing.Size(457, 32);
             this.lblDescComercio.TabIndex = 4;
             this.lblDescComercio.Text = "Descripcion Descripcion Descripcion Descripcion Descripcion Descripcion \r\nDescrip" +
     "cion Descripcion Descripcion Descripcion Descripcion Descripcion \r\n";
@@ -100,6 +103,7 @@ namespace Localmarket_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.picValoracion);
             this.Controls.Add(this.lblDescComercio);
@@ -108,7 +112,7 @@ namespace Localmarket_App
             this.Controls.Add(this.picComercio1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PanelEmpresa";
-            this.Size = new System.Drawing.Size(551, 110);
+            this.Size = new System.Drawing.Size(567, 110);
             this.Load += new System.EventHandler(this.PanelEmpresa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picComercio1)).EndInit();

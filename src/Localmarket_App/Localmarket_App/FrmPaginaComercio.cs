@@ -35,6 +35,10 @@ namespace Localmarket_App
             }
 
             picEstrella1.Image = Resources.yellow_star;
+            picImagen1.Image = Resources.Grupo_5;
+            picImagen2.Image = Resources.Grupo_5;
+            picImagen3.Image = Resources.Grupo_5;
+            picImagen4.Image = Resources.Grupo_5;
             lblNombreComercio.Text = empresa.Name;
             picLogoComercio.Image = empresa.ProfilePicture;
             lblDescComercio.Text = empresa.Description;

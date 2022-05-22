@@ -88,6 +88,7 @@ namespace Localmarket_App
         private void lblAlimentacion_Click(object sender, EventArgs e)
         {
             limpiarPagina();
+            pnlComercio.Controls.Clear();
             if (cmbIdioma.Text == "English")
             {
                 lblAlimentacion.Text = "-Nutrition";
@@ -102,11 +103,36 @@ namespace Localmarket_App
                 lblOcio.Text = "Ocio";
                 lblTituloCategoria.Text = "Comercios en categoría de Alimentación:";
             }
+
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                List<Empresa> empresas = Empresa.BusquedaComerciosCategoria("Alimentacion");
+                ConexionBD.CerrarConexion();
+
+                if (empresas != null)
+                {
+                    int x = 0;
+                    int y = 0;
+                    for (int i = 0; i < empresas.Count; i++)
+                    {
+                        var control = new PanelEmpresa(modoNoche, empresas[i], usuario, idioma);
+                        control.Location = new Point(x, y);
+                        pnlComercio.Controls.Add(control);
+                        y += control.Height;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Empresas NO encontradas");
+                }
+            }
         }
 
         private void lblModa_Click(object sender, EventArgs e)
         {
             limpiarPagina();
+            pnlComercio.Controls.Clear();
             if (cmbIdioma.Text == "English")
             {
                 lblAlimentacion.Text = "Nutrition";
@@ -121,11 +147,36 @@ namespace Localmarket_App
                 lblOcio.Text = "Ocio";
                 lblTituloCategoria.Text = "Comercios en categoría de Moda:";
             }
+
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                List<Empresa> empresas = Empresa.BusquedaComerciosCategoria("Moda");
+                ConexionBD.CerrarConexion();
+
+                if (empresas != null)
+                {
+                    int x = 0;
+                    int y = 0;
+                    for (int i = 0; i < empresas.Count; i++)
+                    {
+                        var control = new PanelEmpresa(modoNoche, empresas[i], usuario, idioma);
+                        control.Location = new Point(x, y);
+                        pnlComercio.Controls.Add(control);
+                        y += control.Height;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Empresas NO encontradas");
+                }
+            }
         }
 
         private void lblOcio_Click(object sender, EventArgs e)
         {
             limpiarPagina();
+            pnlComercio.Controls.Clear();
             if (cmbIdioma.Text == "English")
             {
                 lblAlimentacion.Text = "Nutrition";
@@ -139,6 +190,30 @@ namespace Localmarket_App
                 lblModa.Text = "Moda";
                 lblOcio.Text = "-Ocio";
                 lblTituloCategoria.Text = "Comercios en categoría de Ocio:";
+            }
+
+            if (ConexionBD.Conexion != null)
+            {
+                ConexionBD.AbrirConexion();
+                List<Empresa> empresas = Empresa.BusquedaComerciosCategoria("Ocio");
+                ConexionBD.CerrarConexion();
+
+                if (empresas != null)
+                {
+                    int x = 0;
+                    int y = 0;
+                    for (int i = 0; i < empresas.Count; i++)
+                    {
+                        var control = new PanelEmpresa(modoNoche, empresas[i], usuario, idioma);
+                        control.Location = new Point(x, y);
+                        pnlComercio.Controls.Add(control);
+                        y += control.Height;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Empresas NO encontradas");
+                }
             }
         }
 
@@ -167,7 +242,7 @@ namespace Localmarket_App
                     int y = 0;
                     for (int i = 0; i < empresas.Count; i++)
                     {
-                        var control = new PanelEmpresa(modoNoche, empresas[i], usuario);
+                        var control = new PanelEmpresa(modoNoche, empresas[i], usuario, idioma);
                         control.Location = new Point(x, y);
                         pnlComercio.Controls.Add(control);
                         y += control.Height;
@@ -204,14 +279,16 @@ namespace Localmarket_App
 
         private void lblListaFav_Click(object sender, EventArgs e)
         {
-            limpiarPagina();
-            lblTituloCategoria.Text = "Lista de favoritos:";
+            MessageBox.Show("Funcionalidad no disponible","Aviso");
+            /*limpiarPagina();
+            lblTituloCategoria.Text = "Lista de favoritos:";*/
         }
 
         private void lblRecientes_Click(object sender, EventArgs e)
         {
-            limpiarPagina();
-            lblTituloCategoria.Text = "Vistos recientemente:";
+            MessageBox.Show("Funcionalidades no disponibles", "Aviso");
+            /*limpiarPagina();
+            lblTituloCategoria.Text = "Vistos recientemente:";*/
         }
 
         private void picAjustes_Click(object sender, EventArgs e)

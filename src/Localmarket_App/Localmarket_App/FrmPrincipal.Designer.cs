@@ -351,7 +351,7 @@ namespace Localmarket_App
             this.pnlComercio.Location = new System.Drawing.Point(227, 139);
             this.pnlComercio.Margin = new System.Windows.Forms.Padding(2);
             this.pnlComercio.Name = "pnlComercio";
-            this.pnlComercio.Size = new System.Drawing.Size(559, 417);
+            this.pnlComercio.Size = new System.Drawing.Size(570, 417);
             this.pnlComercio.TabIndex = 6;
             this.pnlComercio.Visible = false;
             // 

@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Localmarket_App
 {
     partial class FrmEditarNegocio

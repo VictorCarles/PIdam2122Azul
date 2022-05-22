@@ -57,6 +57,7 @@ namespace Localmarket_App
             }
             else
             {
+                reader.Close();
                 return null;
             }
         }

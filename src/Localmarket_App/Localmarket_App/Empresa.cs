@@ -85,14 +85,14 @@ namespace Localmarket_App
                 while (reader.Read())
                 {
                     Image img;
-                    if (reader.GetString(6) != "nada")
+                    if (!reader.IsDBNull(6))
                     {
                         string data = reader.GetString(6);
                         img = Base64ToImage(data);
                     }
                     else
                     {
-                        img = null;
+                        img = Localmarket_App.Properties.Resources.Grupo_5;
                     }
 
                     Empresa emp = new Empresa(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3),
@@ -105,6 +105,43 @@ namespace Localmarket_App
             }
             else
             {
+                reader.Close();
+                return null;
+            }
+        }
+
+        public static List<Empresa> BusquedaComerciosCategoria(string text)
+        {
+            string consulta = string.Format("SELECT * FROM Empresa WHERE category LIKE ('%{0}%'); ", text);
+            MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);
+            MySqlDataReader reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                List<Empresa> empresas = new List<Empresa>();
+                while (reader.Read())
+                {
+                    Image img;
+                    if (!reader.IsDBNull(6))
+                    {
+                        string data = reader.GetString(6);
+                        img = Base64ToImage(data);
+                    }
+                    else
+                    {
+                        img = Localmarket_App.Properties.Resources.Grupo_5;
+                    }
+
+                    Empresa emp = new Empresa(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3),
+                        reader.GetInt32(4), reader.GetDouble(5), img, reader.GetString(7), reader.GetInt32(8), reader.GetString(9),
+                        reader.GetString(10));
+                    empresas.Add(emp);
+                }
+                reader.Close();
+                return empresas;
+            }
+            else
+            {
+                reader.Close();
                 return null;
             }
         }
@@ -119,20 +156,20 @@ namespace Localmarket_App
                 reader.Read();
 
                 Image img;
-                if (reader.GetString(6) != "nada")
+                if (!reader.IsDBNull(6))
                 {
                     string data = reader.GetString(6);
                     img = Base64ToImage(data);
                 }
                 else
                 {
-                    img = null;
+                    img = Localmarket_App.Properties.Resources.Grupo_5;
                 }
 
                 Empresa emp = new Empresa(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3),
                    reader.GetInt32(4), reader.GetDouble(5), img, reader.GetString(7), reader.GetInt32(8), reader.GetString(9),
                    reader.GetString(10));
-
+                reader.Close();
                 return emp;
             }
             else
@@ -152,7 +189,6 @@ namespace Localmarket_App
             empresa.name = nombre;
             empresa.description = desc;
             empresa.profilePicture = logo;
-
             return empresa;
         }
 

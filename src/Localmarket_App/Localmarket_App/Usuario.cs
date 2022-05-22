@@ -85,14 +85,15 @@ namespace Localmarket_App
             {
                 Image img;
                 reader.Read();
-                if (reader.GetString(6) != "nada")
+                
+                if (!reader.IsDBNull(6))
                 {
                     string data = reader.GetString(6);
                     img = Base64ToImage(data);
                 }
                 else
                 {
-                    img = null;
+                    img = Localmarket_App.Properties.Resources.Perfil_Usuario;
                 }
                 Usuario usuario = new Usuario(reader.GetString(0),reader.GetString(1),reader.GetString(2),reader.GetString(3),reader.GetInt32(4),reader.GetString(5),
                     reader.GetString(7),reader.GetInt32(8),img,reader.GetString(9),reader.GetString(10));
@@ -115,14 +116,14 @@ namespace Localmarket_App
             {
                 Image img;
                 reader.Read();
-                if (reader.GetString(6) != "nada")
+                if (!reader.IsDBNull(6))
                 {
                     string data = reader.GetString(6);
                     img = Base64ToImage(data);
                 }
                 else
                 {
-                    img = null;
+                    img = Localmarket_App.Properties.Resources.Perfil_Usuario;
                 }
                 Usuario usuario = new Usuario(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetString(5),
                     reader.GetString(7), reader.GetInt32(8), img, reader.GetString(9), reader.GetString(10));
@@ -131,6 +132,7 @@ namespace Localmarket_App
             }
             else
             {
+                reader.Close();
                 return null;
             }
         }

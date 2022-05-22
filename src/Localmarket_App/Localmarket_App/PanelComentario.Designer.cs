@@ -43,6 +43,7 @@ namespace Localmarket_App
             this.lblComentario.AutoSize = true;
             this.lblComentario.Location = new System.Drawing.Point(82, 32);
             this.lblComentario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblComentario.MaximumSize = new System.Drawing.Size(310, 0);
             this.lblComentario.Name = "lblComentario";
             this.lblComentario.Size = new System.Drawing.Size(106, 13);
             this.lblComentario.TabIndex = 1;
@@ -84,10 +85,10 @@ namespace Localmarket_App
             // 
             // picFoto
             // 
-            this.picFoto.Location = new System.Drawing.Point(8, 5);
+            this.picFoto.Location = new System.Drawing.Point(-1, -1);
             this.picFoto.Margin = new System.Windows.Forms.Padding(2);
             this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(62, 60);
+            this.picFoto.Size = new System.Drawing.Size(79, 82);
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFoto.TabIndex = 0;
             this.picFoto.TabStop = false;
@@ -104,7 +105,7 @@ namespace Localmarket_App
             this.Controls.Add(this.picFoto);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PanelComentario";
-            this.Size = new System.Drawing.Size(495, 69);
+            this.Size = new System.Drawing.Size(495, 80);
             this.Load += new System.EventHandler(this.PanelComentario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picValoracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();

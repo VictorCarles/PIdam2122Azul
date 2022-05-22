@@ -18,8 +18,9 @@ namespace Localmarket_App
             InitializeComponent();
         }
 
-        public PanelEmpresa(bool noche, Empresa emp, Usuario usu) : this()
+        public PanelEmpresa(bool noche, Empresa emp, Usuario usu, string idioma) : this()
         {
+            this.idioma = idioma;
             empresa = emp;
             usuario = usu;
             modoNoche = noche;

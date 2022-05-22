@@ -114,34 +114,38 @@ namespace Localmarket_App
 
         private void picImagen1_Click(object sender, EventArgs e)
         {
-            if (openFileDialogImagen1.ShowDialog() == DialogResult.OK)
+            MessageBox.Show("Funcionalidades no disponibles", "Aviso");
+            /*if (openFileDialogImagen1.ShowDialog() == DialogResult.OK)
             {
                 picImagen1.Image = new Bitmap(openFileDialogImagen1.FileName);
-            }
+            }*/
         }
 
         private void picImagen2_Click(object sender, EventArgs e)
         {
-            if (openFileDialogImagen2.ShowDialog() == DialogResult.OK)
+            MessageBox.Show("Funcionalidades no disponibles", "Aviso");
+            /*if (openFileDialogImagen2.ShowDialog() == DialogResult.OK)
             {
                 picImagen2.Image = new Bitmap(openFileDialogImagen2.FileName);
-            }
+            }*/
         }
 
         private void picImagen3_Click(object sender, EventArgs e)
         {
-            if (openFileDialogImagen3.ShowDialog() == DialogResult.OK)
+            MessageBox.Show("Funcionalidades no disponibles", "Aviso");
+            /*if (openFileDialogImagen3.ShowDialog() == DialogResult.OK)
             {
                 picImagen3.Image = new Bitmap(openFileDialogImagen3.FileName);
-            }
+            }*/
         }
 
         private void picImagen4_Click(object sender, EventArgs e)
         {
-            if (openFileDialogImagen4.ShowDialog() == DialogResult.OK)
+            MessageBox.Show("Funcionalidades no disponibles", "Aviso");
+            /*if (openFileDialogImagen4.ShowDialog() == DialogResult.OK)
             {
                 picImagen4.Image = new Bitmap(openFileDialogImagen4.FileName);
-            }
+            }*/
         }
 
         private void btnElegirFotoProducto_Click(object sender, EventArgs e)
