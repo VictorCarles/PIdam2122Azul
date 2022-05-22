@@ -1,4 +1,4 @@
-## BASE DE DATOS Local Market App 
+## BASE DE DATOS Local Market App - PI Equipo Azul. 1ºDAM.
 ## Inicio código de creación de base de datos
 ## Version: 2.0
  
@@ -23,7 +23,9 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Usuario(
   `cp` INT NOT NULL,
   `tipo` VARCHAR(20) NOT NULL DEFAULT 'basic',
   `nif` VARCHAR(9) NULL,
-  PRIMARY KEY (username));
+  PRIMARY KEY (username)
+  -- INDEX `pk_username_idx` (`username` ASC),
+  );
 -- DROP TABLE IF EXISTS localmarket_db.Usuario;
 
 
@@ -42,6 +44,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
   `owner_username` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`cif`),
   INDEX `fk_owner_username_idx` (`owner_username` ASC),
+  -- INDEX `cp_idx` (`cp` ASC),
   CONSTRAINT `fk_owner_username`
     FOREIGN KEY (owner_username)
     REFERENCES localmarket_db.Usuario (`username`)
@@ -53,7 +56,6 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Empresa(
 
 ## Tabla Acciones:
 CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
---  `action_id` INT NOT NULL AUTO_INCREMENT,
   `action_id` INT NOT NULL AUTO_INCREMENT,
   `accion` VARCHAR(600) NOT NULL,
   `fecha` DATETIME NOT NULL,
@@ -80,12 +82,12 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Acciones (
 CREATE TABLE IF NOT EXISTS localmarket_db.Listas (
   `list_id` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
-  `username` VARCHAR(20) NOT NULL,
+  `list_username` VARCHAR(20) NOT NULL,
   `cif_included` VARCHAR(9) NOT NULL,
   PRIMARY KEY (`list_id`),
-  INDEX `fk_username_idx` (`username` ASC),
-  CONSTRAINT `fk_username`
-    FOREIGN KEY (`username`)
+  INDEX `fk_list_username_idx` (`list_username` ASC),
+  CONSTRAINT `fk_list_username`
+    FOREIGN KEY (`list_username`)
     REFERENCES localmarket_db.Usuario (`username`)
 	 ON DELETE CASCADE
     ON UPDATE CASCADE,
@@ -117,7 +119,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
   `idProducto` INT NOT NULL AUTO_INCREMENT,
   `category` VARCHAR(45) NOT NULL,
   `price` DOUBLE NOT NULL,
-  `prod_name` VARCHAR(45) NOT NULL,
+  `product_name` VARCHAR(45) NOT NULL,
   `description` VARCHAR(200) NOT NULL,
   `image` LONGBLOB NULL,
   `available` TINYINT(1) NOT NULL,
@@ -126,7 +128,7 @@ CREATE TABLE IF NOT EXISTS localmarket_db.Producto (
   INDEX `fk_product_company_idx` (`product_company` ASC),
   CONSTRAINT `fk_product_company`
     FOREIGN KEY (`product_company`)
-    REFERENCES `localmarket_db`.`Empresa` (`cif`)
+    REFERENCES localmarket_db.Empresa (`cif`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
 -- DROP TABLE IF EXISTS localmarket_db.Producto;
