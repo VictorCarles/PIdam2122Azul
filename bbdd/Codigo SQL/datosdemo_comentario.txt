@@ -1,6 +1,0 @@
-INSERT INTO Comentario VALUES (DEFAULT,'Tu tienda tiene mucho texto, vaya puta mierda.',0,'P8277233F','baronmorgalen',NULL,2,CURDATE());
-INSERT INTO Comentario VALUES (DEFAULT,'¡Muhas gacias mi nieto ba muy guapo a su comunion!',5,'E05377254','bacala',NULL,9,CURDATE());
-INSERT INTO Comentario VALUES (DEFAULT,'La verdad es que te has flipado un poco con el precio de las palomitas, pero bastante bueno.',3,'F03146412','aserenarme',NULL,6,CURDATE());
-INSERT INTO Comentario VALUES (DEFAULT,'Muy buenos precios, las pelis perfectas para verlas con los nenes los findes.',5,'F03146412','zxcvsad',NULL,2,CURDATE());
-INSERT INTO Comentario VALUES (DEFAULT,'No tienen gluten.',5,'S9086833B',‘jaydcock’,NULL,66,CURDATE());
-INSERT INTO Comentario VALUES (DEFAULT,'De hecho, Rosario es el nombre de mi tia.',3,'G96932579','jaydcock',NULL,8,CURDATE());
