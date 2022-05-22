@@ -26,8 +26,9 @@ cifEmp => cif_company
 
 
 TABLA LISTAS:
+idListas => list_id
 Nombre => nombre
-Usuario_Username => username
+Usuario_Username => list_username
 cifEmp => cif_included
 
 
@@ -52,7 +53,9 @@ cif_emp => company_profile
 
 
 
+
 TABLA PRODUCTO
+prod_name => product_name
 cifEmp => product_company
 
 
