@@ -192,3 +192,5 @@ C:\Users\Usuario\Desktop\PI_AZUL\src\Localmarket_App\Localmarket_App\obj\Debug\L
 C:\Users\Usuario\Desktop\PI_AZUL\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.pdb
 C:\Users\Usuario\Desktop\PI_AZUL\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPaginaComercioEsp.resources
 C:\Users\Usuario\Desktop\PI_AZUL\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPaginaComercioIng.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPaginaComercioEsp.resources
+C:\Users\Victor\Documents\PIdam2122Azul\src\Localmarket_App\Localmarket_App\obj\Debug\Localmarket_App.MultiIdiomas.FrmPaginaComercioIng.resources
