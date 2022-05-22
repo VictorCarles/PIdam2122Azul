@@ -42,6 +42,7 @@ namespace Localmarket_App
             picPerfil2.Image = usuario.Imagen;
             lblUsuario.Text = usuario.Username;
             cmbIdioma.Text = idioma;
+            
             AplicarIdioma();
             
         }
@@ -342,7 +343,7 @@ namespace Localmarket_App
             else
             {
                 this.Hide();
-                FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
+                FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario, idioma);
                 frmRegEmp.ShowDialog();
                 this.Close();
             }

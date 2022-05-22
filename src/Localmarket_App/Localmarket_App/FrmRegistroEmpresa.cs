@@ -15,17 +15,19 @@ namespace Localmarket_App
     {
         private Usuario usuario;
         private bool modoNoche;
-        public FrmRegistroEmpresa(bool modoNoche, Usuario usu)
+        private string idioma;
+        public FrmRegistroEmpresa(bool modoNoche, Usuario usu, string idioma)
         {
             InitializeComponent();
             this.modoNoche = modoNoche;
             this.usuario = usu;
+            this.idioma = idioma;
         }
 
         private void picAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche, usuario);
+            FrmPrincipal frmPrin = new FrmPrincipal(modoNoche, usuario, null, idioma);
             frmPrin.ShowDialog();
             this.Close();
         }
@@ -51,6 +53,10 @@ namespace Localmarket_App
                     Empresa.InsertarEmpresa(empresa);
                     ConexionBD.CerrarConexion();
                 }
+                this.Hide();
+                FrmPrincipal frmPrin = new FrmPrincipal(modoNoche, usuario, empresa, idioma);
+                frmPrin.ShowDialog();
+                this.Close();
             }
         }
 
@@ -154,7 +160,8 @@ namespace Localmarket_App
 
         private void FrmRegistroEmpresa_Load(object sender, EventArgs e)
         {
-            cmbIdioma.Text = "Español";
+            cmbIdioma.Text = idioma;
+            AplicarIdioma();
 
             if (modoNoche)
             {
@@ -170,6 +177,7 @@ namespace Localmarket_App
         {
             if (cmbIdioma.Text == "English")
             {
+                idioma = "English";
                 lblAjustes.Text = MultiIdiomas.FrmRegistroEmpresaIng.Settings;
                 lblCategoria.Text = MultiIdiomas.FrmRegistroEmpresaIng.Category;
                 lblCp.Text = MultiIdiomas.FrmRegistroEmpresaIng.PostalCode;
@@ -184,6 +192,7 @@ namespace Localmarket_App
             }
             else if (cmbIdioma.Text == "Español")
             {
+                idioma = "Español";
                 lblAjustes.Text = MultiIdiomas.FrmRegistroEmpresaEsp.Settings;
                 lblCategoria.Text = MultiIdiomas.FrmRegistroEmpresaEsp.Category;
                 lblCp.Text = MultiIdiomas.FrmRegistroEmpresaEsp.PostalCode;

@@ -230,7 +230,7 @@ namespace Localmarket_App
             this.pnlPerfil.Controls.Add(this.lblPerfil);
             this.pnlPerfil.Controls.Add(this.lblUsuario);
             this.pnlPerfil.Controls.Add(this.picPerfilUsuario);
-            this.pnlPerfil.Location = new System.Drawing.Point(761, 85);
+            this.pnlPerfil.Location = new System.Drawing.Point(752, 85);
             this.pnlPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPerfil.Name = "pnlPerfil";
             this.pnlPerfil.Size = new System.Drawing.Size(140, 143);
@@ -320,7 +320,7 @@ namespace Localmarket_App
             this.pnlAjustes.Controls.Add(this.picNocheOff);
             this.pnlAjustes.Controls.Add(this.picIdioma);
             this.pnlAjustes.Controls.Add(this.cmbIdioma);
-            this.pnlAjustes.Location = new System.Drawing.Point(825, 85);
+            this.pnlAjustes.Location = new System.Drawing.Point(816, 85);
             this.pnlAjustes.Margin = new System.Windows.Forms.Padding(2);
             this.pnlAjustes.Name = "pnlAjustes";
             this.pnlAjustes.Size = new System.Drawing.Size(140, 143);
@@ -409,7 +409,7 @@ namespace Localmarket_App
             this.tabReseñasyProductos.Controls.Add(this.tabProductos);
             this.tabReseñasyProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabReseñasyProductos.ItemSize = new System.Drawing.Size(200, 29);
-            this.tabReseñasyProductos.Location = new System.Drawing.Point(111, 422);
+            this.tabReseñasyProductos.Location = new System.Drawing.Point(102, 422);
             this.tabReseñasyProductos.Margin = new System.Windows.Forms.Padding(2);
             this.tabReseñasyProductos.Multiline = true;
             this.tabReseñasyProductos.Name = "tabReseñasyProductos";
@@ -624,10 +624,10 @@ namespace Localmarket_App
             // 
             this.picFavoritos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picFavoritos.Image = global::Localmarket_App.Properties.Resources.favoritovacio;
-            this.picFavoritos.Location = new System.Drawing.Point(690, 145);
+            this.picFavoritos.Location = new System.Drawing.Point(194, 135);
             this.picFavoritos.Margin = new System.Windows.Forms.Padding(2);
             this.picFavoritos.Name = "picFavoritos";
-            this.picFavoritos.Size = new System.Drawing.Size(41, 39);
+            this.picFavoritos.Size = new System.Drawing.Size(50, 52);
             this.picFavoritos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFavoritos.TabIndex = 14;
             this.picFavoritos.TabStop = false;
@@ -671,7 +671,7 @@ namespace Localmarket_App
             // picCorazon
             // 
             this.picCorazon.Image = global::Localmarket_App.Properties.Resources.corazon;
-            this.picCorazon.Location = new System.Drawing.Point(686, 136);
+            this.picCorazon.Location = new System.Drawing.Point(194, 157);
             this.picCorazon.Margin = new System.Windows.Forms.Padding(2);
             this.picCorazon.Name = "picCorazon";
             this.picCorazon.Size = new System.Drawing.Size(50, 51);

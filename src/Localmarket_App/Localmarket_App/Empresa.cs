@@ -48,7 +48,7 @@ namespace Localmarket_App
         {
             string consulta = string.Format("INSERT INTO Empresa (cif, emp_name, category, email, telephone, avgscore, ppicture, address, cp, description, usuario_username)" + 
                 "VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')",
-                empresa.CIF, empresa.name, empresa.category, empresa.email, empresa.phone, empresa.avgScore,
+                empresa.CIF, empresa.name, empresa.category, empresa.email, empresa.phone, 0,
                 ImageToBase64(empresa.profilePicture, empresa.profilePicture.RawFormat), empresa.address, empresa.cp, empresa.description, empresa.usuario);
 
             MySqlCommand comando = new MySqlCommand(consulta, ConexionBD.Conexion);

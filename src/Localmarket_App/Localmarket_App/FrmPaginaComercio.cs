@@ -116,15 +116,21 @@ namespace Localmarket_App
 
         private void picFavoritos_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Funcionalidad no disponible", "Aviso");
             pnlNaranja.Focus();
+            /*
             picCorazon.Visible = true;
             picFavoritos.Visible = false;
+            */
         }
         private void picCorazon_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Funcionalidad no disponible", "Aviso");
             pnlNaranja.Focus();
+            /*
             picCorazon.Visible = false;
             picFavoritos.Visible = true;
+            */
         }
 
         private void picAjustes_Click(object sender, EventArgs e)
@@ -174,7 +180,7 @@ namespace Localmarket_App
             else
             {
                 this.Hide();
-                FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario);
+                FrmRegistroEmpresa frmRegEmp = new FrmRegistroEmpresa(modoNoche, usuario, idioma);
                 frmRegEmp.ShowDialog();
                 this.Close();
             }
