@@ -1,0 +1,8 @@
+## EMPRESA
+
+INSERT INTO localmarket_db.Comentario VALUES (DEFAULT, 'Me encantó, unservicio increible! La chica que atiende es muy maja, y sus productos de calidad.',5,'P8277233F','baronmorgalen',NULL,5, CURRENT_DATE());
+INSERT INTO localmarket_db.Comentario VALUES (DEFAULT, '¡Muhas gracias mi nieto va muy guapo para su comunion! Y los tejidos son muy frescos, lo cual es genial para que pueda llevar su trajecito de marinero en pleno JuLIO',5,'E05377254','bacala',NULL,9, CURRENT_DATE());
+INSERT INTO localmarket_db.Comentario VALUES (DEFAULT, 'La verdad es que te has flipado un poco con el precio de las palomitas, pero bastante bueno.',3,'F03146412','aserenarme',NULL,6, CURRENT_DATE());
+INSERT INTO localmarket_db.Comentario VALUES (DEFAULT, 'Muy buenos precios, las pelis perfectas para verlas con los nenes los findes.',5,'F03146412','zxcvsad',NULL,2,CURRENT_DATE());
+INSERT INTO localmarket_db.Comentario VALUES (DEFAULT, 'No tienen gluten, como celiaca es una maravilla, siempre me veia forzada a comprar en amazon.', 5,'S9086833B', 'jaydcock', NULL, 66, CURRENT_DATE());
+INSERT INTO localmarket_db.Comentario VALUES (DEFAULT, 'Es increible la calidad de los productos. Estaba acostumbrada a comprar mucha comida preparadas, desde que compro productos más frescos la verdad, es que me encuentro mejor,ademñas de que la comida es más disfrutable', 3, 'G96932579', 'jaydcock',NULL, 8, CURRENT_DATE());
