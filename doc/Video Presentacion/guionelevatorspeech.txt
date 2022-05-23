@@ -25,12 +25,17 @@ and the lack of resources from the small businesses.
 
 How does it work?
 
-After logging in, the user is sent to the main page, where a tab of news is shown.
-In this page, the user can filter by categories, use the searchbar or see their last
+After logging in, the user is sent to the main page, where a tab of news is shown, as well a slider showing the most
+recently added stores, or those that have updated their commerce profile.
+
+In this page, the user can filter by categories, use the searchbar to search business by name or addres, and see their last
 viewed shops.
 
 Once the shop is selected, the user has a much more detailed page about the business.
-It shows its location, products, description and of course, reviews from other users.
+
+It shows its location, products, description of the location, history and service of the business and of course,
+reviews from other users, which includes a rating system, so the user can get a well inform idea about the general user experience
+of that business.
 
 From the owners perspective, a lot of options are shown, such as adding or deleting new products,
 create new shops, and changing the aspect of the shops pages.
